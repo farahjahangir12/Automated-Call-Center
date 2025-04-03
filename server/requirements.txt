@@ -1,0 +1,10 @@
+python-dotenv supabase
+langchain
+langchain-community
+langchain-groq
+flask
+flask_cors
+pymupdf
+langchain-cohere
+pymupdf
+neo4j

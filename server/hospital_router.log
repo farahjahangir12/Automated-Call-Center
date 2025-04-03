@@ -1,0 +1,125 @@
+2025-04-02 13:02:09,032 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:09,039 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:02:09,376 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:09,377 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:02:09,703 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:09,706 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:02:10,037 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:10,040 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:02:10,365 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:10,368 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:02:57,630 - INFO - Processing query: Can you guide me about visitor guides...
+2025-04-02 13:02:58,146 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:02:58,148 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:03:00,060 - INFO - Routed to Live Operator in 2.43 seconds
+2025-04-02 13:03:00,063 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:03:22,853 - INFO - Processing query: What are your charges per day...
+2025-04-02 13:03:23,263 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:03:23,266 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:03:24,297 - INFO - Routed to Live Operator in 1.44 seconds
+2025-04-02 13:03:24,302 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:03:56,261 - INFO - Processing query: I want to book an appointment...
+2025-04-02 13:03:56,917 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:03:56,920 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:03:58,634 - INFO - Routed to Live Operator in 2.37 seconds
+2025-04-02 13:03:58,635 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:04:37,579 - INFO - Processing query: Want to book appoinymrnt...
+2025-04-02 13:04:38,331 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:04:38,333 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:04:40,029 - WARNING - Connection failed to Live Operator
+2025-04-02 13:04:40,031 - ERROR - System error: 'response'
+2025-04-02 13:04:53,960 - INFO - Processing query: Want to book an appointment...
+2025-04-02 13:04:54,690 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:04:54,692 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:04:56,317 - INFO - Routed to Live Operator in 2.36 seconds
+2025-04-02 13:04:56,318 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:07:43,883 - ERROR - System error: 
+2025-04-02 13:07:49,938 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:07:49,941 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:07:50,197 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:07:50,200 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:07:50,455 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:07:50,457 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:07:50,710 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:07:50,712 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:07:51,043 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:07:51,045 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:08:12,205 - INFO - Processing query: I want to schedule an appoitnment...
+2025-04-02 13:08:12,942 - INFO - Routed to Appointment Desk in 0.74 seconds
+2025-04-02 13:08:12,946 - INFO - Call handled - Classification: SQL | Status: success
+2025-04-02 13:08:34,655 - INFO - Processing query: What are the care instructions for migraine...
+2025-04-02 13:08:35,401 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:08:35,403 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:08:36,693 - INFO - Routed to Live Operator in 2.04 seconds
+2025-04-02 13:08:36,697 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:08:51,595 - INFO - Processing query: what are your charges per day for room...
+2025-04-02 13:08:52,257 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:08:52,258 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:08:54,217 - WARNING - Connection failed to Live Operator
+2025-04-02 13:08:54,219 - ERROR - System error: 'response'
+2025-04-02 13:09:05,155 - INFO - Processing query: what are your visisting hours...
+2025-04-02 13:09:05,948 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:09:05,951 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:09:06,955 - INFO - Routed to Live Operator in 1.80 seconds
+2025-04-02 13:09:06,959 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:09:32,562 - INFO - Processing query: Visiting hours...
+2025-04-02 13:09:33,169 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:09:33,172 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:09:34,659 - INFO - Routed to Live Operator in 2.10 seconds
+2025-04-02 13:09:34,660 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:10:58,541 - INFO - Processing query: what are your visiting hours...
+2025-04-02 13:10:59,300 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:10:59,302 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:00,530 - INFO - Routed to Live Operator in 1.99 seconds
+2025-04-02 13:11:00,531 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:11:04,118 - ERROR - System error: 
+2025-04-02 13:11:10,130 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:10,134 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:10,387 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:10,390 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:10,638 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:10,639 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:10,881 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:10,884 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:11,141 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:11,144 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:17,155 - INFO - Processing query: Visiting hours...
+2025-04-02 13:11:17,891 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:11:17,893 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:11:18,628 - INFO - Routed to Live Operator in 1.47 seconds
+2025-04-02 13:11:18,630 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:13:07,546 - ERROR - System error: 
+2025-04-02 13:13:18,814 - INFO - Processing query: What are your visiting hours...
+2025-04-02 13:13:20,653 - INFO - Routed to Hospitals Policies, Rule and Regulations, Administration Guidelines in 1.84 seconds
+2025-04-02 13:13:20,657 - INFO - Call handled - Classification: RAG | Status: success
+2025-04-02 13:13:36,768 - INFO - Processing query: Admission policies...
+2025-04-02 13:13:37,833 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:13:37,836 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:13:39,094 - INFO - Routed to Live Operator in 2.33 seconds
+2025-04-02 13:13:39,098 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:13:58,827 - INFO - Processing query: care instructions for migraine...
+2025-04-02 13:13:59,615 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-02 13:13:59,616 - ERROR - Classification error: Error code: 404 - {'error': {'message': 'The model `llama-3-70b-8192` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2025-04-02 13:14:00,348 - INFO - Routed to Live Operator in 1.52 seconds
+2025-04-02 13:14:00,353 - INFO - Call handled - Classification: HUMAN | Status: success
+2025-04-02 13:20:21,209 - ERROR - System error: 
+13:20:28.738 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+13:20:28.740 - LLM timeout/error: Error code: 400 - {'error': {'message': 'The model
+13:20:33.127 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+13:20:33.129 - LLM timeout/error: Error code: 400 - {'error': {'message': 'The model
+13:24:22.977 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+13:24:23.853 - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-02 13:29:00,035 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:29:00,039 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:29:41,245 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:29:41,247 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:34:09,327 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:34:09,330 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:36:42,425 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:36:42,428 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:38:24,145 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:38:24,148 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:39:08,520 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:39:08,522 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-02 13:39:31,738 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-02 13:39:31,740 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
