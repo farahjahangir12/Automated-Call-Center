@@ -1,5 +1,5 @@
-from functions.Book_Appointment.extract_doctor_name import extract_doctor_name
-from functions.AppointmentSlots_info.get_slots_info import get_slots_info
+from ..functions.Book_Appointment.extract_doctor_name import extract_doctor_name
+from ..functions.AppointmentSlots_info.get_slots_info import get_slots_info
 from langchain.tools import Tool
 
 

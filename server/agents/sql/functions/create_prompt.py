@@ -1,6 +1,6 @@
 from langchain.schema.runnable import RunnableSequence
 from langchain.prompts import ChatPromptTemplate
-from llm import llm  
+from ..llm import llm  
 # Define a function to create a prompt template
 def create_prompt(system_message: str, user_input: str) -> str:
     """

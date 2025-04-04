@@ -1,4 +1,4 @@
-from connection import supabase
+from ...connection import supabase
 
 def get_patient_name(patient_id: str) -> str:
     """

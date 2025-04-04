@@ -1,4 +1,4 @@
-from connection import supabase
+from ...connection import supabase
 
 def get_slots_info(doctor_name: str):
     """

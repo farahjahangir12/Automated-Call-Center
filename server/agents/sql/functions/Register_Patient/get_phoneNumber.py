@@ -1,4 +1,4 @@
-from functions.create_prompt import create_prompt
+from ...functions.create_prompt import create_prompt
 import re
 
 def get_phoneNumber() -> str:

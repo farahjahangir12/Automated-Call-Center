@@ -1,4 +1,4 @@
-from functions.doctor_details.extract_doctor_details import extract_doctor_details
+from ..functions.doctor_details.extract_doctor_details import extract_doctor_details
 from langchain.tools import Tool
 
 def get_doctors_info(*args, **kwargs):

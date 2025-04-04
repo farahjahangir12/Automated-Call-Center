@@ -1,11 +1,14 @@
 import asyncio
+import importlib.util
+from pathlib import Path
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import logging
 from datetime import datetime
 import random
 import re
-from typing import Tuple, Dict
+from typing import Dict, Optional
+import sys
 
 # Configure logging
 logging.basicConfig(
@@ -19,14 +22,14 @@ load_dotenv()
 
 # Initialize the LLM
 llm = ChatGroq(
-    model_name="mixtral-8x7b-32768",
+    model_name="gemma2-9b-it",
     temperature=0.2,
     max_tokens=10,
     max_retries=1,
     timeout=2.0
 )
 
-class InteractiveRouter:
+class HospitalRouter:
     def __init__(self):
         self.routing_matrix = {
             "EMERGENCY": {
@@ -48,7 +51,7 @@ class InteractiveRouter:
                 "timeout": 0.3
             },
             "MEDICAL": {
-                "keywords": ["symptom", "fever", "pain", "headache", "rash", "cough","disease","care instructions","treatment","genetic linkage"],
+                "keywords": ["symptom", "fever", "pain", "headache", "rash", "cough", "disease", "care instructions", "treatment", "genetic linkage"],
                 "patterns": [
                     r"what should I do for.*",
                     r"is.*serious",
@@ -59,11 +62,11 @@ class InteractiveRouter:
                 "response": "🩺 Analyzing your symptoms...",
                 "timeout": 0.5
             },
-            "General Polcies": {
-                "keywords": ["admisssion details", "visitor guides", "department details", "payment methods", "consulting services"],
+            "GENERAL": {
+                "keywords": ["admission details", "visitor guides", "department details", "payment methods", "consulting services"],
                 "patterns": [r"guide|details|hours|departments|pay"],
                 "department": "RAG",
-                "response": "🚨 Connecting to RAG Agent!",
+                "response": "📚 Retrieving relevant information...",
                 "timeout": 0.1
             },
         }
@@ -83,8 +86,62 @@ class InteractiveRouter:
             "total_time": 0.0
         }
 
-    async def classify_query(self, query: str) -> Tuple[str, str, float, str]:
-        """Classify with detailed method tracking"""
+        # Load agent modules dynamically
+        self.agents = {
+            "GRAPH": self._load_agent("graph"),
+            "SQL": self._load_agent("sql"),
+            "RAG": self._load_agent("rag")
+        }
+        self.verify_agents()
+
+
+    def verify_agents(self):
+        """Check all required agents are loaded"""
+        for name, handler in self.agents.items():
+            if handler is None:
+                print(f"Critical: {name} agent failed to load!")
+            else:
+                logger.info(f"{name} agent ready")
+
+
+    def _load_agent(self, agent_name: str) -> Optional[callable]:
+        """Dynamically load agent module from agents directory"""
+        try:
+            agent_dir = Path(__file__).parent / "agents" / agent_name
+            agent_path = agent_dir / "main.py"
+        
+            print(f"Attempting to load agent from: {agent_path}")
+            if not agent_path.exists():
+                print(f"Agent file not found at {agent_path}")
+                return None
+
+        # 2. Create proper module spec
+            module_name = f"agents.{agent_name}.main"
+            spec = importlib.util.spec_from_file_location(
+            module_name,
+            str(agent_path)
+        )
+            if spec is None:
+                print(f"Couldn't create spec for {agent_name} agent")
+                return None
+    
+        # 3. Create and execute module
+            module = importlib.util.module_from_spec(spec)
+            sys.modules[module_name] = module
+            spec.loader.exec_module(module)
+    
+        # 4. Verify required function exists
+            if not hasattr(module, "handle_query"):
+                print(f"{agent_name} agent missing handle_query function")
+                return None
+            print(f"Successfully loaded {agent_name} agent")
+            return module.handle_query
+        except Exception as e:
+            print(f"Failed to load {agent_name} agent: {str(e)}")
+            return None
+
+    async def classify_query(self, query: str) -> tuple:
+        """Classify query with detailed method tracking"""
         start_time = datetime.now()
         query_lower = query.lower()
         route_method = "LLM"
@@ -104,19 +161,19 @@ class InteractiveRouter:
             if any(keyword in query_lower for keyword in config["keywords"]):
                 elapsed = (datetime.now() - start_time).total_seconds()
                 self.stats["fast_path"] += 1
-                return category, config["response"], elapsed, f"FAST_{category}"
+                return config["department"], config["response"], elapsed, f"FAST_{category}"
             
             # Regex check
             for pattern in self.compiled_patterns[category]:
                 if pattern.search(query_lower):
                     elapsed = (datetime.now() - start_time).total_seconds()
                     self.stats["fast_path"] += 1
-                    return category, config["response"], elapsed, f"REGEX_{category}"
+                    return config["department"], config["response"], elapsed, f"REGEX_{category}"
 
         # LLM Fallback
         try:
             prompt = f"""Classify this hospital query in ONE WORD:
-            Options: [EMERGENCY, APPOINTMENT, MEDICAL, OTHER]
+            Options: [EMERGENCY, APPOINTMENT, MEDICAL, GENERAL]
             Query: "{query[:200]}"
             Classification:"""
             
@@ -135,6 +192,8 @@ class InteractiveRouter:
                 return "SQL", self.routing_matrix["APPOINTMENT"]["response"], elapsed, "LLM_APPOINTMENT"
             elif classification in ["MEDICAL", "SYMPTOM"]:
                 return "GRAPH", self.routing_matrix["MEDICAL"]["response"], elapsed, "LLM_MEDICAL"
+            elif classification in ["GENERAL", "POLICY"]:
+                return "RAG", self.routing_matrix["GENERAL"]["response"], elapsed, "LLM_GENERAL"
                 
         except Exception as e:
             logger.warning(f"LLM error: {str(e)[:50]}")
@@ -144,15 +203,31 @@ class InteractiveRouter:
         elapsed = (datetime.now() - start_time).total_seconds()
         return "HUMAN", "Please hold while we connect you...", elapsed, "FALLBACK"
 
+    async def route_to_agent(self, department: str, query: str) -> str:
+        """Route the query to the appropriate agent"""
+        if department == "HUMAN":
+            return "Please wait while we connect you to a human operator..."
+        
+        agent_handler = self.agents.get(department)
+        if not agent_handler:
+            return f"System error: {department} agent not available"
+        
+        try:
+            response = await agent_handler(query)
+            return response
+        except Exception as e:
+            logger.error(f"Error in {department} agent: {str(e)}")
+            return f"Sorry, the {department} system is currently unavailable. Please try again later."
+
     async def process_query(self, query: str) -> Dict:
         """Process a single query with full diagnostics"""
         self.stats["total_queries"] += 1
         start_time = datetime.now()
         
-        dept, response, classify_time, method = await self.classify_query(query)
-        processing_time = self.routing_matrix.get(dept, {}).get("timeout", 0.5)
+        dept, initial_response, classify_time, method = await self.classify_query(query)
         
-        await asyncio.sleep(min(processing_time, 1.0))
+        # Get final response from the appropriate agent
+        final_response = await self.route_to_agent(dept, query)
         
         total_time = (datetime.now() - start_time).total_seconds()
         self.stats["total_time"] += total_time
@@ -160,11 +235,12 @@ class InteractiveRouter:
         return {
             "query": query,
             "department": dept,
-            "response": response,
+            "initial_response": initial_response,
+            "final_response": final_response,
             "processing_time": f"{total_time:.3f}s",
             "classification_method": method,
             "keywords_found": self._find_keywords(query),
-            "success": random.random() > 0.05
+            "success": True  # Assuming success after routing
         }
 
     def _find_keywords(self, query: str) -> str:
@@ -204,9 +280,9 @@ class InteractiveRouter:
         return "D (Needs Improvement)"
 
 async def interactive_test():
-    router = InteractiveRouter()
+    router = HospitalRouter()
     print("\n" + "="*60)
-    print("🏥 Osaka University Hospital - Interactive Routing System")
+    print("🏥 Osaka University Hospital - Intelligent Routing System")
     print("="*60)
     print("Type your query or 'exit' to end the session\n")
     
@@ -232,11 +308,11 @@ async def interactive_test():
             
             print(f"\n🔍 Classification:")
             print(f"Department: {result['department']}")
-            print(f"Response: {result['response']}")
+            print(f"Initial Response: {result['initial_response']}")
+            print(f"Final Response: {result['final_response']}")
             print(f"Method: {result['classification_method']}")
             print(f"Keywords: {result['keywords_found']}")
             print(f"Time: {result['processing_time']}")
-            print(f"Success: {'✅' if result['success'] else '❌ (Retrying...)'}")
             
             print("\n📊 Current Stats:")
             stats = router.get_stats()

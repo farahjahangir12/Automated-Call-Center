@@ -1,12 +1,12 @@
 
-from functions.Register_Patient.get_anchor_year_group import get_anchor_year_group
-from functions.Register_Patient.get_phoneNumber import get_phoneNumber
-from functions.Register_Patient.get_address import get_address
-from functions.Register_Patient.get_gender import get_gender
-from functions.Register_Patient.get_name import get_name
-from functions.Register_Patient.get_age import get_age
+from ..functions.Register_Patient.get_anchor_year_group import get_anchor_year_group
+from ..functions.Register_Patient.get_phoneNumber import get_phoneNumber
+from ..functions.Register_Patient.get_address import get_address
+from ..functions.Register_Patient.get_gender import get_gender
+from ..functions.Register_Patient.get_name import get_name
+from ..functions.Register_Patient.get_age import get_age
 from langchain.agents import Tool
-from connection import supabase
+from ..connection import supabase
 import random
 import string
 

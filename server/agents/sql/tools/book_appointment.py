@@ -1,7 +1,7 @@
-from connection import supabase
-from functions.Book_Appointment.extract_doctor_name import extract_doctor_name
-from functions.Book_Appointment.extract_day_time import extract_day_time
-from functions.Book_Appointment.extract_reason import extract_reason
+from ..connection import supabase
+from ..functions.Book_Appointment.extract_doctor_name import extract_doctor_name
+from ..functions.Book_Appointment.extract_day_time import extract_day_time
+from ..functions.Book_Appointment.extract_reason import extract_reason
 from langchain.agents import Tool
 
 # Function to book an appointment

@@ -123,3 +123,798 @@
 2025-04-02 13:39:08,522 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
 2025-04-02 13:39:31,738 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
 2025-04-02 13:39:31,740 - WARNING - LLM error: Error code: 400 - {'error': {'message': 'The model
+2025-04-03 21:20:16,421 - ERROR - Failed to load sql agent: No module named 'prompt'
+2025-04-03 21:23:12,162 - ERROR - Failed to load graph agent: [Errno 2] No such file or directory: 'D:\\agents\\graph\\main.py'
+2025-04-03 21:23:12,162 - ERROR - Failed to load sql agent: [Errno 2] No such file or directory: 'D:\\agents\\sql\\main.py'
+2025-04-03 21:23:12,163 - ERROR - Failed to load rag agent: [Errno 2] No such file or directory: 'D:\\agents\\rag\\main.py'
+2025-04-03 22:46:29,544 - INFO - Attempting to load agent from: D:\FYP\agents\graph\main.py
+2025-04-03 22:46:29,554 - ERROR - Agent file not found at D:\FYP\agents\graph\main.py
+2025-04-03 22:46:29,554 - INFO - Attempting to load agent from: D:\FYP\agents\sql\main.py
+2025-04-03 22:46:29,554 - ERROR - Agent file not found at D:\FYP\agents\sql\main.py
+2025-04-03 22:46:29,554 - INFO - Attempting to load agent from: D:\FYP\agents\rag\main.py
+2025-04-03 22:46:29,554 - ERROR - Agent file not found at D:\FYP\agents\rag\main.py
+2025-04-03 22:51:23,124 - INFO - Attempting to load agent from: D:\FYP\agents\graph\main.py
+2025-04-03 22:51:23,125 - ERROR - Agent file not found at D:\FYP\agents\graph\main.py
+2025-04-03 22:51:23,125 - INFO - Attempting to load agent from: D:\FYP\agents\sql\main.py
+2025-04-03 22:51:23,125 - ERROR - Agent file not found at D:\FYP\agents\sql\main.py
+2025-04-03 22:51:23,125 - INFO - Attempting to load agent from: D:\FYP\agents\rag\main.py
+2025-04-03 22:51:23,125 - ERROR - Agent file not found at D:\FYP\agents\rag\main.py
+2025-04-03 22:51:23,125 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-03 22:51:23,125 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 22:51:23,126 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 22:57:21,365 - INFO - Attempting to load agent from: D:\FYP\agents\graph\main.py
+2025-04-03 22:57:21,365 - ERROR - Agent file not found at D:\FYP\agents\graph\main.py
+2025-04-03 22:57:21,366 - INFO - Attempting to load agent from: D:\FYP\agents\sql\main.py
+2025-04-03 22:57:21,366 - ERROR - Agent file not found at D:\FYP\agents\sql\main.py
+2025-04-03 22:57:21,366 - INFO - Attempting to load agent from: D:\FYP\agents\rag\main.py
+2025-04-03 22:57:21,366 - ERROR - Agent file not found at D:\FYP\agents\rag\main.py
+2025-04-03 22:57:21,366 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-03 22:57:21,366 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 22:57:21,366 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 22:59:21,796 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 22:59:26,633 - INFO - Successfully loaded graph agent
+2025-04-03 22:59:26,634 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 22:59:27,531 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 4, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 22:59:27,534 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 22:59:29,952 - ERROR - rag agent missing handle_query function
+2025-04-03 22:59:29,952 - INFO - GRAPH agent ready
+2025-04-03 22:59:29,952 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 22:59:29,952 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 23:02:31,175 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 23:02:35,502 - INFO - Successfully loaded graph agent
+2025-04-03 23:02:35,502 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 23:02:36,375 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 4, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 23:02:36,378 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 23:02:38,532 - ERROR - rag agent missing handle_query function
+2025-04-03 23:02:38,532 - INFO - GRAPH agent ready
+2025-04-03 23:02:38,532 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 23:02:38,532 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 23:03:39,798 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 23:03:43,914 - INFO - Successfully loaded graph agent
+2025-04-03 23:03:43,914 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 23:03:44,837 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 4, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 23:03:44,840 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 23:03:47,994 - ERROR - rag agent missing handle_query function
+2025-04-03 23:03:47,994 - INFO - GRAPH agent ready
+2025-04-03 23:03:47,994 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 23:03:47,995 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 23:03:59,669 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 23:04:00,558 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 23:12:32,560 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 23:12:36,848 - INFO - Successfully loaded graph agent
+2025-04-03 23:12:36,848 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 23:12:37,912 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 4, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 23:12:37,915 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 23:12:40,626 - ERROR - rag agent missing handle_query function
+2025-04-03 23:12:40,626 - INFO - GRAPH agent ready
+2025-04-03 23:12:40,626 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 23:12:40,626 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 23:15:58,912 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 23:15:59,597 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-03 23:18:07,358 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 23:18:11,661 - INFO - Successfully loaded graph agent
+2025-04-03 23:18:11,661 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 23:18:12,552 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 23:18:12,555 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 23:18:15,571 - ERROR - rag agent missing handle_query function
+2025-04-03 23:18:15,571 - INFO - GRAPH agent ready
+2025-04-03 23:18:15,571 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 23:18:15,571 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-03 23:24:00,793 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-03 23:24:04,909 - INFO - Successfully loaded graph agent
+2025-04-03 23:24:04,909 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-03 23:24:05,947 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-03 23:24:05,951 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-03 23:24:08,886 - ERROR - rag agent missing handle_query function
+2025-04-03 23:24:08,886 - INFO - GRAPH agent ready
+2025-04-03 23:24:08,886 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-03 23:24:08,886 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-04 18:20:58,152 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-04 18:21:05,101 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 14, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-04 18:21:05,449 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-04 18:21:06,893 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-04 18:21:06,895 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-04 18:21:10,939 - ERROR - rag agent missing handle_query function
+2025-04-04 18:21:10,940 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-04 18:21:10,940 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-04 18:21:10,940 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-04 18:37:28,413 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-04 18:37:33,595 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 14, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-04 18:37:33,636 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-04 18:37:34,560 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-04 18:37:34,563 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-04 18:37:36,910 - ERROR - rag agent missing handle_query function
+2025-04-04 18:37:36,911 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-04 18:37:36,911 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-04 18:37:36,911 - CRITICAL - Critical: RAG agent failed to load!
+2025-04-04 18:39:44,335 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-04 18:39:49,482 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 14, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-04 18:39:49,515 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-04 18:39:50,257 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-04 18:39:50,258 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-04 18:39:52,978 - INFO - Successfully loaded rag agent
+2025-04-04 18:39:52,979 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-04 18:39:52,979 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-04 18:39:52,979 - INFO - RAG agent ready
+2025-04-04 18:40:15,128 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:15,490 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:15,836 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:16,185 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:16,541 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:17,027 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:17,383 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:17,710 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-04 18:40:20,118 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/rpc/search_hospital_documents "HTTP/2 200 OK"
+2025-04-04 18:40:20,919 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 19:15:22,295 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-04 19:15:27,676 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 14, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-04 19:15:27,710 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-04 19:15:28,502 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-04 19:15:28,504 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-04 19:15:30,774 - INFO - Successfully loaded rag agent
+2025-04-04 19:15:30,774 - CRITICAL - Critical: GRAPH agent failed to load!
+2025-04-04 19:15:30,774 - CRITICAL - Critical: SQL agent failed to load!
+2025-04-04 19:15:30,774 - INFO - RAG agent ready
+2025-04-04 19:19:41,243 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 14, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-04 19:19:42,091 - ERROR - Failed to load sql agent: No module named 'prompt'
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 131, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from prompt import agent_instructions
+ModuleNotFoundError: No module named 'prompt'
+2025-04-04 19:19:44,372 - INFO - Successfully loaded rag agent
+2025-04-04 19:19:44,373 - INFO - RAG agent ready
+2025-04-04 19:22:42,286 - INFO - RAG agent ready
+2025-04-04 20:36:52,256 - INFO - RAG agent ready
+2025-04-04 20:37:41,870 - INFO - RAG agent ready
+2025-04-04 20:40:27,318 - INFO - RAG agent ready
+2025-04-04 20:42:50,519 - INFO - RAG agent ready
+2025-04-04 20:47:16,963 - INFO - RAG agent ready
+2025-04-04 20:51:25,619 - INFO - RAG agent ready
+2025-04-04 20:52:12,626 - INFO - RAG agent ready
+2025-04-04 20:53:16,999 - INFO - RAG agent ready
+2025-04-04 20:55:03,320 - INFO - SQL agent ready
+2025-04-04 20:55:03,320 - INFO - RAG agent ready
+2025-04-04 20:55:19,238 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-04-04 21:13:47,332 - INFO - SQL agent ready
+2025-04-04 21:13:47,332 - INFO - RAG agent ready
+2025-04-04 21:13:57,988 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:13:58,911 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:14:00,626 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-04 21:14:10,553 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:14:11,302 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-04 21:14:11,916 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=%2A&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-04 21:14:12,908 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:14:13,726 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:14:13,964 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-04 21:14:30,143 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:14:31,032 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-04 21:14:31,258 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-04 21:14:31,511 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-04 21:14:31,751 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-04 21:14:32,622 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-04 21:15:10,918 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"

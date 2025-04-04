@@ -1,5 +1,5 @@
-from functions.find_best_match import find_best_match
-from functions.create_prompt import create_prompt
+from ...functions.find_best_match import find_best_match
+from ...functions.create_prompt import create_prompt
 
 def extract_doctor_name(user_input: str = None) -> str:
     """

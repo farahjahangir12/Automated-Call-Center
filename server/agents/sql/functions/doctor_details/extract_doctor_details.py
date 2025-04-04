@@ -1,6 +1,6 @@
-from functions.find_best_match import find_best_match
-from functions.create_prompt import create_prompt
-from connection import supabase  # Assuming you use Supabase for the database
+from ...functions.find_best_match import find_best_match
+from ...functions.create_prompt import create_prompt
+from ...connection import supabase  # Assuming you use Supabase for the database
 
 def extract_doctor_details(user_input: str = None) -> dict:
     """

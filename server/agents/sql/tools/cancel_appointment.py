@@ -1,7 +1,7 @@
-from connection import supabase
-from functions.Cancel_Appointment.get_appointment_details import get_appointment_details
-from functions.Cancel_Appointment.delete_appointment import delete_appointment
-from functions.Cancel_Appointment.get_patient_name import get_patient_name
+from ..connection import supabase
+from ..functions.Cancel_Appointment.get_appointment_details import get_appointment_details
+from ..functions.Cancel_Appointment.delete_appointment import delete_appointment
+from ..functions.Cancel_Appointment.get_patient_name import get_patient_name
 from langchain.agents import Tool
 
 # Function to cancel an appointment

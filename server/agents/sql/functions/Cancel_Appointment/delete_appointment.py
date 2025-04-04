@@ -1,4 +1,4 @@
-from connection import supabase
+from ...connection import supabase
 
 def delete_appointment(patient_id: str) -> bool:
     """

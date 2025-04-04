@@ -1,5 +1,5 @@
-from connection import supabase
-from functions.create_prompt import create_prompt
+from ...connection import supabase
+from ...functions.create_prompt import create_prompt
 
 # Function to extract the appointment day and time
 def extract_day_time(doctor_name: str) -> tuple:

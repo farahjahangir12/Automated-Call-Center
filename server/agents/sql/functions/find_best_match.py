@@ -1,4 +1,4 @@
-from connection import supabase
+from ..connection import supabase
 from rapidfuzz import process
 
 

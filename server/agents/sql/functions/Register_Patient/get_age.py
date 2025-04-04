@@ -1,5 +1,5 @@
 import re
-from functions.create_prompt import create_prompt
+from ...functions.create_prompt import create_prompt
 
 def get_age() -> int:
     """

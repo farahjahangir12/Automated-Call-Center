@@ -7,4 +7,5 @@ flask_cors
 pymupdf
 langchain-cohere
 pymupdf
-neo4j
+langchain-neo4j
+rapidfuzz

@@ -133,36 +133,68 @@ Response:"""
         
         return response.content
 
-    async def chat_loop(self):
-        """Main chat loop"""
-        print("Hospital RAG Agent initialized. Type 'exit' to quit.\n")
-        
-        while True:
-            try:
-                query = input("\nUser: ").strip()
-                
-                if query.lower() == "exit":
-                    print("Goodbye!")
-                    break
-                
-                collection_name = await self.get_relevant_collection(query)
-                print(f"Searching in collection: {collection_name}")
-                
-                docs = await self.retrieve_documents(query, collection_name)
-                context = "\n".join([f"{i+1}. {doc['content']}" for i, doc in enumerate(docs)]) if docs else "No relevant documents found."
-                
-                response = await self.generate_response(query, context)
-                print(f"\nRAG Agent: {response}")
-                
-                self.memory.save_context({"query": query}, {"text": response})
-                
-            except Exception as e:
-                print(f"Error: {str(e)}")
-                continue
+    async def handle_query(self, query: str) -> str:
+        """Handle RAG queries programmatically for router integration"""
+        try:
+            if query.lower() == "exit":
+                self.memory.clear()
+                return "Goodbye! Have a nice day."
+            
+            collection_name = await self.get_relevant_collection(query)
+            docs = await self.retrieve_documents(query, collection_name)
+            context = "\n".join([f"{i+1}. {doc['content']}" for i, doc in enumerate(docs)]) if docs else "No relevant documents found."
+            
+            response = await self.generate_response(query, context)
+            self.memory.save_context({"query": query}, {"text": response})
+            
+            return response
+            
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            self.memory.clear()
+            return f"Sorry, I encountered an error: {str(e)}"
 
-async def main():
+# Router-compatible interface
+async def handle_query(query: str) -> str:
+    """
+    Public interface for router compatibility
+    Args:
+        query (str): The user's query
+    Returns:
+        str: The agent's response
+    """
+    try:
+        # Create new instance for each query to ensure clean state
+        rag_system = HospitalRAGSystem()
+        response = await rag_system.handle_query(query)
+        return response
+    except Exception as e:
+        return f"Information system error: {str(e)}. Please try again later."
+
+# Preserve original chat loop for testing
+async def chat_loop():
+    """Standalone testing mode"""
     rag_system = HospitalRAGSystem()
-    await rag_system.chat_loop()
+    print("Hospital RAG Agent (Standalone Mode)")
+    print("Type 'exit' to quit\n")
+    
+    while True:
+        try:
+            query = input("\nUser: ").strip()
+            if not query:
+                continue
+                
+            if query.lower() == "exit":
+                print("Goodbye!")
+                break
+                
+            response = await rag_system.handle_query(query)
+            print(f"\nRAG Agent: {response}")
+            
+        except KeyboardInterrupt:
+            print("\nSession ended by user")
+            break
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(chat_loop())
