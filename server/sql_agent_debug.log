@@ -1,0 +1,2633 @@
+2025-04-08 16:52:02,632 - INFO - Creating SQL Agent instance
+2025-04-08 16:52:02,633 - DEBUG - Initial session context: {}
+2025-04-08 16:52:02,633 - INFO - Initializing Supabase connection
+2025-04-08 16:52:03,697 - INFO - Initializing tools
+2025-04-08 16:52:03,697 - DEBUG - Tools initialized: 5
+2025-04-08 16:52:03,698 - INFO - Initializing memory
+2025-04-08 16:52:03,699 - DEBUG - Memory initialized
+2025-04-08 16:52:03,700 - INFO - Creating prompt template
+2025-04-08 16:52:03,700 - INFO - Creating agent
+2025-04-08 16:52:03,755 - DEBUG - Agent created successfully
+2025-04-08 16:52:03,755 - INFO - SQL Agent fully initialized
+2025-04-08 16:55:16,532 - INFO - Creating SQL Agent instance
+2025-04-08 16:55:16,533 - DEBUG - Initial session context: {}
+2025-04-08 16:55:16,534 - INFO - Initializing Supabase connection
+2025-04-08 16:55:17,888 - INFO - Initializing tools
+2025-04-08 16:55:17,888 - DEBUG - Tools initialized: 5
+2025-04-08 16:55:17,888 - INFO - Initializing memory
+2025-04-08 16:55:17,891 - DEBUG - Memory initialized
+2025-04-08 16:55:17,891 - INFO - Creating prompt template
+2025-04-08 16:55:17,892 - INFO - Creating agent
+2025-04-08 16:55:17,947 - DEBUG - Agent created successfully
+2025-04-08 16:55:17,948 - INFO - SQL Agent fully initialized
+2025-04-08 16:56:49,882 - INFO - Creating SQL Agent instance
+2025-04-08 16:56:49,882 - DEBUG - Initial session context: {}
+2025-04-08 16:56:49,883 - INFO - Initializing Supabase connection
+2025-04-08 16:56:50,667 - INFO - Initializing tools
+2025-04-08 16:56:50,668 - DEBUG - Tools initialized: 5
+2025-04-08 16:56:50,668 - INFO - Initializing memory
+2025-04-08 16:56:50,670 - DEBUG - Memory initialized
+2025-04-08 16:56:50,670 - INFO - Creating prompt template
+2025-04-08 16:56:50,671 - INFO - Creating agent
+2025-04-08 16:56:50,730 - DEBUG - Agent created successfully
+2025-04-08 16:56:50,731 - INFO - SQL Agent fully initialized
+2025-04-08 16:58:23,683 - INFO - Creating SQL Agent instance
+2025-04-08 16:58:23,684 - DEBUG - Initial session context: {}
+2025-04-08 16:58:23,685 - INFO - Initializing Supabase connection
+2025-04-08 16:58:24,890 - INFO - Initializing tools
+2025-04-08 16:58:24,891 - DEBUG - Tools initialized: 5
+2025-04-08 16:58:24,891 - INFO - Initializing memory
+2025-04-08 16:58:24,893 - DEBUG - Memory initialized
+2025-04-08 16:58:24,894 - INFO - Creating prompt template
+2025-04-08 16:58:24,894 - INFO - Creating agent
+2025-04-08 16:58:24,992 - DEBUG - Agent created successfully
+2025-04-08 16:58:24,993 - INFO - SQL Agent fully initialized
+2025-04-08 16:59:15,327 - INFO - Creating SQL Agent instance
+2025-04-08 16:59:15,328 - DEBUG - Initial session context: {}
+2025-04-08 16:59:15,328 - INFO - Initializing Supabase connection
+2025-04-08 16:59:16,102 - INFO - Initializing tools
+2025-04-08 16:59:16,102 - DEBUG - Tools initialized: 5
+2025-04-08 16:59:16,103 - INFO - Initializing memory
+2025-04-08 16:59:16,105 - DEBUG - Memory initialized
+2025-04-08 16:59:16,105 - INFO - Creating prompt template
+2025-04-08 16:59:16,106 - INFO - Creating agent
+2025-04-08 16:59:16,152 - DEBUG - Agent created successfully
+2025-04-08 16:59:16,153 - INFO - SQL Agent fully initialized
+2025-04-08 17:01:03,755 - INFO - Creating SQL Agent instance
+2025-04-08 17:01:03,756 - DEBUG - Initial session context: {}
+2025-04-08 17:01:03,757 - INFO - Initializing Supabase connection
+2025-04-08 17:01:04,935 - INFO - Initializing tools
+2025-04-08 17:01:04,935 - DEBUG - Tools initialized: 5
+2025-04-08 17:01:04,935 - INFO - Initializing memory
+2025-04-08 17:01:04,937 - DEBUG - Memory initialized
+2025-04-08 17:01:04,938 - INFO - Creating prompt template
+2025-04-08 17:01:04,938 - INFO - Creating agent
+2025-04-08 17:01:04,982 - DEBUG - Agent created successfully
+2025-04-08 17:01:04,982 - INFO - SQL Agent fully initialized
+2025-04-08 17:02:21,797 - INFO - Creating SQL Agent instance
+2025-04-08 17:02:21,797 - DEBUG - Initial session context: {}
+2025-04-08 17:02:21,798 - INFO - Initializing Supabase connection
+2025-04-08 17:02:22,739 - INFO - Initializing tools
+2025-04-08 17:02:22,739 - DEBUG - Tools initialized: 5
+2025-04-08 17:02:22,740 - INFO - Initializing memory
+2025-04-08 17:02:22,742 - DEBUG - Memory initialized
+2025-04-08 17:02:22,742 - INFO - Creating prompt template
+2025-04-08 17:02:22,743 - INFO - Creating agent
+2025-04-08 17:02:22,786 - DEBUG - Agent created successfully
+2025-04-08 17:02:22,787 - INFO - SQL Agent fully initialized
+2025-04-08 17:03:48,671 - INFO - Creating SQL Agent instance
+2025-04-08 17:03:48,672 - DEBUG - Initial session context: {}
+2025-04-08 17:03:48,672 - INFO - Initializing Supabase connection
+2025-04-08 17:03:49,672 - INFO - Initializing tools
+2025-04-08 17:03:49,672 - DEBUG - Tools initialized: 5
+2025-04-08 17:03:49,672 - INFO - Initializing memory
+2025-04-08 17:03:49,674 - DEBUG - Memory initialized
+2025-04-08 17:03:49,674 - INFO - Creating prompt template
+2025-04-08 17:03:49,675 - INFO - Creating agent
+2025-04-08 17:03:49,713 - DEBUG - Agent created successfully
+2025-04-08 17:03:49,713 - INFO - SQL Agent fully initialized
+2025-04-08 17:05:22,033 - INFO - Creating SQL Agent instance
+2025-04-08 17:05:22,033 - DEBUG - Initial session context: {}
+2025-04-08 17:05:22,034 - INFO - Initializing Supabase connection
+2025-04-08 17:05:22,979 - INFO - Initializing tools
+2025-04-08 17:05:22,979 - DEBUG - Tools initialized: 5
+2025-04-08 17:05:22,979 - INFO - Initializing memory
+2025-04-08 17:05:22,981 - DEBUG - Memory initialized
+2025-04-08 17:05:22,981 - INFO - Creating prompt template
+2025-04-08 17:05:22,982 - INFO - Creating agent
+2025-04-08 17:05:23,042 - DEBUG - Agent created successfully
+2025-04-08 17:05:23,043 - INFO - SQL Agent fully initialized
+2025-04-08 17:05:40,946 - ERROR - Invalid query_data format
+2025-04-08 17:06:40,149 - INFO - Creating SQL Agent instance
+2025-04-08 17:06:40,150 - DEBUG - Initial session context: {}
+2025-04-08 17:06:40,150 - INFO - Initializing Supabase connection
+2025-04-08 17:06:41,172 - INFO - Initializing tools
+2025-04-08 17:06:41,172 - DEBUG - Tools initialized: 5
+2025-04-08 17:06:41,173 - INFO - Initializing memory
+2025-04-08 17:06:41,174 - DEBUG - Memory initialized
+2025-04-08 17:06:41,175 - INFO - Creating prompt template
+2025-04-08 17:06:41,175 - INFO - Creating agent
+2025-04-08 17:06:41,215 - DEBUG - Agent created successfully
+2025-04-08 17:06:41,216 - INFO - SQL Agent fully initialized
+2025-04-08 17:06:59,624 - INFO - Handling query: I want to schedule an appointment
+2025-04-08 17:06:59,624 - DEBUG - Query context: {}
+2025-04-08 17:06:59,625 - DEBUG - Updated session context: {}
+2025-04-08 17:06:59,625 - DEBUG - Loading memory variables
+2025-04-08 17:06:59,625 - WARNING - Invalid chat history format, clearing memory
+2025-04-08 17:06:59,626 - INFO - Invoking agent executor (attempt 1)
+2025-04-08 17:06:59,660 - ERROR - Agent execution error (attempt 1): variable chat_history should be a list of base messages, got  of type <class 'str'>
+2025-04-08 17:06:59,760 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 311, in handle_query
+    response = await self.agent_executor.ainvoke({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    })
+    ^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1019, in astream
+    yield await self.ainvoke(input, config, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 235, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1976, in _acall_with_config
+    output: Output = await asyncio.create_task(coro, context=context)  # type: ignore
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 191, in _aformat_prompt_with_error_handling
+    return await self.aformat_prompt(**_inner_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 797, in aformat_prompt
+    messages = await self.aformat_messages(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 1255, in aformat_messages
+    message = await message_template.aformat_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 90, in aformat_messages
+    return self.format_messages(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 250, in format_messages
+    raise ValueError(msg)  # noqa: TRY004
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: variable chat_history should be a list of base messages, got  of type <class 'str'>
+
+2025-04-08 17:07:00,786 - INFO - Invoking agent executor (attempt 2)
+2025-04-08 17:07:00,791 - ERROR - Agent execution error (attempt 2): variable chat_history should be a list of base messages, got  of type <class 'str'>
+2025-04-08 17:07:00,796 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 311, in handle_query
+    response = await self.agent_executor.ainvoke({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    })
+    ^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1019, in astream
+    yield await self.ainvoke(input, config, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 235, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1976, in _acall_with_config
+    output: Output = await asyncio.create_task(coro, context=context)  # type: ignore
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 191, in _aformat_prompt_with_error_handling
+    return await self.aformat_prompt(**_inner_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 797, in aformat_prompt
+    messages = await self.aformat_messages(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 1255, in aformat_messages
+    message = await message_template.aformat_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 90, in aformat_messages
+    return self.format_messages(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 250, in format_messages
+    raise ValueError(msg)  # noqa: TRY004
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: variable chat_history should be a list of base messages, got  of type <class 'str'>
+
+2025-04-08 17:07:01,808 - INFO - Invoking agent executor (attempt 3)
+2025-04-08 17:07:01,813 - ERROR - Agent execution error (attempt 3): variable chat_history should be a list of base messages, got  of type <class 'str'>
+2025-04-08 17:07:01,819 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 311, in handle_query
+    response = await self.agent_executor.ainvoke({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    })
+    ^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1019, in astream
+    yield await self.ainvoke(input, config, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 235, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1976, in _acall_with_config
+    output: Output = await asyncio.create_task(coro, context=context)  # type: ignore
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 191, in _aformat_prompt_with_error_handling
+    return await self.aformat_prompt(**_inner_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 797, in aformat_prompt
+    messages = await self.aformat_messages(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 1255, in aformat_messages
+    message = await message_template.aformat_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 90, in aformat_messages
+    return self.format_messages(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 250, in format_messages
+    raise ValueError(msg)  # noqa: TRY004
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: variable chat_history should be a list of base messages, got  of type <class 'str'>
+
+2025-04-08 17:07:01,834 - ERROR - All agent execution attempts failed: variable chat_history should be a list of base messages, got  of type <class 'str'>
+2025-04-08 17:08:46,021 - INFO - Handling query: I want to schedule an appointment
+2025-04-08 17:08:46,022 - DEBUG - Query context: {}
+2025-04-08 17:08:46,022 - DEBUG - Updated session context: {}
+2025-04-08 17:08:46,022 - DEBUG - Loading memory variables
+2025-04-08 17:08:46,023 - WARNING - Invalid chat history format, clearing memory
+2025-04-08 17:08:46,023 - INFO - Invoking agent executor (attempt 1)
+2025-04-08 17:08:55,315 - INFO - Creating SQL Agent instance
+2025-04-08 17:08:55,315 - DEBUG - Initial session context: {}
+2025-04-08 17:08:55,316 - INFO - Initializing Supabase connection
+2025-04-08 17:08:56,332 - INFO - Initializing tools
+2025-04-08 17:08:56,332 - DEBUG - Tools initialized: 5
+2025-04-08 17:08:56,332 - INFO - Initializing memory
+2025-04-08 17:08:56,334 - DEBUG - Memory initialized
+2025-04-08 17:08:56,334 - INFO - Creating prompt template
+2025-04-08 17:08:56,335 - INFO - Creating agent
+2025-04-08 17:08:56,374 - DEBUG - Agent created successfully
+2025-04-08 17:08:56,374 - INFO - SQL Agent fully initialized
+2025-04-08 17:09:12,416 - INFO - SQL Agent: Received query
+2025-04-08 17:09:12,416 - DEBUG - Query data: {'text': 'I want to schedule an appointment', 'context': {}, 'history': []}
+2025-04-08 17:09:12,417 - DEBUG - Updated session context: {}
+2025-04-08 17:09:12,431 - ERROR - Error in SQL Agent handle_query: variable chat_history should be a list of base messages, got Human: I want to schedule an appointment of type <class 'str'>
+2025-04-08 17:09:12,441 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1019, in astream
+    yield await self.ainvoke(input, config, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 235, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1976, in _acall_with_config
+    output: Output = await asyncio.create_task(coro, context=context)  # type: ignore
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 191, in _aformat_prompt_with_error_handling
+    return await self.aformat_prompt(**_inner_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 797, in aformat_prompt
+    messages = await self.aformat_messages(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 1255, in aformat_messages
+    message = await message_template.aformat_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 90, in aformat_messages
+    return self.format_messages(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 250, in format_messages
+    raise ValueError(msg)  # noqa: TRY004
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: variable chat_history should be a list of base messages, got Human: I want to schedule an appointment of type <class 'str'>
+
+2025-04-08 17:10:14,298 - INFO - Creating SQL Agent instance
+2025-04-08 17:10:14,299 - DEBUG - Initial session context: {}
+2025-04-08 17:10:14,299 - INFO - Initializing Supabase connection
+2025-04-08 17:10:15,162 - INFO - Initializing tools
+2025-04-08 17:10:15,162 - DEBUG - Tools initialized: 5
+2025-04-08 17:10:15,162 - INFO - Initializing memory
+2025-04-08 17:10:15,164 - DEBUG - Memory initialized
+2025-04-08 17:10:15,164 - INFO - Creating prompt template
+2025-04-08 17:10:15,165 - INFO - Creating agent
+2025-04-08 17:10:15,206 - DEBUG - Agent created successfully
+2025-04-08 17:10:15,206 - INFO - SQL Agent fully initialized
+2025-04-08 17:10:36,712 - INFO - SQL Agent: Received query
+2025-04-08 17:10:36,713 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:10:36,713 - DEBUG - Updated session context: {}
+2025-04-08 17:10:36,729 - ERROR - Error in SQL Agent handle_query: variable chat_history should be a list of base messages, got Human: I want to book an appointment of type <class 'str'>
+2025-04-08 17:10:36,740 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1019, in astream
+    yield await self.ainvoke(input, config, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 235, in ainvoke
+    return await self._acall_with_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1976, in _acall_with_config
+    output: Output = await asyncio.create_task(coro, context=context)  # type: ignore
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\base.py", line 191, in _aformat_prompt_with_error_handling
+    return await self.aformat_prompt(**_inner_input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 797, in aformat_prompt
+    messages = await self.aformat_messages(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 1255, in aformat_messages
+    message = await message_template.aformat_messages(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 90, in aformat_messages
+    return self.format_messages(**kwargs)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\prompts\chat.py", line 250, in format_messages
+    raise ValueError(msg)  # noqa: TRY004
+    ^^^^^^^^^^^^^^^^^^^^^
+ValueError: variable chat_history should be a list of base messages, got Human: I want to book an appointment of type <class 'str'>
+
+2025-04-08 17:11:25,599 - INFO - SQL Agent: Received query
+2025-04-08 17:11:25,600 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:11:25,600 - DEBUG - Updated session context: {}
+2025-04-08 17:11:33,126 - INFO - Creating SQL Agent instance
+2025-04-08 17:11:33,127 - DEBUG - Initial session context: {}
+2025-04-08 17:11:33,128 - INFO - Initializing Supabase connection
+2025-04-08 17:11:34,154 - INFO - Initializing tools
+2025-04-08 17:11:34,154 - DEBUG - Tools initialized: 5
+2025-04-08 17:11:34,155 - INFO - Initializing memory
+2025-04-08 17:11:34,156 - DEBUG - Memory initialized
+2025-04-08 17:11:34,157 - INFO - Creating prompt template
+2025-04-08 17:11:34,157 - INFO - Creating agent
+2025-04-08 17:11:34,195 - DEBUG - Agent created successfully
+2025-04-08 17:11:34,196 - INFO - SQL Agent fully initialized
+2025-04-08 17:11:49,585 - INFO - SQL Agent: Received query
+2025-04-08 17:11:49,586 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:11:49,586 - DEBUG - Updated session context: {}
+2025-04-08 17:11:50,323 - ERROR - Error in SQL Agent handle_query: Error code: 400 - {'error': {'message': "'messages.0' : for 'role:system' the following must be satisfied[('messages.0.content' : value must be a string)]", 'type': 'invalid_request_error'}}
+2025-04-08 17:11:50,399 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\language_models\chat_models.py", line 512, in astream
+    async for chunk in self._astream(
+    ...<14 lines>...
+            generation += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_groq\chat_models.py", line 573, in _astream
+    async for chunk in await self.async_client.create(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        messages=message_dicts, **params
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\groq\resources\chat\completions.py", line 649, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<36 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\groq\_base_client.py", line 1736, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\groq\_base_client.py", line 1444, in request
+    return await self._request(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\groq\_base_client.py", line 1545, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.BadRequestError: Error code: 400 - {'error': {'message': "'messages.0' : for 'role:system' the following must be satisfied[('messages.0.content' : value must be a string)]", 'type': 'invalid_request_error'}}
+
+2025-04-08 17:13:08,472 - INFO - Creating SQL Agent instance
+2025-04-08 17:13:08,472 - DEBUG - Initial session context: {}
+2025-04-08 17:13:08,472 - INFO - Initializing Supabase connection
+2025-04-08 17:13:09,399 - INFO - Initializing tools
+2025-04-08 17:13:09,399 - DEBUG - Tools initialized: 5
+2025-04-08 17:13:09,400 - INFO - Initializing memory
+2025-04-08 17:13:09,401 - DEBUG - Memory initialized
+2025-04-08 17:13:09,402 - INFO - Creating prompt template
+2025-04-08 17:13:09,402 - INFO - Creating agent
+2025-04-08 17:13:09,445 - DEBUG - Agent created successfully
+2025-04-08 17:13:09,445 - INFO - SQL Agent fully initialized
+2025-04-08 17:13:24,917 - INFO - SQL Agent: Received query
+2025-04-08 17:13:24,917 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:13:24,918 - DEBUG - Updated session context: {}
+2025-04-08 17:13:25,977 - ERROR - Error in SQL Agent handle_query: 'str' object has no attribute 'get'
+2025-04-08 17:13:26,013 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 242, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\simple.py", line 117, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 18, in invoke
+    input_data.get("input_str", ""),
+    ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2025-04-08 17:14:42,306 - INFO - Creating SQL Agent instance
+2025-04-08 17:14:42,306 - DEBUG - Initial session context: {}
+2025-04-08 17:14:42,307 - INFO - Initializing Supabase connection
+2025-04-08 17:14:43,291 - INFO - Initializing tools
+2025-04-08 17:14:43,291 - DEBUG - Tools initialized: 5
+2025-04-08 17:14:43,292 - INFO - Initializing memory
+2025-04-08 17:14:43,293 - DEBUG - Memory initialized
+2025-04-08 17:14:43,293 - INFO - Creating prompt template
+2025-04-08 17:14:43,294 - INFO - Creating agent
+2025-04-08 17:14:43,294 - ERROR - Agent creation error: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:14:43,295 - ERROR - Agent creation error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 104, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:14:43,296 - ERROR - Critical error during SQL Agent initialization: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:14:43,297 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 104, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:16:14,449 - INFO - Creating SQL Agent instance
+2025-04-08 17:16:14,450 - DEBUG - Initial session context: {}
+2025-04-08 17:16:14,451 - INFO - Initializing Supabase connection
+2025-04-08 17:16:15,533 - INFO - Initializing tools
+2025-04-08 17:16:15,534 - DEBUG - Tools initialized: 5
+2025-04-08 17:16:15,535 - INFO - Initializing memory
+2025-04-08 17:16:15,538 - DEBUG - Memory initialized
+2025-04-08 17:16:15,539 - INFO - Creating prompt template
+2025-04-08 17:16:15,540 - INFO - Creating agent
+2025-04-08 17:16:15,541 - ERROR - Agent creation error: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:16:15,543 - ERROR - Agent creation error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 104, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:16:15,546 - ERROR - Critical error during SQL Agent initialization: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:16:15,548 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 104, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:17:36,774 - INFO - Creating SQL Agent instance
+2025-04-08 17:17:36,775 - INFO - Creating SQL Agent instance
+2025-04-08 17:17:36,776 - DEBUG - Initial session context: {}
+2025-04-08 17:17:36,777 - INFO - Initializing Supabase connection
+2025-04-08 17:17:37,915 - INFO - Initializing tools
+2025-04-08 17:17:37,916 - DEBUG - Tools initialized: 5
+2025-04-08 17:17:37,916 - INFO - Initializing memory
+2025-04-08 17:17:37,919 - DEBUG - Memory initialized
+2025-04-08 17:17:37,919 - INFO - Creating prompt template
+2025-04-08 17:17:37,920 - INFO - Creating agent
+2025-04-08 17:17:37,921 - ERROR - Error initializing SQL Agent: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:17:37,923 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 109, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:17:37,925 - ERROR - Error creating SQL Agent: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+2025-04-08 17:17:37,927 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 65, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 109, in initialize
+    agent = create_openai_tools_agent(
+        llm=llm,
+    ...<2 lines>...
+        tool_calling_format="function"
+    )
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'tool_calling_format'
+
+2025-04-08 17:19:18,629 - INFO - Creating SQL Agent instance
+2025-04-08 17:19:18,630 - INFO - Creating SQL Agent instance
+2025-04-08 17:19:18,631 - DEBUG - Initial session context: {}
+2025-04-08 17:19:18,632 - INFO - Initializing Supabase connection
+2025-04-08 17:19:19,683 - INFO - Initializing tools
+2025-04-08 17:19:19,684 - DEBUG - Tools initialized: 5
+2025-04-08 17:19:19,685 - INFO - Initializing memory
+2025-04-08 17:19:19,687 - DEBUG - Memory initialized
+2025-04-08 17:19:19,688 - INFO - Creating prompt template
+2025-04-08 17:19:19,689 - INFO - Creating agent
+2025-04-08 17:19:19,774 - INFO - Creating agent executor
+2025-04-08 17:19:19,775 - INFO - SQL Agent initialized successfully
+2025-04-08 17:19:41,194 - INFO - SQL Agent: Received query
+2025-04-08 17:19:41,195 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:19:41,196 - DEBUG - Updated session context: {}
+2025-04-08 17:19:42,291 - ERROR - Error in SQL Agent handle_query: 'str' object has no attribute 'get'
+2025-04-08 17:19:42,300 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\simple.py", line 117, in _arun
+    return await self.coroutine(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 18, in invoke
+    input_data.get("input_str", ""),
+    ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+
+2025-04-08 17:21:00,561 - INFO - SQL Agent: Received query
+2025-04-08 17:21:00,562 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:21:00,563 - DEBUG - Updated session context: {}
+2025-04-08 17:21:09,129 - INFO - Creating SQL Agent instance
+2025-04-08 17:21:09,131 - INFO - Creating SQL Agent instance
+2025-04-08 17:21:09,131 - DEBUG - Initial session context: {}
+2025-04-08 17:21:09,132 - INFO - Initializing Supabase connection
+2025-04-08 17:21:10,375 - INFO - Initializing tools
+2025-04-08 17:21:10,376 - DEBUG - Tools initialized: 5
+2025-04-08 17:21:10,376 - INFO - Initializing memory
+2025-04-08 17:21:10,379 - DEBUG - Memory initialized
+2025-04-08 17:21:10,379 - INFO - Creating prompt template
+2025-04-08 17:21:10,380 - INFO - Creating agent
+2025-04-08 17:21:10,494 - INFO - Creating agent executor
+2025-04-08 17:21:10,495 - INFO - SQL Agent initialized successfully
+2025-04-08 17:21:31,893 - INFO - SQL Agent: Received query
+2025-04-08 17:21:31,894 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:21:31,895 - DEBUG - Updated session context: {}
+2025-04-08 17:21:36,448 - ERROR - Error in SQL Agent handle_query: One input key expected got ['context', 'input']
+2025-04-08 17:21:36,506 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke(agent_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 216, in ainvoke
+    final_outputs: Dict[str, Any] = await self.aprep_outputs(
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+        inputs, outputs, return_only_outputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 492, in aprep_outputs
+    await self.memory.asave_context(inputs, outputs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\memory\chat_memory.py", line 84, in asave_context
+    input_str, output_str = self._get_input_output(inputs, outputs)
+                            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\memory\chat_memory.py", line 47, in _get_input_output
+    prompt_input_key = get_prompt_input_key(inputs, self.memory_variables)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\memory\utils.py", line 19, in get_prompt_input_key
+    raise ValueError(f"One input key expected got {prompt_input_keys}")
+ValueError: One input key expected got ['context', 'input']
+
+2025-04-08 17:22:53,524 - INFO - Creating SQL Agent instance
+2025-04-08 17:22:53,525 - INFO - Creating SQL Agent instance
+2025-04-08 17:22:53,525 - DEBUG - Initial session context: {}
+2025-04-08 17:22:53,526 - INFO - Initializing Supabase connection
+2025-04-08 17:22:54,632 - INFO - Initializing tools
+2025-04-08 17:22:54,632 - DEBUG - Tools initialized: 5
+2025-04-08 17:22:54,633 - INFO - Initializing memory
+2025-04-08 17:22:54,635 - DEBUG - Memory initialized
+2025-04-08 17:22:54,635 - INFO - Creating prompt template
+2025-04-08 17:22:54,636 - INFO - Creating agent
+2025-04-08 17:22:54,736 - INFO - Creating agent executor
+2025-04-08 17:22:54,736 - INFO - SQL Agent initialized successfully
+2025-04-08 17:23:45,721 - INFO - SQL Agent: Received query
+2025-04-08 17:23:45,722 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:23:45,723 - DEBUG - Updated session context: {}
+2025-04-08 17:40:17,391 - INFO - Creating SQL Agent instance
+2025-04-08 17:40:17,392 - INFO - Creating SQL Agent instance
+2025-04-08 17:40:17,393 - DEBUG - Initial session context: {}
+2025-04-08 17:40:17,394 - INFO - Initializing Supabase connection
+2025-04-08 17:40:19,212 - INFO - Initializing tools
+2025-04-08 17:40:19,213 - DEBUG - Tools initialized: 5
+2025-04-08 17:40:19,213 - INFO - Initializing memory
+2025-04-08 17:40:19,216 - DEBUG - Memory initialized
+2025-04-08 17:40:19,217 - INFO - Creating prompt template
+2025-04-08 17:40:19,218 - INFO - Creating agent
+2025-04-08 17:40:19,301 - INFO - Creating agent executor
+2025-04-08 17:40:19,302 - INFO - SQL Agent initialized successfully
+2025-04-08 17:40:36,917 - INFO - SQL Agent: Received query
+2025-04-08 17:40:36,918 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:40:36,919 - DEBUG - Updated session context: {}
+2025-04-08 17:40:41,298 - ERROR - Error in SQL Agent handle_query: Too many arguments to single-input tool Book Appointment.
+                Consider using StructuredTool instead. Args: []
+2025-04-08 17:40:41,308 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke({"input": query_data["text"]})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 833, in arun
+    tool_args, tool_kwargs = self._to_args_and_kwargs(tool_input, tool_call_id)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\simple.py", line 84, in _to_args_and_kwargs
+    raise ToolException(msg)
+langchain_core.tools.base.ToolException: Too many arguments to single-input tool Book Appointment.
+                Consider using StructuredTool instead. Args: []
+
+2025-04-08 17:47:50,240 - INFO - Creating SQL Agent instance
+2025-04-08 17:47:50,241 - INFO - Creating SQL Agent instance
+2025-04-08 17:47:50,242 - DEBUG - Initial session context: {}
+2025-04-08 17:47:50,243 - INFO - Initializing Supabase connection
+2025-04-08 17:47:51,537 - INFO - Initializing tools
+2025-04-08 17:47:51,538 - DEBUG - Tools initialized: 5
+2025-04-08 17:47:51,538 - INFO - Initializing memory
+2025-04-08 17:47:51,541 - DEBUG - Memory initialized
+2025-04-08 17:47:51,541 - INFO - Creating prompt template
+2025-04-08 17:47:51,542 - INFO - Creating agent
+2025-04-08 17:47:51,605 - INFO - Creating agent executor
+2025-04-08 17:47:51,606 - INFO - SQL Agent initialized successfully
+2025-04-08 17:48:11,620 - INFO - SQL Agent: Received query
+2025-04-08 17:48:11,621 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:48:11,621 - DEBUG - Updated session context: {}
+2025-04-08 17:48:12,626 - ERROR - Error in SQL Agent handle_query: AppointmentBookingTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+2025-04-08 17:48:12,756 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke({"input": query_data["text"]})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 110, in _arun
+    return await super()._arun(
+           ^^^^^^^^^^^^^^^^^^^^
+        *args, config=config, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 635, in _arun
+    return await run_in_executor(None, self._run, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 622, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 613, in wrapper
+    return func(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 89, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: AppointmentBookingTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+
+2025-04-08 17:49:43,000 - INFO - Creating SQL Agent instance
+2025-04-08 17:49:43,001 - INFO - Creating SQL Agent instance
+2025-04-08 17:49:43,001 - DEBUG - Initial session context: {}
+2025-04-08 17:49:43,002 - INFO - Initializing Supabase connection
+2025-04-08 17:49:44,252 - INFO - Initializing tools
+2025-04-08 17:49:44,253 - DEBUG - Tools initialized: 5
+2025-04-08 17:49:44,254 - INFO - Initializing memory
+2025-04-08 17:49:44,256 - DEBUG - Memory initialized
+2025-04-08 17:49:44,257 - INFO - Creating prompt template
+2025-04-08 17:49:44,258 - INFO - Creating agent
+2025-04-08 17:49:44,417 - INFO - Creating agent executor
+2025-04-08 17:49:44,429 - INFO - SQL Agent initialized successfully
+2025-04-08 17:50:02,946 - INFO - SQL Agent: Received query
+2025-04-08 17:50:02,947 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:50:02,948 - DEBUG - Updated session context: {}
+2025-04-08 17:51:22,365 - INFO - Creating SQL Agent instance
+2025-04-08 17:51:22,366 - INFO - Creating SQL Agent instance
+2025-04-08 17:51:22,367 - DEBUG - Initial session context: {}
+2025-04-08 17:51:22,368 - INFO - Initializing Supabase connection
+2025-04-08 17:51:23,514 - INFO - Initializing tools
+2025-04-08 17:51:23,514 - DEBUG - Tools initialized: 5
+2025-04-08 17:51:23,515 - INFO - Initializing memory
+2025-04-08 17:51:23,517 - DEBUG - Memory initialized
+2025-04-08 17:51:23,517 - INFO - Creating prompt template
+2025-04-08 17:51:23,518 - INFO - Creating agent
+2025-04-08 17:51:23,602 - INFO - Creating agent executor
+2025-04-08 17:51:23,604 - INFO - SQL Agent initialized successfully
+2025-04-08 17:51:41,139 - INFO - SQL Agent: Received query
+2025-04-08 17:51:41,139 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 17:51:41,140 - DEBUG - Updated session context: {}
+2025-04-08 17:59:22,790 - INFO - Creating SQL Agent instance
+2025-04-08 17:59:22,791 - INFO - Creating SQL Agent instance
+2025-04-08 17:59:22,791 - DEBUG - Initial session context: {}
+2025-04-08 17:59:22,792 - INFO - Initializing Supabase connection
+2025-04-08 17:59:24,076 - INFO - Initializing tools
+2025-04-08 17:59:24,076 - DEBUG - Tools initialized: 5
+2025-04-08 17:59:24,077 - INFO - Initializing memory
+2025-04-08 17:59:24,080 - DEBUG - Memory initialized
+2025-04-08 17:59:24,081 - INFO - Creating prompt template
+2025-04-08 17:59:24,082 - INFO - Creating agent
+2025-04-08 17:59:24,180 - INFO - Creating agent executor
+2025-04-08 17:59:24,182 - INFO - SQL Agent initialized successfully
+2025-04-08 18:00:26,047 - INFO - SQL Agent: Received query
+2025-04-08 18:00:26,048 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:00:26,049 - DEBUG - Updated session context: {}
+2025-04-08 18:03:44,756 - INFO - Creating SQL Agent instance
+2025-04-08 18:03:44,757 - INFO - Creating SQL Agent instance
+2025-04-08 18:03:44,758 - DEBUG - Initial session context: {}
+2025-04-08 18:03:44,758 - INFO - Initializing Supabase connection
+2025-04-08 18:03:46,403 - INFO - Initializing tools
+2025-04-08 18:03:46,404 - DEBUG - Tools initialized: 5
+2025-04-08 18:03:46,404 - INFO - Initializing memory
+2025-04-08 18:03:46,407 - DEBUG - Memory initialized
+2025-04-08 18:03:46,407 - INFO - Creating prompt template
+2025-04-08 18:03:46,409 - INFO - Creating agent
+2025-04-08 18:03:46,495 - INFO - Creating agent executor
+2025-04-08 18:03:46,496 - INFO - SQL Agent initialized successfully
+2025-04-08 18:04:07,048 - INFO - SQL Agent: Received query
+2025-04-08 18:04:07,049 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:04:07,050 - DEBUG - Updated session context: {}
+2025-04-08 18:04:10,350 - ERROR - Error in SQL Agent handle_query: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+2025-04-08 18:04:10,412 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke({"input": query_data["text"]})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\language_models\chat_models.py", line 512, in astream
+    async for chunk in self._astream(
+    ...<14 lines>...
+            generation += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_groq\chat_models.py", line 573, in _astream
+    async for chunk in await self.async_client.create(
+    ...<28 lines>...
+        yield generation_chunk
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 147, in __aiter__
+    async for item in self._iterator:
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 193, in __stream__
+    raise APIError(
+    ...<3 lines>...
+    )
+groq.APIError: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+
+2025-04-08 18:05:56,524 - INFO - Creating SQL Agent instance
+2025-04-08 18:05:56,525 - INFO - Creating SQL Agent instance
+2025-04-08 18:05:56,526 - DEBUG - Initial session context: {}
+2025-04-08 18:05:56,527 - INFO - Initializing Supabase connection
+2025-04-08 18:05:57,769 - INFO - Initializing tools
+2025-04-08 18:05:57,769 - DEBUG - Tools initialized: 5
+2025-04-08 18:05:57,770 - INFO - Initializing memory
+2025-04-08 18:05:57,773 - DEBUG - Memory initialized
+2025-04-08 18:05:57,773 - INFO - Creating prompt template
+2025-04-08 18:05:57,775 - INFO - Creating agent
+2025-04-08 18:05:57,832 - INFO - Creating agent executor
+2025-04-08 18:05:57,834 - INFO - SQL Agent initialized successfully
+2025-04-08 18:06:19,569 - INFO - SQL Agent: Received query
+2025-04-08 18:06:19,570 - DEBUG - Query data: {'text': 'I want to schedule an appointment', 'context': {}, 'history': []}
+2025-04-08 18:06:19,571 - DEBUG - Updated session context: {}
+2025-04-08 18:08:34,396 - INFO - Creating SQL Agent instance
+2025-04-08 18:08:34,397 - INFO - Creating SQL Agent instance
+2025-04-08 18:08:34,397 - DEBUG - Initial session context: {}
+2025-04-08 18:08:34,398 - INFO - Initializing Supabase connection
+2025-04-08 18:08:35,688 - INFO - Initializing tools
+2025-04-08 18:08:35,689 - DEBUG - Tools initialized: 5
+2025-04-08 18:08:35,689 - INFO - Initializing memory
+2025-04-08 18:08:35,692 - DEBUG - Memory initialized
+2025-04-08 18:08:35,693 - INFO - Creating prompt template
+2025-04-08 18:08:35,694 - INFO - Creating agent
+2025-04-08 18:08:35,819 - INFO - Creating agent executor
+2025-04-08 18:08:35,821 - INFO - SQL Agent initialized successfully
+2025-04-08 18:08:53,886 - INFO - SQL Agent: Received query
+2025-04-08 18:08:53,887 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:08:53,888 - DEBUG - Updated session context: {}
+2025-04-08 18:08:54,974 - ERROR - Error in SQL Agent handle_query: name 'doctor_info_tool' is not defined
+2025-04-08 18:08:54,994 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 228, in handle_query
+    response = await self.agent_executor.ainvoke({"input": query_data["text"]})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 110, in _arun
+    return await super()._arun(
+           ^^^^^^^^^^^^^^^^^^^^
+        *args, config=config, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 635, in _arun
+    return await run_in_executor(None, self._run, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 622, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 613, in wrapper
+    return func(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 89, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 234, in <lambda>
+    doctor_info_tool=doctor_info_tool,
+                     ^^^^^^^^^^^^^^^^
+NameError: name 'doctor_info_tool' is not defined
+
+2025-04-08 18:10:09,884 - INFO - Creating SQL Agent instance
+2025-04-08 18:10:09,885 - INFO - Creating SQL Agent instance
+2025-04-08 18:10:09,886 - DEBUG - Initial session context: {}
+2025-04-08 18:10:09,887 - INFO - Initializing Supabase connection
+2025-04-08 18:10:11,211 - INFO - Initializing tools
+2025-04-08 18:10:11,212 - ERROR - Error initializing SQL Agent: name 'StructuredTool' is not defined
+2025-04-08 18:10:11,220 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 92, in initialize
+    StructuredTool.from_function(
+    ^^^^^^^^^^^^^^
+NameError: name 'StructuredTool' is not defined
+
+2025-04-08 18:10:11,221 - ERROR - Error creating SQL Agent: name 'StructuredTool' is not defined
+2025-04-08 18:10:11,233 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 65, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 92, in initialize
+    StructuredTool.from_function(
+    ^^^^^^^^^^^^^^
+NameError: name 'StructuredTool' is not defined
+
+2025-04-08 18:11:33,275 - INFO - Creating SQL Agent instance
+2025-04-08 18:11:33,282 - INFO - Creating SQL Agent instance
+2025-04-08 18:11:33,283 - DEBUG - Initial session context: {}
+2025-04-08 18:11:33,283 - INFO - Initializing Supabase connection
+2025-04-08 18:11:34,649 - INFO - Initializing tools
+2025-04-08 18:11:34,650 - ERROR - Error initializing SQL Agent: name 'AppointmentBookingInput' is not defined
+2025-04-08 18:11:34,656 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 97, in initialize
+    args_schema=AppointmentBookingInput
+                ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'AppointmentBookingInput' is not defined. Did you mean: 'AppointmentBookingTool'?
+
+2025-04-08 18:11:34,664 - ERROR - Error creating SQL Agent: name 'AppointmentBookingInput' is not defined
+2025-04-08 18:11:34,669 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 97, in initialize
+    args_schema=AppointmentBookingInput
+                ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'AppointmentBookingInput' is not defined. Did you mean: 'AppointmentBookingTool'?
+
+2025-04-08 18:12:48,487 - INFO - Creating SQL Agent instance
+2025-04-08 18:12:48,488 - INFO - Creating SQL Agent instance
+2025-04-08 18:12:48,489 - DEBUG - Initial session context: {}
+2025-04-08 18:12:48,490 - INFO - Initializing Supabase connection
+2025-04-08 18:12:49,343 - INFO - Initializing tools
+2025-04-08 18:12:49,344 - DEBUG - Tools initialized: 5
+2025-04-08 18:12:49,344 - INFO - Initializing memory
+2025-04-08 18:12:49,347 - DEBUG - Memory initialized
+2025-04-08 18:12:49,347 - INFO - Creating prompt template
+2025-04-08 18:12:49,349 - INFO - Creating agent
+2025-04-08 18:12:49,414 - INFO - Creating agent executor
+2025-04-08 18:12:49,415 - INFO - SQL Agent initialized successfully
+2025-04-08 18:13:08,805 - INFO - SQL Agent: Received query
+2025-04-08 18:13:08,806 - DEBUG - Query data: {'text': 'I want to schedule an appointment', 'context': {}, 'history': []}
+2025-04-08 18:13:08,807 - DEBUG - Updated session context: {}
+2025-04-08 18:13:41,210 - INFO - SQL Agent: Received query
+2025-04-08 18:13:41,211 - DEBUG - Query data: {'text': 'I want to book an appointment with Dr. Angella Webb', 'context': {}, 'history': []}
+2025-04-08 18:13:41,212 - DEBUG - Updated session context: {}
+2025-04-08 18:16:41,304 - INFO - Creating SQL Agent instance
+2025-04-08 18:16:41,304 - INFO - Creating SQL Agent instance
+2025-04-08 18:16:41,305 - DEBUG - Initial session context: {}
+2025-04-08 18:16:41,306 - INFO - Initializing Supabase connection
+2025-04-08 18:16:43,092 - INFO - Initializing tools
+2025-04-08 18:16:43,093 - DEBUG - Tools initialized: 5
+2025-04-08 18:16:43,094 - INFO - Initializing memory
+2025-04-08 18:16:43,096 - DEBUG - Memory initialized
+2025-04-08 18:16:43,097 - INFO - Creating prompt template
+2025-04-08 18:16:43,098 - INFO - Creating agent
+2025-04-08 18:16:43,192 - INFO - Creating agent executor
+2025-04-08 18:16:43,193 - INFO - SQL Agent initialized successfully
+2025-04-08 18:17:00,751 - INFO - SQL Agent: Received query
+2025-04-08 18:17:00,751 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:17:00,752 - DEBUG - Updated session context: {}
+2025-04-08 18:18:39,725 - INFO - Creating SQL Agent instance
+2025-04-08 18:18:39,726 - INFO - Creating SQL Agent instance
+2025-04-08 18:18:39,727 - DEBUG - Initial session context: {}
+2025-04-08 18:18:39,727 - INFO - Initializing Supabase connection
+2025-04-08 18:18:41,148 - INFO - Initializing tools
+2025-04-08 18:18:41,148 - DEBUG - Tools initialized: 5
+2025-04-08 18:18:41,149 - INFO - Initializing memory
+2025-04-08 18:18:41,152 - DEBUG - Memory initialized
+2025-04-08 18:18:41,152 - INFO - Creating prompt template
+2025-04-08 18:18:41,153 - INFO - Creating agent
+2025-04-08 18:18:41,246 - INFO - Creating agent executor
+2025-04-08 18:18:41,248 - INFO - SQL Agent initialized successfully
+2025-04-08 18:19:04,417 - INFO - SQL Agent: Received query
+2025-04-08 18:19:04,418 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:19:04,419 - DEBUG - Updated session context: {}
+2025-04-08 18:21:07,830 - INFO - Creating SQL Agent instance
+2025-04-08 18:21:07,832 - INFO - Creating SQL Agent instance
+2025-04-08 18:21:07,833 - DEBUG - Initial session context: {}
+2025-04-08 18:21:07,834 - INFO - Initializing Supabase connection
+2025-04-08 18:21:09,521 - INFO - Initializing tools
+2025-04-08 18:21:09,522 - DEBUG - Tools initialized: 5
+2025-04-08 18:21:09,522 - INFO - Initializing memory
+2025-04-08 18:21:09,525 - DEBUG - Memory initialized
+2025-04-08 18:21:09,525 - INFO - Creating prompt template
+2025-04-08 18:21:09,527 - INFO - Creating agent
+2025-04-08 18:21:09,592 - INFO - Creating agent executor
+2025-04-08 18:21:09,595 - INFO - SQL Agent initialized successfully
+2025-04-08 18:21:41,726 - INFO - SQL Agent: Received query
+2025-04-08 18:21:41,727 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:21:41,728 - DEBUG - Updated session context: {}
+2025-04-08 18:24:49,768 - INFO - Creating SQL Agent instance
+2025-04-08 18:24:49,769 - INFO - Creating SQL Agent instance
+2025-04-08 18:24:49,769 - DEBUG - Initial session context: {}
+2025-04-08 18:24:49,770 - INFO - Initializing Supabase connection
+2025-04-08 18:24:51,541 - INFO - Initializing tools
+2025-04-08 18:24:51,542 - DEBUG - Tools initialized: 5
+2025-04-08 18:24:51,543 - INFO - Initializing memory
+2025-04-08 18:24:51,545 - DEBUG - Memory initialized
+2025-04-08 18:24:51,546 - INFO - Creating prompt template
+2025-04-08 18:24:51,547 - INFO - Creating agent
+2025-04-08 18:24:51,619 - INFO - Creating agent executor
+2025-04-08 18:24:51,620 - INFO - SQL Agent initialized successfully
+2025-04-08 18:25:07,140 - INFO - SQL Agent: Received query
+2025-04-08 18:25:07,141 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:25:07,141 - DEBUG - Updated session context: {}
+2025-04-08 18:25:27,897 - INFO - SQL Agent: Received query
+2025-04-08 18:25:27,897 - DEBUG - Query data: {'text': 'Dr. Angella Webb', 'context': {}, 'history': []}
+2025-04-08 18:25:27,898 - DEBUG - Updated session context: {}
+2025-04-08 18:25:39,846 - INFO - SQL Agent: Received query
+2025-04-08 18:25:39,846 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {}, 'history': []}
+2025-04-08 18:25:39,847 - DEBUG - Updated session context: {}
+2025-04-08 18:40:15,809 - INFO - Creating SQL Agent instance
+2025-04-08 18:40:15,810 - INFO - Creating SQL Agent instance
+2025-04-08 18:40:15,811 - DEBUG - Initial session context: {}
+2025-04-08 18:40:15,812 - INFO - Initializing Supabase connection
+2025-04-08 18:40:17,353 - INFO - Initializing tools
+2025-04-08 18:40:17,354 - DEBUG - Tools initialized: 5
+2025-04-08 18:40:17,354 - INFO - Initializing memory
+2025-04-08 18:40:17,357 - DEBUG - Memory initialized
+2025-04-08 18:40:17,358 - INFO - Creating prompt template
+2025-04-08 18:40:17,359 - INFO - Creating agent
+2025-04-08 18:40:17,434 - INFO - Creating agent executor
+2025-04-08 18:40:17,435 - INFO - SQL Agent initialized successfully
+2025-04-08 18:41:39,788 - INFO - SQL Agent: Received query
+2025-04-08 18:41:39,788 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:41:39,789 - DEBUG - Updated session context: {}
+2025-04-08 18:41:54,888 - INFO - SQL Agent: Received query
+2025-04-08 18:41:54,888 - DEBUG - Query data: {'text': 'Dr. Angella Webb', 'context': {}, 'history': []}
+2025-04-08 18:41:54,889 - DEBUG - Updated session context: {}
+2025-04-08 18:42:06,435 - INFO - SQL Agent: Received query
+2025-04-08 18:42:06,435 - DEBUG - Query data: {'text': 'Friday 15:00', 'context': {}, 'history': []}
+2025-04-08 18:42:06,436 - DEBUG - Updated session context: {}
+2025-04-08 18:44:43,969 - INFO - Creating SQL Agent instance
+2025-04-08 18:44:43,969 - INFO - Creating SQL Agent instance
+2025-04-08 18:44:43,970 - DEBUG - Initial session context: {}
+2025-04-08 18:44:43,971 - INFO - Initializing Supabase connection
+2025-04-08 18:44:45,157 - INFO - Initializing tools
+2025-04-08 18:44:45,158 - DEBUG - Tools initialized: 5
+2025-04-08 18:44:45,159 - INFO - Initializing memory
+2025-04-08 18:44:45,162 - DEBUG - Memory initialized
+2025-04-08 18:44:45,162 - INFO - Creating prompt template
+2025-04-08 18:44:45,163 - INFO - Creating agent
+2025-04-08 18:44:45,246 - INFO - Creating agent executor
+2025-04-08 18:44:45,247 - INFO - SQL Agent initialized successfully
+2025-04-08 18:45:05,377 - INFO - SQL Agent: Received query
+2025-04-08 18:45:05,378 - DEBUG - Query data: {'text': 'I want to schedule an appointment', 'context': {}, 'history': []}
+2025-04-08 18:45:05,379 - DEBUG - Updated session context: {}
+2025-04-08 18:45:22,934 - INFO - SQL Agent: Received query
+2025-04-08 18:45:22,935 - DEBUG - Query data: {'text': 'Dr. Angella Webb', 'context': {}, 'history': []}
+2025-04-08 18:45:22,936 - DEBUG - Updated session context: {}
+2025-04-08 18:48:35,658 - INFO - Creating SQL Agent instance
+2025-04-08 18:48:35,659 - INFO - Creating SQL Agent instance
+2025-04-08 18:48:35,660 - DEBUG - Initial session context: {}
+2025-04-08 18:48:35,660 - INFO - Initializing Supabase connection
+2025-04-08 18:48:37,298 - INFO - Initializing tools
+2025-04-08 18:48:37,300 - DEBUG - Tools initialized: 5
+2025-04-08 18:48:37,300 - INFO - Initializing memory
+2025-04-08 18:48:37,303 - DEBUG - Memory initialized
+2025-04-08 18:48:37,304 - INFO - Creating prompt template
+2025-04-08 18:48:37,305 - INFO - Creating agent
+2025-04-08 18:48:37,387 - INFO - Creating agent executor
+2025-04-08 18:48:37,388 - INFO - SQL Agent initialized successfully
+2025-04-08 18:49:09,164 - INFO - SQL Agent: Received query
+2025-04-08 18:49:09,165 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-08 18:49:09,166 - DEBUG - Updated session context: {}
+2025-04-08 18:49:20,517 - INFO - SQL Agent: Received query
+2025-04-08 18:49:20,518 - DEBUG - Query data: {'text': 'Dr. Angella Webb', 'context': {}, 'history': []}
+2025-04-08 18:49:20,519 - DEBUG - Updated session context: {}
+2025-04-08 18:49:35,885 - INFO - SQL Agent: Received query
+2025-04-08 18:49:35,885 - DEBUG - Query data: {'text': 'On Friday 15:00', 'context': {}, 'history': []}
+2025-04-08 18:49:35,886 - DEBUG - Updated session context: {}
+2025-04-08 18:49:49,506 - INFO - SQL Agent: Received query
+2025-04-08 18:49:49,507 - DEBUG - Query data: {'text': 'Yes confirm my appointment', 'context': {}, 'history': []}
+2025-04-08 18:49:49,508 - DEBUG - Updated session context: {}
+2025-04-08 18:50:33,932 - INFO - SQL Agent: Received query
+2025-04-08 18:50:33,933 - DEBUG - Query data: {'text': 'I already have a patient id', 'context': {}, 'history': []}
+2025-04-08 18:50:33,934 - DEBUG - Updated session context: {}
+2025-04-08 22:02:37,975 - INFO - Creating SQL Agent instance
+2025-04-08 22:02:37,976 - INFO - Creating SQL Agent instance
+2025-04-08 22:02:37,977 - DEBUG - Initial session context: {}
+2025-04-08 22:02:37,977 - INFO - Initializing Supabase connection
+2025-04-08 22:02:40,204 - INFO - Initializing tools
+2025-04-08 22:02:40,205 - DEBUG - Tools initialized: 5
+2025-04-08 22:02:40,206 - INFO - Initializing memory
+2025-04-08 22:02:40,211 - DEBUG - Memory initialized
+2025-04-08 22:02:40,212 - INFO - Creating prompt template
+2025-04-08 22:02:40,214 - INFO - Creating agent
+2025-04-08 22:02:40,376 - INFO - Creating agent executor
+2025-04-08 22:02:40,378 - INFO - SQL Agent initialized successfully
+2025-04-08 22:03:40,836 - INFO - Creating SQL Agent instance
+2025-04-08 22:03:40,837 - INFO - Creating SQL Agent instance
+2025-04-08 22:03:40,838 - DEBUG - Initial session context: {}
+2025-04-08 22:03:40,838 - INFO - Initializing Supabase connection
+2025-04-08 22:03:42,349 - INFO - Initializing tools
+2025-04-08 22:03:42,350 - DEBUG - Tools initialized: 5
+2025-04-08 22:03:42,351 - INFO - Initializing memory
+2025-04-08 22:03:42,354 - DEBUG - Memory initialized
+2025-04-08 22:03:42,354 - INFO - Creating prompt template
+2025-04-08 22:03:42,355 - INFO - Creating agent
+2025-04-08 22:03:42,500 - INFO - Creating agent executor
+2025-04-08 22:03:42,502 - INFO - SQL Agent initialized successfully
+2025-04-08 22:07:00,104 - INFO - Creating SQL Agent instance
+2025-04-08 22:07:00,105 - INFO - Creating SQL Agent instance
+2025-04-08 22:07:00,106 - DEBUG - Initial session context: {}
+2025-04-08 22:07:00,107 - INFO - Initializing Supabase connection
+2025-04-08 22:07:02,441 - INFO - Initializing tools
+2025-04-08 22:07:02,442 - DEBUG - Tools initialized: 5
+2025-04-08 22:07:02,443 - INFO - Initializing memory
+2025-04-08 22:07:02,449 - DEBUG - Memory initialized
+2025-04-08 22:07:02,450 - INFO - Creating prompt template
+2025-04-08 22:07:02,452 - INFO - Creating agent
+2025-04-08 22:07:02,641 - INFO - Creating agent executor
+2025-04-08 22:07:02,646 - INFO - SQL Agent initialized successfully
+2025-04-08 22:15:35,459 - INFO - Creating SQL Agent instance
+2025-04-08 22:15:35,460 - INFO - Creating SQL Agent instance
+2025-04-08 22:15:35,460 - DEBUG - Initial session context: {}
+2025-04-08 22:15:35,461 - INFO - Initializing Supabase connection
+2025-04-08 22:15:37,345 - INFO - Initializing tools
+2025-04-08 22:15:37,346 - DEBUG - Tools initialized: 5
+2025-04-08 22:15:37,349 - INFO - Initializing memory
+2025-04-08 22:15:37,355 - DEBUG - Memory initialized
+2025-04-08 22:15:37,356 - INFO - Creating prompt template
+2025-04-08 22:15:37,358 - INFO - Creating agent
+2025-04-08 22:15:37,507 - INFO - Creating agent executor
+2025-04-08 22:15:37,510 - INFO - SQL Agent initialized successfully
+2025-04-08 22:16:26,461 - INFO - SQL Agent: Received query
+2025-04-08 22:16:26,463 - DEBUG - Query data: {'text': 'Whta is sthe admission procedure', 'context': {}, 'history': []}
+2025-04-08 22:16:26,464 - DEBUG - Updated session context: {}
+2025-04-08 22:17:40,072 - INFO - Creating SQL Agent instance
+2025-04-08 22:17:40,073 - INFO - Creating SQL Agent instance
+2025-04-08 22:17:40,073 - DEBUG - Initial session context: {}
+2025-04-08 22:17:40,074 - INFO - Initializing Supabase connection
+2025-04-08 22:17:41,839 - INFO - Initializing tools
+2025-04-08 22:17:41,841 - DEBUG - Tools initialized: 5
+2025-04-08 22:17:41,842 - INFO - Initializing memory
+2025-04-08 22:17:41,847 - DEBUG - Memory initialized
+2025-04-08 22:17:41,849 - INFO - Creating prompt template
+2025-04-08 22:17:41,852 - INFO - Creating agent
+2025-04-08 22:17:42,006 - INFO - Creating agent executor
+2025-04-08 22:17:42,008 - INFO - SQL Agent initialized successfully
+2025-04-08 22:55:03,090 - INFO - Creating SQL Agent instance
+2025-04-08 22:55:03,091 - INFO - Creating SQL Agent instance
+2025-04-08 22:55:03,091 - DEBUG - Initial session context: {}
+2025-04-08 22:55:03,092 - INFO - Initializing Supabase connection
+2025-04-08 22:55:04,433 - INFO - Initializing tools
+2025-04-08 22:55:04,435 - DEBUG - Tools initialized: 5
+2025-04-08 22:55:04,436 - INFO - Initializing memory
+2025-04-08 22:55:04,442 - DEBUG - Memory initialized
+2025-04-08 22:55:04,443 - INFO - Creating prompt template
+2025-04-08 22:55:04,445 - INFO - Creating agent
+2025-04-08 22:55:04,538 - INFO - Creating agent executor
+2025-04-08 22:55:04,540 - INFO - SQL Agent initialized successfully
+2025-04-08 22:56:39,861 - INFO - Creating SQL Agent instance
+2025-04-08 22:56:39,862 - INFO - Creating SQL Agent instance
+2025-04-08 22:56:39,862 - DEBUG - Initial session context: {}
+2025-04-08 22:56:39,863 - INFO - Initializing Supabase connection
+2025-04-08 22:56:41,161 - INFO - Initializing tools
+2025-04-08 22:56:41,162 - DEBUG - Tools initialized: 5
+2025-04-08 22:56:41,163 - INFO - Initializing memory
+2025-04-08 22:56:41,168 - DEBUG - Memory initialized
+2025-04-08 22:56:41,169 - INFO - Creating prompt template
+2025-04-08 22:56:41,171 - INFO - Creating agent
+2025-04-08 22:56:41,336 - INFO - Creating agent executor
+2025-04-08 22:56:41,338 - INFO - SQL Agent initialized successfully
+2025-04-08 22:57:49,934 - INFO - SQL Agent: Received query
+2025-04-08 22:57:49,935 - DEBUG - Query data: {'text': 'What are ypur admission policies', 'context': {}, 'history': []}
+2025-04-08 22:57:49,935 - DEBUG - Updated session context: {}
+2025-04-08 22:58:31,609 - INFO - SQL Agent: Received query
+2025-04-08 22:58:31,609 - DEBUG - Query data: {'text': 'I want to know at what time I can visit your hospital', 'context': {}, 'history': []}
+2025-04-08 22:58:31,610 - DEBUG - Updated session context: {}
+2025-04-08 22:58:55,641 - INFO - SQL Agent: Received query
+2025-04-08 22:58:55,642 - DEBUG - Query data: {'text': 'Whta re the generala consulting hours', 'context': {}, 'history': []}
+2025-04-08 22:58:55,643 - DEBUG - Updated session context: {}
+2025-04-08 23:00:51,021 - INFO - Creating SQL Agent instance
+2025-04-08 23:00:51,022 - INFO - Creating SQL Agent instance
+2025-04-08 23:00:51,023 - DEBUG - Initial session context: {}
+2025-04-08 23:00:51,023 - INFO - Initializing Supabase connection
+2025-04-08 23:00:52,969 - INFO - Initializing tools
+2025-04-08 23:00:52,971 - DEBUG - Tools initialized: 5
+2025-04-08 23:00:52,972 - INFO - Initializing memory
+2025-04-08 23:00:52,977 - DEBUG - Memory initialized
+2025-04-08 23:00:52,978 - INFO - Creating prompt template
+2025-04-08 23:00:52,981 - INFO - Creating agent
+2025-04-08 23:00:53,129 - INFO - Creating agent executor
+2025-04-08 23:00:53,130 - INFO - SQL Agent initialized successfully
+2025-04-08 23:02:11,522 - INFO - SQL Agent: Received query
+2025-04-08 23:02:11,523 - DEBUG - Query data: {'text': 'In what ways I can do payment', 'context': {}, 'history': []}
+2025-04-08 23:02:11,523 - DEBUG - Updated session context: {}
+2025-04-08 23:02:50,666 - INFO - SQL Agent: Received query
+2025-04-08 23:02:50,667 - DEBUG - Query data: {'text': 'Debit', 'context': {}, 'history': []}
+2025-04-08 23:02:50,667 - DEBUG - Updated session context: {}
+2025-04-08 23:05:44,348 - INFO - Creating SQL Agent instance
+2025-04-08 23:05:44,349 - INFO - Creating SQL Agent instance
+2025-04-08 23:05:44,349 - DEBUG - Initial session context: {}
+2025-04-08 23:05:44,349 - INFO - Initializing Supabase connection
+2025-04-08 23:05:45,808 - INFO - Initializing tools
+2025-04-08 23:05:45,810 - DEBUG - Tools initialized: 5
+2025-04-08 23:05:45,811 - INFO - Initializing memory
+2025-04-08 23:05:45,815 - DEBUG - Memory initialized
+2025-04-08 23:05:45,816 - INFO - Creating prompt template
+2025-04-08 23:05:45,818 - INFO - Creating agent
+2025-04-08 23:05:45,938 - INFO - Creating agent executor
+2025-04-08 23:05:45,939 - INFO - SQL Agent initialized successfully
+2025-04-08 23:07:56,066 - INFO - Creating SQL Agent instance
+2025-04-08 23:07:56,067 - INFO - Creating SQL Agent instance
+2025-04-08 23:07:56,068 - DEBUG - Initial session context: {}
+2025-04-08 23:07:56,068 - INFO - Initializing Supabase connection
+2025-04-08 23:07:57,798 - INFO - Initializing tools
+2025-04-08 23:07:57,799 - DEBUG - Tools initialized: 5
+2025-04-08 23:07:57,800 - INFO - Initializing memory
+2025-04-08 23:07:57,805 - DEBUG - Memory initialized
+2025-04-08 23:07:57,806 - INFO - Creating prompt template
+2025-04-08 23:07:57,808 - INFO - Creating agent
+2025-04-08 23:07:57,951 - INFO - Creating agent executor
+2025-04-08 23:07:57,952 - INFO - SQL Agent initialized successfully
+2025-04-08 23:14:15,362 - INFO - Creating SQL Agent instance
+2025-04-08 23:14:15,363 - INFO - Creating SQL Agent instance
+2025-04-08 23:14:15,363 - DEBUG - Initial session context: {}
+2025-04-08 23:14:15,364 - INFO - Initializing Supabase connection
+2025-04-08 23:14:16,688 - INFO - Initializing tools
+2025-04-08 23:14:16,689 - DEBUG - Tools initialized: 5
+2025-04-08 23:14:16,690 - INFO - Initializing memory
+2025-04-08 23:14:16,694 - DEBUG - Memory initialized
+2025-04-08 23:14:16,695 - INFO - Creating prompt template
+2025-04-08 23:14:16,697 - INFO - Creating agent
+2025-04-08 23:14:16,837 - INFO - Creating agent executor
+2025-04-08 23:14:16,839 - INFO - SQL Agent initialized successfully
+2025-04-08 23:16:43,355 - INFO - Creating SQL Agent instance
+2025-04-08 23:16:43,356 - INFO - Creating SQL Agent instance
+2025-04-08 23:16:43,357 - DEBUG - Initial session context: {}
+2025-04-08 23:16:43,357 - INFO - Initializing Supabase connection
+2025-04-08 23:16:44,342 - INFO - Initializing tools
+2025-04-08 23:16:44,343 - DEBUG - Tools initialized: 5
+2025-04-08 23:16:44,345 - INFO - Initializing memory
+2025-04-08 23:16:44,349 - DEBUG - Memory initialized
+2025-04-08 23:16:44,350 - INFO - Creating prompt template
+2025-04-08 23:16:44,352 - INFO - Creating agent
+2025-04-08 23:16:44,495 - INFO - Creating agent executor
+2025-04-08 23:16:44,497 - INFO - SQL Agent initialized successfully
+2025-04-08 23:19:33,649 - INFO - Creating SQL Agent instance
+2025-04-08 23:19:33,650 - INFO - Creating SQL Agent instance
+2025-04-08 23:19:33,651 - DEBUG - Initial session context: {}
+2025-04-08 23:19:33,652 - INFO - Initializing Supabase connection
+2025-04-08 23:19:34,745 - INFO - Initializing tools
+2025-04-08 23:19:34,747 - DEBUG - Tools initialized: 5
+2025-04-08 23:19:34,748 - INFO - Initializing memory
+2025-04-08 23:19:34,752 - DEBUG - Memory initialized
+2025-04-08 23:19:34,753 - INFO - Creating prompt template
+2025-04-08 23:19:34,755 - INFO - Creating agent
+2025-04-08 23:19:34,900 - INFO - Creating agent executor
+2025-04-08 23:19:34,901 - INFO - SQL Agent initialized successfully
+2025-04-08 23:21:09,026 - INFO - Creating SQL Agent instance
+2025-04-08 23:21:09,026 - INFO - Creating SQL Agent instance
+2025-04-08 23:21:09,027 - DEBUG - Initial session context: {}
+2025-04-08 23:21:09,028 - INFO - Initializing Supabase connection
+2025-04-08 23:21:09,975 - INFO - Initializing tools
+2025-04-08 23:21:09,976 - DEBUG - Tools initialized: 5
+2025-04-08 23:21:09,976 - INFO - Initializing memory
+2025-04-08 23:21:09,979 - DEBUG - Memory initialized
+2025-04-08 23:21:09,980 - INFO - Creating prompt template
+2025-04-08 23:21:09,981 - INFO - Creating agent
+2025-04-08 23:21:10,072 - INFO - Creating agent executor
+2025-04-08 23:21:10,073 - INFO - SQL Agent initialized successfully
+2025-04-08 23:24:01,163 - INFO - Creating SQL Agent instance
+2025-04-08 23:24:01,164 - INFO - Creating SQL Agent instance
+2025-04-08 23:24:01,164 - DEBUG - Initial session context: {}
+2025-04-08 23:24:01,165 - INFO - Initializing Supabase connection
+2025-04-08 23:24:02,457 - INFO - Initializing tools
+2025-04-08 23:24:02,458 - DEBUG - Tools initialized: 5
+2025-04-08 23:24:02,459 - INFO - Initializing memory
+2025-04-08 23:24:02,464 - DEBUG - Memory initialized
+2025-04-08 23:24:02,465 - INFO - Creating prompt template
+2025-04-08 23:24:02,467 - INFO - Creating agent
+2025-04-08 23:24:02,616 - INFO - Creating agent executor
+2025-04-08 23:24:02,618 - INFO - SQL Agent initialized successfully
+2025-04-08 23:25:37,494 - INFO - Creating SQL Agent instance
+2025-04-08 23:25:37,495 - INFO - Creating SQL Agent instance
+2025-04-08 23:25:37,495 - DEBUG - Initial session context: {}
+2025-04-08 23:25:37,496 - INFO - Initializing Supabase connection
+2025-04-08 23:25:38,705 - INFO - Initializing tools
+2025-04-08 23:25:38,706 - DEBUG - Tools initialized: 5
+2025-04-08 23:25:38,707 - INFO - Initializing memory
+2025-04-08 23:25:38,711 - DEBUG - Memory initialized
+2025-04-08 23:25:38,712 - INFO - Creating prompt template
+2025-04-08 23:25:38,714 - INFO - Creating agent
+2025-04-08 23:25:38,848 - INFO - Creating agent executor
+2025-04-08 23:25:38,849 - INFO - SQL Agent initialized successfully
+2025-04-08 23:42:05,491 - INFO - Creating SQL Agent instance
+2025-04-08 23:42:05,492 - INFO - Creating SQL Agent instance
+2025-04-08 23:42:05,492 - DEBUG - Initial session context: {}
+2025-04-08 23:42:05,493 - INFO - Initializing Supabase connection
+2025-04-08 23:42:12,418 - INFO - Initializing tools
+2025-04-08 23:42:12,420 - DEBUG - Tools initialized: 5
+2025-04-08 23:42:12,422 - INFO - Initializing memory
+2025-04-08 23:42:12,430 - DEBUG - Memory initialized
+2025-04-08 23:42:12,431 - INFO - Creating prompt template
+2025-04-08 23:42:12,433 - INFO - Creating agent
+2025-04-08 23:42:12,634 - INFO - Creating agent executor
+2025-04-08 23:42:12,636 - INFO - SQL Agent initialized successfully
+2025-04-08 23:44:49,013 - INFO - Creating SQL Agent instance
+2025-04-08 23:44:49,014 - INFO - Creating SQL Agent instance
+2025-04-08 23:44:49,014 - DEBUG - Initial session context: {}
+2025-04-08 23:44:49,015 - INFO - Initializing Supabase connection
+2025-04-08 23:44:50,458 - INFO - Initializing tools
+2025-04-08 23:44:50,460 - DEBUG - Tools initialized: 5
+2025-04-08 23:44:50,460 - INFO - Initializing memory
+2025-04-08 23:44:50,464 - DEBUG - Memory initialized
+2025-04-08 23:44:50,464 - INFO - Creating prompt template
+2025-04-08 23:44:50,466 - INFO - Creating agent
+2025-04-08 23:44:50,544 - INFO - Creating agent executor
+2025-04-08 23:44:50,545 - INFO - SQL Agent initialized successfully
+2025-04-09 00:02:14,800 - INFO - Creating SQL Agent instance
+2025-04-09 00:02:14,800 - INFO - Creating SQL Agent instance
+2025-04-09 00:02:14,801 - DEBUG - Initial session context: {}
+2025-04-09 00:02:14,801 - INFO - Initializing Supabase connection
+2025-04-09 00:02:16,143 - INFO - Initializing tools
+2025-04-09 00:02:16,144 - DEBUG - Tools initialized: 5
+2025-04-09 00:02:16,145 - INFO - Initializing memory
+2025-04-09 00:02:16,149 - DEBUG - Memory initialized
+2025-04-09 00:02:16,150 - INFO - Creating prompt template
+2025-04-09 00:02:16,151 - INFO - Creating agent
+2025-04-09 00:02:16,200 - INFO - Creating agent executor
+2025-04-09 00:02:16,201 - INFO - SQL Agent initialized successfully
+2025-04-09 00:04:42,526 - INFO - Creating SQL Agent instance
+2025-04-09 00:04:42,526 - INFO - Creating SQL Agent instance
+2025-04-09 00:04:42,527 - DEBUG - Initial session context: {}
+2025-04-09 00:04:42,527 - INFO - Initializing Supabase connection
+2025-04-09 00:04:43,758 - INFO - Initializing tools
+2025-04-09 00:04:43,759 - DEBUG - Tools initialized: 5
+2025-04-09 00:04:43,759 - INFO - Initializing memory
+2025-04-09 00:04:43,762 - DEBUG - Memory initialized
+2025-04-09 00:04:43,762 - INFO - Creating prompt template
+2025-04-09 00:04:43,763 - INFO - Creating agent
+2025-04-09 00:04:43,806 - INFO - Creating agent executor
+2025-04-09 00:04:43,807 - INFO - SQL Agent initialized successfully
+2025-04-09 00:07:47,720 - INFO - Creating SQL Agent instance
+2025-04-09 00:07:47,721 - INFO - Creating SQL Agent instance
+2025-04-09 00:07:47,721 - DEBUG - Initial session context: {}
+2025-04-09 00:07:47,722 - INFO - Initializing Supabase connection
+2025-04-09 00:07:48,743 - INFO - Initializing tools
+2025-04-09 00:07:48,744 - DEBUG - Tools initialized: 5
+2025-04-09 00:07:48,745 - INFO - Initializing memory
+2025-04-09 00:07:48,750 - DEBUG - Memory initialized
+2025-04-09 00:07:48,751 - INFO - Creating prompt template
+2025-04-09 00:07:48,753 - INFO - Creating agent
+2025-04-09 00:07:48,796 - INFO - Creating agent executor
+2025-04-09 00:07:48,797 - INFO - SQL Agent initialized successfully
+2025-04-09 00:18:15,977 - INFO - Creating SQL Agent instance
+2025-04-09 00:18:15,978 - INFO - Creating SQL Agent instance
+2025-04-09 00:18:15,978 - DEBUG - Initial session context: {}
+2025-04-09 00:18:15,978 - INFO - Initializing Supabase connection
+2025-04-09 00:18:17,119 - INFO - Initializing tools
+2025-04-09 00:18:17,121 - DEBUG - Tools initialized: 5
+2025-04-09 00:18:17,122 - INFO - Initializing memory
+2025-04-09 00:18:17,126 - DEBUG - Memory initialized
+2025-04-09 00:18:17,127 - INFO - Creating prompt template
+2025-04-09 00:18:17,128 - INFO - Creating agent
+2025-04-09 00:18:17,179 - INFO - Creating agent executor
+2025-04-09 00:18:17,180 - INFO - SQL Agent initialized successfully
+2025-04-09 00:21:28,525 - INFO - Creating SQL Agent instance
+2025-04-09 00:21:28,525 - INFO - Creating SQL Agent instance
+2025-04-09 00:21:28,526 - DEBUG - Initial session context: {}
+2025-04-09 00:21:28,526 - INFO - Initializing Supabase connection
+2025-04-09 00:21:29,474 - INFO - Initializing tools
+2025-04-09 00:21:29,475 - DEBUG - Tools initialized: 5
+2025-04-09 00:21:29,476 - INFO - Initializing memory
+2025-04-09 00:21:29,479 - DEBUG - Memory initialized
+2025-04-09 00:21:29,479 - INFO - Creating prompt template
+2025-04-09 00:21:29,480 - INFO - Creating agent
+2025-04-09 00:21:29,528 - INFO - Creating agent executor
+2025-04-09 00:21:29,530 - INFO - SQL Agent initialized successfully
+2025-04-09 00:26:16,061 - INFO - Creating SQL Agent instance
+2025-04-09 00:26:16,062 - INFO - Creating SQL Agent instance
+2025-04-09 00:26:16,062 - DEBUG - Initial session context: {}
+2025-04-09 00:26:16,062 - INFO - Initializing Supabase connection
+2025-04-09 00:26:17,027 - INFO - Initializing tools
+2025-04-09 00:26:17,029 - DEBUG - Tools initialized: 5
+2025-04-09 00:26:17,030 - INFO - Initializing memory
+2025-04-09 00:26:17,035 - DEBUG - Memory initialized
+2025-04-09 00:26:17,036 - INFO - Creating prompt template
+2025-04-09 00:26:17,038 - INFO - Creating agent
+2025-04-09 00:26:17,095 - INFO - Creating agent executor
+2025-04-09 00:26:17,096 - INFO - SQL Agent initialized successfully
+2025-04-09 00:29:29,846 - INFO - Creating SQL Agent instance
+2025-04-09 00:29:29,847 - INFO - Creating SQL Agent instance
+2025-04-09 00:29:29,848 - DEBUG - Initial session context: {}
+2025-04-09 00:29:29,848 - INFO - Initializing Supabase connection
+2025-04-09 00:29:30,792 - INFO - Initializing tools
+2025-04-09 00:29:30,793 - DEBUG - Tools initialized: 5
+2025-04-09 00:29:30,793 - INFO - Initializing memory
+2025-04-09 00:29:30,795 - DEBUG - Memory initialized
+2025-04-09 00:29:30,796 - INFO - Creating prompt template
+2025-04-09 00:29:30,796 - INFO - Creating agent
+2025-04-09 00:29:30,843 - INFO - Creating agent executor
+2025-04-09 00:29:30,843 - INFO - SQL Agent initialized successfully
+2025-04-09 00:35:33,556 - INFO - Creating SQL Agent instance
+2025-04-09 00:35:33,557 - INFO - Creating SQL Agent instance
+2025-04-09 00:35:33,558 - DEBUG - Initial session context: {}
+2025-04-09 00:35:33,558 - INFO - Initializing Supabase connection
+2025-04-09 00:35:34,516 - INFO - Initializing tools
+2025-04-09 00:35:34,517 - DEBUG - Tools initialized: 5
+2025-04-09 00:35:34,519 - INFO - Initializing memory
+2025-04-09 00:35:34,525 - DEBUG - Memory initialized
+2025-04-09 00:35:34,527 - INFO - Creating prompt template
+2025-04-09 00:35:34,528 - INFO - Creating agent
+2025-04-09 00:35:34,578 - INFO - Creating agent executor
+2025-04-09 00:35:34,579 - INFO - SQL Agent initialized successfully
+2025-04-09 05:44:49,974 - INFO - Creating SQL Agent instance
+2025-04-09 05:44:49,975 - INFO - Creating SQL Agent instance
+2025-04-09 05:44:49,976 - DEBUG - Initial session context: {}
+2025-04-09 05:44:49,977 - INFO - Initializing Supabase connection
+2025-04-09 05:44:51,778 - INFO - Initializing tools
+2025-04-09 05:44:51,779 - DEBUG - Tools initialized: 5
+2025-04-09 05:44:51,781 - INFO - Initializing memory
+2025-04-09 05:44:51,785 - DEBUG - Memory initialized
+2025-04-09 05:44:51,786 - INFO - Creating prompt template
+2025-04-09 05:44:51,788 - INFO - Creating agent
+2025-04-09 05:44:51,942 - INFO - Creating agent executor
+2025-04-09 05:44:51,945 - INFO - SQL Agent initialized successfully
+2025-04-09 05:50:08,998 - INFO - Creating SQL Agent instance
+2025-04-09 05:50:08,999 - INFO - Creating SQL Agent instance
+2025-04-09 05:50:09,000 - DEBUG - Initial session context: {}
+2025-04-09 05:50:09,001 - INFO - Initializing Supabase connection
+2025-04-09 05:50:10,748 - INFO - Initializing tools
+2025-04-09 05:50:10,749 - DEBUG - Tools initialized: 5
+2025-04-09 05:50:10,750 - INFO - Initializing memory
+2025-04-09 05:50:10,755 - DEBUG - Memory initialized
+2025-04-09 05:50:10,757 - INFO - Creating prompt template
+2025-04-09 05:50:10,759 - INFO - Creating agent
+2025-04-09 05:50:10,916 - INFO - Creating agent executor
+2025-04-09 05:50:10,919 - INFO - SQL Agent initialized successfully
+2025-04-09 05:53:48,368 - INFO - Creating SQL Agent instance
+2025-04-09 05:53:48,369 - INFO - Creating SQL Agent instance
+2025-04-09 05:53:48,369 - DEBUG - Initial session context: {}
+2025-04-09 05:53:48,370 - INFO - Initializing Supabase connection
+2025-04-09 05:53:49,540 - INFO - Initializing tools
+2025-04-09 05:53:49,542 - DEBUG - Tools initialized: 5
+2025-04-09 05:53:49,543 - INFO - Initializing memory
+2025-04-09 05:53:49,558 - DEBUG - Memory initialized
+2025-04-09 05:53:49,560 - INFO - Creating prompt template
+2025-04-09 05:53:49,562 - INFO - Creating agent
+2025-04-09 05:53:49,712 - INFO - Creating agent executor
+2025-04-09 05:53:49,713 - INFO - SQL Agent initialized successfully
+2025-04-09 05:57:20,967 - INFO - Creating SQL Agent instance
+2025-04-09 05:57:20,967 - INFO - Creating SQL Agent instance
+2025-04-09 05:57:20,968 - DEBUG - Initial session context: {}
+2025-04-09 05:57:20,969 - INFO - Initializing Supabase connection
+2025-04-09 05:57:22,324 - INFO - Initializing tools
+2025-04-09 05:57:22,325 - DEBUG - Tools initialized: 5
+2025-04-09 05:57:22,326 - INFO - Initializing memory
+2025-04-09 05:57:22,331 - DEBUG - Memory initialized
+2025-04-09 05:57:22,332 - INFO - Creating prompt template
+2025-04-09 05:57:22,334 - INFO - Creating agent
+2025-04-09 05:57:22,498 - INFO - Creating agent executor
+2025-04-09 05:57:22,499 - INFO - SQL Agent initialized successfully
+2025-04-09 06:00:38,991 - INFO - Creating SQL Agent instance
+2025-04-09 06:00:38,992 - INFO - Creating SQL Agent instance
+2025-04-09 06:00:38,993 - DEBUG - Initial session context: {}
+2025-04-09 06:00:38,993 - INFO - Initializing Supabase connection
+2025-04-09 06:00:40,054 - INFO - Initializing tools
+2025-04-09 06:00:40,066 - DEBUG - Tools initialized: 5
+2025-04-09 06:00:40,067 - INFO - Initializing memory
+2025-04-09 06:00:40,072 - DEBUG - Memory initialized
+2025-04-09 06:00:40,073 - INFO - Creating prompt template
+2025-04-09 06:00:40,075 - INFO - Creating agent
+2025-04-09 06:00:40,206 - INFO - Creating agent executor
+2025-04-09 06:00:40,208 - INFO - SQL Agent initialized successfully
+2025-04-09 06:02:39,328 - INFO - Creating SQL Agent instance
+2025-04-09 06:02:39,328 - INFO - Creating SQL Agent instance
+2025-04-09 06:02:39,329 - DEBUG - Initial session context: {}
+2025-04-09 06:02:39,330 - INFO - Initializing Supabase connection
+2025-04-09 06:02:40,754 - INFO - Initializing tools
+2025-04-09 06:02:40,755 - DEBUG - Tools initialized: 5
+2025-04-09 06:02:40,756 - INFO - Initializing memory
+2025-04-09 06:02:40,760 - DEBUG - Memory initialized
+2025-04-09 06:02:40,761 - INFO - Creating prompt template
+2025-04-09 06:02:40,763 - INFO - Creating agent
+2025-04-09 06:02:40,881 - INFO - Creating agent executor
+2025-04-09 06:02:40,882 - INFO - SQL Agent initialized successfully
+2025-04-09 06:07:44,449 - INFO - Creating SQL Agent instance
+2025-04-09 06:07:44,450 - INFO - Creating SQL Agent instance
+2025-04-09 06:07:44,451 - DEBUG - Initial session context: {}
+2025-04-09 06:07:44,451 - INFO - Initializing Supabase connection
+2025-04-09 06:07:45,526 - INFO - Initializing tools
+2025-04-09 06:07:45,528 - DEBUG - Tools initialized: 5
+2025-04-09 06:07:45,529 - INFO - Initializing memory
+2025-04-09 06:07:45,534 - DEBUG - Memory initialized
+2025-04-09 06:07:45,535 - INFO - Creating prompt template
+2025-04-09 06:07:45,537 - INFO - Creating agent
+2025-04-09 06:07:45,661 - INFO - Creating agent executor
+2025-04-09 06:07:45,662 - INFO - SQL Agent initialized successfully
+2025-04-09 06:09:07,030 - INFO - Creating SQL Agent instance
+2025-04-09 06:09:07,031 - INFO - Creating SQL Agent instance
+2025-04-09 06:09:07,031 - DEBUG - Initial session context: {}
+2025-04-09 06:09:07,032 - INFO - Initializing Supabase connection
+2025-04-09 06:09:08,049 - INFO - Initializing tools
+2025-04-09 06:09:08,050 - DEBUG - Tools initialized: 5
+2025-04-09 06:09:08,051 - INFO - Initializing memory
+2025-04-09 06:09:08,053 - DEBUG - Memory initialized
+2025-04-09 06:09:08,054 - INFO - Creating prompt template
+2025-04-09 06:09:08,055 - INFO - Creating agent
+2025-04-09 06:09:08,159 - INFO - Creating agent executor
+2025-04-09 06:09:08,161 - INFO - SQL Agent initialized successfully
+2025-04-09 06:10:49,666 - INFO - Creating SQL Agent instance
+2025-04-09 06:10:49,667 - INFO - Creating SQL Agent instance
+2025-04-09 06:10:49,668 - DEBUG - Initial session context: {}
+2025-04-09 06:10:49,668 - INFO - Initializing Supabase connection
+2025-04-09 06:10:50,804 - INFO - Initializing tools
+2025-04-09 06:10:50,805 - DEBUG - Tools initialized: 5
+2025-04-09 06:10:50,806 - INFO - Initializing memory
+2025-04-09 06:10:50,811 - DEBUG - Memory initialized
+2025-04-09 06:10:50,812 - INFO - Creating prompt template
+2025-04-09 06:10:50,814 - INFO - Creating agent
+2025-04-09 06:10:50,956 - INFO - Creating agent executor
+2025-04-09 06:10:50,958 - INFO - SQL Agent initialized successfully
+2025-04-09 06:12:04,734 - INFO - Creating SQL Agent instance
+2025-04-09 06:12:04,734 - INFO - Creating SQL Agent instance
+2025-04-09 06:12:04,735 - DEBUG - Initial session context: {}
+2025-04-09 06:12:04,736 - INFO - Initializing Supabase connection
+2025-04-09 06:12:05,643 - INFO - Initializing tools
+2025-04-09 06:12:05,644 - DEBUG - Tools initialized: 5
+2025-04-09 06:12:05,645 - INFO - Initializing memory
+2025-04-09 06:12:05,648 - DEBUG - Memory initialized
+2025-04-09 06:12:05,649 - INFO - Creating prompt template
+2025-04-09 06:12:05,651 - INFO - Creating agent
+2025-04-09 06:12:05,737 - INFO - Creating agent executor
+2025-04-09 06:12:05,738 - INFO - SQL Agent initialized successfully
+2025-04-09 06:14:07,668 - INFO - Creating SQL Agent instance
+2025-04-09 06:14:07,669 - INFO - Creating SQL Agent instance
+2025-04-09 06:14:07,669 - DEBUG - Initial session context: {}
+2025-04-09 06:14:07,670 - INFO - Initializing Supabase connection
+2025-04-09 06:14:09,138 - INFO - Initializing tools
+2025-04-09 06:14:09,139 - DEBUG - Tools initialized: 5
+2025-04-09 06:14:09,140 - INFO - Initializing memory
+2025-04-09 06:14:09,143 - DEBUG - Memory initialized
+2025-04-09 06:14:09,143 - INFO - Creating prompt template
+2025-04-09 06:14:09,144 - INFO - Creating agent
+2025-04-09 06:14:09,233 - INFO - Creating agent executor
+2025-04-09 06:14:09,234 - INFO - SQL Agent initialized successfully
+2025-04-09 06:25:45,351 - INFO - Creating SQL Agent instance
+2025-04-09 06:25:45,352 - INFO - Creating SQL Agent instance
+2025-04-09 06:25:45,352 - DEBUG - Initial session context: {}
+2025-04-09 06:25:45,353 - INFO - Initializing Supabase connection
+2025-04-09 06:25:46,508 - INFO - Initializing tools
+2025-04-09 06:25:46,509 - DEBUG - Tools initialized: 5
+2025-04-09 06:25:46,510 - INFO - Initializing memory
+2025-04-09 06:25:46,515 - DEBUG - Memory initialized
+2025-04-09 06:25:46,516 - INFO - Creating prompt template
+2025-04-09 06:25:46,518 - INFO - Creating agent
+2025-04-09 06:25:46,665 - INFO - Creating agent executor
+2025-04-09 06:25:46,667 - INFO - SQL Agent initialized successfully
+2025-04-09 06:30:05,938 - INFO - Creating SQL Agent instance
+2025-04-09 06:30:05,939 - INFO - Creating SQL Agent instance
+2025-04-09 06:30:05,939 - DEBUG - Initial session context: {}
+2025-04-09 06:30:05,940 - INFO - Initializing Supabase connection
+2025-04-09 06:30:07,280 - INFO - Initializing tools
+2025-04-09 06:30:07,282 - DEBUG - Tools initialized: 5
+2025-04-09 06:30:07,283 - INFO - Initializing memory
+2025-04-09 06:30:07,287 - DEBUG - Memory initialized
+2025-04-09 06:30:07,288 - INFO - Creating prompt template
+2025-04-09 06:30:07,290 - INFO - Creating agent
+2025-04-09 06:30:07,427 - INFO - Creating agent executor
+2025-04-09 06:30:07,428 - INFO - SQL Agent initialized successfully
+2025-04-09 06:32:35,822 - INFO - Creating SQL Agent instance
+2025-04-09 06:32:35,822 - INFO - Creating SQL Agent instance
+2025-04-09 06:32:35,823 - DEBUG - Initial session context: {}
+2025-04-09 06:32:35,824 - INFO - Initializing Supabase connection
+2025-04-09 06:32:36,973 - INFO - Initializing tools
+2025-04-09 06:32:36,974 - DEBUG - Tools initialized: 5
+2025-04-09 06:32:36,975 - INFO - Initializing memory
+2025-04-09 06:32:36,980 - DEBUG - Memory initialized
+2025-04-09 06:32:36,981 - INFO - Creating prompt template
+2025-04-09 06:32:36,983 - INFO - Creating agent
+2025-04-09 06:32:37,139 - INFO - Creating agent executor
+2025-04-09 06:32:37,140 - INFO - SQL Agent initialized successfully
+2025-04-09 06:50:58,300 - INFO - Creating SQL Agent instance
+2025-04-09 06:50:58,300 - INFO - Creating SQL Agent instance
+2025-04-09 06:50:58,301 - DEBUG - Initial session context: {}
+2025-04-09 06:50:58,301 - INFO - Initializing Supabase connection
+2025-04-09 06:51:00,056 - INFO - Initializing tools
+2025-04-09 06:51:00,058 - DEBUG - Tools initialized: 5
+2025-04-09 06:51:00,059 - INFO - Initializing memory
+2025-04-09 06:51:00,063 - DEBUG - Memory initialized
+2025-04-09 06:51:00,064 - INFO - Creating prompt template
+2025-04-09 06:51:00,066 - INFO - Creating agent
+2025-04-09 06:51:00,200 - INFO - Creating agent executor
+2025-04-09 06:51:00,201 - INFO - SQL Agent initialized successfully
+2025-04-09 06:53:06,450 - INFO - Creating SQL Agent instance
+2025-04-09 06:53:06,451 - INFO - Creating SQL Agent instance
+2025-04-09 06:53:06,452 - DEBUG - Initial session context: {}
+2025-04-09 06:53:06,452 - INFO - Initializing Supabase connection
+2025-04-09 06:53:07,567 - INFO - Initializing tools
+2025-04-09 06:53:07,568 - DEBUG - Tools initialized: 5
+2025-04-09 06:53:07,569 - INFO - Initializing memory
+2025-04-09 06:53:07,574 - DEBUG - Memory initialized
+2025-04-09 06:53:07,575 - INFO - Creating prompt template
+2025-04-09 06:53:07,577 - INFO - Creating agent
+2025-04-09 06:53:07,708 - INFO - Creating agent executor
+2025-04-09 06:53:07,710 - INFO - SQL Agent initialized successfully
+2025-04-09 06:54:47,228 - INFO - Creating SQL Agent instance
+2025-04-09 06:54:47,229 - INFO - Creating SQL Agent instance
+2025-04-09 06:54:47,229 - DEBUG - Initial session context: {}
+2025-04-09 06:54:47,230 - INFO - Initializing Supabase connection
+2025-04-09 06:54:48,179 - INFO - Initializing tools
+2025-04-09 06:54:48,180 - DEBUG - Tools initialized: 5
+2025-04-09 06:54:48,181 - INFO - Initializing memory
+2025-04-09 06:54:48,186 - DEBUG - Memory initialized
+2025-04-09 06:54:48,187 - INFO - Creating prompt template
+2025-04-09 06:54:48,189 - INFO - Creating agent
+2025-04-09 06:54:48,330 - INFO - Creating agent executor
+2025-04-09 06:54:48,332 - INFO - SQL Agent initialized successfully
+2025-04-09 06:57:05,429 - INFO - Creating SQL Agent instance
+2025-04-09 06:57:05,430 - INFO - Creating SQL Agent instance
+2025-04-09 06:57:05,431 - DEBUG - Initial session context: {}
+2025-04-09 06:57:05,431 - INFO - Initializing Supabase connection
+2025-04-09 06:57:06,671 - INFO - Initializing tools
+2025-04-09 06:57:06,673 - DEBUG - Tools initialized: 5
+2025-04-09 06:57:06,674 - INFO - Initializing memory
+2025-04-09 06:57:06,678 - DEBUG - Memory initialized
+2025-04-09 06:57:06,679 - INFO - Creating prompt template
+2025-04-09 06:57:06,681 - INFO - Creating agent
+2025-04-09 06:57:06,851 - INFO - Creating agent executor
+2025-04-09 06:57:06,853 - INFO - SQL Agent initialized successfully
+2025-04-09 08:30:09,588 - INFO - Creating SQL Agent instance
+2025-04-09 08:30:09,589 - INFO - Creating SQL Agent instance
+2025-04-09 08:30:09,589 - DEBUG - Initial session context: {}
+2025-04-09 08:30:09,590 - INFO - Initializing Supabase connection
+2025-04-09 08:30:11,576 - INFO - Initializing tools
+2025-04-09 08:30:11,577 - DEBUG - Tools initialized: 5
+2025-04-09 08:30:11,578 - INFO - Initializing memory
+2025-04-09 08:30:11,581 - DEBUG - Memory initialized
+2025-04-09 08:30:11,582 - INFO - Creating prompt template
+2025-04-09 08:30:11,583 - INFO - Creating agent
+2025-04-09 08:30:11,674 - INFO - Creating agent executor
+2025-04-09 08:30:11,676 - INFO - SQL Agent initialized successfully
+2025-04-09 08:37:34,332 - INFO - Creating SQL Agent instance
+2025-04-09 08:37:34,333 - INFO - Creating SQL Agent instance
+2025-04-09 08:37:34,334 - DEBUG - Initial session context: {}
+2025-04-09 08:37:34,334 - INFO - Initializing Supabase connection
+2025-04-09 08:37:36,503 - INFO - Initializing tools
+2025-04-09 08:37:36,504 - DEBUG - Tools initialized: 5
+2025-04-09 08:37:36,504 - INFO - Initializing memory
+2025-04-09 08:37:36,508 - DEBUG - Memory initialized
+2025-04-09 08:37:36,509 - INFO - Creating prompt template
+2025-04-09 08:37:36,510 - INFO - Creating agent
+2025-04-09 08:37:36,628 - INFO - Creating agent executor
+2025-04-09 08:37:36,631 - INFO - SQL Agent initialized successfully
+2025-04-09 08:44:02,760 - INFO - Creating SQL Agent instance
+2025-04-09 08:44:02,760 - INFO - Creating SQL Agent instance
+2025-04-09 08:44:02,761 - DEBUG - Initial session context: {}
+2025-04-09 08:44:02,761 - INFO - Initializing Supabase connection
+2025-04-09 08:44:04,237 - INFO - Initializing tools
+2025-04-09 08:44:04,238 - DEBUG - Tools initialized: 5
+2025-04-09 08:44:04,239 - INFO - Initializing memory
+2025-04-09 08:44:04,261 - DEBUG - Memory initialized
+2025-04-09 08:44:04,262 - INFO - Creating prompt template
+2025-04-09 08:44:04,264 - INFO - Creating agent
+2025-04-09 08:44:04,390 - INFO - Creating agent executor
+2025-04-09 08:44:04,391 - INFO - SQL Agent initialized successfully
+2025-04-09 08:47:09,443 - INFO - Creating SQL Agent instance
+2025-04-09 08:47:09,444 - INFO - Creating SQL Agent instance
+2025-04-09 08:47:09,445 - DEBUG - Initial session context: {}
+2025-04-09 08:47:09,445 - INFO - Initializing Supabase connection
+2025-04-09 08:47:10,729 - INFO - Initializing tools
+2025-04-09 08:47:10,730 - DEBUG - Tools initialized: 5
+2025-04-09 08:47:10,731 - INFO - Initializing memory
+2025-04-09 08:47:10,736 - DEBUG - Memory initialized
+2025-04-09 08:47:10,736 - INFO - Creating prompt template
+2025-04-09 08:47:10,739 - INFO - Creating agent
+2025-04-09 08:47:10,865 - INFO - Creating agent executor
+2025-04-09 08:47:10,877 - INFO - SQL Agent initialized successfully
+2025-04-09 08:59:05,815 - INFO - Creating SQL Agent instance
+2025-04-09 08:59:05,815 - INFO - Creating SQL Agent instance
+2025-04-09 08:59:05,816 - DEBUG - Initial session context: {}
+2025-04-09 08:59:05,816 - INFO - Initializing Supabase connection
+2025-04-09 08:59:08,994 - INFO - Initializing tools
+2025-04-09 08:59:08,995 - DEBUG - Tools initialized: 5
+2025-04-09 08:59:08,996 - INFO - Initializing memory
+2025-04-09 08:59:09,012 - DEBUG - Memory initialized
+2025-04-09 08:59:09,013 - INFO - Creating prompt template
+2025-04-09 08:59:09,015 - INFO - Creating agent
+2025-04-09 08:59:09,183 - INFO - Creating agent executor
+2025-04-09 08:59:09,185 - INFO - SQL Agent initialized successfully
+2025-04-09 09:02:22,443 - INFO - Creating SQL Agent instance
+2025-04-09 09:02:22,444 - INFO - Creating SQL Agent instance
+2025-04-09 09:02:22,444 - DEBUG - Initial session context: {}
+2025-04-09 09:02:22,445 - INFO - Initializing Supabase connection
+2025-04-09 09:02:23,996 - INFO - Initializing tools
+2025-04-09 09:02:23,997 - DEBUG - Tools initialized: 5
+2025-04-09 09:02:23,997 - INFO - Initializing memory
+2025-04-09 09:02:24,001 - DEBUG - Memory initialized
+2025-04-09 09:02:24,001 - INFO - Creating prompt template
+2025-04-09 09:02:24,003 - INFO - Creating agent
+2025-04-09 09:02:24,064 - INFO - Creating agent executor
+2025-04-09 09:02:24,065 - INFO - SQL Agent initialized successfully
+2025-04-09 09:04:39,301 - INFO - Creating SQL Agent instance
+2025-04-09 09:04:39,301 - INFO - Creating SQL Agent instance
+2025-04-09 09:04:39,302 - DEBUG - Initial session context: {}
+2025-04-09 09:04:39,303 - INFO - Initializing Supabase connection
+2025-04-09 09:04:40,501 - INFO - Initializing tools
+2025-04-09 09:04:40,502 - DEBUG - Tools initialized: 5
+2025-04-09 09:04:40,503 - INFO - Initializing memory
+2025-04-09 09:04:40,507 - DEBUG - Memory initialized
+2025-04-09 09:04:40,508 - INFO - Creating prompt template
+2025-04-09 09:04:40,510 - INFO - Creating agent
+2025-04-09 09:04:40,635 - INFO - Creating agent executor
+2025-04-09 09:04:40,636 - INFO - SQL Agent initialized successfully
+2025-04-09 09:06:11,553 - INFO - Creating SQL Agent instance
+2025-04-09 09:06:11,554 - INFO - Creating SQL Agent instance
+2025-04-09 09:06:11,555 - DEBUG - Initial session context: {}
+2025-04-09 09:06:11,555 - INFO - Initializing Supabase connection
+2025-04-09 09:06:12,563 - INFO - Initializing tools
+2025-04-09 09:06:12,564 - DEBUG - Tools initialized: 5
+2025-04-09 09:06:12,565 - INFO - Initializing memory
+2025-04-09 09:06:12,570 - DEBUG - Memory initialized
+2025-04-09 09:06:12,571 - INFO - Creating prompt template
+2025-04-09 09:06:12,573 - INFO - Creating agent
+2025-04-09 09:06:12,723 - INFO - Creating agent executor
+2025-04-09 09:06:12,725 - INFO - SQL Agent initialized successfully
+2025-04-09 09:08:06,181 - INFO - Creating SQL Agent instance
+2025-04-09 09:08:06,183 - INFO - Creating SQL Agent instance
+2025-04-09 09:08:06,184 - DEBUG - Initial session context: {}
+2025-04-09 09:08:06,185 - INFO - Initializing Supabase connection
+2025-04-09 09:08:07,628 - INFO - Initializing tools
+2025-04-09 09:08:07,629 - DEBUG - Tools initialized: 5
+2025-04-09 09:08:07,630 - INFO - Initializing memory
+2025-04-09 09:08:07,634 - DEBUG - Memory initialized
+2025-04-09 09:08:07,636 - INFO - Creating prompt template
+2025-04-09 09:08:07,637 - INFO - Creating agent
+2025-04-09 09:08:07,755 - INFO - Creating agent executor
+2025-04-09 09:08:07,756 - INFO - SQL Agent initialized successfully
+2025-04-09 09:11:39,085 - INFO - Creating SQL Agent instance
+2025-04-09 09:11:39,086 - INFO - Creating SQL Agent instance
+2025-04-09 09:11:39,087 - DEBUG - Initial session context: {}
+2025-04-09 09:11:39,087 - INFO - Initializing Supabase connection
+2025-04-09 09:11:40,645 - INFO - Initializing tools
+2025-04-09 09:11:40,646 - DEBUG - Tools initialized: 5
+2025-04-09 09:11:40,647 - INFO - Initializing memory
+2025-04-09 09:11:40,651 - DEBUG - Memory initialized
+2025-04-09 09:11:40,653 - INFO - Creating prompt template
+2025-04-09 09:11:40,655 - INFO - Creating agent
+2025-04-09 09:11:40,785 - INFO - Creating agent executor
+2025-04-09 09:11:40,786 - INFO - SQL Agent initialized successfully
+2025-04-09 09:14:42,192 - INFO - Creating SQL Agent instance
+2025-04-09 09:14:42,193 - INFO - Creating SQL Agent instance
+2025-04-09 09:14:42,193 - DEBUG - Initial session context: {}
+2025-04-09 09:14:42,194 - INFO - Initializing Supabase connection
+2025-04-09 09:14:43,532 - INFO - Initializing tools
+2025-04-09 09:14:43,533 - DEBUG - Tools initialized: 5
+2025-04-09 09:14:43,535 - INFO - Initializing memory
+2025-04-09 09:14:43,539 - DEBUG - Memory initialized
+2025-04-09 09:14:43,540 - INFO - Creating prompt template
+2025-04-09 09:14:43,542 - INFO - Creating agent
+2025-04-09 09:14:43,706 - INFO - Creating agent executor
+2025-04-09 09:14:43,708 - INFO - SQL Agent initialized successfully
+2025-04-09 09:19:52,229 - INFO - Creating SQL Agent instance
+2025-04-09 09:19:52,230 - INFO - Creating SQL Agent instance
+2025-04-09 09:19:52,230 - DEBUG - Initial session context: {}
+2025-04-09 09:19:52,231 - INFO - Initializing Supabase connection
+2025-04-09 09:19:53,840 - INFO - Initializing tools
+2025-04-09 09:19:53,840 - DEBUG - Tools initialized: 5
+2025-04-09 09:19:53,841 - INFO - Initializing memory
+2025-04-09 09:19:53,865 - DEBUG - Memory initialized
+2025-04-09 09:19:53,866 - INFO - Creating prompt template
+2025-04-09 09:19:53,867 - INFO - Creating agent
+2025-04-09 09:19:53,950 - INFO - Creating agent executor
+2025-04-09 09:19:53,952 - INFO - SQL Agent initialized successfully
+2025-04-09 09:21:07,498 - INFO - Creating SQL Agent instance
+2025-04-09 09:21:07,499 - INFO - Creating SQL Agent instance
+2025-04-09 09:21:07,500 - DEBUG - Initial session context: {}
+2025-04-09 09:21:07,500 - INFO - Initializing Supabase connection
+2025-04-09 09:21:08,397 - INFO - Initializing tools
+2025-04-09 09:21:08,398 - DEBUG - Tools initialized: 5
+2025-04-09 09:21:08,399 - INFO - Initializing memory
+2025-04-09 09:21:08,403 - DEBUG - Memory initialized
+2025-04-09 09:21:08,404 - INFO - Creating prompt template
+2025-04-09 09:21:08,406 - INFO - Creating agent
+2025-04-09 09:21:08,536 - INFO - Creating agent executor
+2025-04-09 09:21:08,538 - INFO - SQL Agent initialized successfully
+2025-04-09 09:27:08,228 - INFO - Creating SQL Agent instance
+2025-04-09 09:27:08,229 - INFO - Creating SQL Agent instance
+2025-04-09 09:27:08,229 - DEBUG - Initial session context: {}
+2025-04-09 09:27:08,230 - INFO - Initializing Supabase connection
+2025-04-09 09:27:10,070 - INFO - Initializing tools
+2025-04-09 09:27:10,071 - DEBUG - Tools initialized: 5
+2025-04-09 09:27:10,072 - INFO - Initializing memory
+2025-04-09 09:27:10,077 - DEBUG - Memory initialized
+2025-04-09 09:27:10,078 - INFO - Creating prompt template
+2025-04-09 09:27:10,080 - INFO - Creating agent
+2025-04-09 09:27:10,212 - INFO - Creating agent executor
+2025-04-09 09:27:10,214 - INFO - SQL Agent initialized successfully
+2025-04-09 09:32:38,466 - INFO - Creating SQL Agent instance
+2025-04-09 09:32:38,467 - INFO - Creating SQL Agent instance
+2025-04-09 09:32:38,468 - DEBUG - Initial session context: {}
+2025-04-09 09:32:38,468 - INFO - Initializing Supabase connection
+2025-04-09 09:32:39,906 - INFO - Initializing tools
+2025-04-09 09:32:39,908 - DEBUG - Tools initialized: 5
+2025-04-09 09:32:39,909 - INFO - Initializing memory
+2025-04-09 09:32:39,913 - DEBUG - Memory initialized
+2025-04-09 09:32:39,914 - INFO - Creating prompt template
+2025-04-09 09:32:39,916 - INFO - Creating agent
+2025-04-09 09:32:40,047 - INFO - Creating agent executor
+2025-04-09 09:32:40,048 - INFO - SQL Agent initialized successfully
+2025-04-09 09:33:55,994 - INFO - Creating SQL Agent instance
+2025-04-09 09:33:55,995 - INFO - Creating SQL Agent instance
+2025-04-09 09:33:55,995 - DEBUG - Initial session context: {}
+2025-04-09 09:33:55,996 - INFO - Initializing Supabase connection
+2025-04-09 09:33:56,958 - INFO - Initializing tools
+2025-04-09 09:33:56,960 - DEBUG - Tools initialized: 5
+2025-04-09 09:33:56,971 - INFO - Initializing memory
+2025-04-09 09:33:56,976 - DEBUG - Memory initialized
+2025-04-09 09:33:56,977 - INFO - Creating prompt template
+2025-04-09 09:33:56,981 - INFO - Creating agent
+2025-04-09 09:33:57,117 - INFO - Creating agent executor
+2025-04-09 09:33:57,118 - INFO - SQL Agent initialized successfully
+2025-04-09 09:36:02,704 - INFO - Creating SQL Agent instance
+2025-04-09 09:36:02,705 - INFO - Creating SQL Agent instance
+2025-04-09 09:36:02,706 - DEBUG - Initial session context: {}
+2025-04-09 09:36:02,706 - INFO - Initializing Supabase connection
+2025-04-09 09:36:03,989 - INFO - Initializing tools
+2025-04-09 09:36:03,990 - DEBUG - Tools initialized: 5
+2025-04-09 09:36:03,991 - INFO - Initializing memory
+2025-04-09 09:36:03,994 - DEBUG - Memory initialized
+2025-04-09 09:36:03,995 - INFO - Creating prompt template
+2025-04-09 09:36:03,996 - INFO - Creating agent
+2025-04-09 09:36:04,098 - INFO - Creating agent executor
+2025-04-09 09:36:04,100 - INFO - SQL Agent initialized successfully
+2025-04-09 09:41:00,693 - INFO - Creating SQL Agent instance
+2025-04-09 09:41:00,694 - INFO - Creating SQL Agent instance
+2025-04-09 09:41:00,694 - DEBUG - Initial session context: {}
+2025-04-09 09:41:00,695 - INFO - Initializing Supabase connection
+2025-04-09 09:41:02,064 - INFO - Initializing tools
+2025-04-09 09:41:02,065 - DEBUG - Tools initialized: 5
+2025-04-09 09:41:02,067 - INFO - Initializing memory
+2025-04-09 09:41:02,071 - DEBUG - Memory initialized
+2025-04-09 09:41:02,072 - INFO - Creating prompt template
+2025-04-09 09:41:02,074 - INFO - Creating agent
+2025-04-09 09:41:02,216 - INFO - Creating agent executor
+2025-04-09 09:41:02,217 - INFO - SQL Agent initialized successfully
+2025-04-09 09:42:12,735 - INFO - Creating SQL Agent instance
+2025-04-09 09:42:12,736 - INFO - Creating SQL Agent instance
+2025-04-09 09:42:12,736 - DEBUG - Initial session context: {}
+2025-04-09 09:42:12,737 - INFO - Initializing Supabase connection
+2025-04-09 09:42:13,670 - INFO - Initializing tools
+2025-04-09 09:42:13,671 - DEBUG - Tools initialized: 5
+2025-04-09 09:42:13,673 - INFO - Initializing memory
+2025-04-09 09:42:13,677 - DEBUG - Memory initialized
+2025-04-09 09:42:13,678 - INFO - Creating prompt template
+2025-04-09 09:42:13,680 - INFO - Creating agent
+2025-04-09 09:42:13,819 - INFO - Creating agent executor
+2025-04-09 09:42:13,821 - INFO - SQL Agent initialized successfully
+2025-04-09 09:45:31,627 - INFO - Creating SQL Agent instance
+2025-04-09 09:45:31,628 - INFO - Creating SQL Agent instance
+2025-04-09 09:45:31,629 - DEBUG - Initial session context: {}
+2025-04-09 09:45:31,629 - INFO - Initializing Supabase connection
+2025-04-09 09:45:33,031 - INFO - Initializing tools
+2025-04-09 09:45:33,032 - DEBUG - Tools initialized: 5
+2025-04-09 09:45:33,033 - INFO - Initializing memory
+2025-04-09 09:45:33,038 - DEBUG - Memory initialized
+2025-04-09 09:45:33,039 - INFO - Creating prompt template
+2025-04-09 09:45:33,041 - INFO - Creating agent
+2025-04-09 09:45:33,194 - INFO - Creating agent executor
+2025-04-09 09:45:33,197 - INFO - SQL Agent initialized successfully
+2025-04-09 09:48:16,926 - INFO - Creating SQL Agent instance
+2025-04-09 09:48:16,926 - INFO - Creating SQL Agent instance
+2025-04-09 09:48:16,927 - DEBUG - Initial session context: {}
+2025-04-09 09:48:16,928 - INFO - Initializing Supabase connection
+2025-04-09 09:48:18,408 - INFO - Initializing tools
+2025-04-09 09:48:18,410 - DEBUG - Tools initialized: 5
+2025-04-09 09:48:18,411 - INFO - Initializing memory
+2025-04-09 09:48:18,416 - DEBUG - Memory initialized
+2025-04-09 09:48:18,418 - INFO - Creating prompt template
+2025-04-09 09:48:18,420 - INFO - Creating agent
+2025-04-09 09:48:18,559 - INFO - Creating agent executor
+2025-04-09 09:48:18,560 - INFO - SQL Agent initialized successfully
+2025-04-09 09:51:11,508 - INFO - Creating SQL Agent instance
+2025-04-09 09:51:11,509 - INFO - Creating SQL Agent instance
+2025-04-09 09:51:11,509 - DEBUG - Initial session context: {}
+2025-04-09 09:51:11,510 - INFO - Initializing Supabase connection
+2025-04-09 09:51:12,804 - INFO - Initializing tools
+2025-04-09 09:51:12,805 - DEBUG - Tools initialized: 5
+2025-04-09 09:51:12,806 - INFO - Initializing memory
+2025-04-09 09:51:12,811 - DEBUG - Memory initialized
+2025-04-09 09:51:12,812 - INFO - Creating prompt template
+2025-04-09 09:51:12,814 - INFO - Creating agent
+2025-04-09 09:51:12,940 - INFO - Creating agent executor
+2025-04-09 09:51:12,941 - INFO - SQL Agent initialized successfully
+2025-04-09 10:01:14,456 - INFO - Creating SQL Agent instance
+2025-04-09 10:01:14,456 - INFO - Creating SQL Agent instance
+2025-04-09 10:01:14,457 - DEBUG - Initial session context: {}
+2025-04-09 10:01:14,457 - INFO - Initializing Supabase connection
+2025-04-09 10:01:15,563 - INFO - Initializing tools
+2025-04-09 10:01:15,564 - DEBUG - Tools initialized: 5
+2025-04-09 10:01:15,565 - INFO - Initializing memory
+2025-04-09 10:01:15,567 - DEBUG - Memory initialized
+2025-04-09 10:01:15,567 - INFO - Creating prompt template
+2025-04-09 10:01:15,568 - INFO - Creating agent
+2025-04-09 10:01:15,611 - INFO - Creating agent executor
+2025-04-09 10:01:15,612 - INFO - SQL Agent initialized successfully
+2025-04-09 10:03:01,200 - INFO - Creating SQL Agent instance
+2025-04-09 10:03:01,200 - INFO - Creating SQL Agent instance
+2025-04-09 10:03:01,201 - DEBUG - Initial session context: {}
+2025-04-09 10:03:01,201 - INFO - Initializing Supabase connection
+2025-04-09 10:03:02,123 - INFO - Initializing tools
+2025-04-09 10:03:02,125 - DEBUG - Tools initialized: 5
+2025-04-09 10:03:02,126 - INFO - Initializing memory
+2025-04-09 10:03:02,133 - DEBUG - Memory initialized
+2025-04-09 10:03:02,134 - INFO - Creating prompt template
+2025-04-09 10:03:02,137 - INFO - Creating agent
+2025-04-09 10:03:02,187 - INFO - Creating agent executor
+2025-04-09 10:03:02,188 - INFO - SQL Agent initialized successfully
+2025-04-09 10:06:38,254 - INFO - Creating SQL Agent instance
+2025-04-09 10:06:38,254 - INFO - Creating SQL Agent instance
+2025-04-09 10:06:38,255 - DEBUG - Initial session context: {}
+2025-04-09 10:06:38,255 - INFO - Initializing Supabase connection
+2025-04-09 10:06:39,352 - INFO - Initializing tools
+2025-04-09 10:06:39,353 - DEBUG - Tools initialized: 5
+2025-04-09 10:06:39,353 - INFO - Initializing memory
+2025-04-09 10:06:39,356 - DEBUG - Memory initialized
+2025-04-09 10:06:39,357 - INFO - Creating prompt template
+2025-04-09 10:06:39,358 - INFO - Creating agent
+2025-04-09 10:06:39,402 - INFO - Creating agent executor
+2025-04-09 10:06:39,402 - INFO - SQL Agent initialized successfully
+2025-04-09 10:09:47,164 - INFO - Creating SQL Agent instance
+2025-04-09 10:09:47,164 - INFO - Creating SQL Agent instance
+2025-04-09 10:09:47,165 - DEBUG - Initial session context: {}
+2025-04-09 10:09:47,165 - INFO - Initializing Supabase connection
+2025-04-09 10:09:48,231 - INFO - Initializing tools
+2025-04-09 10:09:48,232 - DEBUG - Tools initialized: 5
+2025-04-09 10:09:48,232 - INFO - Initializing memory
+2025-04-09 10:09:48,235 - DEBUG - Memory initialized
+2025-04-09 10:09:48,235 - INFO - Creating prompt template
+2025-04-09 10:09:48,236 - INFO - Creating agent
+2025-04-09 10:09:48,290 - INFO - Creating agent executor
+2025-04-09 10:09:48,290 - INFO - SQL Agent initialized successfully
+2025-04-09 10:11:30,905 - INFO - Creating SQL Agent instance
+2025-04-09 10:11:30,905 - INFO - Creating SQL Agent instance
+2025-04-09 10:11:30,906 - DEBUG - Initial session context: {}
+2025-04-09 10:11:30,906 - INFO - Initializing Supabase connection
+2025-04-09 10:11:32,091 - INFO - Initializing tools
+2025-04-09 10:11:32,092 - DEBUG - Tools initialized: 5
+2025-04-09 10:11:32,092 - INFO - Initializing memory
+2025-04-09 10:11:32,095 - DEBUG - Memory initialized
+2025-04-09 10:11:32,095 - INFO - Creating prompt template
+2025-04-09 10:11:32,096 - INFO - Creating agent
+2025-04-09 10:11:32,143 - INFO - Creating agent executor
+2025-04-09 10:11:32,144 - INFO - SQL Agent initialized successfully
+2025-04-09 10:12:19,525 - INFO - Creating SQL Agent instance
+2025-04-09 10:12:19,526 - INFO - Creating SQL Agent instance
+2025-04-09 10:12:19,526 - DEBUG - Initial session context: {}
+2025-04-09 10:12:19,526 - INFO - Initializing Supabase connection
+2025-04-09 10:12:20,454 - INFO - Initializing tools
+2025-04-09 10:12:20,454 - DEBUG - Tools initialized: 5
+2025-04-09 10:12:20,455 - INFO - Initializing memory
+2025-04-09 10:12:20,456 - DEBUG - Memory initialized
+2025-04-09 10:12:20,457 - INFO - Creating prompt template
+2025-04-09 10:12:20,457 - INFO - Creating agent
+2025-04-09 10:12:20,493 - INFO - Creating agent executor
+2025-04-09 10:12:20,494 - INFO - SQL Agent initialized successfully
+2025-04-09 10:13:59,541 - INFO - Creating SQL Agent instance
+2025-04-09 10:13:59,541 - INFO - Creating SQL Agent instance
+2025-04-09 10:13:59,542 - DEBUG - Initial session context: {}
+2025-04-09 10:13:59,542 - INFO - Initializing Supabase connection
+2025-04-09 10:14:00,480 - INFO - Initializing tools
+2025-04-09 10:14:00,481 - DEBUG - Tools initialized: 5
+2025-04-09 10:14:00,482 - INFO - Initializing memory
+2025-04-09 10:14:00,486 - DEBUG - Memory initialized
+2025-04-09 10:14:00,486 - INFO - Creating prompt template
+2025-04-09 10:14:00,488 - INFO - Creating agent
+2025-04-09 10:14:00,537 - INFO - Creating agent executor
+2025-04-09 10:14:00,538 - INFO - SQL Agent initialized successfully
+2025-04-09 10:15:48,030 - INFO - Creating SQL Agent instance
+2025-04-09 10:15:48,031 - INFO - Creating SQL Agent instance
+2025-04-09 10:15:48,031 - DEBUG - Initial session context: {}
+2025-04-09 10:15:48,032 - INFO - Initializing Supabase connection
+2025-04-09 10:15:48,979 - INFO - Initializing tools
+2025-04-09 10:15:48,980 - DEBUG - Tools initialized: 5
+2025-04-09 10:15:48,981 - INFO - Initializing memory
+2025-04-09 10:15:48,983 - DEBUG - Memory initialized
+2025-04-09 10:15:48,984 - INFO - Creating prompt template
+2025-04-09 10:15:48,985 - INFO - Creating agent
+2025-04-09 10:15:49,032 - INFO - Creating agent executor
+2025-04-09 10:15:49,033 - INFO - SQL Agent initialized successfully
+2025-04-09 10:29:31,113 - INFO - Creating SQL Agent instance
+2025-04-09 10:29:31,115 - INFO - Creating SQL Agent instance
+2025-04-09 10:29:31,115 - DEBUG - Initial session context: {}
+2025-04-09 10:29:31,116 - INFO - Initializing Supabase connection
+2025-04-09 10:29:32,229 - INFO - Initializing tools
+2025-04-09 10:29:32,230 - DEBUG - Tools initialized: 5
+2025-04-09 10:29:32,232 - INFO - Initializing memory
+2025-04-09 10:29:32,237 - DEBUG - Memory initialized
+2025-04-09 10:29:32,238 - INFO - Creating prompt template
+2025-04-09 10:29:32,239 - INFO - Creating agent
+2025-04-09 10:29:32,293 - INFO - Creating agent executor
+2025-04-09 10:29:32,295 - INFO - SQL Agent initialized successfully
+2025-04-10 11:46:28,978 - INFO - Creating SQL Agent instance
+2025-04-10 11:46:28,988 - INFO - Creating SQL Agent instance
+2025-04-10 11:46:28,989 - DEBUG - Initial session context: {}
+2025-04-10 11:46:28,990 - INFO - Initializing Supabase connection
+2025-04-10 11:46:31,254 - INFO - Initializing tools
+2025-04-10 11:46:31,255 - DEBUG - Tools initialized: 5
+2025-04-10 11:46:31,256 - INFO - Initializing memory
+2025-04-10 11:46:31,261 - DEBUG - Memory initialized
+2025-04-10 11:46:31,262 - INFO - Creating prompt template
+2025-04-10 11:46:31,264 - INFO - Creating agent
+2025-04-10 11:46:31,384 - INFO - Creating agent executor
+2025-04-10 11:46:31,385 - INFO - SQL Agent initialized successfully
+2025-04-10 11:48:59,367 - INFO - Creating SQL Agent instance
+2025-04-10 11:48:59,368 - INFO - Creating SQL Agent instance
+2025-04-10 11:48:59,369 - DEBUG - Initial session context: {}
+2025-04-10 11:48:59,369 - INFO - Initializing Supabase connection
+2025-04-10 11:49:12,120 - ERROR - Error initializing SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-04-10 11:49:12,458 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-04-10 11:49:12,470 - ERROR - Error creating SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-04-10 11:49:12,487 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-04-10 11:50:11,000 - INFO - Creating SQL Agent instance
+2025-04-10 11:50:11,001 - INFO - Creating SQL Agent instance
+2025-04-10 11:50:11,001 - DEBUG - Initial session context: {}
+2025-04-10 11:50:11,002 - INFO - Initializing Supabase connection
+2025-04-10 11:50:12,013 - INFO - Initializing tools
+2025-04-10 11:50:12,015 - DEBUG - Tools initialized: 5
+2025-04-10 11:50:12,015 - INFO - Initializing memory
+2025-04-10 11:50:12,019 - DEBUG - Memory initialized
+2025-04-10 11:50:12,020 - INFO - Creating prompt template
+2025-04-10 11:50:12,022 - INFO - Creating agent
+2025-04-10 11:50:12,149 - INFO - Creating agent executor
+2025-04-10 11:50:12,151 - INFO - SQL Agent initialized successfully
+2025-04-10 11:52:45,966 - INFO - SQL Agent: Received query
+2025-04-10 11:52:45,967 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
+2025-04-10 11:52:45,968 - DEBUG - Updated session context: {}

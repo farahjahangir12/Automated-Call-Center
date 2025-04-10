@@ -1,46 +1,64 @@
-from ..functions.Book_Appointment.extract_doctor_name import extract_doctor_name
-from ..functions.AppointmentSlots_info.get_slots_info import get_slots_info
+from agents.sql.tools.functions.book_appointment.extract_appointment_info import extract_appointment_info
+from agents.sql.tools.functions.doctor_details.extract_doctor_details import extract_doctor_details
+from agents.sql.tools.functions.appointmentSlots_info.get_available_slots import get_available_slots
 from langchain.tools import Tool
+from typing import Dict, Any
+import logging
 
+logger = logging.getLogger(__name__)
 
-def get_appointment_slots(*args, **kwargs):
+async def get_appointment_slots(input_data: Dict) -> Dict:
     """
-    Extracts the doctor's name, fetches available slots, and returns them while ensuring booked slots are removed.
+    Get available appointment slots for a doctor.
+    Args:
+        input_data: Dict containing query parameters
+    Returns:
+        Dict with available slots or error message
     """
     try:
         # Extract doctor name
-        input =args[0] if args else ""
+        input_str = input_data.get("input_str", "") if isinstance(input_data, dict) else str(input_data)
+        result = await extract_doctor_details(input_str)
 
-        doctor_name = extract_doctor_name(input)
-
-        if not doctor_name:
+        if not result['success']:
             return {
-                "observation": "Doctor name not found.",
-                "action": "Error",
-                "action_input": "Doctor name is missing or could not be extracted."
+                "response": "Failed to extract doctor name.",
+                "current_step": "get_doctor",
+                "collected_data": {},
+                "status": "error"
             }
 
         # Fetch available slots
-        available_slots = get_slots_info(doctor_name)
+        slots_result = await get_available_slots(result['value'])
+
+        if not slots_result['success']:
+            return {
+                "response": "Failed to fetch appointment slots.",
+                "current_step": "get_time",
+                "collected_data": {},
+                "status": "error"
+            }
 
         return {
-            "observation": f"Available slots for Dr. {doctor_name} fetched successfully.",
-            "action": "Final Answer",
-            "action_input": available_slots
+            "response": f"Available slots for Dr. {result['value']} fetched successfully: {slots_result['value']}",
+            "current_step": "get_time",
+            "collected_data": {"slots": slots_result['value']},
+            "status": "in_progress"
         }
 
     except Exception as e:
+        logger.error(f"Error in get_appointment_slots: {str(e)}")
         return {
-            "observation": f"An error occurred: {str(e)}",
-            "action": "Error",
-            "action_input": "There was an issue fetching appointment slots. Please try again."
+            "response": f"Error: {str(e)}",
+            "current_step": "get_time",
+            "collected_data": {},
+            "status": "error"
         }
 
 appointment_slotsInfo_tool = Tool(
-    name="Appointment Slots  Detail",
+    name="Appointment Slots Info",
     func=get_appointment_slots,
-    description="Call this tool to cancel a patient's appointment by providing their patient ID."
+    description="Get available appointment slots for a specific doctor"
 )
-
 
 __all__ = ["appointment_slotsInfo_tool"]

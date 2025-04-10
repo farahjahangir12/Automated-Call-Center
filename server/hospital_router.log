@@ -918,3 +918,2642 @@ ModuleNotFoundError: No module named 'prompt'
 2025-04-04 21:14:31,751 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
 2025-04-04 21:14:32,622 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-04-04 21:15:10,918 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:19:38,494 - INFO - SQL agent ready
+2025-04-06 15:19:38,504 - INFO - RAG agent ready
+2025-04-06 15:19:54,034 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:54,468 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:54,879 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:55,287 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:55,698 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:56,035 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:56,517 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:56,926 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 15:19:58,896 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/rpc/search_hospital_documents "HTTP/2 200 OK"
+2025-04-06 15:20:00,001 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:27,243 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:27,700 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:29,039 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 15:21:37,382 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:37,790 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 15:21:38,403 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=%2A&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 15:21:38,962 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:39,428 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:21:39,697 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 15:22:36,772 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:22:37,583 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 15:22:37,825 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 15:22:38,080 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 15:22:38,319 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 15:22:39,156 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:00,221 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:04,010 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:09,247 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:12,304 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:28,387 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:23:28,821 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients "HTTP/2 201 Created"
+2025-04-06 15:23:29,620 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 15:30:03,995 - INFO - SQL agent ready
+2025-04-06 15:30:03,995 - INFO - RAG agent ready
+2025-04-06 15:30:16,565 - ERROR - Error in SQL agent: name 'SystemMessagePromptTemplate' is not defined
+2025-04-06 15:31:04,314 - ERROR - Error in SQL agent: name 'SystemMessagePromptTemplate' is not defined
+2025-04-06 17:39:35,969 - ERROR - Error in SQL agent: name 'SystemMessagePromptTemplate' is not defined
+2025-04-06 17:39:53,865 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:54,227 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:54,860 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:55,268 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:55,679 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:56,100 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:56,503 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:56,893 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-06 17:39:59,924 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/rpc/search_hospital_documents "HTTP/2 200 OK"
+2025-04-06 17:40:01,061 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:19,449 - INFO - SQL agent ready
+2025-04-06 17:44:19,449 - INFO - RAG agent ready
+2025-04-06 17:44:31,692 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:32,983 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:36,238 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 17:44:50,507 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:51,533 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 17:44:52,180 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=%2A&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 17:44:53,455 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:54,169 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:44:54,737 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 17:45:03,051 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:03,670 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 17:45:04,016 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 17:45:04,329 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 17:45:04,651 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 17:45:05,934 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:10,688 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:14,116 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:24,088 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:34,730 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:42,360 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:48,588 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 17:45:49,127 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients "HTTP/2 201 Created"
+2025-04-06 17:45:50,379 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 20:35:42,594 - INFO - SQL agent ready
+2025-04-06 20:35:42,594 - INFO - RAG agent ready
+2025-04-06 20:35:52,370 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 20:42:57,954 - INFO - SQL agent ready
+2025-04-06 20:42:57,954 - INFO - RAG agent ready
+2025-04-06 20:44:00,409 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 20:54:23,249 - INFO - RAG agent ready
+2025-04-06 20:56:08,327 - INFO - RAG agent ready
+2025-04-06 20:58:20,285 - INFO - RAG agent ready
+2025-04-06 21:01:38,759 - INFO - SQL agent ready
+2025-04-06 21:01:38,759 - INFO - RAG agent ready
+2025-04-06 21:03:20,237 - ERROR - Error in SQL agent: 'SQLAgent' object has no attribute 'conversation_stage'
+2025-04-06 21:10:58,890 - INFO - SQL agent ready
+2025-04-06 21:10:58,891 - INFO - RAG agent ready
+2025-04-06 21:11:11,293 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:11:12,058 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:11:13,740 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:11:24,231 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:11:25,052 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:11:25,370 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=%2A&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:11:26,279 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:11:36,882 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:11:37,235 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:11:37,478 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:11:38,115 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:11:38,339 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:11:45,120 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:02,119 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:08,494 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:20,349 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:21,249 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:41,996 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:45,584 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:51,024 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:53,419 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:57,619 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:12:58,678 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients "HTTP/2 201 Created"
+2025-04-06 21:12:59,565 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:14,685 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:15,129 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:13:15,363 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:13:15,640 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:13:15,857 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:13:21,170 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:25,778 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:35,301 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:42,675 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:13:43,521 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:18:22,274 - INFO - SQL agent ready
+2025-04-06 21:18:22,274 - INFO - RAG agent ready
+2025-04-06 21:18:35,526 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:18:42,820 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:18:44,129 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:18:44,389 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:18:44,743 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:18:44,965 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:18:54,162 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:01,946 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:02,925 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:09,830 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:13,721 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:19,864 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:22,162 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:37,679 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:38,091 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients "HTTP/2 201 Created"
+2025-04-06 21:19:39,064 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:40,168 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:19:40,447 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:20:08,559 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:20:09,120 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:20:09,342 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=%2A&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:20:10,348 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:20:11,093 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:20:11,368 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:41:13,840 - INFO - SQL agent ready
+2025-04-06 21:41:13,841 - INFO - RAG agent ready
+2025-04-06 21:41:22,744 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:24,740 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:26,205 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:41:41,175 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:41,928 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:41:42,477 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 21:41:42,958 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:41:43,173 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 21:41:50,644 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:51,366 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:51,771 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 21:41:52,719 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 21:44:51,739 - INFO - SQL agent ready
+2025-04-06 21:44:51,739 - INFO - RAG agent ready
+2025-04-06 21:52:14,000 - INFO - RAG agent ready
+2025-04-06 21:54:14,689 - INFO - RAG agent ready
+2025-04-06 21:56:01,896 - INFO - RAG agent ready
+2025-04-06 22:09:15,405 - INFO - SQL agent ready
+2025-04-06 22:09:15,405 - INFO - RAG agent ready
+2025-04-06 22:09:34,457 - INFO - Processing appointment query: I want to schedule an appointment
+2025-04-06 22:09:35,689 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:09:44,206 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:09:46,166 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:09:46,765 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 22:09:47,403 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 22:09:47,646 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 22:09:57,312 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:10:05,826 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:10:06,633 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:16,238 - INFO - SQL agent ready
+2025-04-06 22:12:16,238 - INFO - RAG agent ready
+2025-04-06 22:12:25,891 - INFO - Processing query: I want to book an appointment
+2025-04-06 22:12:27,532 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:37,472 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:39,006 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:12:39,582 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Angela+Webb "HTTP/2 200 OK"
+2025-04-06 22:12:39,807 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=day%2Ctime&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 22:12:40,032 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/appointments?select=appointment_day%2Cappointment_time&doctor_id=eq.160 "HTTP/2 200 OK"
+2025-04-06 22:12:48,855 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:56,523 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:57,349 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:12:57,356 - INFO - Successfully processed query: I want to book an appointment
+2025-04-06 22:16:58,164 - INFO - SQL agent ready
+2025-04-06 22:16:58,164 - INFO - RAG agent ready
+2025-04-06 22:17:18,944 - INFO - Processing query: I want to book an appointment
+2025-04-06 22:17:20,055 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:17:20,828 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:17:22,209 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:17:22,489 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Please+provide+the+doctor%27s+name%2C+day+and+time%2C+and+reason+for+appointment+to+book+a+slot%2C+for+example%3A+Book+appointment+with+Dr.+Angela+Webb+on+Friday+at+14%3A00+for+routine+checkup "HTTP/2 200 OK"
+2025-04-06 22:17:22,492 - ERROR - Error in book_appointment_tool: not enough values to unpack (expected 3, got 2)
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 28, in book_appointment_tool
+    doctor_id, day, time = extract_day_time(input_str)
+    ^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+2025-04-06 22:17:23,362 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:17:23,379 - INFO - Successfully processed query: I want to book an appointment
+2025-04-06 22:24:24,189 - INFO - SQL agent ready
+2025-04-06 22:24:24,190 - INFO - RAG agent ready
+2025-04-06 22:24:38,924 - INFO - Processing query: I want to schedule an appointment
+2025-04-06 22:24:40,384 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:24:41,113 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:24:42,922 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:24:42,932 - ERROR - Error in book_appointment_tool: extract_day_time() missing 1 required positional argument: 'doctor_name'
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 28, in book_appointment_tool
+    doctor_id, day, time = extract_day_time(input_str)
+                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: extract_day_time() missing 1 required positional argument: 'doctor_name'
+2025-04-06 22:24:43,766 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:24:43,786 - INFO - Successfully processed query: I want to schedule an appointment
+2025-04-06 22:25:39,872 - INFO - SQL agent ready
+2025-04-06 22:25:39,872 - INFO - RAG agent ready
+2025-04-06 22:25:51,608 - INFO - Processing query: I want to schedule an appointment
+2025-04-06 22:25:53,202 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:25:53,929 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:25:55,204 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:25:55,220 - ERROR - Error in book_appointment_tool: extract_day_time() missing 1 required positional argument: 'doctor_name'
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 28, in book_appointment_tool
+    doctor_id, day, time = extract_day_time(input_str)
+                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: extract_day_time() missing 1 required positional argument: 'doctor_name'
+2025-04-06 22:25:56,570 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:25:56,586 - INFO - Successfully processed query: I want to schedule an appointment
+2025-04-06 22:27:30,392 - INFO - RAG agent ready
+2025-04-06 22:27:59,926 - INFO - SQL agent ready
+2025-04-06 22:27:59,927 - INFO - RAG agent ready
+2025-04-06 22:28:25,409 - INFO - Processing query: I want to schedule an appointment
+2025-04-06 22:28:26,398 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:28:27,096 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:28:28,817 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=name "HTTP/2 200 OK"
+2025-04-06 22:28:29,416 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors?select=doctor_id&name=eq.Steven+Smith+IV "HTTP/2 200 OK"
+2025-04-06 22:28:30,539 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:28:30,787 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/doctors_slots?select=%2A&doctor_id=eq.853&day=eq.Friday&time=eq.14%3A00%3A00 "HTTP/2 200 OK"
+2025-04-06 22:28:32,107 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-06 22:28:32,124 - INFO - Successfully processed query: I want to schedule an appointment
+2025-04-06 22:50:11,082 - ERROR - Failed to initialize agent: ConversationalChatAgent does not support multi-input tool book_appointment_tool.
+2025-04-06 22:50:14,146 - INFO - RAG agent ready
+2025-04-06 23:01:39,439 - INFO - SQL agent ready
+2025-04-06 23:01:39,439 - INFO - RAG agent ready
+2025-04-06 23:01:50,944 - INFO - Processing query: I want to schedule an appointment
+2025-04-06 23:01:51,027 - ERROR - Error in handle_query: 'dict' object has no attribute 'parent_run_id'
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 79, in handle_query
+    return await self._handle_appointment_flow(query, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\main.py", line 94, in _handle_appointment_flow
+    result = book_appointment_wrapper(query, context)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 181, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 888, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    callback_manager = CallbackManager.configure(
+        callbacks,
+    ...<5 lines>...
+        self.metadata,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\callbacks\manager.py", line 1564, in configure
+    return _configure(
+        cls,
+    ...<6 lines>...
+        local_metadata,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\callbacks\manager.py", line 2292, in _configure
+    parent_run_id_ = inheritable_callbacks.parent_run_id
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'parent_run_id'
+
+2025-04-06 23:05:22,911 - INFO - Processing query: I want to book an appointment
+2025-04-06 23:05:22,916 - ERROR - Error in handle_query: 'dict' object has no attribute 'parent_run_id'
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 79, in handle_query
+    return await self._handle_appointment_flow(query, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\main.py", line 94, in _handle_appointment_flow
+    result = book_appointment_wrapper(query, context)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 181, in warning_emitting_wrapper
+    return wrapped(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 888, in __call__
+    return self.run(tool_input, callbacks=callbacks)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 694, in run
+    callback_manager = CallbackManager.configure(
+        callbacks,
+    ...<5 lines>...
+        self.metadata,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\callbacks\manager.py", line 1564, in configure
+    return _configure(
+        cls,
+    ...<6 lines>...
+        local_metadata,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\callbacks\manager.py", line 2292, in _configure
+    parent_run_id_ = inheritable_callbacks.parent_run_id
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'parent_run_id'
+
+2025-04-06 23:09:11,677 - INFO - SQL agent ready
+2025-04-06 23:09:11,678 - INFO - RAG agent ready
+2025-04-06 23:09:20,285 - INFO - Processing query: I want to book an appointment
+2025-04-06 23:09:20,291 - ERROR - Error in handle_query: 'coroutine' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 79, in handle_query
+    return await self._handle_appointment_flow(query, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\main.py", line 107, in _handle_appointment_flow
+    "response": result["response"],
+                ~~~~~~^^^^^^^^^^^^
+TypeError: 'coroutine' object is not subscriptable
+
+2025-04-06 23:12:43,941 - INFO - SQL agent ready
+2025-04-06 23:12:43,942 - INFO - RAG agent ready
+2025-04-06 23:12:54,457 - INFO - Processing query: I want to book an appointment
+2025-04-06 23:12:54,479 - ERROR - Error in handle_query: 1 validation error for book_appointment_wrapper
+input_data
+  Field required [type=missing, input_value={'input_str': 'I want to ...04-06T23:12:54.457368'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 79, in handle_query
+    return await self._handle_appointment_flow(query, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\agents\sql\main.py", line 94, in _handle_appointment_flow
+    result = await book_appointment_wrapper.invoke({
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+        "input_str": query,
+        ^^^^^^^^^^^^^^^^^^^
+        "context": context
+        ^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 508, in invoke
+    return self.run(tool_input, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 763, in run
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 725, in run
+    tool_args, tool_kwargs = self._to_args_and_kwargs(
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^
+        tool_input, tool_call_id
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 648, in _to_args_and_kwargs
+    tool_input = self._parse_input(tool_input, tool_call_id)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 564, in _parse_input
+    result = input_args.model_validate(tool_input)
+  File "D:\FYP\server\env\Lib\site-packages\pydantic\main.py", line 693, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj, strict=strict, from_attributes=from_attributes, context=context, by_alias=by_alias, by_name=by_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for book_appointment_wrapper
+input_data
+  Field required [type=missing, input_value={'input_str': 'I want to ...04-06T23:12:54.457368'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+
+2025-04-06 23:15:22,119 - ERROR - Failed to initialize agent: name 'AgentType' is not defined
+2025-04-06 23:15:26,761 - INFO - RAG agent ready
+2025-04-07 18:49:56,086 - INFO - RAG agent ready
+2025-04-08 13:16:43,984 - INFO - RAG agent ready
+2025-04-08 13:20:35,942 - INFO - SQL agent ready
+2025-04-08 13:20:35,942 - INFO - RAG agent ready
+2025-04-08 13:22:22,851 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x000002E401C11160> is not properly initialized
+2025-04-08 13:29:31,600 - INFO - SQL agent ready
+2025-04-08 13:29:31,601 - INFO - RAG agent ready
+2025-04-08 13:29:41,104 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x0000029675335940> is not properly initialized
+2025-04-08 13:38:09,723 - INFO - SQL agent ready
+2025-04-08 13:38:09,724 - INFO - RAG agent ready
+2025-04-08 13:38:23,000 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x000002DE47D397F0> is not properly initialized
+2025-04-08 13:41:48,065 - INFO - SQL agent ready
+2025-04-08 13:41:48,065 - INFO - RAG agent ready
+2025-04-08 13:42:08,128 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x0000018715149940> is not properly initialized
+2025-04-08 13:46:21,483 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients?select=count "HTTP/2 200 OK"
+2025-04-08 13:46:21,488 - INFO - Successfully connected to Supabase
+2025-04-08 13:46:22,885 - INFO - SQL agent ready
+2025-04-08 13:46:22,886 - INFO - RAG agent ready
+2025-04-08 13:46:36,249 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x00000204B5DBC050> is not properly initialized
+2025-04-08 13:46:59,787 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:00,127 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:00,632 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:00,937 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:01,244 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:01,574 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:01,870 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:02,178 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:03,385 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/rpc/search_hospital_documents "HTTP/2 200 OK"
+2025-04-08 13:47:04,686 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-08 13:47:43,985 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:44,325 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:44,649 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:44,958 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:45,415 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:45,700 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:45,998 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:46,418 - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2025-04-08 13:47:46,918 - INFO - HTTP Request: POST https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/rpc/search_hospital_documents "HTTP/2 200 OK"
+2025-04-08 13:47:48,203 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-08 13:53:58,987 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients?select=count "HTTP/2 200 OK"
+2025-04-08 13:53:58,993 - INFO - Successfully connected to Supabase
+2025-04-08 13:54:03,436 - INFO - SQL agent ready
+2025-04-08 13:54:03,437 - INFO - RAG agent ready
+2025-04-08 13:54:14,347 - ERROR - Error in SQL agent: Tool <agents.sql.tools.book_appointment.AppointmentBookingTool object at 0x000001FD4699C050> is not properly initialized
+2025-04-08 14:01:51,506 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-08 14:01:57,363 - ERROR - Error executing module agents.graph.main: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:01:57,364 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-08 14:02:05,106 - INFO - HTTP Request: GET https://adxmtyjibwipeivrxcil.supabase.co/rest/v1/patients?select=count "HTTP/2 200 OK"
+2025-04-08 14:02:05,110 - INFO - Successfully connected to Supabase
+2025-04-08 14:02:05,280 - ERROR - Error executing module agents.sql.main: name 'logging' is not defined
+2025-04-08 14:02:05,280 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-08 14:02:08,843 - INFO - Successfully loaded rag agent
+2025-04-08 14:02:08,844 - INFO - RAG agent ready
+2025-04-08 14:08:49,441 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-08 14:08:54,747 - ERROR - Error executing module agents.graph.main: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:08:54,748 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-08 14:08:58,295 - ERROR - Error executing module agents.sql.main: name 'Tool' is not defined
+2025-04-08 14:08:58,295 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-08 14:09:01,953 - INFO - Successfully loaded rag agent
+2025-04-08 14:09:01,954 - INFO - RAG agent ready
+2025-04-08 14:15:21,968 - ERROR - Failed to initialize router: __init__() should return None, not 'coroutine'
+2025-04-08 14:17:14,507 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-08 14:17:21,119 - ERROR - Error executing module agents.graph.main: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:17:21,119 - ERROR - Failed to load GRAPH agent
+2025-04-08 14:17:21,120 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-08 14:17:24,375 - ERROR - Error executing module agents.sql.main: name 'Tool' is not defined
+2025-04-08 14:17:24,375 - ERROR - Failed to load SQL agent
+2025-04-08 14:17:24,375 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-08 14:17:27,611 - ERROR - No get_agent function found in rag module
+2025-04-08 14:17:27,611 - ERROR - Failed to load RAG agent
+2025-04-08 14:17:27,611 - INFO - Router initialization complete
+2025-04-08 14:17:48,383 - INFO - Routing query to SQL agent: I want to schedule an apppointment
+2025-04-08 14:17:48,383 - ERROR - Agent handler not found for department: SQL
+2025-04-08 14:20:56,090 - ERROR - Failed to initialize router: 
+2025-04-08 14:21:05,739 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-08 14:21:12,113 - ERROR - Error executing module agents.graph.main: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:21:12,477 - ERROR - Module error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 181, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 16, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+
+2025-04-08 14:21:12,478 - ERROR - Failed to load GRAPH agent
+2025-04-08 14:21:12,478 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-08 14:21:16,440 - ERROR - Error executing module agents.sql.main: name 'Tool' is not defined
+2025-04-08 14:21:16,447 - ERROR - Module error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 181, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 9, in <module>
+    from .tools.book_appointment import book_appointment_wrapper
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 183, in <module>
+    book_appointment_wrapper = Tool(
+                               ^^^^
+NameError: name 'Tool' is not defined. Did you mean: 'tool'?
+
+2025-04-08 14:21:16,448 - ERROR - Failed to load SQL agent
+2025-04-08 14:21:16,448 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-08 14:21:20,937 - ERROR - No get_agent function found in rag module
+2025-04-08 14:21:20,937 - ERROR - Failed to load RAG agent
+2025-04-08 14:21:20,938 - INFO - Router initialization complete
+2025-04-08 14:21:32,320 - INFO - Routing query to SQL agent: I want to schedule ana pppointment
+2025-04-08 14:21:32,320 - ERROR - Agent handler not found for department: SQL
+2025-04-08 14:29:48,288 - ERROR - Failed to initialize router: 
+2025-04-08 14:30:01,042 - INFO - Attempting to load agent from: D:\FYP\server\agents\graph\main.py
+2025-04-08 14:30:07,522 - ERROR - Error executing module agents.graph.main: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:30:07,557 - ERROR - Module error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 181, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 16, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+
+2025-04-08 14:30:07,557 - ERROR - Failed to load GRAPH agent
+2025-04-08 14:30:07,558 - INFO - Attempting to load agent from: D:\FYP\server\agents\sql\main.py
+2025-04-08 14:30:11,698 - ERROR - Error executing module agents.sql.main: name 'Tool' is not defined
+2025-04-08 14:30:11,707 - ERROR - Module error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 181, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 9, in <module>
+    from .tools.book_appointment import book_appointment_wrapper
+  File "D:\FYP\server\agents\sql\tools\book_appointment.py", line 183, in <module>
+    book_appointment_wrapper = Tool(
+                               ^^^^
+NameError: name 'Tool' is not defined. Did you mean: 'tool'?
+
+2025-04-08 14:30:11,708 - ERROR - Failed to load SQL agent
+2025-04-08 14:30:11,708 - INFO - Attempting to load agent from: D:\FYP\server\agents\rag\main.py
+2025-04-08 14:30:16,033 - ERROR - No get_agent function found in rag module
+2025-04-08 14:30:16,034 - ERROR - Failed to load RAG agent
+2025-04-08 14:30:16,034 - INFO - Router initialization complete
+2025-04-08 14:30:25,842 - INFO - Routing query to SQL agent: I want to book an appointment
+2025-04-08 14:30:25,842 - ERROR - Agent handler not found for department: SQL
+2025-04-08 14:30:39,852 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-08 14:30:39,884 - INFO - Routing query to GRAPH agent: what are your private room charges
+2025-04-08 14:30:39,884 - ERROR - Agent handler not found for department: GRAPH
+2025-04-08 14:31:22,324 - INFO - Routing query to RAG agent: what are you payments procedures
+2025-04-08 14:31:22,324 - ERROR - Agent handler not found for department: RAG
+2025-04-08 14:44:22,648 - ERROR - Failed to initialize router: 
+2025-04-08 14:44:37,522 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:44:37,558 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 168, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 16, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+
+2025-04-08 14:44:37,559 - ERROR - Failed to load GRAPH agent
+2025-04-08 14:44:38,726 - ERROR - Failed to load sql agent: No module named 'agents.prompt'
+2025-04-08 14:44:38,729 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 168, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from .prompt import agent_instructions
+ModuleNotFoundError: No module named 'agents.prompt'
+
+2025-04-08 14:44:38,730 - ERROR - Failed to load SQL agent
+2025-04-08 14:44:43,025 - ERROR - Failed to load rag agent: module 'agents.rag' has no attribute 'get_agent'
+2025-04-08 14:44:43,029 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 171, in _load_agent
+    self.agents[agent_name] = await module.get_agent()
+                                    ^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.rag' has no attribute 'get_agent'
+
+2025-04-08 14:44:43,030 - ERROR - Failed to load RAG agent
+2025-04-08 14:44:43,030 - INFO - Router initialization complete
+2025-04-08 14:44:55,306 - INFO - Routing query to SQL agent: I want to book an appointment
+2025-04-08 14:44:55,306 - ERROR - Agent handler not found for department: SQL
+2025-04-08 14:47:34,687 - ERROR - Failed to initialize router: 
+2025-04-08 14:51:29,913 - INFO - Starting agent initialization...
+2025-04-08 14:51:32,685 - ERROR - Failed to load sql agent: No module named 'agents.prompt'
+2025-04-08 14:51:32,696 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 183, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from .prompt import agent_instructions
+ModuleNotFoundError: No module named 'agents.prompt'
+
+2025-04-08 14:51:37,170 - ERROR - Failed to load rag agent: module 'agents.rag' has no attribute 'get_agent'
+2025-04-08 14:51:37,172 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 186, in _load_agent
+    self.agents[agent_name.upper()] = await module.get_agent()
+                                            ^^^^^^^^^^^^^^^^
+AttributeError: module 'agents.rag' has no attribute 'get_agent'
+
+2025-04-08 14:51:41,735 - ERROR - Failed to load graph agent: Could not connect to Neo4j database. Please ensure that the url is correct
+2025-04-08 14:51:41,748 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 409, in _connect_secure
+    s.connect(resolved_address)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 328, in connect
+    s = cls._connect_secure(
+        resolved_address, tcp_timeout, keep_alive, ssl_context
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_async_compat\network\_bolt_socket.py", line 426, in _connect_secure
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from error
+neo4j.exceptions.ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 415, in __init__
+    self._driver.verify_connectivity()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1082, in verify_connectivity
+    self._get_server_info(session_config)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\driver.py", line 1297, in _get_server_info
+    return session._get_server_info()
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 183, in _get_server_info
+    self._connect(READ_ACCESS, liveness_check_timeout=0)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\session.py", line 136, in _connect
+    super()._connect(
+    ~~~~~~~~~~~~~~~~^
+        access_mode, auth=self._config.auth, **acquire_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\work\workspace.py", line 199, in _connect
+    self._connection = self._pool.acquire(**acquire_kwargs_)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 662, in acquire
+    return self._acquire(
+           ~~~~~~~~~~~~~^
+        self.address, auth, deadline, liveness_check_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 408, in _acquire
+    return connection_creator()
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 230, in connection_creator
+    connection = self.opener(
+        address, auth or self.pool_config.auth, deadline
+    )
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_pool.py", line 624, in opener
+    return Bolt.open(
+           ~~~~~~~~~^
+        addr,
+        ^^^^^
+    ...<3 lines>...
+        pool_config=pool_config,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt.py", line 369, in open
+    s, protocol_version, handshake, data = BoltSocket.connect(
+                                           ~~~~~~~~~~~~~~~~~~^
+        address,
+        ^^^^^^^^
+    ...<4 lines>...
+        keep_alive=pool_config.keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\neo4j\_sync\io\_bolt_socket.py", line 376, in connect
+    raise ServiceUnavailable(
+    ...<2 lines>...
+    ) from errors[0]
+neo4j.exceptions.ServiceUnavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] No connection could be made because the target machine actively refused it)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 183, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 16, in <module>
+    graph = Neo4jGraph(
+        url=os.getenv("NEO4J_URI"),
+    ...<2 lines>...
+        database="medicalrag"
+    )
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\_api\deprecation.py", line 214, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_community\graphs\neo4j_graph.py", line 417, in __init__
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Could not connect to Neo4j database. Please ensure that the url is correct
+
+2025-04-08 14:51:41,757 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:51:41,757 - ERROR - Agent loading failure details:
+2025-04-08 14:51:41,757 - ERROR - sql loading traceback:
+2025-04-08 14:51:41,757 - ERROR - NoneType: None
+
+2025-04-08 14:51:41,757 - ERROR - rag loading traceback:
+2025-04-08 14:51:41,758 - ERROR - NoneType: None
+
+2025-04-08 14:51:41,758 - ERROR - graph loading traceback:
+2025-04-08 14:51:41,758 - ERROR - NoneType: None
+
+2025-04-08 14:51:41,758 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:51:41,758 - ERROR - Full initialization traceback:
+2025-04-08 14:51:41,758 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 142, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 14:51:41,759 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:55:19,871 - INFO - Starting agent initialization...
+2025-04-08 14:55:26,888 - ERROR - Failed to load sql agent: No module named 'agents.prompt'
+2025-04-08 14:55:26,896 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 185, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from .prompt import agent_instructions
+ModuleNotFoundError: No module named 'agents.prompt'
+
+2025-04-08 14:55:27,556 - ERROR - Failed to load rag agent: No module named 'langchain_cohere'
+2025-04-08 14:55:27,559 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 185, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\rag\main.py", line 5, in <module>
+    from langchain_cohere import CohereEmbeddings
+ModuleNotFoundError: No module named 'langchain_cohere'
+
+2025-04-08 14:55:27,573 - ERROR - Failed to load graph agent: No module named 'langchain_neo4j'
+2025-04-08 14:55:27,575 - ERROR - Agent error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 185, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 5, in <module>
+    from langchain_neo4j import Neo4jGraph
+ModuleNotFoundError: No module named 'langchain_neo4j'
+
+2025-04-08 14:55:27,576 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:55:27,576 - ERROR - Agent loading failure details:
+2025-04-08 14:55:27,576 - ERROR - sql loading traceback:
+2025-04-08 14:55:27,576 - ERROR - NoneType: None
+
+2025-04-08 14:55:27,576 - ERROR - rag loading traceback:
+2025-04-08 14:55:27,577 - ERROR - NoneType: None
+
+2025-04-08 14:55:27,577 - ERROR - graph loading traceback:
+2025-04-08 14:55:27,577 - ERROR - NoneType: None
+
+2025-04-08 14:55:27,577 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:55:27,577 - ERROR - Full initialization traceback:
+2025-04-08 14:55:27,578 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 144, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 14:55:27,579 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:56:43,535 - INFO - Starting agent initialization...
+2025-04-08 14:56:45,623 - ERROR - Error executing module for sql agent: No module named 'agents.prompt'
+2025-04-08 14:56:45,631 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 195, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from .prompt import agent_instructions
+ModuleNotFoundError: No module named 'agents.prompt'
+
+2025-04-08 14:56:46,178 - ERROR - Error executing module for rag agent: No module named 'langchain_cohere'
+2025-04-08 14:56:46,183 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 195, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\rag\main.py", line 5, in <module>
+    from langchain_cohere import CohereEmbeddings
+ModuleNotFoundError: No module named 'langchain_cohere'
+
+2025-04-08 14:56:46,187 - ERROR - Error executing module for graph agent: No module named 'langchain_neo4j'
+2025-04-08 14:56:46,192 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 195, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 5, in <module>
+    from langchain_neo4j import Neo4jGraph
+ModuleNotFoundError: No module named 'langchain_neo4j'
+
+2025-04-08 14:56:46,193 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:56:46,193 - ERROR - Agent loading failure details:
+2025-04-08 14:56:46,193 - ERROR - sql loading traceback:
+2025-04-08 14:56:46,194 - ERROR - NoneType: None
+
+2025-04-08 14:56:46,194 - ERROR - rag loading traceback:
+2025-04-08 14:56:46,195 - ERROR - NoneType: None
+
+2025-04-08 14:56:46,195 - ERROR - graph loading traceback:
+2025-04-08 14:56:46,195 - ERROR - NoneType: None
+
+2025-04-08 14:56:46,196 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:56:46,196 - ERROR - Full initialization traceback:
+2025-04-08 14:56:46,198 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 144, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 14:56:46,200 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:58:11,426 - INFO - Starting agent initialization...
+2025-04-08 14:58:11,427 - DEBUG - Environment variables verified
+2025-04-08 14:58:11,428 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 14:58:11,430 - DEBUG - Starting to load sql agent
+2025-04-08 14:58:11,431 - DEBUG - Looking for agent module at D:\FYP\server\agents\sql\main.py
+2025-04-08 14:58:11,433 - DEBUG - Found agent module at D:\FYP\server\agents\sql\main.py
+2025-04-08 14:58:11,434 - DEBUG - Creating spec for sql agent
+2025-04-08 14:58:11,435 - DEBUG - Created spec for sql agent
+2025-04-08 14:58:11,436 - DEBUG - Creating module from spec for sql agent
+2025-04-08 14:58:11,437 - DEBUG - Executing module for sql agent
+2025-04-08 14:58:13,897 - ERROR - Error executing module for sql agent: No module named 'agents.prompt'
+2025-04-08 14:58:13,907 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 209, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\sql\main.py", line 5, in <module>
+    from .prompt import agent_instructions
+ModuleNotFoundError: No module named 'agents.prompt'
+
+2025-04-08 14:58:13,912 - DEBUG - Starting to load rag agent
+2025-04-08 14:58:13,914 - DEBUG - Looking for agent module at D:\FYP\server\agents\rag\main.py
+2025-04-08 14:58:13,917 - DEBUG - Found agent module at D:\FYP\server\agents\rag\main.py
+2025-04-08 14:58:13,919 - DEBUG - Creating spec for rag agent
+2025-04-08 14:58:13,921 - DEBUG - Created spec for rag agent
+2025-04-08 14:58:13,922 - DEBUG - Creating module from spec for rag agent
+2025-04-08 14:58:13,923 - DEBUG - Executing module for rag agent
+2025-04-08 14:58:14,334 - ERROR - Error executing module for rag agent: No module named 'langchain_cohere'
+2025-04-08 14:58:14,337 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 209, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\rag\main.py", line 5, in <module>
+    from langchain_cohere import CohereEmbeddings
+ModuleNotFoundError: No module named 'langchain_cohere'
+
+2025-04-08 14:58:14,340 - DEBUG - Starting to load graph agent
+2025-04-08 14:58:14,340 - DEBUG - Looking for agent module at D:\FYP\server\agents\graph\main.py
+2025-04-08 14:58:14,342 - DEBUG - Found agent module at D:\FYP\server\agents\graph\main.py
+2025-04-08 14:58:14,342 - DEBUG - Creating spec for graph agent
+2025-04-08 14:58:14,343 - DEBUG - Created spec for graph agent
+2025-04-08 14:58:14,344 - DEBUG - Creating module from spec for graph agent
+2025-04-08 14:58:14,344 - DEBUG - Executing module for graph agent
+2025-04-08 14:58:14,347 - ERROR - Error executing module for graph agent: No module named 'langchain_neo4j'
+2025-04-08 14:58:14,351 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 209, in _load_agent
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 1026, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\FYP\server\agents\graph\main.py", line 5, in <module>
+    from langchain_neo4j import Neo4jGraph
+ModuleNotFoundError: No module named 'langchain_neo4j'
+
+2025-04-08 14:58:14,354 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 14:58:14,355 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:58:14,356 - ERROR - Agent loading failure details:
+2025-04-08 14:58:14,356 - ERROR - sql loading traceback:
+2025-04-08 14:58:14,357 - ERROR - NoneType: None
+
+2025-04-08 14:58:14,358 - ERROR - rag loading traceback:
+2025-04-08 14:58:14,358 - ERROR - NoneType: None
+
+2025-04-08 14:58:14,359 - ERROR - graph loading traceback:
+2025-04-08 14:58:14,360 - ERROR - NoneType: None
+
+2025-04-08 14:58:14,361 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:58:14,361 - ERROR - Full initialization traceback:
+2025-04-08 14:58:14,363 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 14:58:14,365 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:59:29,589 - INFO - Starting agent initialization...
+2025-04-08 14:59:29,590 - DEBUG - Environment variables verified
+2025-04-08 14:59:29,591 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 14:59:32,453 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 14:59:32,454 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:59:32,454 - ERROR - Agent loading failure details:
+2025-04-08 14:59:32,455 - ERROR - sql loading traceback:
+2025-04-08 14:59:32,456 - ERROR - NoneType: None
+
+2025-04-08 14:59:32,458 - ERROR - rag loading traceback:
+2025-04-08 14:59:32,459 - ERROR - NoneType: None
+
+2025-04-08 14:59:32,460 - ERROR - graph loading traceback:
+2025-04-08 14:59:32,460 - ERROR - NoneType: None
+
+2025-04-08 14:59:32,461 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 14:59:32,462 - ERROR - Full initialization traceback:
+2025-04-08 14:59:32,464 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 14:59:32,466 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 15:08:49,650 - INFO - Starting agent initialization...
+2025-04-08 15:08:49,651 - DEBUG - Environment variables verified
+2025-04-08 15:08:49,651 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 15:08:53,697 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 15:08:53,699 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 15:08:53,699 - ERROR - Agent loading failure details:
+2025-04-08 15:08:53,700 - ERROR - sql loading traceback:
+2025-04-08 15:08:53,701 - ERROR - NoneType: None
+
+2025-04-08 15:08:53,703 - ERROR - rag loading traceback:
+2025-04-08 15:08:53,703 - ERROR - NoneType: None
+
+2025-04-08 15:08:53,705 - ERROR - graph loading traceback:
+2025-04-08 15:08:53,706 - ERROR - NoneType: None
+
+2025-04-08 15:08:53,708 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 15:08:53,709 - ERROR - Full initialization traceback:
+2025-04-08 15:08:53,711 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 15:08:53,715 - ERROR - Failed to initialize router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:50:32,698 - INFO - Starting agent initialization...
+2025-04-08 16:50:32,699 - DEBUG - Environment variables verified
+2025-04-08 16:50:32,699 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:50:33,754 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 16:50:33,755 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:50:33,755 - ERROR - Agent loading failure details:
+2025-04-08 16:50:33,756 - ERROR - sql loading traceback:
+2025-04-08 16:50:33,756 - ERROR - NoneType: None
+
+2025-04-08 16:50:33,756 - ERROR - rag loading traceback:
+2025-04-08 16:50:33,756 - ERROR - NoneType: None
+
+2025-04-08 16:50:33,757 - ERROR - graph loading traceback:
+2025-04-08 16:50:33,757 - ERROR - NoneType: None
+
+2025-04-08 16:50:33,757 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:50:33,758 - ERROR - Full initialization traceback:
+2025-04-08 16:50:33,759 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:50:33,760 - ERROR - Critical error in main: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:50:33,762 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 601, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:52:00,572 - INFO - Starting agent initialization...
+2025-04-08 16:52:00,572 - DEBUG - Environment variables verified
+2025-04-08 16:52:00,573 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:52:03,758 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 16:52:03,758 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 16:52:03,759 - ERROR - Agent loading failure details:
+2025-04-08 16:52:03,759 - ERROR - rag loading traceback:
+2025-04-08 16:52:03,759 - ERROR - NoneType: None
+
+2025-04-08 16:52:03,760 - ERROR - graph loading traceback:
+2025-04-08 16:52:03,760 - ERROR - NoneType: None
+
+2025-04-08 16:52:03,760 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:52:03,760 - ERROR - Full initialization traceback:
+2025-04-08 16:52:03,762 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 16:52:03,763 - ERROR - Critical error in main: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:52:03,764 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 606, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 16:53:36,780 - INFO - Starting agent initialization...
+2025-04-08 16:53:36,781 - DEBUG - Environment variables verified
+2025-04-08 16:53:36,781 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:53:38,166 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 16:53:38,167 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:53:38,167 - ERROR - Agent loading failure details:
+2025-04-08 16:53:38,168 - ERROR - sql loading traceback:
+2025-04-08 16:53:38,168 - ERROR - NoneType: None
+
+2025-04-08 16:53:38,168 - ERROR - rag loading traceback:
+2025-04-08 16:53:38,169 - ERROR - NoneType: None
+
+2025-04-08 16:53:38,169 - ERROR - graph loading traceback:
+2025-04-08 16:53:38,169 - ERROR - NoneType: None
+
+2025-04-08 16:53:38,170 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:53:38,170 - ERROR - Full initialization traceback:
+2025-04-08 16:53:38,172 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:53:38,174 - ERROR - Critical error in main: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:53:38,175 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 606, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:55:14,347 - INFO - Starting agent initialization...
+2025-04-08 16:55:14,348 - DEBUG - Environment variables verified
+2025-04-08 16:55:14,348 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:55:17,972 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 16:55:17,972 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:55:17,973 - ERROR - Agent loading failure details:
+2025-04-08 16:55:17,973 - ERROR - sql loading traceback:
+2025-04-08 16:55:17,973 - ERROR - NoneType: None
+
+2025-04-08 16:55:17,974 - ERROR - rag loading traceback:
+2025-04-08 16:55:17,975 - ERROR - NoneType: None
+
+2025-04-08 16:55:17,976 - ERROR - graph loading traceback:
+2025-04-08 16:55:17,977 - ERROR - NoneType: None
+
+2025-04-08 16:55:17,978 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:55:17,978 - ERROR - Full initialization traceback:
+2025-04-08 16:55:17,979 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:55:17,981 - ERROR - Critical error in main: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:55:17,982 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 606, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:56:47,737 - INFO - Starting agent initialization...
+2025-04-08 16:56:47,737 - DEBUG - Environment variables verified
+2025-04-08 16:56:47,738 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:56:50,755 - DEBUG - Agent loading results: [False, False, False]
+2025-04-08 16:56:50,756 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:56:50,756 - ERROR - Agent loading failure details:
+2025-04-08 16:56:50,757 - ERROR - sql loading traceback:
+2025-04-08 16:56:50,757 - ERROR - NoneType: None
+
+2025-04-08 16:56:50,757 - ERROR - rag loading traceback:
+2025-04-08 16:56:50,758 - ERROR - NoneType: None
+
+2025-04-08 16:56:50,758 - ERROR - graph loading traceback:
+2025-04-08 16:56:50,758 - ERROR - NoneType: None
+
+2025-04-08 16:56:50,759 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:56:50,759 - ERROR - Full initialization traceback:
+2025-04-08 16:56:50,760 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:56:50,761 - ERROR - Critical error in main: Failed to load agents: ['sql', 'rag', 'graph']
+2025-04-08 16:56:50,763 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 606, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-04-08 16:58:19,472 - INFO - Starting agent initialization...
+2025-04-08 16:58:19,474 - DEBUG - Environment variables verified
+2025-04-08 16:58:19,474 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:58:25,019 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 16:58:25,020 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 16:58:25,020 - ERROR - Agent loading failure details:
+2025-04-08 16:58:25,021 - ERROR - rag loading traceback:
+2025-04-08 16:58:25,021 - ERROR - NoneType: None
+
+2025-04-08 16:58:25,022 - ERROR - graph loading traceback:
+2025-04-08 16:58:25,023 - ERROR - NoneType: None
+
+2025-04-08 16:58:25,023 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:58:25,024 - ERROR - Full initialization traceback:
+2025-04-08 16:58:25,026 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 16:58:25,028 - ERROR - Critical error in main: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:58:25,031 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 16:59:12,895 - INFO - Starting agent initialization...
+2025-04-08 16:59:12,895 - DEBUG - Environment variables verified
+2025-04-08 16:59:12,896 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 16:59:28,946 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 16:59:28,947 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 16:59:28,947 - ERROR - Agent loading failure details:
+2025-04-08 16:59:28,948 - ERROR - rag loading traceback:
+2025-04-08 16:59:28,948 - ERROR - NoneType: None
+
+2025-04-08 16:59:28,949 - ERROR - graph loading traceback:
+2025-04-08 16:59:28,949 - ERROR - NoneType: None
+
+2025-04-08 16:59:28,949 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:59:28,950 - ERROR - Full initialization traceback:
+2025-04-08 16:59:28,951 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 16:59:28,953 - ERROR - Critical error in main: Failed to load agents: ['rag', 'graph']
+2025-04-08 16:59:28,954 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 17:01:01,508 - INFO - Starting agent initialization...
+2025-04-08 17:01:01,509 - DEBUG - Environment variables verified
+2025-04-08 17:01:01,510 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:01:11,818 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 17:01:11,818 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 17:01:11,819 - ERROR - Agent loading failure details:
+2025-04-08 17:01:11,819 - ERROR - rag loading traceback:
+2025-04-08 17:01:11,819 - ERROR - NoneType: None
+
+2025-04-08 17:01:11,819 - ERROR - graph loading traceback:
+2025-04-08 17:01:11,820 - ERROR - NoneType: None
+
+2025-04-08 17:01:11,820 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 17:01:11,821 - ERROR - Full initialization traceback:
+2025-04-08 17:01:11,822 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 17:01:11,823 - ERROR - Critical error in main: Failed to load agents: ['rag', 'graph']
+2025-04-08 17:01:11,825 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 17:02:19,577 - INFO - Starting agent initialization...
+2025-04-08 17:02:19,578 - DEBUG - Environment variables verified
+2025-04-08 17:02:19,579 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:02:29,624 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 17:02:29,624 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 17:02:29,624 - ERROR - Agent loading failure details:
+2025-04-08 17:02:29,625 - ERROR - rag loading traceback:
+2025-04-08 17:02:29,625 - ERROR - NoneType: None
+
+2025-04-08 17:02:29,626 - ERROR - graph loading traceback:
+2025-04-08 17:02:29,626 - ERROR - NoneType: None
+
+2025-04-08 17:02:29,626 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 17:02:29,627 - ERROR - Full initialization traceback:
+2025-04-08 17:02:29,628 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 17:02:29,629 - ERROR - Critical error in main: Failed to load agents: ['rag', 'graph']
+2025-04-08 17:02:29,630 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 17:03:46,075 - INFO - Starting agent initialization...
+2025-04-08 17:03:46,076 - DEBUG - Environment variables verified
+2025-04-08 17:03:46,077 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:03:56,489 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:03:56,490 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:03:56,497 - DEBUG - Agent verification complete
+2025-04-08 17:03:56,497 - INFO - All agents initialized successfully
+2025-04-08 17:05:19,849 - INFO - Starting agent initialization...
+2025-04-08 17:05:19,850 - DEBUG - Environment variables verified
+2025-04-08 17:05:19,850 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:05:29,800 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:05:29,801 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:05:29,805 - DEBUG - Agent verification complete
+2025-04-08 17:05:29,805 - INFO - All agents initialized successfully
+2025-04-08 17:06:37,903 - INFO - Starting agent initialization...
+2025-04-08 17:06:37,904 - DEBUG - Environment variables verified
+2025-04-08 17:06:37,904 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:06:47,904 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:06:47,904 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:06:47,908 - DEBUG - Agent verification complete
+2025-04-08 17:06:47,908 - INFO - All agents initialized successfully
+2025-04-08 17:08:53,133 - INFO - Starting agent initialization...
+2025-04-08 17:08:53,134 - DEBUG - Environment variables verified
+2025-04-08 17:08:53,134 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:09:03,251 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:09:03,252 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:09:03,256 - DEBUG - Agent verification complete
+2025-04-08 17:09:03,256 - INFO - All agents initialized successfully
+2025-04-08 17:10:12,303 - INFO - Starting agent initialization...
+2025-04-08 17:10:12,304 - DEBUG - Environment variables verified
+2025-04-08 17:10:12,305 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:10:21,761 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:10:21,762 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:10:21,766 - DEBUG - Agent verification complete
+2025-04-08 17:10:21,766 - INFO - All agents initialized successfully
+2025-04-08 17:11:30,682 - INFO - Starting agent initialization...
+2025-04-08 17:11:30,683 - DEBUG - Environment variables verified
+2025-04-08 17:11:30,683 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:11:40,894 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:11:40,894 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:11:40,898 - DEBUG - Agent verification complete
+2025-04-08 17:11:40,899 - INFO - All agents initialized successfully
+2025-04-08 17:13:06,357 - INFO - Starting agent initialization...
+2025-04-08 17:13:06,358 - DEBUG - Environment variables verified
+2025-04-08 17:13:06,358 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:13:16,769 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:13:16,770 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:13:16,774 - DEBUG - Agent verification complete
+2025-04-08 17:13:16,775 - INFO - All agents initialized successfully
+2025-04-08 17:14:40,184 - INFO - Starting agent initialization...
+2025-04-08 17:14:40,185 - DEBUG - Environment variables verified
+2025-04-08 17:14:40,185 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:14:51,517 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 17:14:51,518 - ERROR - Failed to load agents: ['sql']
+2025-04-08 17:14:51,519 - ERROR - Agent loading failure details:
+2025-04-08 17:14:51,520 - ERROR - sql loading traceback:
+2025-04-08 17:14:51,520 - ERROR - NoneType: None
+
+2025-04-08 17:14:51,521 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 17:14:51,522 - ERROR - Full initialization traceback:
+2025-04-08 17:14:51,524 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:14:51,525 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 17:14:51,528 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:16:11,434 - INFO - Starting agent initialization...
+2025-04-08 17:16:11,435 - DEBUG - Environment variables verified
+2025-04-08 17:16:11,436 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:16:24,488 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 17:16:24,489 - ERROR - Failed to load agents: ['sql']
+2025-04-08 17:16:24,489 - ERROR - Agent loading failure details:
+2025-04-08 17:16:24,490 - ERROR - sql loading traceback:
+2025-04-08 17:16:24,491 - ERROR - NoneType: None
+
+2025-04-08 17:16:24,492 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 17:16:24,492 - ERROR - Full initialization traceback:
+2025-04-08 17:16:24,494 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:16:24,496 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 17:16:24,499 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:17:33,748 - INFO - Starting agent initialization...
+2025-04-08 17:17:33,749 - DEBUG - Environment variables verified
+2025-04-08 17:17:33,750 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:17:46,815 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 17:17:46,816 - ERROR - Failed to load agents: ['sql']
+2025-04-08 17:17:46,816 - ERROR - Agent loading failure details:
+2025-04-08 17:17:46,817 - ERROR - sql loading traceback:
+2025-04-08 17:17:46,818 - ERROR - NoneType: None
+
+2025-04-08 17:17:46,819 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 17:17:46,820 - ERROR - Full initialization traceback:
+2025-04-08 17:17:46,821 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:17:46,823 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 17:17:46,825 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:19:15,607 - INFO - Starting agent initialization...
+2025-04-08 17:19:15,608 - DEBUG - Environment variables verified
+2025-04-08 17:19:15,609 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:19:28,174 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:19:28,174 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:19:28,181 - DEBUG - Agent verification complete
+2025-04-08 17:19:28,182 - INFO - All agents initialized successfully
+2025-04-08 17:21:06,304 - INFO - Starting agent initialization...
+2025-04-08 17:21:06,305 - DEBUG - Environment variables verified
+2025-04-08 17:21:06,306 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:21:18,936 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:21:18,936 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:21:18,942 - DEBUG - Agent verification complete
+2025-04-08 17:21:18,942 - INFO - All agents initialized successfully
+2025-04-08 17:22:50,630 - INFO - Starting agent initialization...
+2025-04-08 17:22:50,631 - DEBUG - Environment variables verified
+2025-04-08 17:22:50,632 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:23:03,821 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:23:03,821 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:23:03,828 - DEBUG - Agent verification complete
+2025-04-08 17:23:03,828 - INFO - All agents initialized successfully
+2025-04-08 17:40:14,601 - INFO - Starting agent initialization...
+2025-04-08 17:40:14,602 - DEBUG - Environment variables verified
+2025-04-08 17:40:14,603 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:40:27,752 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:40:27,752 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:40:27,758 - DEBUG - Agent verification complete
+2025-04-08 17:40:27,758 - INFO - All agents initialized successfully
+2025-04-08 17:45:09,350 - INFO - Starting agent initialization...
+2025-04-08 17:45:09,351 - DEBUG - Environment variables verified
+2025-04-08 17:45:09,352 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:45:20,606 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 17:45:20,607 - ERROR - Failed to load agents: ['sql']
+2025-04-08 17:45:20,608 - ERROR - Agent loading failure details:
+2025-04-08 17:45:20,609 - ERROR - sql loading traceback:
+2025-04-08 17:45:20,610 - ERROR - NoneType: None
+
+2025-04-08 17:45:20,611 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 17:45:20,611 - ERROR - Full initialization traceback:
+2025-04-08 17:45:20,613 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:45:20,615 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 17:45:20,617 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:46:40,178 - INFO - Starting agent initialization...
+2025-04-08 17:46:40,179 - DEBUG - Environment variables verified
+2025-04-08 17:46:40,179 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:46:51,482 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 17:46:51,483 - ERROR - Failed to load agents: ['sql']
+2025-04-08 17:46:51,483 - ERROR - Agent loading failure details:
+2025-04-08 17:46:51,484 - ERROR - sql loading traceback:
+2025-04-08 17:46:51,485 - ERROR - NoneType: None
+
+2025-04-08 17:46:51,486 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 17:46:51,486 - ERROR - Full initialization traceback:
+2025-04-08 17:46:51,488 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:46:51,490 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 17:46:51,493 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 17:47:47,463 - INFO - Starting agent initialization...
+2025-04-08 17:47:47,464 - DEBUG - Environment variables verified
+2025-04-08 17:47:47,465 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:48:01,246 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:48:01,247 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:48:01,252 - DEBUG - Agent verification complete
+2025-04-08 17:48:01,253 - INFO - All agents initialized successfully
+2025-04-08 17:49:40,256 - INFO - Starting agent initialization...
+2025-04-08 17:49:40,257 - DEBUG - Environment variables verified
+2025-04-08 17:49:40,258 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:49:53,545 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:49:53,546 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:49:53,551 - DEBUG - Agent verification complete
+2025-04-08 17:49:53,552 - INFO - All agents initialized successfully
+2025-04-08 17:51:19,645 - INFO - Starting agent initialization...
+2025-04-08 17:51:19,646 - DEBUG - Environment variables verified
+2025-04-08 17:51:19,647 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:51:32,450 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:51:32,451 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:51:32,457 - DEBUG - Agent verification complete
+2025-04-08 17:51:32,457 - INFO - All agents initialized successfully
+2025-04-08 17:59:19,701 - INFO - Starting agent initialization...
+2025-04-08 17:59:19,702 - DEBUG - Environment variables verified
+2025-04-08 17:59:19,703 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 17:59:32,956 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 17:59:32,957 - DEBUG - Verifying agent interfaces...
+2025-04-08 17:59:32,963 - DEBUG - Agent verification complete
+2025-04-08 17:59:32,964 - INFO - All agents initialized successfully
+2025-04-08 18:03:41,985 - INFO - Starting agent initialization...
+2025-04-08 18:03:41,986 - DEBUG - Environment variables verified
+2025-04-08 18:03:41,987 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:03:55,041 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:03:55,042 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:03:55,047 - DEBUG - Agent verification complete
+2025-04-08 18:03:55,048 - INFO - All agents initialized successfully
+2025-04-08 18:05:53,436 - INFO - Starting agent initialization...
+2025-04-08 18:05:53,437 - DEBUG - Environment variables verified
+2025-04-08 18:05:53,438 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:06:06,866 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:06:06,866 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:06:06,872 - DEBUG - Agent verification complete
+2025-04-08 18:06:06,873 - INFO - All agents initialized successfully
+2025-04-08 18:08:31,334 - INFO - Starting agent initialization...
+2025-04-08 18:08:31,335 - DEBUG - Environment variables verified
+2025-04-08 18:08:31,336 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:08:44,637 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:08:44,637 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:08:44,644 - DEBUG - Agent verification complete
+2025-04-08 18:08:44,645 - INFO - All agents initialized successfully
+2025-04-08 18:10:05,765 - INFO - Starting agent initialization...
+2025-04-08 18:10:05,766 - DEBUG - Environment variables verified
+2025-04-08 18:10:05,766 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:10:23,108 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 18:10:23,109 - ERROR - Failed to load agents: ['sql']
+2025-04-08 18:10:23,110 - ERROR - Agent loading failure details:
+2025-04-08 18:10:23,111 - ERROR - sql loading traceback:
+2025-04-08 18:10:23,111 - ERROR - NoneType: None
+
+2025-04-08 18:10:23,112 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 18:10:23,113 - ERROR - Full initialization traceback:
+2025-04-08 18:10:23,115 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 18:10:23,117 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 18:10:23,119 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 18:11:29,894 - INFO - Starting agent initialization...
+2025-04-08 18:11:29,895 - DEBUG - Environment variables verified
+2025-04-08 18:11:29,896 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:11:43,661 - DEBUG - Agent loading results: [False, True, True]
+2025-04-08 18:11:43,662 - ERROR - Failed to load agents: ['sql']
+2025-04-08 18:11:43,662 - ERROR - Agent loading failure details:
+2025-04-08 18:11:43,663 - ERROR - sql loading traceback:
+2025-04-08 18:11:43,664 - ERROR - NoneType: None
+
+2025-04-08 18:11:43,665 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-08 18:11:43,665 - ERROR - Full initialization traceback:
+2025-04-08 18:11:43,667 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 18:11:43,669 - ERROR - Critical error in main: Failed to load agents: ['sql']
+2025-04-08 18:11:43,671 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-08 18:12:45,394 - INFO - Starting agent initialization...
+2025-04-08 18:12:45,395 - DEBUG - Environment variables verified
+2025-04-08 18:12:45,396 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:12:57,899 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:12:57,900 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:12:57,906 - DEBUG - Agent verification complete
+2025-04-08 18:12:57,907 - INFO - All agents initialized successfully
+2025-04-08 18:16:38,155 - INFO - Starting agent initialization...
+2025-04-08 18:16:38,156 - DEBUG - Environment variables verified
+2025-04-08 18:16:38,157 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:16:51,947 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:16:51,947 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:16:51,953 - DEBUG - Agent verification complete
+2025-04-08 18:16:51,954 - INFO - All agents initialized successfully
+2025-04-08 18:18:36,838 - INFO - Starting agent initialization...
+2025-04-08 18:18:36,839 - DEBUG - Environment variables verified
+2025-04-08 18:18:36,840 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:18:49,898 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:18:49,899 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:18:49,905 - DEBUG - Agent verification complete
+2025-04-08 18:18:49,906 - INFO - All agents initialized successfully
+2025-04-08 18:21:02,568 - INFO - Starting agent initialization...
+2025-04-08 18:21:02,569 - DEBUG - Environment variables verified
+2025-04-08 18:21:02,570 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:21:22,754 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:21:22,755 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:21:22,762 - DEBUG - Agent verification complete
+2025-04-08 18:21:22,763 - INFO - All agents initialized successfully
+2025-04-08 18:24:46,357 - INFO - Starting agent initialization...
+2025-04-08 18:24:46,358 - DEBUG - Environment variables verified
+2025-04-08 18:24:46,359 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:25:00,194 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:25:00,195 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:25:00,200 - DEBUG - Agent verification complete
+2025-04-08 18:25:00,201 - INFO - All agents initialized successfully
+2025-04-08 18:25:17,405 - WARNING - LLM error: 
+2025-04-08 18:40:12,694 - INFO - Starting agent initialization...
+2025-04-08 18:40:12,695 - DEBUG - Environment variables verified
+2025-04-08 18:40:12,696 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:40:25,919 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:40:25,919 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:40:25,924 - DEBUG - Agent verification complete
+2025-04-08 18:40:25,925 - INFO - All agents initialized successfully
+2025-04-08 18:41:28,405 - ERROR - Error: No agent found for department HUMAN
+2025-04-08 18:44:41,203 - INFO - Starting agent initialization...
+2025-04-08 18:44:41,204 - DEBUG - Environment variables verified
+2025-04-08 18:44:41,205 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:44:53,787 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:44:53,788 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:44:53,793 - DEBUG - Agent verification complete
+2025-04-08 18:44:53,794 - INFO - All agents initialized successfully
+2025-04-08 18:45:47,071 - WARNING - LLM error: 
+2025-04-08 18:45:47,071 - ERROR - Error: No agent found for department HUMAN
+2025-04-08 18:48:32,654 - INFO - Starting agent initialization...
+2025-04-08 18:48:32,655 - DEBUG - Environment variables verified
+2025-04-08 18:48:32,656 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 18:48:46,575 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 18:48:46,576 - DEBUG - Verifying agent interfaces...
+2025-04-08 18:48:46,581 - DEBUG - Agent verification complete
+2025-04-08 18:48:46,582 - INFO - All agents initialized successfully
+2025-04-08 22:02:31,026 - INFO - Starting agent initialization...
+2025-04-08 22:02:31,027 - DEBUG - Environment variables verified
+2025-04-08 22:02:31,027 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:02:40,424 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 22:02:40,426 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 22:02:40,427 - ERROR - Agent loading failure details:
+2025-04-08 22:02:40,428 - ERROR - rag loading traceback:
+2025-04-08 22:02:40,429 - ERROR - NoneType: None
+
+2025-04-08 22:02:40,430 - ERROR - graph loading traceback:
+2025-04-08 22:02:40,432 - ERROR - NoneType: None
+
+2025-04-08 22:02:40,433 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 22:02:40,434 - ERROR - Full initialization traceback:
+2025-04-08 22:02:40,436 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 22:02:40,439 - ERROR - Critical error: Failed to load agents: ['rag', 'graph']
+2025-04-08 22:02:40,443 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 592, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 22:03:37,346 - INFO - Starting agent initialization...
+2025-04-08 22:03:37,347 - DEBUG - Environment variables verified
+2025-04-08 22:03:37,348 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:03:42,554 - DEBUG - Agent loading results: [True, False, False]
+2025-04-08 22:03:42,555 - ERROR - Failed to load agents: ['rag', 'graph']
+2025-04-08 22:03:42,556 - ERROR - Agent loading failure details:
+2025-04-08 22:03:42,557 - ERROR - rag loading traceback:
+2025-04-08 22:03:42,558 - ERROR - NoneType: None
+
+2025-04-08 22:03:42,559 - ERROR - graph loading traceback:
+2025-04-08 22:03:42,560 - ERROR - NoneType: None
+
+2025-04-08 22:03:42,561 - ERROR - Critical initialization failure: Failed to load agents: ['rag', 'graph']
+2025-04-08 22:03:42,562 - ERROR - Full initialization traceback:
+2025-04-08 22:03:42,564 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 22:03:42,567 - ERROR - Critical error: Failed to load agents: ['rag', 'graph']
+2025-04-08 22:03:42,570 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 592, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag', 'graph']
+
+2025-04-08 22:06:52,425 - INFO - Starting agent initialization...
+2025-04-08 22:06:52,428 - DEBUG - Environment variables verified
+2025-04-08 22:06:52,430 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:07:19,777 - DEBUG - Agent loading results: [True, True, False]
+2025-04-08 22:07:19,778 - ERROR - Failed to load agents: ['graph']
+2025-04-08 22:07:19,779 - ERROR - Agent loading failure details:
+2025-04-08 22:07:19,780 - ERROR - graph loading traceback:
+2025-04-08 22:07:19,781 - ERROR - NoneType: None
+
+2025-04-08 22:07:19,781 - ERROR - Critical initialization failure: Failed to load agents: ['graph']
+2025-04-08 22:07:19,782 - ERROR - Full initialization traceback:
+2025-04-08 22:07:19,784 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-08 22:07:19,786 - ERROR - Critical error: Failed to load agents: ['graph']
+2025-04-08 22:07:19,791 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 592, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 132, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 158, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-08 22:15:29,827 - INFO - Starting agent initialization...
+2025-04-08 22:15:29,828 - DEBUG - Environment variables verified
+2025-04-08 22:15:29,829 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:16:01,077 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 22:16:01,079 - DEBUG - Verifying agent interfaces...
+2025-04-08 22:16:01,086 - DEBUG - Agent verification complete
+2025-04-08 22:16:01,087 - INFO - All agents initialized successfully
+2025-04-08 22:16:12,655 - WARNING - LLM error: 
+2025-04-08 22:16:12,657 - ERROR - Error: No agent found for department HUMAN
+2025-04-08 22:17:35,867 - INFO - Starting agent initialization...
+2025-04-08 22:17:35,869 - DEBUG - Environment variables verified
+2025-04-08 22:17:35,869 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:17:54,160 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 22:17:54,162 - DEBUG - Verifying agent interfaces...
+2025-04-08 22:17:54,169 - DEBUG - Agent verification complete
+2025-04-08 22:17:54,170 - INFO - All agents initialized successfully
+2025-04-08 22:54:57,833 - INFO - Starting agent initialization...
+2025-04-08 22:54:57,834 - DEBUG - Environment variables verified
+2025-04-08 22:54:57,834 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:55:13,278 - DEBUG - Agent loading results: [True, False, True]
+2025-04-08 22:55:13,279 - ERROR - Failed to load agents: ['rag']
+2025-04-08 22:55:13,280 - ERROR - Agent loading failure details:
+2025-04-08 22:55:13,280 - ERROR - rag loading traceback:
+2025-04-08 22:55:13,282 - ERROR - NoneType: None
+
+2025-04-08 22:55:13,283 - ERROR - Critical initialization failure: Failed to load agents: ['rag']
+2025-04-08 22:55:13,285 - ERROR - Full initialization traceback:
+2025-04-08 22:55:13,288 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 159, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-04-08 22:55:13,291 - ERROR - Critical error: Failed to load agents: ['rag']
+2025-04-08 22:55:13,295 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 610, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 133, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 159, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-04-08 22:56:35,178 - INFO - Starting agent initialization...
+2025-04-08 22:56:35,179 - DEBUG - Environment variables verified
+2025-04-08 22:56:35,179 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 22:56:54,812 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 22:56:54,812 - DEBUG - Verifying agent interfaces...
+2025-04-08 22:56:54,828 - DEBUG - Agent verification complete
+2025-04-08 22:56:54,829 - INFO - All agents initialized successfully
+2025-04-08 22:57:49,933 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 22:58:31,608 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 22:58:55,640 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:00:46,340 - INFO - Starting agent initialization...
+2025-04-08 23:00:46,341 - DEBUG - Environment variables verified
+2025-04-08 23:00:46,342 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:01:02,347 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:01:02,348 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:01:02,353 - DEBUG - Agent verification complete
+2025-04-08 23:01:02,354 - INFO - All agents initialized successfully
+2025-04-08 23:02:11,521 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:02:50,665 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:05:40,890 - INFO - Starting agent initialization...
+2025-04-08 23:05:40,891 - DEBUG - Environment variables verified
+2025-04-08 23:05:40,892 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:05:55,208 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:05:55,209 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:05:55,214 - DEBUG - Agent verification complete
+2025-04-08 23:05:55,215 - INFO - All agents initialized successfully
+2025-04-08 23:06:11,794 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:07:52,879 - INFO - Starting agent initialization...
+2025-04-08 23:07:52,880 - DEBUG - Environment variables verified
+2025-04-08 23:07:52,881 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:08:07,331 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:08:07,332 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:08:07,338 - DEBUG - Agent verification complete
+2025-04-08 23:08:07,339 - INFO - All agents initialized successfully
+2025-04-08 23:08:25,978 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:10:52,242 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:14:11,947 - INFO - Starting agent initialization...
+2025-04-08 23:14:11,948 - DEBUG - Environment variables verified
+2025-04-08 23:14:11,949 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:14:26,508 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:14:26,509 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:14:26,515 - DEBUG - Agent verification complete
+2025-04-08 23:14:26,515 - INFO - All agents initialized successfully
+2025-04-08 23:16:13,924 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:16:40,148 - INFO - Starting agent initialization...
+2025-04-08 23:16:40,149 - DEBUG - Environment variables verified
+2025-04-08 23:16:40,150 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:16:53,328 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:16:53,329 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:16:53,334 - DEBUG - Agent verification complete
+2025-04-08 23:16:53,335 - INFO - All agents initialized successfully
+2025-04-08 23:17:13,546 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:19:30,704 - INFO - Starting agent initialization...
+2025-04-08 23:19:30,705 - DEBUG - Environment variables verified
+2025-04-08 23:19:30,706 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:19:44,022 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:19:44,023 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:19:44,028 - DEBUG - Agent verification complete
+2025-04-08 23:19:44,029 - INFO - All agents initialized successfully
+2025-04-08 23:20:06,603 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:21:05,745 - INFO - Starting agent initialization...
+2025-04-08 23:21:05,746 - DEBUG - Environment variables verified
+2025-04-08 23:21:05,747 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:21:19,762 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:21:19,762 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:21:19,768 - DEBUG - Agent verification complete
+2025-04-08 23:21:19,768 - INFO - All agents initialized successfully
+2025-04-08 23:21:33,317 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:23:57,950 - INFO - Starting agent initialization...
+2025-04-08 23:23:57,952 - DEBUG - Environment variables verified
+2025-04-08 23:23:57,952 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:24:11,872 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:24:11,873 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:24:11,879 - DEBUG - Agent verification complete
+2025-04-08 23:24:11,879 - INFO - All agents initialized successfully
+2025-04-08 23:24:27,212 - ERROR - Error in query classification: Got unknown type Y
+2025-04-08 23:25:34,289 - INFO - Starting agent initialization...
+2025-04-08 23:25:34,290 - DEBUG - Environment variables verified
+2025-04-08 23:25:34,291 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:25:47,444 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:25:47,445 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:25:47,450 - DEBUG - Agent verification complete
+2025-04-08 23:25:47,451 - INFO - All agents initialized successfully
+2025-04-08 23:27:00,378 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:41:57,233 - INFO - Starting agent initialization...
+2025-04-08 23:41:57,234 - DEBUG - Environment variables verified
+2025-04-08 23:41:57,235 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:42:31,725 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:42:31,725 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:42:31,741 - DEBUG - Agent verification complete
+2025-04-08 23:42:31,742 - INFO - All agents initialized successfully
+2025-04-08 23:43:42,984 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:44:16,458 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-08 23:44:43,891 - INFO - Starting agent initialization...
+2025-04-08 23:44:43,893 - DEBUG - Environment variables verified
+2025-04-08 23:44:43,894 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-08 23:45:07,538 - DEBUG - Agent loading results: [True, True, True]
+2025-04-08 23:45:07,538 - DEBUG - Verifying agent interfaces...
+2025-04-08 23:45:07,544 - DEBUG - Agent verification complete
+2025-04-08 23:45:07,545 - INFO - All agents initialized successfully
+2025-04-08 23:45:21,915 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-09 00:02:13,046 - INFO - Starting agent initialization...
+2025-04-09 00:02:13,047 - DEBUG - Environment variables verified
+2025-04-09 00:02:13,048 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:02:23,363 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:02:23,363 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:02:23,369 - DEBUG - Agent verification complete
+2025-04-09 00:02:23,369 - INFO - All agents initialized successfully
+2025-04-09 00:04:40,896 - INFO - Starting agent initialization...
+2025-04-09 00:04:40,897 - DEBUG - Environment variables verified
+2025-04-09 00:04:40,897 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:04:50,418 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:04:50,418 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:04:50,422 - DEBUG - Agent verification complete
+2025-04-09 00:04:50,422 - INFO - All agents initialized successfully
+2025-04-09 00:07:46,116 - INFO - Starting agent initialization...
+2025-04-09 00:07:46,116 - DEBUG - Environment variables verified
+2025-04-09 00:07:46,117 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:07:55,264 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:07:55,264 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:07:55,268 - DEBUG - Agent verification complete
+2025-04-09 00:07:55,268 - INFO - All agents initialized successfully
+2025-04-09 00:18:14,368 - INFO - Starting agent initialization...
+2025-04-09 00:18:14,368 - DEBUG - Environment variables verified
+2025-04-09 00:18:14,369 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:18:23,806 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:18:23,807 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:18:23,810 - DEBUG - Agent verification complete
+2025-04-09 00:18:23,811 - INFO - All agents initialized successfully
+2025-04-09 00:21:26,969 - INFO - Starting agent initialization...
+2025-04-09 00:21:26,970 - DEBUG - Environment variables verified
+2025-04-09 00:21:26,971 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:21:36,190 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:21:36,191 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:21:36,195 - DEBUG - Agent verification complete
+2025-04-09 00:21:36,195 - INFO - All agents initialized successfully
+2025-04-09 00:26:14,270 - INFO - Starting agent initialization...
+2025-04-09 00:26:14,271 - DEBUG - Environment variables verified
+2025-04-09 00:26:14,271 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:26:23,837 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:26:23,837 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:26:23,842 - DEBUG - Agent verification complete
+2025-04-09 00:26:23,842 - INFO - All agents initialized successfully
+2025-04-09 00:29:28,190 - INFO - Starting agent initialization...
+2025-04-09 00:29:28,191 - DEBUG - Environment variables verified
+2025-04-09 00:29:28,191 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:29:37,460 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:29:37,461 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:29:37,464 - DEBUG - Agent verification complete
+2025-04-09 00:29:37,465 - INFO - All agents initialized successfully
+2025-04-09 00:35:31,802 - INFO - Starting agent initialization...
+2025-04-09 00:35:31,803 - DEBUG - Environment variables verified
+2025-04-09 00:35:31,803 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 00:35:41,349 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 00:35:41,349 - DEBUG - Verifying agent interfaces...
+2025-04-09 00:35:41,354 - DEBUG - Agent verification complete
+2025-04-09 00:35:41,354 - INFO - All agents initialized successfully
+2025-04-09 05:44:46,271 - INFO - Starting agent initialization...
+2025-04-09 05:44:46,272 - DEBUG - Environment variables verified
+2025-04-09 05:44:46,273 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 05:45:03,609 - DEBUG - Agent loading results: [True, True, False]
+2025-04-09 05:45:03,610 - ERROR - Failed to load agents: ['graph']
+2025-04-09 05:45:03,612 - ERROR - Agent loading failure details:
+2025-04-09 05:45:03,614 - ERROR - graph loading traceback:
+2025-04-09 05:45:03,616 - ERROR - NoneType: None
+
+2025-04-09 05:45:03,617 - ERROR - Critical initialization failure: Failed to load agents: ['graph']
+2025-04-09 05:45:03,619 - ERROR - Full initialization traceback:
+2025-04-09 05:45:03,623 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-09 05:45:03,627 - ERROR - Critical error: Failed to load agents: ['graph']
+2025-04-09 05:45:03,631 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 608, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-09 05:50:03,456 - INFO - Starting agent initialization...
+2025-04-09 05:50:03,460 - DEBUG - Environment variables verified
+2025-04-09 05:50:03,462 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 05:50:38,693 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 05:50:38,694 - DEBUG - Verifying agent interfaces...
+2025-04-09 05:50:38,705 - DEBUG - Agent verification complete
+2025-04-09 05:50:38,706 - INFO - All agents initialized successfully
+2025-04-09 05:53:45,051 - INFO - Starting agent initialization...
+2025-04-09 05:53:45,051 - DEBUG - Environment variables verified
+2025-04-09 05:53:45,052 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 05:54:00,788 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 05:54:00,789 - DEBUG - Verifying agent interfaces...
+2025-04-09 05:54:00,805 - DEBUG - Agent verification complete
+2025-04-09 05:54:00,806 - INFO - All agents initialized successfully
+2025-04-09 05:57:17,373 - INFO - Starting agent initialization...
+2025-04-09 05:57:17,374 - DEBUG - Environment variables verified
+2025-04-09 05:57:17,375 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 05:57:33,241 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 05:57:33,242 - DEBUG - Verifying agent interfaces...
+2025-04-09 05:57:33,247 - DEBUG - Agent verification complete
+2025-04-09 05:57:33,248 - INFO - All agents initialized successfully
+2025-04-09 06:00:35,295 - INFO - Starting agent initialization...
+2025-04-09 06:00:35,296 - DEBUG - Environment variables verified
+2025-04-09 06:00:35,297 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:00:51,202 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:00:51,202 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:00:51,219 - DEBUG - Agent verification complete
+2025-04-09 06:00:51,220 - INFO - All agents initialized successfully
+2025-04-09 06:02:36,061 - INFO - Starting agent initialization...
+2025-04-09 06:02:36,062 - DEBUG - Environment variables verified
+2025-04-09 06:02:36,065 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:02:52,752 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:02:52,752 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:02:52,758 - DEBUG - Agent verification complete
+2025-04-09 06:02:52,758 - INFO - All agents initialized successfully
+2025-04-09 06:07:41,512 - INFO - Starting agent initialization...
+2025-04-09 06:07:41,513 - DEBUG - Environment variables verified
+2025-04-09 06:07:41,514 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:07:55,220 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:07:55,221 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:07:55,227 - DEBUG - Agent verification complete
+2025-04-09 06:07:55,227 - INFO - All agents initialized successfully
+2025-04-09 06:09:03,918 - INFO - Starting agent initialization...
+2025-04-09 06:09:03,919 - DEBUG - Environment variables verified
+2025-04-09 06:09:03,919 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:09:19,178 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:09:19,179 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:09:19,185 - DEBUG - Agent verification complete
+2025-04-09 06:09:19,186 - INFO - All agents initialized successfully
+2025-04-09 06:10:46,705 - INFO - Starting agent initialization...
+2025-04-09 06:10:46,706 - DEBUG - Environment variables verified
+2025-04-09 06:10:46,706 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:10:57,064 - DEBUG - Agent loading results: [True, False, True]
+2025-04-09 06:10:57,064 - ERROR - Failed to load agents: ['rag']
+2025-04-09 06:10:57,065 - ERROR - Agent loading failure details:
+2025-04-09 06:10:57,066 - ERROR - rag loading traceback:
+2025-04-09 06:10:57,066 - ERROR - NoneType: None
+
+2025-04-09 06:10:57,067 - ERROR - Critical initialization failure: Failed to load agents: ['rag']
+2025-04-09 06:10:57,068 - ERROR - Full initialization traceback:
+2025-04-09 06:10:57,070 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-04-09 06:10:57,072 - ERROR - Critical error: Failed to load agents: ['rag']
+2025-04-09 06:10:57,074 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 608, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-04-09 06:12:01,501 - INFO - Starting agent initialization...
+2025-04-09 06:12:01,502 - DEBUG - Environment variables verified
+2025-04-09 06:12:01,503 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:12:15,995 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:12:15,996 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:12:16,001 - DEBUG - Agent verification complete
+2025-04-09 06:12:16,002 - INFO - All agents initialized successfully
+2025-04-09 06:14:04,356 - INFO - Starting agent initialization...
+2025-04-09 06:14:04,357 - DEBUG - Environment variables verified
+2025-04-09 06:14:04,358 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:14:20,314 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:14:20,315 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:14:20,322 - DEBUG - Agent verification complete
+2025-04-09 06:14:20,322 - INFO - All agents initialized successfully
+2025-04-09 06:25:42,164 - INFO - Starting agent initialization...
+2025-04-09 06:25:42,165 - DEBUG - Environment variables verified
+2025-04-09 06:25:42,166 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:25:58,364 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:25:58,365 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:25:58,373 - DEBUG - Agent verification complete
+2025-04-09 06:25:58,375 - INFO - All agents initialized successfully
+2025-04-09 06:30:02,968 - INFO - Starting agent initialization...
+2025-04-09 06:30:02,969 - DEBUG - Environment variables verified
+2025-04-09 06:30:02,970 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:30:17,744 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:30:17,745 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:30:17,752 - DEBUG - Agent verification complete
+2025-04-09 06:30:17,753 - INFO - All agents initialized successfully
+2025-04-09 06:32:33,060 - INFO - Starting agent initialization...
+2025-04-09 06:32:33,061 - DEBUG - Environment variables verified
+2025-04-09 06:32:33,061 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:32:48,392 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:32:48,393 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:32:48,402 - DEBUG - Agent verification complete
+2025-04-09 06:32:48,403 - INFO - All agents initialized successfully
+2025-04-09 06:50:55,097 - INFO - Starting agent initialization...
+2025-04-09 06:50:55,098 - DEBUG - Environment variables verified
+2025-04-09 06:50:55,098 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:51:11,346 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:51:11,347 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:51:11,354 - DEBUG - Agent verification complete
+2025-04-09 06:51:11,355 - INFO - All agents initialized successfully
+2025-04-09 06:53:03,172 - INFO - Starting agent initialization...
+2025-04-09 06:53:03,173 - DEBUG - Environment variables verified
+2025-04-09 06:53:03,174 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:53:18,291 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:53:18,292 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:53:18,299 - DEBUG - Agent verification complete
+2025-04-09 06:53:18,300 - INFO - All agents initialized successfully
+2025-04-09 06:54:44,024 - INFO - Starting agent initialization...
+2025-04-09 06:54:44,025 - DEBUG - Environment variables verified
+2025-04-09 06:54:44,026 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:55:00,090 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:55:00,091 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:55:00,099 - DEBUG - Agent verification complete
+2025-04-09 06:55:00,100 - INFO - All agents initialized successfully
+2025-04-09 06:57:02,310 - INFO - Starting agent initialization...
+2025-04-09 06:57:02,311 - DEBUG - Environment variables verified
+2025-04-09 06:57:02,312 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 06:57:18,686 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 06:57:18,687 - DEBUG - Verifying agent interfaces...
+2025-04-09 06:57:18,694 - DEBUG - Agent verification complete
+2025-04-09 06:57:18,695 - INFO - All agents initialized successfully
+2025-04-09 08:30:05,330 - INFO - Starting agent initialization...
+2025-04-09 08:30:05,331 - DEBUG - Environment variables verified
+2025-04-09 08:30:05,332 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 08:30:25,486 - DEBUG - Agent loading results: [True, True, False]
+2025-04-09 08:30:25,489 - ERROR - Failed to load agents: ['graph']
+2025-04-09 08:30:25,492 - ERROR - Agent loading failure details:
+2025-04-09 08:30:25,494 - ERROR - graph loading traceback:
+2025-04-09 08:30:25,497 - ERROR - NoneType: None
+
+2025-04-09 08:30:25,500 - ERROR - Critical initialization failure: Failed to load agents: ['graph']
+2025-04-09 08:30:25,504 - ERROR - Full initialization traceback:
+2025-04-09 08:30:25,509 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-09 08:30:25,518 - ERROR - Critical error: Failed to load agents: ['graph']
+2025-04-09 08:30:25,523 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 608, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-09 08:37:30,265 - INFO - Starting agent initialization...
+2025-04-09 08:37:30,266 - DEBUG - Environment variables verified
+2025-04-09 08:37:30,266 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 08:37:59,680 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 08:37:59,682 - DEBUG - Verifying agent interfaces...
+2025-04-09 08:37:59,694 - DEBUG - Agent verification complete
+2025-04-09 08:37:59,695 - INFO - All agents initialized successfully
+2025-04-09 08:43:59,139 - INFO - Starting agent initialization...
+2025-04-09 08:43:59,140 - DEBUG - Environment variables verified
+2025-04-09 08:43:59,141 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 08:44:16,251 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 08:44:16,252 - DEBUG - Verifying agent interfaces...
+2025-04-09 08:44:16,270 - DEBUG - Agent verification complete
+2025-04-09 08:44:16,272 - INFO - All agents initialized successfully
+2025-04-09 08:47:06,375 - INFO - Starting agent initialization...
+2025-04-09 08:47:06,376 - DEBUG - Environment variables verified
+2025-04-09 08:47:06,376 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 08:47:22,324 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 08:47:22,325 - DEBUG - Verifying agent interfaces...
+2025-04-09 08:47:22,332 - DEBUG - Agent verification complete
+2025-04-09 08:47:22,333 - INFO - All agents initialized successfully
+2025-04-09 08:59:02,533 - INFO - Starting agent initialization...
+2025-04-09 08:59:02,534 - DEBUG - Environment variables verified
+2025-04-09 08:59:02,535 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 08:59:21,903 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 08:59:21,904 - DEBUG - Verifying agent interfaces...
+2025-04-09 08:59:21,924 - DEBUG - Agent verification complete
+2025-04-09 08:59:21,926 - INFO - All agents initialized successfully
+2025-04-09 09:02:19,838 - INFO - Starting agent initialization...
+2025-04-09 09:02:19,839 - DEBUG - Environment variables verified
+2025-04-09 09:02:19,840 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:02:33,291 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:02:33,292 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:02:33,302 - DEBUG - Agent verification complete
+2025-04-09 09:02:33,304 - INFO - All agents initialized successfully
+2025-04-09 09:04:35,895 - INFO - Starting agent initialization...
+2025-04-09 09:04:35,896 - DEBUG - Environment variables verified
+2025-04-09 09:04:35,896 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:04:51,688 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:04:51,689 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:04:51,696 - DEBUG - Agent verification complete
+2025-04-09 09:04:51,698 - INFO - All agents initialized successfully
+2025-04-09 09:06:08,574 - INFO - Starting agent initialization...
+2025-04-09 09:06:08,575 - DEBUG - Environment variables verified
+2025-04-09 09:06:08,576 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:06:24,235 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:06:24,236 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:06:24,242 - DEBUG - Agent verification complete
+2025-04-09 09:06:24,243 - INFO - All agents initialized successfully
+2025-04-09 09:08:02,244 - INFO - Starting agent initialization...
+2025-04-09 09:08:02,244 - DEBUG - Environment variables verified
+2025-04-09 09:08:02,245 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:08:18,727 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:08:18,728 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:08:18,736 - DEBUG - Agent verification complete
+2025-04-09 09:08:18,737 - INFO - All agents initialized successfully
+2025-04-09 09:11:35,697 - INFO - Starting agent initialization...
+2025-04-09 09:11:35,698 - DEBUG - Environment variables verified
+2025-04-09 09:11:35,698 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:11:51,497 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:11:51,498 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:11:51,506 - DEBUG - Agent verification complete
+2025-04-09 09:11:51,507 - INFO - All agents initialized successfully
+2025-04-09 09:14:39,080 - INFO - Starting agent initialization...
+2025-04-09 09:14:39,081 - DEBUG - Environment variables verified
+2025-04-09 09:14:39,082 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:14:54,579 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:14:54,580 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:14:54,588 - DEBUG - Agent verification complete
+2025-04-09 09:14:54,589 - INFO - All agents initialized successfully
+2025-04-09 09:19:47,936 - INFO - Starting agent initialization...
+2025-04-09 09:19:47,937 - DEBUG - Environment variables verified
+2025-04-09 09:19:47,937 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:20:08,892 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:20:08,893 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:20:08,913 - DEBUG - Agent verification complete
+2025-04-09 09:20:08,915 - INFO - All agents initialized successfully
+2025-04-09 09:21:04,252 - INFO - Starting agent initialization...
+2025-04-09 09:21:04,253 - DEBUG - Environment variables verified
+2025-04-09 09:21:04,254 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:21:19,100 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:21:19,101 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:21:19,108 - DEBUG - Agent verification complete
+2025-04-09 09:21:19,109 - INFO - All agents initialized successfully
+2025-04-09 09:27:05,090 - INFO - Starting agent initialization...
+2025-04-09 09:27:05,091 - DEBUG - Environment variables verified
+2025-04-09 09:27:05,091 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:27:21,577 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:27:21,578 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:27:21,586 - DEBUG - Agent verification complete
+2025-04-09 09:27:21,587 - INFO - All agents initialized successfully
+2025-04-09 09:32:35,298 - INFO - Starting agent initialization...
+2025-04-09 09:32:35,299 - DEBUG - Environment variables verified
+2025-04-09 09:32:35,300 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:32:51,256 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:32:51,257 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:32:51,265 - DEBUG - Agent verification complete
+2025-04-09 09:32:51,266 - INFO - All agents initialized successfully
+2025-04-09 09:33:53,029 - INFO - Starting agent initialization...
+2025-04-09 09:33:53,030 - DEBUG - Environment variables verified
+2025-04-09 09:33:53,031 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:34:07,919 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:34:07,920 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:34:07,926 - DEBUG - Agent verification complete
+2025-04-09 09:34:07,927 - INFO - All agents initialized successfully
+2025-04-09 09:35:59,254 - INFO - Starting agent initialization...
+2025-04-09 09:35:59,254 - DEBUG - Environment variables verified
+2025-04-09 09:35:59,255 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:36:14,836 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:36:14,837 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:36:14,843 - DEBUG - Agent verification complete
+2025-04-09 09:36:14,844 - INFO - All agents initialized successfully
+2025-04-09 09:40:57,549 - INFO - Starting agent initialization...
+2025-04-09 09:40:57,550 - DEBUG - Environment variables verified
+2025-04-09 09:40:57,551 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:41:13,116 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:41:13,117 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:41:13,125 - DEBUG - Agent verification complete
+2025-04-09 09:41:13,127 - INFO - All agents initialized successfully
+2025-04-09 09:42:09,841 - INFO - Starting agent initialization...
+2025-04-09 09:42:09,842 - DEBUG - Environment variables verified
+2025-04-09 09:42:09,843 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:42:25,137 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:42:25,138 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:42:25,146 - DEBUG - Agent verification complete
+2025-04-09 09:42:25,148 - INFO - All agents initialized successfully
+2025-04-09 09:45:28,519 - INFO - Starting agent initialization...
+2025-04-09 09:45:28,520 - DEBUG - Environment variables verified
+2025-04-09 09:45:28,521 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:45:43,660 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:45:43,662 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:45:43,670 - DEBUG - Agent verification complete
+2025-04-09 09:45:43,675 - INFO - All agents initialized successfully
+2025-04-09 09:48:13,415 - INFO - Starting agent initialization...
+2025-04-09 09:48:13,416 - DEBUG - Environment variables verified
+2025-04-09 09:48:13,417 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:48:29,305 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:48:29,306 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:48:29,313 - DEBUG - Agent verification complete
+2025-04-09 09:48:29,315 - INFO - All agents initialized successfully
+2025-04-09 09:51:08,275 - INFO - Starting agent initialization...
+2025-04-09 09:51:08,277 - DEBUG - Environment variables verified
+2025-04-09 09:51:08,277 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 09:51:22,903 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 09:51:22,904 - DEBUG - Verifying agent interfaces...
+2025-04-09 09:51:22,909 - DEBUG - Agent verification complete
+2025-04-09 09:51:22,911 - INFO - All agents initialized successfully
+2025-04-09 10:01:12,609 - INFO - Starting agent initialization...
+2025-04-09 10:01:12,610 - DEBUG - Environment variables verified
+2025-04-09 10:01:12,610 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:01:22,675 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:01:22,676 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:01:22,680 - DEBUG - Agent verification complete
+2025-04-09 10:01:22,680 - INFO - All agents initialized successfully
+2025-04-09 10:02:59,258 - INFO - Starting agent initialization...
+2025-04-09 10:02:59,258 - DEBUG - Environment variables verified
+2025-04-09 10:02:59,259 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:03:09,569 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:03:09,570 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:03:09,575 - DEBUG - Agent verification complete
+2025-04-09 10:03:09,576 - INFO - All agents initialized successfully
+2025-04-09 10:06:36,418 - INFO - Starting agent initialization...
+2025-04-09 10:06:36,419 - DEBUG - Environment variables verified
+2025-04-09 10:06:36,420 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:06:46,757 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:06:46,757 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:06:46,761 - DEBUG - Agent verification complete
+2025-04-09 10:06:46,762 - INFO - All agents initialized successfully
+2025-04-09 10:09:44,476 - INFO - Starting agent initialization...
+2025-04-09 10:09:44,477 - DEBUG - Environment variables verified
+2025-04-09 10:09:44,477 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:09:57,458 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:09:57,459 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:09:57,465 - DEBUG - Agent verification complete
+2025-04-09 10:09:57,466 - INFO - All agents initialized successfully
+2025-04-09 10:11:28,280 - INFO - Starting agent initialization...
+2025-04-09 10:11:28,281 - DEBUG - Environment variables verified
+2025-04-09 10:11:28,281 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:11:41,242 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:11:41,243 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:11:41,249 - DEBUG - Agent verification complete
+2025-04-09 10:11:41,249 - INFO - All agents initialized successfully
+2025-04-09 10:12:17,351 - INFO - Starting agent initialization...
+2025-04-09 10:12:17,351 - DEBUG - Environment variables verified
+2025-04-09 10:12:17,352 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:12:28,453 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:12:28,454 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:12:28,458 - DEBUG - Agent verification complete
+2025-04-09 10:12:28,459 - INFO - All agents initialized successfully
+2025-04-09 10:13:57,821 - INFO - Starting agent initialization...
+2025-04-09 10:13:57,822 - DEBUG - Environment variables verified
+2025-04-09 10:13:57,822 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:14:07,402 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:14:07,403 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:14:07,409 - DEBUG - Agent verification complete
+2025-04-09 10:14:07,410 - INFO - All agents initialized successfully
+2025-04-09 10:15:46,254 - INFO - Starting agent initialization...
+2025-04-09 10:15:46,255 - DEBUG - Environment variables verified
+2025-04-09 10:15:46,255 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:15:55,792 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:15:55,793 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:15:55,797 - DEBUG - Agent verification complete
+2025-04-09 10:15:55,798 - INFO - All agents initialized successfully
+2025-04-09 10:29:29,133 - INFO - Starting agent initialization...
+2025-04-09 10:29:29,134 - DEBUG - Environment variables verified
+2025-04-09 10:29:29,134 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-09 10:29:39,721 - DEBUG - Agent loading results: [True, True, True]
+2025-04-09 10:29:39,721 - DEBUG - Verifying agent interfaces...
+2025-04-09 10:29:39,727 - DEBUG - Agent verification complete
+2025-04-09 10:29:39,728 - INFO - All agents initialized successfully
+2025-04-10 11:46:24,728 - INFO - Starting agent initialization...
+2025-04-10 11:46:24,729 - DEBUG - Environment variables verified
+2025-04-10 11:46:24,730 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-10 11:46:52,055 - DEBUG - Agent loading results: [True, True, False]
+2025-04-10 11:46:52,058 - ERROR - Failed to load agents: ['graph']
+2025-04-10 11:46:52,061 - ERROR - Agent loading failure details:
+2025-04-10 11:46:52,064 - ERROR - graph loading traceback:
+2025-04-10 11:46:52,065 - ERROR - NoneType: None
+
+2025-04-10 11:46:52,068 - ERROR - Critical initialization failure: Failed to load agents: ['graph']
+2025-04-10 11:46:52,069 - ERROR - Full initialization traceback:
+2025-04-10 11:46:52,072 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-10 11:46:52,077 - ERROR - Critical error: Failed to load agents: ['graph']
+2025-04-10 11:46:52,085 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 608, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-10 11:48:55,113 - INFO - Starting agent initialization...
+2025-04-10 11:48:55,114 - DEBUG - Environment variables verified
+2025-04-10 11:48:55,115 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-10 11:49:28,463 - DEBUG - Agent loading results: [False, True, False]
+2025-04-10 11:49:28,464 - ERROR - Failed to load agents: ['sql', 'graph']
+2025-04-10 11:49:28,467 - ERROR - Agent loading failure details:
+2025-04-10 11:49:28,469 - ERROR - sql loading traceback:
+2025-04-10 11:49:28,472 - ERROR - NoneType: None
+
+2025-04-10 11:49:28,474 - ERROR - graph loading traceback:
+2025-04-10 11:49:28,476 - ERROR - NoneType: None
+
+2025-04-10 11:49:28,478 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'graph']
+2025-04-10 11:49:28,479 - ERROR - Full initialization traceback:
+2025-04-10 11:49:28,486 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'graph']
+
+2025-04-10 11:49:28,490 - ERROR - Critical error: Failed to load agents: ['sql', 'graph']
+2025-04-10 11:49:28,494 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 608, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'graph']
+
+2025-04-10 11:50:07,979 - INFO - Starting agent initialization...
+2025-04-10 11:50:07,980 - DEBUG - Environment variables verified
+2025-04-10 11:50:07,981 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-10 11:50:31,175 - DEBUG - Agent loading results: [True, True, True]
+2025-04-10 11:50:31,176 - DEBUG - Verifying agent interfaces...
+2025-04-10 11:50:31,192 - DEBUG - Agent verification complete
+2025-04-10 11:50:31,193 - INFO - All agents initialized successfully
+2025-04-10 11:53:34,925 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)

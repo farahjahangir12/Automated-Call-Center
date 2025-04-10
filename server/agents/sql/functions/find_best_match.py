@@ -1,18 +1,22 @@
 from ..connection import supabase
 from rapidfuzz import process
+import logging
 
+logger = logging.getLogger(__name__)
 
-def find_best_match(input_name: str) -> str:
+async def find_best_match(input_name: str) -> str:
     """
     Finds the most similar doctor name from the stored doctor list.
 
-    :param input_name: The name to search for.
-    :return: The best matching doctor name or an empty string if no match is found.
+    Args:
+        input_name: The name to search for.
+    Returns:
+        str: The best matching doctor name or an empty string if no match is found.
     """
     threshold = 70
     try:
         # Fetch all doctor names from Supabase
-        response = supabase.table("doctors").select("name").execute()
+        response = await supabase.table("doctors").select("name").execute()
         
         if not response.data:
             return ""  # Return an empty string if no data is found
@@ -24,7 +28,7 @@ def find_best_match(input_name: str) -> str:
         return best_match if score >= threshold else ""
 
     except Exception as e:
-        print(f"Error: {e}")  # Log the error
+        logger.error(f"Error in find_best_match: {e}")
         return ""  # Return an empty string in case of any exception
 
 __all__ = ["find_best_match"]

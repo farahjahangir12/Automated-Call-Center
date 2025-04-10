@@ -1,0 +1,157 @@
+2025-04-08 16:41:58,042 - INFO - Creating SQL Agent instance
+2025-04-08 16:41:58,043 - DEBUG - Initial session context: {}
+2025-04-08 16:41:58,043 - INFO - Initializing Supabase connection
+2025-04-08 16:41:59,900 - ERROR - Failed to initialize Supabase: Failed to initialize Supabase client: object APIResponse[TypeVar] can't be used in 'await' expression
+2025-04-08 16:41:59,903 - ERROR - Supabase error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 41, in initialize
+    response = await self._client.table("patients").select("count").execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object APIResponse[TypeVar] can't be used in 'await' expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 75, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 50, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: object APIResponse[TypeVar] can't be used in 'await' expression
+
+2025-04-08 16:41:59,908 - ERROR - Critical error during SQL Agent initialization: Failed to initialize Supabase client: object APIResponse[TypeVar] can't be used in 'await' expression
+2025-04-08 16:41:59,910 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 41, in initialize
+    response = await self._client.table("patients").select("count").execute()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object APIResponse[TypeVar] can't be used in 'await' expression
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 75, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 50, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: object APIResponse[TypeVar] can't be used in 'await' expression
+
+2025-04-08 16:43:29,202 - INFO - Creating SQL Agent instance
+2025-04-08 16:43:29,203 - DEBUG - Initial session context: {}
+2025-04-08 16:43:29,203 - INFO - Initializing Supabase connection
+2025-04-08 16:43:30,424 - DEBUG - Supabase connection initialized
+2025-04-08 16:43:30,425 - INFO - Initializing tools
+2025-04-08 16:43:30,425 - DEBUG - Tools initialized: 5
+2025-04-08 16:43:30,426 - INFO - Initializing memory
+2025-04-08 16:43:30,428 - DEBUG - Memory initialized
+2025-04-08 16:43:30,428 - INFO - Creating agent
+2025-04-08 16:43:30,428 - ERROR - Failed to create agent: create_openai_tools_agent() got an unexpected keyword argument 'memory'
+2025-04-08 16:43:30,430 - ERROR - Agent creation error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 106, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<3 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'memory'
+
+2025-04-08 16:43:30,432 - ERROR - Critical error during SQL Agent initialization: create_openai_tools_agent() got an unexpected keyword argument 'memory'
+2025-04-08 16:43:30,433 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 106, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<3 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'memory'
+
+2025-04-08 16:44:42,780 - INFO - Creating SQL Agent instance
+2025-04-08 16:44:42,781 - DEBUG - Initial session context: {}
+2025-04-08 16:44:42,781 - INFO - Initializing Supabase connection
+2025-04-08 16:44:43,774 - DEBUG - Supabase connection initialized
+2025-04-08 16:44:43,774 - INFO - Initializing tools
+2025-04-08 16:44:43,775 - DEBUG - Tools initialized: 5
+2025-04-08 16:44:43,775 - INFO - Initializing memory
+2025-04-08 16:44:43,776 - DEBUG - Memory initialized
+2025-04-08 16:44:43,777 - INFO - Creating agent
+2025-04-08 16:44:43,777 - ERROR - Failed to create agent: create_openai_tools_agent() got an unexpected keyword argument 'system_message'
+2025-04-08 16:44:43,778 - ERROR - Agent creation error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 106, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<2 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'system_message'
+
+2025-04-08 16:44:43,779 - ERROR - Critical error during SQL Agent initialization: create_openai_tools_agent() got an unexpected keyword argument 'system_message'
+2025-04-08 16:44:43,780 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 106, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<2 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'system_message'
+
+2025-04-08 16:47:22,782 - INFO - Creating SQL Agent instance
+2025-04-08 16:47:22,782 - DEBUG - Initial session context: {}
+2025-04-08 16:47:22,783 - INFO - Initializing Supabase connection
+2025-04-08 16:47:23,888 - INFO - Initializing tools
+2025-04-08 16:47:23,888 - DEBUG - Tools initialized: 5
+2025-04-08 16:47:23,889 - INFO - Initializing memory
+2025-04-08 16:47:23,890 - DEBUG - Memory initialized
+2025-04-08 16:47:23,890 - INFO - Creating prompt template
+2025-04-08 16:47:23,893 - INFO - Creating agent
+2025-04-08 16:47:23,893 - ERROR - Agent creation error: create_openai_tools_agent() got an unexpected keyword argument 'verbose'
+2025-04-08 16:47:23,895 - ERROR - Agent creation error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 108, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<2 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'verbose'
+
+2025-04-08 16:47:23,897 - ERROR - Critical error during SQL Agent initialization: create_openai_tools_agent() got an unexpected keyword argument 'verbose'
+2025-04-08 16:47:23,898 - ERROR - Full initialization traceback: Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 108, in initialize
+    agent=create_openai_tools_agent(
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        llm=llm,
+        ^^^^^^^^
+    ...<2 lines>...
+        verbose=True
+        ^^^^^^^^^^^^
+    ),
+    ^
+TypeError: create_openai_tools_agent() got an unexpected keyword argument 'verbose'
+
+2025-04-08 16:48:25,491 - INFO - Creating SQL Agent instance
+2025-04-08 16:48:25,491 - DEBUG - Initial session context: {}
+2025-04-08 16:48:25,492 - INFO - Initializing Supabase connection
+2025-04-08 16:48:26,768 - INFO - Initializing tools
+2025-04-08 16:48:26,769 - DEBUG - Tools initialized: 5
+2025-04-08 16:48:26,769 - INFO - Initializing memory
+2025-04-08 16:48:26,770 - DEBUG - Memory initialized
+2025-04-08 16:48:26,770 - INFO - Creating prompt template
+2025-04-08 16:48:26,771 - INFO - Creating agent
+2025-04-08 16:48:26,826 - DEBUG - Agent created successfully
+2025-04-08 16:48:26,827 - INFO - SQL Agent fully initialized

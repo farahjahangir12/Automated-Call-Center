@@ -1,77 +1,269 @@
-
-from ..functions.Register_Patient.get_anchor_year_group import get_anchor_year_group
-from ..functions.Register_Patient.get_phoneNumber import get_phoneNumber
-from ..functions.Register_Patient.get_address import get_address
-from ..functions.Register_Patient.get_gender import get_gender
-from ..functions.Register_Patient.get_name import get_name
-from ..functions.Register_Patient.get_age import get_age
-from langchain.agents import Tool
-from ..connection import supabase
+from agents.sql.tools.functions.register_patient.extract_patient_info import extract_patient_info
+from agents.sql.tools.functions.register_patient.validate_patient_info import validate_patient_info
+from agents.sql.tools.functions.register_patient.create_patient_record import create_patient_record
+from langchain.tools import Tool
+from typing import Dict, Any
 import random
 import string
+import logging
 
-# Function to generate a unique 8-character patient ID
-def generate_patient_id():
-    return ''.join(random.choices(string.digits, k=8))
+logger = logging.getLogger(__name__)
 
-# Function to register a patient
-def register_patient(*args, **kwargs):
+class PatientRegistrationTool:
+    def __init__(self):
+        self.current_step = "get_name"
+        self.collected_data = {}
+
+    async def invoke(self, input_data: Dict) -> Dict:
+        """Main entry point that matches LangChain's expected interface"""
+        return await self.handle_query(
+            input_data.get("input_str", ""),
+            input_data.get("context", {})
+        )
+
+    async def handle_query(self, input_str: str, context: Dict[str, Any]) -> Dict:
+        """
+        Handles the patient registration process.
+        Returns dict with:
+        - response: string for user
+        - current_step: next step identifier
+        - collected_data: updated context
+        - status: 'in_progress'|'complete'|'error'
+        """
+        self.current_step = context.get('current_step', 'get_name')
+        self.collected_data = context.get('collected_data', {})
+
+        try:
+            if self.current_step == 'get_name':
+                return await self._handle_name_step(input_str)
+            elif self.current_step == 'get_gender':
+                return await self._handle_gender_step(input_str)
+            elif self.current_step == 'get_phone':
+                return await self._handle_phone_step(input_str)
+            elif self.current_step == 'get_age':
+                return await self._handle_age_step(input_str)
+            elif self.current_step == 'get_address':
+                return await self._handle_address_step(input_str)
+            elif self.current_step == 'confirm':
+                return await self._handle_confirmation_step(input_str)
+            else:
+                return self._reset_flow("Let's start your registration. What is your name?")
+                
+        except Exception as e:
+            logger.error(f"Registration error: {str(e)}")
+            return self._reset_flow("I encountered an error. Let's start over.")
+
+    async def _handle_name_step(self, input_str: str) -> Dict:
+        """Handle name input step"""
+        try:
+            result = await extract_patient_info(input_str, 'name')
+            
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_name',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
+            
+            self.collected_data['name'] = result['value']
+            return {
+                'response': "What is your gender? (Male/Female/Prefer not to say)",
+                'current_step': 'get_gender',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
+            }
+        except Exception as e:
+            logger.error(f"Error in name step: {e}")
+            return self._reset_flow("I encountered an error. Let's start over with your name.")
+
+    async def _handle_gender_step(self, input_str: str) -> Dict:
+        """Handle gender input step"""
+        try:
+            result = await extract_patient_info(input_str, 'gender')
+            
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_gender',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
+            
+            self.collected_data['gender'] = result['value']
+            return {
+                'response': "What is your phone number?",
+                'current_step': 'get_phone',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
+            }
+        except Exception as e:
+            logger.error(f"Error in gender step: {e}")
+            return self._reset_flow("I encountered an error. Let's start over with your gender.")
+
+    async def _handle_phone_step(self, input_str: str) -> Dict:
+        """Handle phone number input step"""
+        try:
+            result = await extract_patient_info(input_str, 'phone_number')
+            
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_phone',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
+            
+            self.collected_data['phone_number'] = result['value']
+            return {
+                'response': "What is your age?",
+                'current_step': 'get_age',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
+            }
+        except Exception as e:
+            logger.error(f"Error in phone step: {e}")
+            return self._reset_flow("I encountered an error. Let's start over with your phone number.")
+
+    async def _handle_age_step(self, input_str: str) -> Dict:
+        """Handle age input step"""
+        try:
+            result = await extract_patient_info(input_str, 'age')
+            
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_age',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
+            
+            self.collected_data['age'] = result['value']
+            return {
+                'response': "What is your address?",
+                'current_step': 'get_address',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
+            }
+        except Exception as e:
+            logger.error(f"Error in age step: {e}")
+            return self._reset_flow("I encountered an error. Let's start over with your age.")
+
+    async def _handle_address_step(self, input_str: str) -> Dict:
+        """Handle address input step"""
+        try:
+            result = await extract_patient_info(input_str, 'address')
+            
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_address',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
+            
+            self.collected_data['address'] = result['value']
+            return {
+                'response': f"Please confirm your details:\n" +
+                          f"Name: {self.collected_data['name']}\n" +
+                          f"Gender: {self.collected_data['gender']}\n" +
+                          f"Phone: {self.collected_data['phone_number']}\n" +
+                          f"Age: {self.collected_data['age']}\n" +
+                          f"Address: {self.collected_data['address']}\n\n" +
+                          f"Is this correct? (yes/no)",
+                'current_step': 'confirm',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
+            }
+        except Exception as e:
+            logger.error(f"Error in address step: {e}")
+            return self._reset_flow("I encountered an error. Let's start over with your address.")
+
+    async def _handle_confirmation_step(self, input_str: str) -> Dict:
+        """Handle final confirmation and registration"""
+        if input_str.lower() not in ['yes', 'y']:
+            return self._reset_flow("Let's start over. What is your name?")
+        
+        try:
+            # Validate patient data
+            validation_result = await validate_patient_info(self.collected_data)
+            if not validation_result['success']:
+                return {
+                    'response': validation_result['value'],
+                    'current_step': 'get_name',
+                    'collected_data': {},
+                    'status': 'error'
+                }
+            
+            # Create patient record
+            patient_id = await create_patient_record(self.collected_data)
+            return {
+                'response': f"Great! You have been successfully registered with ID {patient_id}.",
+                'current_step': 'complete',
+                'collected_data': {},
+                'status': 'complete'
+            }
+        except Exception as e:
+            logger.error(f"Database error: {str(e)}")
+            return {
+                'response': "Sorry, I couldn't complete your registration. Please try again.",
+                'current_step': 'get_name',
+                'collected_data': {},
+                'status': 'error'
+            }
+    
+    def _reset_flow(self, message: str) -> Dict:
+        """Reset the registration flow"""
+        self.current_step = 'get_name'
+        self.collected_data = {}
+        return {
+            'response': message,
+            'current_step': 'get_name',
+            'collected_data': {},
+            'status': 'in_progress'
+        }
+
+async def create_patient_record(data: Dict) -> Dict:
     """
-    Handles the patient registration process.
+    Create a new patient record in the database
     """
     try:
-        # Extract patient details
-        patient_id = generate_patient_id()
-        name = get_name()
-        gender = get_gender()
-        phone_number = get_phoneNumber()
-        age = get_age()
-        anchor_year_group = get_anchor_year_group(age)
-        address = get_address()
-
-        print(f"Agent: Registering patient {name} with ID {patient_id}")
-
+        # Generate patient ID
+        patient_id = ''.join(random.choices(string.digits, k=8))
+        
         # Prepare patient data
         patient_data = {
             "patient_id": patient_id,
-            "name": name,
-            "gender": gender,
-            "phone_number": phone_number,
-            "age": age,
-            "anchor_year_group": anchor_year_group,
-            "address": address
+            **data
         }
-
-        # Insert into Supabase
-        response = supabase.table("patients").insert(patient_data).execute()
-
-        if response.data:
-            observation = f"Patient {name} has been successfully registered with ID {patient_id}."
-            return {
-                "observation": observation,
-                "action": "Final Answer",
-                "action_input": f"You have been successfully registered with the ID {patient_id}."
-            }
-        else:
-            observation = f"Error: Failed to register patient {name}. Supabase Error: {response.error}"
-            return {
-                "observation": observation,
-                "action": "Error",
-                "action_input": "There was an issue registering the patient. Please try again."
-            }
-
-    except Exception as e:
-        observation = f"An error occurred during patient registration: {e}"
+        
+        # Insert into database
+        result = await supabase.query("patients", "insert", patient_data)
+        
+        if not result:
+            raise Exception("Failed to save patient data")
+        
         return {
-            "observation": observation,
-            "action": "Error",
-            "action_input": "An internal error occurred. Please check the system."
+            'success': True,
+            'value': patient_id,
+            'confidence': 1.0
+        }
+        
+    except Exception as e:
+        logger.error(f"Database error: {str(e)}")
+        return {
+            'success': False,
+            'value': f"Failed to create patient record: {str(e)}",
+            'confidence': 0.0
         }
 
-# Define the tool
+# Create tool instance
+registration_tool = PatientRegistrationTool()
+
+# LangChain tool decorator
 register_patient_tool = Tool(
     name="Register Patient",
-    func=register_patient,
+    func=registration_tool.invoke,
     description="Call this tool to register a patient with unique ID, name, gender, phone number, age, and address."
 )
 

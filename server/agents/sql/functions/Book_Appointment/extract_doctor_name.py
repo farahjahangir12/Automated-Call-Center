@@ -1,23 +1,27 @@
 from ...functions.find_best_match import find_best_match
 from ...functions.create_prompt import create_prompt
 
-def extract_doctor_name(user_input: str = None) -> str:
+async def extract_doctor_name(user_input: str) -> dict:
     """
-    Prompts the user to enter the doctor's name, validates the input, 
-    and checks for the best match in the database.
+    Extracts and validates a doctor's name from the given input.
+    Args:
+        user_input: String containing the potential doctor's name
+    Returns:
+        dict: {
+            'success': bool,
+            'value': str,  # doctor's name if found, error message if not
+            'status': str  # 'complete' or 'error'
+        }
     """
-    while True:
-        if not user_input:
-            user_input = input("Agent: Please enter the name of the doctor: ").strip()
-
-        # Validate input
-        if not user_input:
-            print("Agent: Input cannot be empty. Please enter a valid doctor's name.")
-            user_input = None  # Reset input to prompt again
-            continue
-        
-        # # Extract only the name
-        name_extracted = create_prompt(
+    if not user_input:
+        return {
+            'success': False,
+            'value': 'Please provide a doctor\'s name.',
+            'status': 'error'
+        }
+    
+    # Extract only the name
+    name_extracted = await create_prompt(
         "Extract only the doctor's name from the given input. "
         "Ensure that the response contains only a valid human-like name and not a sentence, "
         "random text, or unrelated words. "
@@ -25,22 +29,23 @@ def extract_doctor_name(user_input: str = None) -> str:
         "If the input contains unrelated text, a script, or random words, respond with 'Not a valid name.' "
         "Do not include explanations, extra words, or any text other than the extracted name or rejection message.",
         user_input
-        ).strip()
+    )
+    name_extracted = name_extracted.strip()
 
+    # Check for best match in database
+    doctor_name = await find_best_match(name_extracted)
 
-        # if "sorry" in name_extracted.lower():
-        #     print("Agent: Not a valid name. Please enter a valid doctor's name.")
-        #     continue
-
-  
-
-        # Check for best match in database
-        doctor_name = find_best_match(name_extracted)
-
-        if doctor_name:
-            return doctor_name
-
-        user_input=None
-        print("Agent: Sorry, this doctor is not available. Please enter a valid doctor's name.")
+    if doctor_name:
+        return {
+            'success': True,
+            'value': doctor_name,
+            'status': 'complete'
+        }
+    
+    return {
+        'success': False,
+        'value': 'Sorry, this doctor is not available. Please provide a valid doctor\'s name.',
+        'status': 'error'
+    }
 
 __all__ = ["extract_doctor_name"]

@@ -1,83 +1,144 @@
-from ..connection import supabase
-from ..functions.Cancel_Appointment.get_appointment_details import get_appointment_details
-from ..functions.Cancel_Appointment.delete_appointment import delete_appointment
-from ..functions.Cancel_Appointment.get_patient_name import get_patient_name
-from langchain.agents import Tool
+from agents.sql.tools.functions.cancel_appointment.extract_appointment_details import extract_appointment_details
+from agents.sql.tools.functions.cancel_appointment.validate_appointment_details import validate_appointment_details
+from agents.sql.tools.functions.cancel_appointment.delete_appointment_record import delete_appointment_record
+from langchain.tools import Tool
+from typing import Dict, Any
+import logging
 
-# Function to cancel an appointment
-def cancel_appointment(*args, **kwargs):
-    """
-    Cancels a patient's appointment by fetching appointment details,
-    confirming with the user using their name, and deleting it.
-    """
-    try:
-        patient_id = input("Agent: Please enter your patient ID: ").strip()
+logger = logging.getLogger(__name__)
 
-        if not patient_id:
+class AppointmentCancellationTool:
+    def __init__(self):
+        self.current_step = "get_patient_id"
+        self.collected_data = {}
+
+    async def invoke(self, input_data: Dict) -> Dict:
+        """Main entry point that matches LangChain's expected interface"""
+        return await self.handle_query(
+            input_data.get("input_str", ""),
+            input_data.get("context", {})
+        )
+
+    async def handle_query(self, input_str: str, context: Dict[str, Any]) -> Dict:
+        """
+        Handles the appointment cancellation process.
+        Returns dict with:
+        - response: string for user
+        - current_step: next step identifier
+        - collected_data: updated context
+        - status: 'in_progress'|'complete'|'error'
+        """
+        self.current_step = context.get('current_step', 'get_patient_id')
+        self.collected_data = context.get('collected_data', {})
+
+        try:
+            if self.current_step == 'get_patient_id':
+                return await self._handle_patient_id_step(input_str)
+            elif self.current_step == 'confirm_cancellation':
+                return await self._handle_confirmation_step(input_str)
+            else:
+                return self._reset_flow("Let's start over. Please provide your patient ID.")
+                
+        except Exception as e:
+            logger.error(f"Cancellation error: {str(e)}")
+            return self._reset_flow("I encountered an error. Let's start over.")
+
+    async def _handle_patient_id_step(self, input_str: str) -> Dict:
+        """Handle patient ID input step"""
+        if not input_str.strip():
             return {
-                "observation": "Patient ID cannot be empty.",
-                "action": "Error",
-                "action_input": "Please provide a valid patient ID."
+                'response': "Please provide your patient ID.",
+                'current_step': 'get_patient_id',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
             }
 
-        # Fetch patient name
-        patient_name = get_patient_name(patient_id)
-
-        if not patient_name:
+        # Get patient name
+        name_result = get_patient_name(input_str)
+        if not name_result['success']:
             return {
-                "observation": "No patient found with this ID.",
-                "action": "Error",
-                "action_input": "Invalid patient ID. Please try again."
+                'response': name_result['value'],
+                'current_step': 'get_patient_id',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
             }
 
-        # Fetch appointment details
-        appointment_details = get_appointment_details(patient_id)
-
-        if not appointment_details:
+        # Get appointment details
+        details_result = get_appointment_details(input_str)
+        if not details_result['success']:
             return {
-                "observation": f"No appointment found for {patient_name}.",
-                "action": "Error",
-                "action_input": "No appointment exists under this ID."
+                'response': details_result['value'],
+                'current_step': 'get_patient_id',
+                'collected_data': self.collected_data,
+                'status': 'in_progress'
             }
 
-        # Confirmation message with patient's name
-        confirmation = input(
-            f"Agent: {patient_name}, are you sure you want to delete your appointment "
-            f"with Dr. {appointment_details['doctor_name']} on {appointment_details['day']} at {appointment_details['time']}? (yes/no): "
-        ).strip().lower()
+        # Store data and ask for confirmation
+        self.collected_data.update({
+            'patient_id': input_str,
+            'patient_name': name_result['value'],
+            'appointment_details': details_result['value']
+        })
 
-        if confirmation != "yes":
-            return {
-                "observation": "Appointment cancellation aborted by the user.",
-                "action": "Abort",
-                "action_input": "Cancellation process stopped."
-            }
-
-        if delete_appointment(patient_id):
-            return {
-                "observation": f"Patient {patient_name}'s appointment has been successfully canceled.",
-                "action": "Final Answer",
-                "action_input": f"Your appointment has been successfully canceled, {patient_name}."
-            }
-        else:
-            return {
-                "observation": f"Error: Failed to cancel appointment for {patient_name}.",
-                "action": "Error",
-                "action_input": "There was an issue canceling the appointment. Please try again."
-            }
-
-    except Exception as e:
+        details = details_result['value']
         return {
-            "observation": f"An error occurred during appointment cancellation: {e}",
-            "action": "Error",
-            "action_input": "An internal error occurred. Please check the system."
+            'response': f"{name_result['value']}, are you sure you want to cancel your appointment "
+                      f"with Dr. {details['doctor_name']} on {details['day']} at {details['time']}? (yes/no)",
+            'current_step': 'confirm_cancellation',
+            'collected_data': self.collected_data,
+            'status': 'in_progress'
         }
 
-# Define the tool
+    async def _handle_confirmation_step(self, input_str: str) -> Dict:
+        """Handle confirmation step"""
+        if input_str.lower() not in ['yes', 'y']:
+            return self._reset_flow("Cancellation aborted. Let's start over if you want to try again.")
+
+        try:
+            result = delete_appointment(self.collected_data['patient_id'])
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_patient_id',
+                    'collected_data': {},
+                    'status': 'error'
+                }
+
+            return {
+                'response': f"Your appointment has been successfully canceled, {self.collected_data['patient_name']}.",
+                'current_step': 'complete',
+                'collected_data': {},
+                'status': 'complete'
+            }
+
+        except Exception as e:
+            logger.error(f"Database error: {str(e)}")
+            return {
+                'response': "Sorry, I couldn't cancel your appointment. Please try again.",
+                'current_step': 'get_patient_id',
+                'collected_data': {},
+                'status': 'error'
+            }
+
+    def _reset_flow(self, message: str) -> Dict:
+        """Reset the cancellation flow"""
+        self.current_step = 'get_patient_id'
+        self.collected_data = {}
+        return {
+            'response': message,
+            'current_step': 'get_patient_id',
+            'collected_data': {},
+            'status': 'in_progress'
+        }
+
+# Create tool instance
+cancellation_tool = AppointmentCancellationTool()
+
+# LangChain tool decorator
 cancel_appointment_tool = Tool(
-    name="cancel Appointment",
-    func=cancel_appointment,
-    description="Call this tool to cancel a patient's appointment by providing their patient ID."
+    name="Cancel Appointment",
+    func=cancellation_tool.invoke,
+    description="Cancel a patient's appointment by providing their patient ID."
 )
 
 __all__ = ["cancel_appointment_tool"]
