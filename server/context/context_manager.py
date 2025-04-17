@@ -1,7 +1,13 @@
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from datetime import datetime
 import json
 from pathlib import Path
+from enum import Enum
+
+class QueryStatus(Enum):
+    INACTIVE = 'inactive'
+    ACTIVE = 'active'
+    RESOLVED = 'resolved'
 
 class ContextManager:
     def __init__(self):
@@ -11,11 +17,36 @@ class ContextManager:
             "sql": {},
             "graph": {}
         }
+        self.current_agent = None
+        self.query_status = QueryStatus.INACTIVE
+        self.current_query = None
+        self.query_data = {}
         
+    def start_query(self, query: str, agent_id: str) -> bool:
+        """Initialize a new query context"""
+        if self.query_status != QueryStatus.INACTIVE and not self.can_accept_new_query():
+            return False
+        
+        self.current_agent = agent_id
+        self.query_status = QueryStatus.ACTIVE
+        self.current_query = query
+        self.query_data = {
+            'query': query,
+            'agent': agent_id,
+            'response': None,
+            'follow_up_data': {},
+            'start_time': datetime.now().isoformat()
+        }
+        return True
+
     def update_context(self, agent_id: str, updates: Dict[str, Any]) -> None:
         """Update context for a specific agent and merge shared context"""
+        if self.query_status != QueryStatus.ACTIVE or agent_id != self.current_agent:
+            return
+            
         # Update agent-specific state
         self._agent_states[agent_id].update(updates)
+        self.query_data['follow_up_data'].update(updates)
         
         # Extract and merge shared context
         shared_context = self._extract_shared_context(updates)
@@ -57,6 +88,20 @@ class ContextManager:
             
         return shared_context
     
+    def resolve_query(self, response: Any = None) -> Dict[str, Any]:
+        """Mark the current query as resolved and return query data"""
+        if self.query_status != QueryStatus.ACTIVE:
+            return None
+            
+        self.query_data['response'] = response
+        self.query_data['end_time'] = datetime.now().isoformat()
+        self.query_status = QueryStatus.RESOLVED
+        return self.query_data
+
+    def can_accept_new_query(self) -> bool:
+        """Check if a new query can be accepted"""
+        return self.query_status in [QueryStatus.INACTIVE, QueryStatus.RESOLVED]
+
     def clear_context(self, agent_id: Optional[str] = None) -> None:
         """Clear context for a specific agent or all context if agent_id is None"""
         if agent_id:
@@ -65,6 +110,12 @@ class ContextManager:
             self._context.clear()
             for state in self._agent_states.values():
                 state.clear()
+            
+        if agent_id is None or agent_id == self.current_agent:
+            self.current_agent = None
+            self.query_status = QueryStatus.INACTIVE
+            self.current_query = None
+            self.query_data = {}
                 
     def save_state(self, file_path: str) -> None:
         """Save the current context state to a file"""

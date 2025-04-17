@@ -44,10 +44,10 @@ load_dotenv()
 # Initialize the LLM
 llm = ChatGroq(
     model_name="llama-3.3-70b-versatile",
-    temperature=0.2,
-    max_tokens=1000,
+    temperature=0.1,  # Lower temperature for more consistent classification
+    max_tokens=10,    # We only need a short response
     max_retries=3,
-    timeout=30.0
+    timeout=10.0      # Faster timeout for classification
 )
 
 class HospitalRouter:
@@ -202,7 +202,7 @@ class HospitalRouter:
                 raise RuntimeError(f"Failed to load agents: {failed}")
 
             logger.debug("Verifying agent interfaces...")
-            self.verify_agents()
+            await self.verify_agents()
             logger.debug("Agent verification complete")
             
             self._initialized = True
@@ -217,12 +217,22 @@ class HospitalRouter:
         """Check all required agents are loaded"""
         for name, handler in self.agents.items():
             if handler is None:
-                print(f"Critical: {name} agent failed to load!")
+                logger.error(f"Critical: {name} agent failed to load!")
             else:
                 try:
                     if hasattr(handler, 'verify'):
-                        await handler.verify()
-                    logger.info(f"{name} agent ready")
+                        # Check if verify is a coroutine function
+                        if asyncio.iscoroutinefunction(handler.verify):
+                            result = await handler.verify()
+                        else:
+                            result = handler.verify()
+                            
+                        if result is False:
+                            logger.error(f"Critical: {name} agent verification failed!")
+                        else:
+                            logger.info(f"{name} agent ready")
+                    else:
+                        logger.info(f"{name} agent ready")
                 except Exception as e:
                     logger.error(f"Error verifying {name} agent: {str(e)}")
 
@@ -270,8 +280,8 @@ class HospitalRouter:
                 agent = await module.get_agent()
                 print(f"DEBUG: Got agent instance for {agent_name} agent")
                 
-                # Store the agent with proper case
-                self.agents[agent_name.upper()] = agent
+                # Store the agent with lowercase key
+                self.agents[agent_name.lower()] = agent
                 
                 # Only call initialize if it exists and is callable AND agent_name is not 'rag' or 'graph'
                 if agent_name.lower() not in ['rag', 'graph'] and hasattr(agent, 'initialize') and callable(getattr(agent, 'initialize')):
@@ -293,103 +303,62 @@ class HospitalRouter:
             
         except Exception as e:
             print(f"ERROR: Failed to load {agent_name} agent: {str(e)}")
-            print(f"ERROR: Agent error traceback: {traceback.format_exc()}")
+            print(f"ERROR: Agent error traceback: {traceback.format_exc()}") 
             return False
 
-    async def classify_query(self, query: str, current_department: Optional[str] = None) -> Tuple[str, str, float, str]:
-        """Classify query with context awareness"""
-        start_time = datetime.now()
+    async def classify_query(self, query: str, current_department: Optional[str] = None) -> Tuple[str, float]:
+        """Classify query to determine which agent should handle it using LLM reasoning"""
+        query = query.lower().strip()
+        logger.debug(f"Classifying query: {query}")
         
-        # Get context from context manager
-        context = self.context_manager.get_context("sql") if current_department == "SQL" else {}
+        # First check for appointment-related patterns
+        appointment_patterns = [r'\b(book|schedule|cancel|reschedule).*appointment\b', r'appointment.*with.*doctor\b']
+        for pattern in appointment_patterns:
+            if re.search(pattern, query, re.IGNORECASE):
+                logger.debug(f"Query matched SQL pattern: {pattern}")
+                return 'sql', 0.9
+                
+        # Then check for medical/symptom patterns
+        medical_patterns = [r'\b(symptom|treatment|medicine|disease|condition|diagnosis)\b']
+        for pattern in medical_patterns:
+            if re.search(pattern, query, re.IGNORECASE):
+                logger.debug(f"Query matched GRAPH pattern: {pattern}")
+                return 'graph', 0.9
         
-        # Determine if this is a follow-up query
-        is_follow_up = self._is_follow_up(query, current_department)
-        
-        # If it's a follow-up, prioritize current department
-        if is_follow_up and current_department:
-            department = current_department
-            response = "Continuing previous conversation..."
-            route_type = "follow_up"
-            return department, response, (datetime.now() - start_time).total_seconds(), route_type
-        
-        # Check for emergency keywords first
-        for category, config in self.routing_matrix.items():
-            if any(keyword in query.lower() for keyword in config["keywords"]):
-                for pattern in self.compiled_patterns[category]:
-                    if pattern.search(query):
-                        department = config["department"]
-                        response = config["response"]
-                        route_type = "keyword_match"
-                        return department, response, (datetime.now() - start_time).total_seconds(), route_type
-        
-        # If no keyword match, use LLM for classification
-        llm = ChatGroq(
-            model_name="llama-3.3-70b-versatile",
-            temperature=0.2,
-            max_tokens=1000,
-            max_retries=3,
-            timeout=30.0
-        )
-        
-        # Enhanced prompt with more specific instructions
-        prompt = """You are a hospital query router. Your task is to classify the following query and determine the most appropriate department to handle it.
-
-Query: {query}
-
-Current Context: {context}
-
-Classify this query into one of these categories:
-- EMERGENCY: Immediate medical emergencies
-- APPOINTMENT: Scheduling and appointments
-- MEDICAL: Medical symptoms and treatment questions
-- GENERAL: General hospital information (including payment methods, visiting hours, admission policies)
-
-For each category, consider:
-1. Emergency: Look for words like "emergency", "ambulance", "urgent", "help now"
-2. Appointment: Look for words like "appointment", "schedule", "book", "doctor"
-3. Medical: Look for medical symptoms or treatment questions
-4. General: Look for general information requests about hospital facilities, payment options, visiting hours, admission policies
-
-Respond with JSON in this format:
-{{
-    "department": "DEPARTMENT_NAME",
-    "reason": "Brief explanation of why this department was chosen",
-    "confidence": "high|medium|low"
-}}
-"""
-        
+        # Try LLM classification
         try:
-            # Use ainvoke instead of __call__
-            response = await llm.ainvoke(prompt.format(query=query, context=context))
-            result = json.loads(response.content)
-            
-            department = result["department"]
-            response = f"Routing to {department} department... ({result['reason']})"
-            route_type = "llm_classification"
-            
-            # Update context with routing decision
-            self.context_manager.update_context("sql", {
-                "last_routing": {
-                    "department": department,
-                    "reason": result["reason"],
-                    "confidence": result["confidence"]
-                }
-            })
-            
-            return department, response, (datetime.now() - start_time).total_seconds(), route_type
-            
+            prompt = [
+                {"role": "system", "content": """
+                You are a query classifier for a hospital system. Classify incoming queries into one of three categories:
+                1. SQL - For appointment booking, scheduling, cancellations, and calendar management
+                2. GRAPH - For medical knowledge, symptoms, diseases, treatments, and diagnosis information
+                3. RAG - For general hospital information, policies, locations, and services
+                
+                Respond ONLY with the category name in lowercase (sql/graph/rag) and a confidence score (0.0-1.0).
+                Format: category|confidence
+                """}, 
+                {"role": "user", "content": "What are the visiting hours?"}, 
+                {"role": "assistant", "content": "rag|1.0"}, 
+                {"role": "user", "content": "I need to book an appointment"}, 
+                {"role": "assistant", "content": "sql|1.0"}, 
+                {"role": "user", "content": "What are the symptoms of diabetes?"}, 
+                {"role": "assistant", "content": "graph|1.0"}, 
+                {"role": "user", "content": query}
+            ]
+
+            response = await llm.chat.completions.create(
+                messages=prompt,
+                temperature=0.1,
+                max_tokens=10
+            )
+            result = response.choices[0].message.content.strip()
+            department, confidence = result.split('|')
+            logger.debug(f"LLM classified query as {department} with confidence {confidence}")
+            return department, float(confidence)
         except Exception as e:
-            logger.error(f"Error in query classification: {str(e)}")
-            # Default to RAG only if it's not a medical query
-            if any(keyword in query.lower() for keyword in self.routing_matrix["MEDICAL"]["keywords"]):
-                department = "GRAPH"
-                response = "Unable to classify query. Routing to medical department."
-            else:
-                department = "RAG"
-                response = "Unable to classify query. Routing to information department."
-            route_type = "error"
-            return department, response, (datetime.now() - start_time).total_seconds(), route_type
+            logger.error(f"Error in LLM classification: {str(e)}")
+            # Fallback to RAG if LLM fails
+            return "rag", 0.7
 
     def _is_follow_up(self, query: str, current_department: str) -> bool:
         """Determine if query is a follow-up to current session"""
@@ -408,7 +377,7 @@ Respond with JSON in this format:
         logger.info(f"Routing query to {department} agent: {query}")
         logger.debug(f"Session ID: {session_id}")
         
-        if department == "HUMAN":
+        if department == "human":
             return {
                 "response": "Please wait while we connect you to a human operator...",
                 "context_updates": {},
@@ -425,55 +394,61 @@ Respond with JSON in this format:
             }
         
         try:
-            # Get agent-specific context
-            agent_id = department.lower()
-            logger.debug(f"Getting context for agent: {agent_id}")
-            agent_context = self.context_manager.get_context(agent_id)
-            
-            # Merge with session context
+            # Reset context for new query
+            if session_id not in self.active_sessions:
+                self.context_manager.clear_context()
+                
+            # Get fresh context for agent
+            logger.debug(f"Getting context for agent: {department}")
             context = {
-                "session_id": session_id,
-                "department": department,
+                "session_id": session_id or self._generate_session_id(query),
+                "department": department.lower(),
                 "timestamp": datetime.now().isoformat(),
-                **agent_context  # Include agent-specific context
+                "is_new_session": session_id not in self.active_sessions
             }
             
-            if session_id and session_id in self.active_sessions:
-                session_context = self.active_sessions[session_id].get("context", {})
-                logger.debug(f"Adding session context: {session_context}")
-                context.update(session_context)
-            
-            # Pass query and merged context to agent
-            logger.info(f"Calling {department} agent handler")
+            # Create query data
             query_data = {
                 "text": query,
                 "context": context
             }
+            
+            # Call agent handler
+            logger.info(f"Calling {department} agent handler")
             logger.debug(f"Query data: {query_data}")
             
+            # Get agent instance
+            agent = agent_handler
+            
+            if not agent:
+                return {
+                    "response": f"Error: No handler found for {department}",
+                    "context_updates": {},
+                    "suggested_next": "HUMAN"
+                }
+                
             try:
-                response = await agent_handler.handle_query(query_data)
+                # Call agent's handle_query method and await the response
+                response = await agent.handle_query(query_data)
                 
-                # If the agent returned a coroutine, await it
-                if asyncio.iscoroutine(response):
-                    response = await response
-                
-                logger.info(f"Received response from {department} agent")
-                logger.debug(f"Agent response: {response}")
-                
+                # Ensure response is a dictionary
                 if not isinstance(response, dict):
-                    logger.warning(f"Invalid response format from {department} agent")
-                    return {
-                        "response": str(response),
+                    response = {
+                        "response": str(response) if response else "No response from agent",
                         "context_updates": {},
                         "suggested_next": None
                     }
+                
+                # Log response
+                logger.info(f"Received response from {department} agent")
+                logger.debug(f"Agent response: {response}")
+                
                 return response
-            except Exception as agent_error:
-                logger.error(f"Error from {department} agent handler: {str(agent_error)}")
-                logger.error(f"Agent error traceback: {traceback.format_exc()}")
+                
+            except Exception as e:
+                logger.error(f"Error in {department} agent: {str(e)}")
                 return {
-                    "response": f"Sorry, the {department} system encountered an error. Please try again.",
+                    "response": f"Error in {department} agent: {str(e)}",
                     "context_updates": {},
                     "suggested_next": "HUMAN"
                 }
@@ -489,61 +464,70 @@ Respond with JSON in this format:
 
     async def process_query(self, query: str, session_id: Optional[str] = None) -> Dict:
         """
-        Process a query with session support
+        Process a query with session support and ensure resolution
         """
         try:
-            # Clean up old sessions and context
+            # Clean up old sessions
             self._cleanup_sessions()
-            self.stats["total_queries"] += 1
-            start_time = datetime.now()
             
-            # Get current department if session exists
-            current_department = None
-            if session_id and session_id in self.active_sessions:
-                current_department = self.active_sessions[session_id]["department"]
+            # Check active sessions
+            if session_id in self.active_sessions:
+                # Get the current active session
+                active_session = self.active_sessions[session_id]
+                
+                # If there's an active query that's not resolved, continue with the same department
+                if active_session.get('status') == 'active':
+                    logger.debug(f"Continuing active session with department: {active_session['department']}")
+                    return await self.route_to_agent(active_session['department'], query, session_id)
             
-            # Classify query with context awareness
-            department, response, classification_time, route_type = await self.classify_query(query, current_department)
+            # Get or create session ID
+            if not session_id:
+                session_id = self._generate_session_id(query)
             
-            # Print routing information
-            print(f"\n=== Query Routing Information ===")
-            print(f"Query: {query}")
-            print(f"Route Type: {route_type}")
-            print(f"Department: {department}")
-            print(f"Routing Response: {response}")
-            print(f"Classification Time: {classification_time:.3f}s")
-            print("-" * 80)
+            # Classify query to determine department
+            classification = await self.classify_query(query, None)  # Don't pass current_department to ensure fresh classification
+            department = classification[0]
             
-            # Get the appropriate agent
-            agent = self.agents.get(department)
-            if not agent:
-                print(f"Warning: No agent found for department '{department}'")
-                return {
-                    "response": f"No agent available for department '{department}'",
-                    "context_updates": {},
-                    "suggested_next": None
-                }
+            # Log the classification result
+            logger.info(f"Query classified as {department} with confidence {classification[1]}")
             
-            # Process the query with the agent
-            query_data = {
-                "text": query,
-                "context": self.active_sessions[session_id]["context"] if session_id and session_id in self.active_sessions else {},
-                "history": self.active_sessions[session_id]["history"] if session_id and session_id in self.active_sessions else []
+            # Update active session
+            self.active_sessions[session_id] = {
+                "department": department,
+                "last_activity": datetime.now(),
+                "status": "pending"  # Will be updated by agent response
             }
             
-            # Print agent processing information
-            print(f"\n=== Agent Processing Information ===")
-            print(f"Agent: {department}")
-            print(f"Query: {query}")
-            print("-" * 80)
+            # Start new query context
+            self.context_manager.start_query(query, department)
             
-            result = await agent.handle_query(query_data)
+            # Route to appropriate agent
+            result = await self.route_to_agent(department, query, session_id)
             
-            # Update session context with agent's context updates
-            if session_id and session_id in self.active_sessions:
-                self.active_sessions[session_id]["context"].update(result.get("context_updates", {}))
-            
-            return result
+            # Ensure result is properly formatted
+            if asyncio.iscoroutine(result):
+                result = await result
+                
+            if isinstance(result, dict):
+                # Update session status
+                if session_id in self.active_sessions:
+                    self.active_sessions[session_id]["status"] = result.get('status', 'resolved')
+                    
+                # Clear context if query is resolved
+                if result.get('status') == 'resolved':
+                    self.context_manager.clear_context()
+                    
+                return result
+            else:
+                # Handle case where result is not a dictionary
+                response = {
+                    "response": str(result) if result else "No response from agent",
+                    "context_updates": {},
+                    "suggested_next": None,
+                    "status": "resolved"
+                }
+                self.context_manager.clear_context()
+                return response
             
         except Exception as e:
             import traceback
@@ -622,7 +606,15 @@ async def main():
                     continue
 
                 # Process the query
-                result = await router.process_query(query)
+                try:
+                    result = await router.process_query(query)
+                    if asyncio.iscoroutine(result):
+                        result = await result
+                        
+                    if result and 'response' in result:
+                        print(f"Agent: {result['response']}")
+                except Exception as e:
+                    print(f"Error: {str(e)}")
                 
             except KeyboardInterrupt:
                 print("\nExiting...")

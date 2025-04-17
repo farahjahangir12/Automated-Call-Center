@@ -121,14 +121,12 @@ Please respond with a clear answer that references the documents above:
     def _initialize_memory(self) -> ConversationSummaryBufferMemory:
         """Initialize memory with optional session context"""
         memory = ConversationSummaryBufferMemory(
-            llm=ChatGroq(
-                model_name="gemma2-9b-it",
-                temperature=0.2,
-                groq_api_key=os.getenv("GROQ_API_KEY")
-            ),
+            llm=self.llm,
             memory_key="chat_history",
             max_token_limit=2000,
-            return_messages=True
+            return_messages=True,
+            input_key="query",
+            output_key="response"
         )
         
         # Load previous conversation if exists in session
@@ -295,8 +293,7 @@ Please respond with a clear answer that references the documents above:
         """Generate response that properly references retrieved documents"""
         try:
             # Get chat history
-            memory_vars = await self.memory.load_memory_variables({})
-            chat_history = memory_vars.get("chat_history", [])
+            chat_history = self.memory.chat_memory.messages if self.memory else []
             recent_history = "\n".join([f"{msg.type}: {msg.content}" for msg in chat_history[-5:]]) if chat_history else ""
 
             # Format the prompt with all context
@@ -333,10 +330,10 @@ Please respond with a clear answer that references the documents above:
                 if not cleaned_response.endswith("Is there anything else I can help you with?"):
                     cleaned_response = f"{cleaned_response}\n\nIs there anything else I can help you with?"
 
-            # Update memory and context
+            # Save to memory
             self.memory.save_context(
                 {"query": query},
-                {"text": cleaned_response}
+                {"response": cleaned_response}
             )
 
             # Log the final response
@@ -370,7 +367,17 @@ Please respond with a clear answer that references the documents above:
         """Handle medical RAG queries with session context"""
         try:
             query = query_data.get("text", "")
+            context = query_data.get("context", {})
             logger.info(f"Received query: {query}")
+            
+            # Check if this is a completion indicator
+            if query.lower().strip() in ['done', 'finish', 'complete', 'end']:
+                return {
+                    "response": "Medical information query completed.",
+                    "context_updates": {},
+                    "suggested_next": None,
+                    "status": "resolved"
+                }
             
             collection_name = await self.get_relevant_collection(query)
             docs = await self.retrieve_documents(query, collection_name)
@@ -378,9 +385,10 @@ Please respond with a clear answer that references the documents above:
             if not docs:
                 logger.warning("No documents found for query")
                 return {
-                    "response": "I couldn't find specific information about that.",
+                    "response": "I couldn't find specific information about that. Would you like to rephrase your question or ask about something else?",
                     "context_updates": {},
-                    "suggested_next": "HUMAN"
+                    "suggested_next": "RAG",
+                    "status": "active"
                 }
                 
             # Format the document context with more details
@@ -396,8 +404,24 @@ Please respond with a clear answer that references the documents above:
             # Generate response
             response_dict = await self.generate_response(query, context)
             
+            # Determine if we need more information
+            needs_clarification = False
+            response_lower = response_dict["response"].lower()
+            
+            # Check if response suggests need for clarification
+            if any(phrase in response_lower for phrase in [
+                "could you clarify", "could you be more specific", "please provide more details",
+                "what exactly", "can you specify", "do you mean", "which type"]):
+                needs_clarification = True
+            
+            # Update response with status
+            response_dict.update({
+                "status": "active" if needs_clarification else "resolved",
+                "suggested_next": "RAG" if needs_clarification else None
+            })
+            
             # Log the final response before returning
-            logger.info(f"Final response to return: {response_dict['response']}")
+            logger.info(f"Final response to return: {response_dict}")
             
             return response_dict
             
@@ -407,7 +431,8 @@ Please respond with a clear answer that references the documents above:
             return {
                 "response": f"An error occurred: {str(e)}",
                 "context_updates": {},
-                "suggested_next": "HUMAN"
+                "suggested_next": "HUMAN",
+                "status": "resolved"
             }
 
 # Router-compatible interface

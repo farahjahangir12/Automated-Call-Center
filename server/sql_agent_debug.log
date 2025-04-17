@@ -2631,3 +2631,679 @@ ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo
 2025-04-10 11:52:45,966 - INFO - SQL Agent: Received query
 2025-04-10 11:52:45,967 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {}, 'history': []}
 2025-04-10 11:52:45,968 - DEBUG - Updated session context: {}
+2025-04-16 19:40:08,343 - INFO - Creating SQL Agent instance
+2025-04-16 19:40:08,343 - INFO - Creating SQL Agent instance
+2025-04-16 19:40:08,344 - DEBUG - Initial session context: {}
+2025-04-16 19:40:08,344 - INFO - Initializing Supabase connection
+2025-04-16 19:40:10,202 - INFO - Initializing tools
+2025-04-16 19:40:10,203 - DEBUG - Tools initialized: 5
+2025-04-16 19:40:10,204 - INFO - Initializing memory
+2025-04-16 19:40:10,206 - DEBUG - Memory initialized
+2025-04-16 19:40:10,206 - INFO - Creating prompt template
+2025-04-16 19:40:10,207 - INFO - Creating agent
+2025-04-16 19:40:10,255 - INFO - Creating agent executor
+2025-04-16 19:40:10,256 - INFO - SQL Agent initialized successfully
+2025-04-16 19:43:13,789 - INFO - Creating SQL Agent instance
+2025-04-16 19:43:13,790 - INFO - Creating SQL Agent instance
+2025-04-16 19:43:13,790 - DEBUG - Initial session context: {}
+2025-04-16 19:43:13,791 - INFO - Initializing Supabase connection
+2025-04-16 19:43:15,404 - INFO - Initializing tools
+2025-04-16 19:43:15,405 - DEBUG - Tools initialized: 5
+2025-04-16 19:43:15,406 - INFO - Initializing memory
+2025-04-16 19:43:15,413 - DEBUG - Memory initialized
+2025-04-16 19:43:15,414 - INFO - Creating prompt template
+2025-04-16 19:43:15,415 - INFO - Creating agent
+2025-04-16 19:43:15,460 - INFO - Creating agent executor
+2025-04-16 19:43:15,461 - INFO - SQL Agent initialized successfully
+2025-04-16 19:44:38,078 - INFO - SQL Agent: Received query
+2025-04-16 19:44:38,079 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194438_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:44:38.075359'}}
+2025-04-16 19:44:38,081 - DEBUG - Updated session context: {'session_id': 'sess_20250416194438_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:44:38.075359'}
+2025-04-16 19:44:38,084 - ERROR - Error in handle_query: name 'query' is not defined
+2025-04-16 19:44:38,089 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 225, in handle_query
+    if query.lower().strip() in ['done', 'finish', 'complete', 'end']:
+       ^^^^^
+NameError: name 'query' is not defined
+
+2025-04-16 19:46:59,029 - INFO - Creating SQL Agent instance
+2025-04-16 19:46:59,030 - INFO - Creating SQL Agent instance
+2025-04-16 19:46:59,030 - DEBUG - Initial session context: {}
+2025-04-16 19:46:59,031 - INFO - Initializing Supabase connection
+2025-04-16 19:47:00,337 - INFO - Initializing tools
+2025-04-16 19:47:00,339 - DEBUG - Tools initialized: 5
+2025-04-16 19:47:00,340 - INFO - Initializing memory
+2025-04-16 19:47:00,346 - DEBUG - Memory initialized
+2025-04-16 19:47:00,347 - INFO - Creating prompt template
+2025-04-16 19:47:00,349 - INFO - Creating agent
+2025-04-16 19:47:00,396 - INFO - Creating agent executor
+2025-04-16 19:47:00,397 - INFO - SQL Agent initialized successfully
+2025-04-16 19:47:22,744 - INFO - SQL Agent: Received query
+2025-04-16 19:47:22,745 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194722_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:47:22.741130'}}
+2025-04-16 19:47:22,748 - DEBUG - Updated session context: {'session_id': 'sess_20250416194722_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:47:22.741130'}
+2025-04-16 19:47:22,750 - ERROR - Error in handle_query: name 'query' is not defined
+2025-04-16 19:47:22,756 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 225, in handle_query
+    if query.lower().strip() in ['done', 'finish', 'complete', 'end']:
+       ^^^^^
+NameError: name 'query' is not defined
+
+2025-04-16 19:48:53,542 - INFO - Creating SQL Agent instance
+2025-04-16 19:48:53,543 - INFO - Creating SQL Agent instance
+2025-04-16 19:48:53,543 - DEBUG - Initial session context: {}
+2025-04-16 19:48:53,544 - INFO - Initializing Supabase connection
+2025-04-16 19:48:54,660 - INFO - Initializing tools
+2025-04-16 19:48:54,662 - DEBUG - Tools initialized: 5
+2025-04-16 19:48:54,663 - INFO - Initializing memory
+2025-04-16 19:48:54,666 - DEBUG - Memory initialized
+2025-04-16 19:48:54,667 - INFO - Creating prompt template
+2025-04-16 19:48:54,668 - INFO - Creating agent
+2025-04-16 19:48:54,714 - INFO - Creating agent executor
+2025-04-16 19:48:54,715 - INFO - SQL Agent initialized successfully
+2025-04-16 19:49:09,953 - INFO - SQL Agent: Received query
+2025-04-16 19:49:09,954 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194909_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:49:09.949983'}}
+2025-04-16 19:49:09,956 - DEBUG - Updated session context: {'session_id': 'sess_20250416194909_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:49:09.949983'}
+2025-04-16 19:49:09,959 - ERROR - Error in handle_query: cannot access local variable 'query_text' where it is not associated with a value
+2025-04-16 19:49:09,962 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 225, in handle_query
+    if query_text.lower().strip() in ['done', 'finish', 'complete', 'end']:
+       ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'query_text' where it is not associated with a value
+
+2025-04-16 19:50:18,152 - INFO - Creating SQL Agent instance
+2025-04-16 19:50:18,152 - INFO - Creating SQL Agent instance
+2025-04-16 19:50:18,153 - DEBUG - Initial session context: {}
+2025-04-16 19:50:18,153 - INFO - Initializing Supabase connection
+2025-04-16 19:50:18,963 - INFO - Initializing tools
+2025-04-16 19:50:18,964 - DEBUG - Tools initialized: 5
+2025-04-16 19:50:18,964 - INFO - Initializing memory
+2025-04-16 19:50:18,967 - DEBUG - Memory initialized
+2025-04-16 19:50:18,968 - INFO - Creating prompt template
+2025-04-16 19:50:18,969 - INFO - Creating agent
+2025-04-16 19:50:19,023 - INFO - Creating agent executor
+2025-04-16 19:50:19,023 - INFO - SQL Agent initialized successfully
+2025-04-16 19:52:33,828 - INFO - Creating SQL Agent instance
+2025-04-16 19:52:33,829 - INFO - Creating SQL Agent instance
+2025-04-16 19:52:33,829 - DEBUG - Initial session context: {}
+2025-04-16 19:52:33,830 - INFO - Initializing Supabase connection
+2025-04-16 19:52:35,663 - INFO - Initializing tools
+2025-04-16 19:52:35,663 - DEBUG - Tools initialized: 5
+2025-04-16 19:52:35,664 - INFO - Initializing memory
+2025-04-16 19:52:35,666 - DEBUG - Memory initialized
+2025-04-16 19:52:35,666 - INFO - Creating prompt template
+2025-04-16 19:52:35,667 - INFO - Creating agent
+2025-04-16 19:52:35,710 - INFO - Creating agent executor
+2025-04-16 19:52:35,711 - INFO - SQL Agent initialized successfully
+2025-04-16 20:22:20,165 - INFO - Creating SQL Agent instance
+2025-04-16 20:22:20,166 - INFO - Creating SQL Agent instance
+2025-04-16 20:22:20,166 - DEBUG - Initial session context: {}
+2025-04-16 20:22:20,167 - INFO - Initializing Supabase connection
+2025-04-16 20:22:22,401 - INFO - Initializing tools
+2025-04-16 20:22:22,401 - DEBUG - Tools initialized: 5
+2025-04-16 20:22:22,402 - INFO - Initializing memory
+2025-04-16 20:22:22,415 - DEBUG - Memory initialized
+2025-04-16 20:22:22,415 - INFO - Creating prompt template
+2025-04-16 20:22:22,416 - INFO - Creating agent
+2025-04-16 20:22:22,448 - INFO - Creating agent executor
+2025-04-16 20:22:22,449 - INFO - SQL Agent initialized successfully
+2025-04-16 20:30:44,811 - INFO - Creating SQL Agent instance
+2025-04-16 20:30:44,812 - INFO - Creating SQL Agent instance
+2025-04-16 20:30:44,813 - DEBUG - Initial session context: {}
+2025-04-16 20:30:44,813 - INFO - Initializing Supabase connection
+2025-04-16 20:30:54,101 - INFO - Initializing tools
+2025-04-16 20:30:54,103 - DEBUG - Tools initialized: 5
+2025-04-16 20:30:54,104 - INFO - Initializing memory
+2025-04-16 20:30:54,108 - DEBUG - Memory initialized
+2025-04-16 20:30:54,109 - INFO - Creating prompt template
+2025-04-16 20:30:54,109 - INFO - Creating agent
+2025-04-16 20:30:54,161 - INFO - Creating agent executor
+2025-04-16 20:30:54,162 - INFO - SQL Agent initialized successfully
+2025-04-16 20:33:21,812 - INFO - Creating SQL Agent instance
+2025-04-16 20:33:21,813 - INFO - Creating SQL Agent instance
+2025-04-16 20:33:21,815 - DEBUG - Initial session context: {}
+2025-04-16 20:33:21,817 - INFO - Initializing Supabase connection
+2025-04-16 20:33:24,743 - INFO - Initializing tools
+2025-04-16 20:33:24,744 - DEBUG - Tools initialized: 5
+2025-04-16 20:33:24,745 - INFO - Initializing memory
+2025-04-16 20:33:24,748 - DEBUG - Memory initialized
+2025-04-16 20:33:24,749 - INFO - Creating prompt template
+2025-04-16 20:33:24,751 - INFO - Creating agent
+2025-04-16 20:33:24,863 - INFO - Creating agent executor
+2025-04-16 20:33:24,866 - INFO - SQL Agent initialized successfully
+2025-04-16 20:35:51,144 - INFO - Creating SQL Agent instance
+2025-04-16 20:35:51,145 - INFO - Creating SQL Agent instance
+2025-04-16 20:35:51,146 - DEBUG - Initial session context: {}
+2025-04-16 20:35:51,146 - INFO - Initializing Supabase connection
+2025-04-16 20:35:53,125 - INFO - Initializing tools
+2025-04-16 20:35:53,126 - DEBUG - Tools initialized: 5
+2025-04-16 20:35:53,127 - INFO - Initializing memory
+2025-04-16 20:35:53,131 - DEBUG - Memory initialized
+2025-04-16 20:35:53,132 - INFO - Creating prompt template
+2025-04-16 20:35:53,134 - INFO - Creating agent
+2025-04-16 20:35:53,209 - INFO - Creating agent executor
+2025-04-16 20:35:53,212 - INFO - SQL Agent initialized successfully
+2025-04-16 20:40:26,091 - INFO - Creating SQL Agent instance
+2025-04-16 20:40:26,091 - INFO - Creating SQL Agent instance
+2025-04-16 20:40:26,092 - DEBUG - Initial session context: {}
+2025-04-16 20:40:26,092 - INFO - Initializing Supabase connection
+2025-04-16 20:40:27,894 - INFO - Initializing tools
+2025-04-16 20:40:27,895 - DEBUG - Tools initialized: 5
+2025-04-16 20:40:27,896 - INFO - Initializing memory
+2025-04-16 20:40:27,899 - DEBUG - Memory initialized
+2025-04-16 20:40:27,899 - INFO - Creating prompt template
+2025-04-16 20:40:27,901 - INFO - Creating agent
+2025-04-16 20:40:27,943 - INFO - Creating agent executor
+2025-04-16 20:40:27,944 - INFO - SQL Agent initialized successfully
+2025-04-16 21:10:25,505 - INFO - Creating SQL Agent instance
+2025-04-16 21:10:25,507 - INFO - Creating SQL Agent instance
+2025-04-16 21:10:25,507 - DEBUG - Initial session context: {}
+2025-04-16 21:10:25,508 - INFO - Initializing Supabase connection
+2025-04-16 21:10:27,166 - INFO - Initializing tools
+2025-04-16 21:10:27,167 - DEBUG - Tools initialized: 5
+2025-04-16 21:10:27,167 - INFO - Initializing memory
+2025-04-16 21:10:27,169 - DEBUG - Memory initialized
+2025-04-16 21:10:27,170 - INFO - Creating prompt template
+2025-04-16 21:10:27,170 - INFO - Creating agent
+2025-04-16 21:10:27,217 - INFO - Creating agent executor
+2025-04-16 21:10:27,218 - INFO - SQL Agent initialized successfully
+2025-04-16 21:14:52,980 - INFO - Creating SQL Agent instance
+2025-04-16 21:14:52,980 - INFO - Creating SQL Agent instance
+2025-04-16 21:14:52,981 - DEBUG - Initial session context: {}
+2025-04-16 21:14:52,981 - INFO - Initializing Supabase connection
+2025-04-16 21:14:54,564 - INFO - Initializing tools
+2025-04-16 21:14:54,565 - DEBUG - Tools initialized: 5
+2025-04-16 21:14:54,565 - INFO - Initializing memory
+2025-04-16 21:14:54,568 - DEBUG - Memory initialized
+2025-04-16 21:14:54,568 - INFO - Creating prompt template
+2025-04-16 21:14:54,569 - INFO - Creating agent
+2025-04-16 21:14:54,610 - INFO - Creating agent executor
+2025-04-16 21:14:54,611 - INFO - SQL Agent initialized successfully
+2025-04-16 21:24:49,815 - INFO - Creating SQL Agent instance
+2025-04-16 21:24:49,815 - INFO - Creating SQL Agent instance
+2025-04-16 21:24:49,816 - DEBUG - Initial session context: {}
+2025-04-16 21:24:49,817 - INFO - Initializing Supabase connection
+2025-04-16 21:24:51,373 - INFO - Initializing tools
+2025-04-16 21:24:51,375 - DEBUG - Tools initialized: 5
+2025-04-16 21:24:51,377 - INFO - Initializing memory
+2025-04-16 21:24:51,393 - DEBUG - Memory initialized
+2025-04-16 21:24:51,394 - INFO - Creating prompt template
+2025-04-16 21:24:51,397 - INFO - Creating agent
+2025-04-16 21:24:51,543 - INFO - Creating agent executor
+2025-04-16 21:24:51,544 - INFO - SQL Agent initialized successfully
+2025-04-16 21:28:04,583 - INFO - Creating SQL Agent instance
+2025-04-16 21:28:04,584 - INFO - Creating SQL Agent instance
+2025-04-16 21:28:04,584 - DEBUG - Initial session context: {}
+2025-04-16 21:28:04,585 - INFO - Initializing Supabase connection
+2025-04-16 21:28:06,646 - INFO - Initializing tools
+2025-04-16 21:28:06,648 - DEBUG - Tools initialized: 5
+2025-04-16 21:28:06,649 - INFO - Initializing memory
+2025-04-16 21:28:06,655 - DEBUG - Memory initialized
+2025-04-16 21:28:06,657 - INFO - Creating prompt template
+2025-04-16 21:28:06,659 - INFO - Creating agent
+2025-04-16 21:28:06,761 - INFO - Creating agent executor
+2025-04-16 21:28:06,763 - INFO - SQL Agent initialized successfully
+2025-04-16 21:31:51,945 - INFO - Creating SQL Agent instance
+2025-04-16 21:31:51,947 - INFO - Creating SQL Agent instance
+2025-04-16 21:31:51,948 - DEBUG - Initial session context: {}
+2025-04-16 21:31:51,948 - INFO - Initializing Supabase connection
+2025-04-16 21:31:53,461 - INFO - Initializing tools
+2025-04-16 21:31:53,463 - DEBUG - Tools initialized: 5
+2025-04-16 21:31:53,464 - INFO - Initializing memory
+2025-04-16 21:31:53,470 - DEBUG - Memory initialized
+2025-04-16 21:31:53,471 - INFO - Creating prompt template
+2025-04-16 21:31:53,473 - INFO - Creating agent
+2025-04-16 21:31:53,597 - INFO - Creating agent executor
+2025-04-16 21:31:53,598 - INFO - SQL Agent initialized successfully
+2025-04-16 21:34:58,141 - INFO - Creating SQL Agent instance
+2025-04-16 21:34:58,141 - INFO - Creating SQL Agent instance
+2025-04-16 21:34:58,142 - DEBUG - Initial session context: {}
+2025-04-16 21:34:58,143 - INFO - Initializing Supabase connection
+2025-04-16 21:34:59,932 - INFO - Initializing tools
+2025-04-16 21:34:59,934 - DEBUG - Tools initialized: 5
+2025-04-16 21:34:59,936 - INFO - Initializing memory
+2025-04-16 21:34:59,942 - DEBUG - Memory initialized
+2025-04-16 21:34:59,944 - INFO - Creating prompt template
+2025-04-16 21:34:59,947 - INFO - Creating agent
+2025-04-16 21:35:00,122 - INFO - Creating agent executor
+2025-04-16 21:35:00,123 - INFO - SQL Agent initialized successfully
+2025-04-16 21:36:28,344 - INFO - Creating SQL Agent instance
+2025-04-16 21:36:28,346 - INFO - Creating SQL Agent instance
+2025-04-16 21:36:28,348 - DEBUG - Initial session context: {}
+2025-04-16 21:36:28,350 - INFO - Initializing Supabase connection
+2025-04-16 21:36:29,839 - INFO - Initializing tools
+2025-04-16 21:36:29,841 - DEBUG - Tools initialized: 5
+2025-04-16 21:36:29,842 - INFO - Initializing memory
+2025-04-16 21:36:29,850 - DEBUG - Memory initialized
+2025-04-16 21:36:29,852 - INFO - Creating prompt template
+2025-04-16 21:36:29,855 - INFO - Creating agent
+2025-04-16 21:36:30,027 - INFO - Creating agent executor
+2025-04-16 21:36:30,028 - INFO - SQL Agent initialized successfully
+2025-04-16 21:36:56,793 - INFO - SQL Agent: Received query
+2025-04-16 21:36:56,794 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416213656_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T21:36:56.789957'}}
+2025-04-16 21:36:56,797 - DEBUG - Updated session context: {'session_id': 'sess_20250416213656_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T21:36:56.789957'}
+2025-04-16 21:36:56,800 - ERROR - Error in handle_query: name 'context' is not defined
+2025-04-16 21:36:56,807 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 237, in handle_query
+    if context:
+       ^^^^^^^
+NameError: name 'context' is not defined
+
+2025-04-16 21:39:25,217 - INFO - Creating SQL Agent instance
+2025-04-16 21:39:25,218 - INFO - Creating SQL Agent instance
+2025-04-16 21:39:25,218 - DEBUG - Initial session context: {}
+2025-04-16 21:39:25,219 - INFO - Initializing Supabase connection
+2025-04-16 21:39:26,688 - INFO - Initializing tools
+2025-04-16 21:39:26,689 - DEBUG - Tools initialized: 5
+2025-04-16 21:39:26,691 - INFO - Initializing memory
+2025-04-16 21:39:26,696 - DEBUG - Memory initialized
+2025-04-16 21:39:26,697 - INFO - Creating prompt template
+2025-04-16 21:39:26,700 - INFO - Creating agent
+2025-04-16 21:39:26,839 - INFO - Creating agent executor
+2025-04-16 21:39:26,841 - INFO - SQL Agent initialized successfully
+2025-04-16 21:44:58,955 - INFO - Creating SQL Agent instance
+2025-04-16 21:44:58,956 - INFO - Creating SQL Agent instance
+2025-04-16 21:44:58,957 - DEBUG - Initial session context: {}
+2025-04-16 21:44:58,957 - INFO - Initializing Supabase connection
+2025-04-16 21:45:00,401 - INFO - Initializing tools
+2025-04-16 21:45:00,403 - DEBUG - Tools initialized: 5
+2025-04-16 21:45:00,404 - INFO - Initializing memory
+2025-04-16 21:45:00,409 - DEBUG - Memory initialized
+2025-04-16 21:45:00,411 - INFO - Creating prompt template
+2025-04-16 21:45:00,414 - INFO - Creating agent
+2025-04-16 21:45:00,555 - INFO - Creating agent executor
+2025-04-16 21:45:00,556 - INFO - SQL Agent initialized successfully
+2025-04-16 21:48:08,694 - INFO - Creating SQL Agent instance
+2025-04-16 21:48:08,695 - INFO - Creating SQL Agent instance
+2025-04-16 21:48:08,695 - DEBUG - Initial session context: {}
+2025-04-16 21:48:08,696 - INFO - Initializing Supabase connection
+2025-04-16 21:48:10,758 - INFO - Initializing tools
+2025-04-16 21:48:10,759 - DEBUG - Tools initialized: 5
+2025-04-16 21:48:10,760 - INFO - Initializing memory
+2025-04-16 21:48:10,763 - DEBUG - Memory initialized
+2025-04-16 21:48:10,763 - INFO - Creating prompt template
+2025-04-16 21:48:10,765 - INFO - Creating agent
+2025-04-16 21:48:10,845 - INFO - Creating agent executor
+2025-04-16 21:48:10,847 - INFO - SQL Agent initialized successfully
+2025-04-16 21:51:47,904 - INFO - Creating SQL Agent instance
+2025-04-16 21:51:47,905 - INFO - Creating SQL Agent instance
+2025-04-16 21:51:47,906 - DEBUG - Initial session context: {}
+2025-04-16 21:51:47,906 - INFO - Initializing Supabase connection
+2025-04-16 21:51:49,489 - INFO - Initializing tools
+2025-04-16 21:51:49,491 - DEBUG - Tools initialized: 5
+2025-04-16 21:51:49,492 - INFO - Initializing memory
+2025-04-16 21:51:49,497 - DEBUG - Memory initialized
+2025-04-16 21:51:49,499 - INFO - Creating prompt template
+2025-04-16 21:51:49,502 - INFO - Creating agent
+2025-04-16 21:51:49,651 - INFO - Creating agent executor
+2025-04-16 21:51:49,654 - INFO - SQL Agent initialized successfully
+2025-04-16 21:53:16,367 - INFO - Creating SQL Agent instance
+2025-04-16 21:53:16,368 - INFO - Creating SQL Agent instance
+2025-04-16 21:53:16,369 - DEBUG - Initial session context: {}
+2025-04-16 21:53:16,370 - INFO - Initializing Supabase connection
+2025-04-16 21:53:17,651 - INFO - Initializing tools
+2025-04-16 21:53:17,652 - DEBUG - Tools initialized: 5
+2025-04-16 21:53:17,654 - INFO - Initializing memory
+2025-04-16 21:53:17,659 - DEBUG - Memory initialized
+2025-04-16 21:53:17,660 - INFO - Creating prompt template
+2025-04-16 21:53:17,663 - INFO - Creating agent
+2025-04-16 21:53:17,789 - INFO - Creating agent executor
+2025-04-16 21:53:17,790 - INFO - SQL Agent initialized successfully
+2025-04-16 22:07:37,512 - INFO - Creating SQL Agent instance
+2025-04-16 22:07:37,513 - INFO - Creating SQL Agent instance
+2025-04-16 22:07:37,514 - DEBUG - Initial session context: {}
+2025-04-16 22:07:37,516 - INFO - Initializing Supabase connection
+2025-04-16 22:07:38,186 - ERROR - Error initializing SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-04-16 22:07:38,597 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-04-16 22:07:38,643 - ERROR - Error creating SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-04-16 22:07:38,681 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-04-16 22:08:54,311 - INFO - Creating SQL Agent instance
+2025-04-16 22:08:54,312 - INFO - Creating SQL Agent instance
+2025-04-16 22:08:54,313 - DEBUG - Initial session context: {}
+2025-04-16 22:08:54,313 - INFO - Initializing Supabase connection
+2025-04-16 22:08:55,684 - INFO - Initializing tools
+2025-04-16 22:08:55,686 - DEBUG - Tools initialized: 5
+2025-04-16 22:08:55,688 - INFO - Initializing memory
+2025-04-16 22:08:55,696 - DEBUG - Memory initialized
+2025-04-16 22:08:55,697 - INFO - Creating prompt template
+2025-04-16 22:08:55,700 - INFO - Creating agent
+2025-04-16 22:08:55,870 - INFO - Creating agent executor
+2025-04-16 22:08:55,871 - INFO - SQL Agent initialized successfully
+2025-04-16 22:09:10,113 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-16 22:09:18,272 - INFO - SQL Agent: Received query
+2025-04-16 22:09:18,273 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416220918_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:09:18.268506', 'is_new_session': False}}
+2025-04-16 22:09:18,276 - DEBUG - Updated session context: {'session_id': 'sess_20250416220918_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:09:18.268506', 'is_new_session': False}
+2025-04-16 22:09:18,277 - ERROR - Error in handle_query: name 'context' is not defined
+2025-04-16 22:09:18,284 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 241, in handle_query
+    if context:
+       ^^^^^^^
+NameError: name 'context' is not defined
+
+2025-04-16 22:10:38,866 - INFO - Creating SQL Agent instance
+2025-04-16 22:10:38,867 - INFO - Creating SQL Agent instance
+2025-04-16 22:10:38,868 - DEBUG - Initial session context: {}
+2025-04-16 22:10:38,869 - INFO - Initializing Supabase connection
+2025-04-16 22:10:41,124 - INFO - Initializing tools
+2025-04-16 22:10:41,126 - DEBUG - Tools initialized: 5
+2025-04-16 22:10:41,129 - INFO - Initializing memory
+2025-04-16 22:10:41,135 - DEBUG - Memory initialized
+2025-04-16 22:10:41,137 - INFO - Creating prompt template
+2025-04-16 22:10:41,140 - INFO - Creating agent
+2025-04-16 22:10:41,325 - INFO - Creating agent executor
+2025-04-16 22:10:41,328 - INFO - SQL Agent initialized successfully
+2025-04-16 22:10:57,491 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-16 22:11:20,473 - INFO - SQL Agent: Received query
+2025-04-16 22:11:20,474 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416221120_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:11:20.469481', 'is_new_session': False}}
+2025-04-16 22:11:20,477 - DEBUG - Updated session context: {'session_id': 'sess_20250416221120_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:11:20.469481', 'is_new_session': False}
+2025-04-16 22:11:20,479 - DEBUG - Processing query: I want to book an appointment
+2025-04-16 22:17:38,686 - INFO - Creating SQL Agent instance
+2025-04-16 22:17:38,687 - INFO - Creating SQL Agent instance
+2025-04-16 22:17:38,688 - DEBUG - Initial session context: {}
+2025-04-16 22:17:38,688 - INFO - Initializing Supabase connection
+2025-04-16 22:18:20,693 - ERROR - Error initializing SQL Agent: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-04-16 22:18:20,750 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+2025-04-16 22:18:20,800 - ERROR - Error creating SQL Agent: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-04-16 22:18:20,870 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+

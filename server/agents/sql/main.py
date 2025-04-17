@@ -147,19 +147,23 @@ class SQLAgent:
 
     def verify(self) -> bool:
         """Verify agent is properly initialized"""
-        if not self._initialized:
-            return False
-        
-        checks = [
-            self.tools is not None,
-            self.memory is not None,
-            self.agent_executor is not None
-        ]
-        
-        if not all(checks):
-            logger.error("SQL Agent verification failed: Missing required components")
-            return False
+        try:
+            # Check required components
+            if not all([self.tools, self.memory]):
+                logger.error("SQL Agent missing required components")
+                return False
+                
+            # Check database connection
+            if not supabase.client:
+                logger.error("SQL Agent: No database connection")
+                return False
+                
+            logger.info("SQL Agent verification successful")
+            return True
             
+        except Exception as e:
+            logger.error(f"SQL Agent verification failed: {str(e)}")
+            return False   
         return True
 
     def _initialize_tools(self):
@@ -216,50 +220,71 @@ class SQLAgent:
         logger.debug(f"Query data: {query_data}")
         
         try:
+            # Get query text
+            query_text = query_data.get("text", "")
+
             # Update session context if provided
             if "context" in query_data:
                 self.session_context.update(query_data["context"])
                 logger.debug(f"Updated session context: {self.session_context}")
             
-            # Add the current query to memory
-            if query_data.get("text"):
-                self.memory.chat_memory.add_message(HumanMessage(content=query_data["text"]))
+            # Check if this is a completion indicator
+            if query_text.lower().strip() in ['done', 'finish', 'complete', 'end']:
+                return {
+                    "response": "Appointment scheduling completed.",
+                    "context_updates": {},
+                    "suggested_next": None,
+                    "status": "resolved"
+                }
             
-            # Get the current chat history as a list of messages
-            chat_history = self.memory.chat_memory.messages
+            # Update memory with context and history
+            if "context" in query_data:
+                self.session_context.update(query_data["context"])
             
-            # Prepare input for agent executor with proper tool input format
-            agent_input = {
-                "input": query_data["text"],
-                "chat_history": chat_history,
-                "context": self.session_context
-            }
+            if "history" in query_data:
+                for exchange in query_data["history"]:
+                    self.memory.chat_memory.add_message(
+                        HumanMessage(content=exchange["content"]) if exchange["role"] == "user"
+                        else AIMessage(content=exchange["content"])
+                    )
             
-            # Invoke the agent with proper input format
-            response = await self.agent_executor.ainvoke({"input": query_data["text"]})
+            # Process query through agent executor
+            logger.debug(f"Processing query: {query_text}")
+            response = await self.agent_executor.ainvoke(
+                {
+                    "input": query_text,
+                    "chat_history": query_data.get("history", [])
+                }
+            )
             
-            # Extract response text
-            response_text = response["output"]
+            # Extract potential context updates
+            context_updates = self._extract_context_updates(response["output"])
             
-            # Extract context updates from response
-            context_updates = self._extract_context_updates(response_text)
+            # Determine if we need more information
+            needs_more_info = False
+            response_lower = response["output"].lower()
             
-            # Add AI response to memory
-            if response_text:
-                self.memory.chat_memory.add_message(AIMessage(content=response_text))
+            # Check if response indicates need for more information
+            if any(phrase in response_lower for phrase in [
+                "what time", "which doctor", "what date", "please specify",
+                "could you tell me", "do you prefer", "would you like"]):
+                needs_more_info = True
             
             return {
-                "response": response_text,
+                "response": response["output"],
                 "context_updates": context_updates,
-                "suggested_next": None
+                "suggested_next": "SQL" if needs_more_info else None,
+                "status": "active" if needs_more_info else "resolved"
             }
+            
         except Exception as e:
-            logger.error(f"Error in SQL Agent handle_query: {str(e)}")
+            logger.error(f"Error in handle_query: {str(e)}")
             logger.error(traceback.format_exc())
             return {
                 "response": f"Appointment system error: {str(e)}. Please try again later.",
                 "context_updates": {},
-                "suggested_next": "HUMAN"
+                "suggested_next": "HUMAN",
+                "status": "resolved"
             }
 
     def _extract_context_updates(self, response_text: str) -> Dict:

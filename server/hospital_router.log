@@ -3557,3 +3557,672 @@ RuntimeError: Failed to load agents: ['sql', 'graph']
 2025-04-10 11:50:31,192 - DEBUG - Agent verification complete
 2025-04-10 11:50:31,193 - INFO - All agents initialized successfully
 2025-04-10 11:53:34,925 - ERROR - Error in query classification: Expecting value: line 1 column 1 (char 0)
+2025-04-16 19:40:01,819 - INFO - Starting agent initialization...
+2025-04-16 19:40:01,820 - DEBUG - Environment variables verified
+2025-04-16 19:40:01,820 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:40:32,896 - DEBUG - Agent loading results: [True, True, False]
+2025-04-16 19:40:32,897 - ERROR - Failed to load agents: ['graph']
+2025-04-16 19:40:32,898 - ERROR - Agent loading failure details:
+2025-04-16 19:40:32,899 - ERROR - graph loading traceback:
+2025-04-16 19:40:32,900 - ERROR - NoneType: None
+
+2025-04-16 19:40:32,901 - ERROR - Critical initialization failure: Failed to load agents: ['graph']
+2025-04-16 19:40:32,902 - ERROR - Full initialization traceback:
+2025-04-16 19:40:32,903 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-16 19:40:32,907 - ERROR - Critical error: Failed to load agents: ['graph']
+2025-04-16 19:40:32,909 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 604, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['graph']
+
+2025-04-16 19:43:11,958 - INFO - Starting agent initialization...
+2025-04-16 19:43:11,959 - DEBUG - Environment variables verified
+2025-04-16 19:43:11,959 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:43:29,613 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 19:43:29,614 - DEBUG - Verifying agent interfaces...
+2025-04-16 19:43:29,620 - DEBUG - Agent verification complete
+2025-04-16 19:43:29,621 - INFO - All agents initialized successfully
+2025-04-16 19:44:38,071 - INFO - Routing query to SQL agent: I want to book an appointment
+2025-04-16 19:44:38,072 - DEBUG - Session ID: sess_20250416194438_09173d46
+2025-04-16 19:44:38,074 - DEBUG - Getting context for agent: sql
+2025-04-16 19:44:38,075 - INFO - Calling SQL agent handler
+2025-04-16 19:44:38,076 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194438_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:44:38.075359'}}
+2025-04-16 19:44:38,091 - INFO - Received response from SQL agent
+2025-04-16 19:44:38,092 - DEBUG - Agent response: {'response': "Appointment system error: name 'query' is not defined. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-16 19:46:56,828 - INFO - Starting agent initialization...
+2025-04-16 19:46:56,829 - DEBUG - Environment variables verified
+2025-04-16 19:46:56,829 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:47:07,748 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 19:47:07,749 - DEBUG - Verifying agent interfaces...
+2025-04-16 19:47:07,754 - DEBUG - Agent verification complete
+2025-04-16 19:47:07,755 - INFO - All agents initialized successfully
+2025-04-16 19:47:22,737 - INFO - Routing query to SQL agent: I want to book an appointment
+2025-04-16 19:47:22,738 - DEBUG - Session ID: sess_20250416194722_09173d46
+2025-04-16 19:47:22,739 - DEBUG - Getting context for agent: sql
+2025-04-16 19:47:22,741 - INFO - Calling SQL agent handler
+2025-04-16 19:47:22,742 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194722_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:47:22.741130'}}
+2025-04-16 19:47:22,759 - INFO - Received response from SQL agent
+2025-04-16 19:47:22,761 - DEBUG - Agent response: {'response': "Appointment system error: name 'query' is not defined. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-16 19:48:51,932 - INFO - Starting agent initialization...
+2025-04-16 19:48:51,933 - DEBUG - Environment variables verified
+2025-04-16 19:48:51,933 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:49:01,473 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 19:49:01,474 - DEBUG - Verifying agent interfaces...
+2025-04-16 19:49:01,478 - DEBUG - Agent verification complete
+2025-04-16 19:49:01,479 - INFO - All agents initialized successfully
+2025-04-16 19:49:09,945 - INFO - Routing query to SQL agent: I want to book an appointment
+2025-04-16 19:49:09,947 - DEBUG - Session ID: sess_20250416194909_09173d46
+2025-04-16 19:49:09,948 - DEBUG - Getting context for agent: sql
+2025-04-16 19:49:09,950 - INFO - Calling SQL agent handler
+2025-04-16 19:49:09,951 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416194909_09173d46', 'department': 'SQL', 'timestamp': '2025-04-16T19:49:09.949983'}}
+2025-04-16 19:49:09,968 - INFO - Received response from SQL agent
+2025-04-16 19:49:09,969 - DEBUG - Agent response: {'response': "Appointment system error: cannot access local variable 'query_text' where it is not associated with a value. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-16 19:50:16,482 - INFO - Starting agent initialization...
+2025-04-16 19:50:16,483 - DEBUG - Environment variables verified
+2025-04-16 19:50:16,484 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:50:25,870 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 19:50:25,871 - DEBUG - Verifying agent interfaces...
+2025-04-16 19:50:25,875 - DEBUG - Agent verification complete
+2025-04-16 19:50:25,876 - INFO - All agents initialized successfully
+2025-04-16 19:50:35,858 - INFO - Routing query to GRAPH agent: symptoms of gout
+2025-04-16 19:50:35,860 - DEBUG - Session ID: sess_20250416195035_79144ace
+2025-04-16 19:50:35,862 - DEBUG - Getting context for agent: graph
+2025-04-16 19:50:35,863 - INFO - Calling GRAPH agent handler
+2025-04-16 19:50:35,865 - DEBUG - Query data: {'text': 'symptoms of gout', 'context': {'session_id': 'sess_20250416195035_79144ace', 'department': 'GRAPH', 'timestamp': '2025-04-16T19:50:35.863407'}}
+2025-04-16 19:50:39,045 - INFO - Received response from GRAPH agent
+2025-04-16 19:50:39,047 - DEBUG - Agent response: {'response': "I understand you're experiencing some concerning symptoms.  It sounds like you might be dealing with gout.  Gout is a type of arthritis that causes sudden, intense pain, swelling, and redness in the joints, often starting in the big toe.  \n\nIt's important to remember that I'm not a doctor and can't diagnose you.  However, based on what you've described, it's definitely worth talking to a medical professional as soon as possible. They can properly assess your symptoms, run some tests if needed, and recommend the best course of treatment for you. \n\nIn the meantime, try to rest the affected joint and avoid putting weight on it if possible. Applying a cold compress can also help reduce the pain and swelling.  \n\nPlease don't hesitate to reach out to Osaka University Hospital or your primary care physician to schedule an appointment. We're here to help you feel better. \n\n\n\n", 'context_updates': {'last_interaction': '2025-04-16T19:50:39.045149', 'chat_history': [{'query': 'symptoms of gout', 'response': "I understand you're experiencing some concerning symptoms.  It sounds like you might be dealing with gout.  Gout is a type of arthritis that causes sudden, intense pain, swelling, and redness in the joints, often starting in the big toe.  \n\nIt's important to remember that I'm not a doctor and can't diagnose you.  However, based on what you've described, it's definitely worth talking to a medical professional as soon as possible. They can properly assess your symptoms, run some tests if needed, and recommend the best course of treatment for you. \n\nIn the meantime, try to rest the affected joint and avoid putting weight on it if possible. Applying a cold compress can also help reduce the pain and swelling.  \n\nPlease don't hesitate to reach out to Osaka University Hospital or your primary care physician to schedule an appointment. We're here to help you feel better. \n\n\n\n", 'timestamp': '2025-04-16T19:50:39.045170'}]}, 'suggested_next': None}
+2025-04-16 19:52:32,214 - INFO - Starting agent initialization...
+2025-04-16 19:52:32,215 - DEBUG - Environment variables verified
+2025-04-16 19:52:32,215 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 19:52:42,929 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 19:52:42,929 - DEBUG - Verifying agent interfaces...
+2025-04-16 19:52:42,933 - DEBUG - Agent verification complete
+2025-04-16 19:52:42,934 - INFO - All agents initialized successfully
+2025-04-16 19:53:03,811 - INFO - Routing query to RAG agent: What are the visiting hours of your hospital
+2025-04-16 19:53:03,813 - DEBUG - Session ID: sess_20250416195303_258dab27
+2025-04-16 19:53:03,814 - DEBUG - Getting context for agent: rag
+2025-04-16 19:53:03,816 - INFO - Calling RAG agent handler
+2025-04-16 19:53:03,817 - DEBUG - Query data: {'text': 'What are the visiting hours of your hospital', 'context': {'session_id': 'sess_20250416195303_258dab27', 'department': 'RAG', 'timestamp': '2025-04-16T19:53:03.815974'}}
+2025-04-16 19:53:09,590 - INFO - Received response from RAG agent
+2025-04-16 19:53:09,590 - DEBUG - Agent response: {'response': 'I encountered an error processing your request. Please try again.', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 20:22:18,492 - INFO - Starting agent initialization...
+2025-04-16 20:22:18,492 - DEBUG - Environment variables verified
+2025-04-16 20:22:18,493 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 20:22:29,747 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 20:22:29,748 - DEBUG - Verifying agent interfaces...
+2025-04-16 20:22:29,751 - DEBUG - Agent verification complete
+2025-04-16 20:22:29,752 - INFO - All agents initialized successfully
+2025-04-16 20:22:47,366 - INFO - Routing query to RAG agent: What are the visiting hours of your hospital
+2025-04-16 20:22:47,367 - DEBUG - Session ID: sess_20250416202247_258dab27
+2025-04-16 20:22:47,368 - DEBUG - Getting context for agent: rag
+2025-04-16 20:22:47,369 - INFO - Calling RAG agent handler
+2025-04-16 20:22:47,369 - DEBUG - Query data: {'text': 'What are the visiting hours of your hospital', 'context': {'session_id': 'sess_20250416202247_258dab27', 'department': 'RAG', 'timestamp': '2025-04-16T20:22:47.369062'}}
+2025-04-16 20:22:53,318 - INFO - Received response from RAG agent
+2025-04-16 20:22:53,318 - DEBUG - Agent response: {'response': 'I encountered an error processing your request. Please try again.', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 20:30:42,843 - INFO - Starting agent initialization...
+2025-04-16 20:30:42,844 - DEBUG - Environment variables verified
+2025-04-16 20:30:42,844 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 20:31:02,689 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 20:31:02,690 - DEBUG - Verifying agent interfaces...
+2025-04-16 20:31:02,696 - DEBUG - Agent verification complete
+2025-04-16 20:31:02,697 - INFO - All agents initialized successfully
+2025-04-16 20:32:12,773 - INFO - Routing query to RAG agent: What are the visiting hours of your hospital
+2025-04-16 20:32:12,775 - DEBUG - Session ID: sess_20250416203212_258dab27
+2025-04-16 20:32:12,776 - DEBUG - Getting context for agent: RAG
+2025-04-16 20:32:12,777 - ERROR - Error in route_to_agent: 'ContextManager' object has no attribute 'get_agent_context'
+2025-04-16 20:32:12,784 - ERROR - Route error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 430, in route_to_agent
+    context = self.context_manager.get_agent_context(department)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextManager' object has no attribute 'get_agent_context'
+
+2025-04-16 20:33:13,918 - INFO - Starting agent initialization...
+2025-04-16 20:33:13,919 - DEBUG - Environment variables verified
+2025-04-16 20:33:13,920 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 20:33:43,844 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 20:33:43,846 - DEBUG - Verifying agent interfaces...
+2025-04-16 20:33:43,858 - DEBUG - Agent verification complete
+2025-04-16 20:33:43,860 - INFO - All agents initialized successfully
+2025-04-16 20:33:57,307 - INFO - Routing query to RAG agent: What are the visiting hours of your hospital
+2025-04-16 20:33:57,309 - DEBUG - Session ID: sess_20250416203357_258dab27
+2025-04-16 20:33:57,311 - DEBUG - Getting context for agent: RAG
+2025-04-16 20:33:57,313 - ERROR - Error in route_to_agent: 'RAG'
+2025-04-16 20:33:57,319 - ERROR - Route error traceback: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 430, in route_to_agent
+    context = self.context_manager.get_context(department)
+  File "D:\FYP\server\context\context_manager.py", line 60, in get_context
+    **self._agent_states[agent_id]  # Agent-specific context
+      ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'RAG'
+
+2025-04-16 20:35:45,907 - INFO - Starting agent initialization...
+2025-04-16 20:35:45,908 - DEBUG - Environment variables verified
+2025-04-16 20:35:45,909 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 20:36:06,787 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 20:36:06,788 - DEBUG - Verifying agent interfaces...
+2025-04-16 20:36:06,797 - DEBUG - Agent verification complete
+2025-04-16 20:36:06,798 - INFO - All agents initialized successfully
+2025-04-16 20:36:23,043 - INFO - Routing query to RAG agent: What are the visiting hours of your hospital
+2025-04-16 20:36:23,045 - DEBUG - Session ID: sess_20250416203623_258dab27
+2025-04-16 20:36:23,047 - DEBUG - Getting context for agent: RAG
+2025-04-16 20:36:23,048 - INFO - Calling RAG agent handler
+2025-04-16 20:36:23,050 - DEBUG - Query data: {'text': 'What are the visiting hours of your hospital', 'context': {'session_id': 'sess_20250416203623_258dab27', 'department': 'RAG', 'timestamp': '2025-04-16T20:36:23.048549'}}
+2025-04-16 20:37:15,601 - INFO - Received response from RAG agent
+2025-04-16 20:37:15,603 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about visiting hours in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T20:37:15.598901', 'chat_history': [{'query': 'What are the visiting hours of your hospital', 'response': "I can help with that!\n\nI couldn't find specific information about visiting hours in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T20:37:15.598921'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 20:40:24,355 - INFO - Starting agent initialization...
+2025-04-16 20:40:24,356 - DEBUG - Environment variables verified
+2025-04-16 20:40:24,357 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 20:40:34,410 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 20:40:34,411 - DEBUG - Verifying agent interfaces...
+2025-04-16 20:40:34,415 - DEBUG - Agent verification complete
+2025-04-16 20:40:34,415 - INFO - All agents initialized successfully
+2025-04-16 20:42:56,439 - INFO - Routing query to GRAPH agent: What are the symptoms of gout
+2025-04-16 20:42:56,440 - DEBUG - Session ID: sess_20250416204256_8352ee44
+2025-04-16 20:42:56,442 - DEBUG - Getting context for agent: GRAPH
+2025-04-16 20:42:56,443 - INFO - Calling GRAPH agent handler
+2025-04-16 20:42:56,444 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416204256_8352ee44', 'department': 'GRAPH', 'timestamp': '2025-04-16T20:42:56.443154'}}
+2025-04-16 20:42:59,645 - INFO - Received response from GRAPH agent
+2025-04-16 20:42:59,648 - DEBUG - Agent response: {'response': "Gout can cause some really painful symptoms.  \n\nYou might experience a sharp, intense pain in your joints, especially in your big toe. The joint might also feel swollen and look red. \n\nIt can be very uncomfortable, and it's important to seek medical attention if you think you might have gout.  \n\n", 'context_updates': {'last_interaction': '2025-04-16T20:42:59.645602', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "Gout can cause some really painful symptoms.  \n\nYou might experience a sharp, intense pain in your joints, especially in your big toe. The joint might also feel swollen and look red. \n\nIt can be very uncomfortable, and it's important to seek medical attention if you think you might have gout.  \n\n", 'timestamp': '2025-04-16T20:42:59.645629'}]}, 'suggested_next': None}
+2025-04-16 20:45:32,548 - INFO - Routing query to GRAPH agent: What are the visiting hours for outpatients
+2025-04-16 20:45:32,550 - DEBUG - Session ID: None
+2025-04-16 20:45:32,550 - DEBUG - Getting context for agent: GRAPH
+2025-04-16 20:45:32,552 - INFO - Calling GRAPH agent handler
+2025-04-16 20:45:32,552 - DEBUG - Query data: {'text': 'What are the visiting hours for outpatients', 'context': {'session_id': 'sess_20250416204532_c48a1dde', 'department': 'GRAPH', 'timestamp': '2025-04-16T20:45:32.552048'}}
+2025-04-16 20:45:34,333 - INFO - Received response from GRAPH agent
+2025-04-16 20:45:34,334 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 20:45:54,273 - INFO - Routing query to GRAPH agent: what are the visiting hours of ypur hospiptal
+2025-04-16 20:45:54,275 - DEBUG - Session ID: None
+2025-04-16 20:45:54,276 - DEBUG - Getting context for agent: GRAPH
+2025-04-16 20:45:54,277 - INFO - Calling GRAPH agent handler
+2025-04-16 20:45:54,277 - DEBUG - Query data: {'text': 'what are the visiting hours of ypur hospiptal', 'context': {'session_id': 'sess_20250416204554_f009e08c', 'department': 'GRAPH', 'timestamp': '2025-04-16T20:45:54.277008'}}
+2025-04-16 20:45:55,386 - INFO - Received response from GRAPH agent
+2025-04-16 20:45:55,387 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 20:46:07,548 - INFO - Routing query to GRAPH agent: I want to book an appointment
+2025-04-16 20:46:07,549 - DEBUG - Session ID: None
+2025-04-16 20:46:07,550 - DEBUG - Getting context for agent: GRAPH
+2025-04-16 20:46:07,552 - INFO - Calling GRAPH agent handler
+2025-04-16 20:46:07,553 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416204607_09173d46', 'department': 'GRAPH', 'timestamp': '2025-04-16T20:46:07.552044'}}
+2025-04-16 20:46:08,667 - INFO - Received response from GRAPH agent
+2025-04-16 20:46:08,668 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:10:23,651 - INFO - Starting agent initialization...
+2025-04-16 21:10:23,652 - DEBUG - Environment variables verified
+2025-04-16 21:10:23,653 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:10:34,745 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:10:34,746 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:10:34,754 - DEBUG - Agent verification complete
+2025-04-16 21:10:34,755 - INFO - All agents initialized successfully
+2025-04-16 21:10:53,837 - INFO - Routing query to RAG agent: What are the visiting hours for outpatients
+2025-04-16 21:10:53,838 - DEBUG - Session ID: sess_20250416211053_c48a1dde
+2025-04-16 21:10:53,840 - DEBUG - Getting context for agent: RAG
+2025-04-16 21:10:53,841 - INFO - Calling RAG agent handler
+2025-04-16 21:10:53,842 - DEBUG - Query data: {'text': 'What are the visiting hours for outpatients', 'context': {'session_id': 'sess_20250416211053_c48a1dde', 'department': 'RAG', 'timestamp': '2025-04-16T21:10:53.841404'}}
+2025-04-16 21:11:04,564 - INFO - Received response from RAG agent
+2025-04-16 21:11:04,565 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:11:04.563051', 'chat_history': [{'query': 'What are the visiting hours for outpatients', 'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:11:04.563059'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:11:16,448 - INFO - Routing query to RAG agent: What are the symptoms of gout
+2025-04-16 21:11:16,450 - DEBUG - Session ID: None
+2025-04-16 21:11:16,451 - DEBUG - Getting context for agent: RAG
+2025-04-16 21:11:16,452 - INFO - Calling RAG agent handler
+2025-04-16 21:11:16,453 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416211116_8352ee44', 'department': 'RAG', 'timestamp': '2025-04-16T21:11:16.452772'}}
+2025-04-16 21:11:22,779 - INFO - Received response from RAG agent
+2025-04-16 21:11:22,780 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:11:22.776454', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:11:22.776476'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:11:34,716 - INFO - Routing query to RAG agent: I want to book an appointment
+2025-04-16 21:11:34,718 - DEBUG - Session ID: None
+2025-04-16 21:11:34,719 - DEBUG - Getting context for agent: RAG
+2025-04-16 21:11:34,720 - INFO - Calling RAG agent handler
+2025-04-16 21:11:34,728 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416211134_09173d46', 'department': 'RAG', 'timestamp': '2025-04-16T21:11:34.720757'}}
+2025-04-16 21:11:42,475 - INFO - Received response from RAG agent
+2025-04-16 21:11:42,476 - DEBUG - Agent response: {'response': "I can help with that! \n\nUnfortunately, the documents I have don't explain how to book an appointment.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:11:42.472518', 'chat_history': [{'query': 'I want to book an appointment', 'response': "I can help with that! \n\nUnfortunately, the documents I have don't explain how to book an appointment.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:11:42.472534'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:14:51,309 - INFO - Starting agent initialization...
+2025-04-16 21:14:51,310 - DEBUG - Environment variables verified
+2025-04-16 21:14:51,310 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:15:01,665 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:15:01,666 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:15:01,670 - DEBUG - Agent verification complete
+2025-04-16 21:15:01,670 - INFO - All agents initialized successfully
+2025-04-16 21:15:55,984 - INFO - Query classified as RAG with confidence 1.0
+2025-04-16 21:15:55,985 - INFO - Routing query to RAG agent: what are the visiting hours for outpatients at your hospital
+2025-04-16 21:15:55,987 - DEBUG - Session ID: sess_20250416211555_4f00e538
+2025-04-16 21:15:55,988 - DEBUG - Getting context for agent: RAG
+2025-04-16 21:15:55,989 - INFO - Calling RAG agent handler
+2025-04-16 21:15:55,990 - DEBUG - Query data: {'text': 'what are the visiting hours for outpatients at your hospital', 'context': {'session_id': 'sess_20250416211555_4f00e538', 'department': 'RAG', 'timestamp': '2025-04-16T21:15:55.989779'}}
+2025-04-16 21:16:09,622 - INFO - Received response from RAG agent
+2025-04-16 21:16:09,624 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about outpatient visiting hours in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:16:09.618566', 'chat_history': [{'query': 'what are the visiting hours for outpatients at your hospital', 'response': "I can help with that!\n\nI couldn't find specific information about outpatient visiting hours in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:16:09.618576'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:17:39,978 - INFO - Routing query to RAG agent: What are the symptoms of gout
+2025-04-16 21:17:39,980 - DEBUG - Session ID: None
+2025-04-16 21:17:39,981 - DEBUG - Getting context for agent: RAG
+2025-04-16 21:17:39,983 - INFO - Calling RAG agent handler
+2025-04-16 21:17:39,984 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416211739_8352ee44', 'department': 'RAG', 'timestamp': '2025-04-16T21:17:39.983116'}}
+2025-04-16 21:18:03,239 - INFO - Received response from RAG agent
+2025-04-16 21:18:03,241 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:18:03.235149', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:18:03.235178'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:24:46,090 - INFO - Starting agent initialization...
+2025-04-16 21:24:46,091 - DEBUG - Environment variables verified
+2025-04-16 21:24:46,092 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:25:01,895 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:25:01,897 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:25:01,914 - DEBUG - Agent verification complete
+2025-04-16 21:25:01,916 - INFO - All agents initialized successfully
+2025-04-16 21:25:14,209 - INFO - Query classified as graph with confidence 1.0
+2025-04-16 21:25:14,211 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-16 21:25:14,212 - DEBUG - Session ID: sess_20250416212514_8352ee44
+2025-04-16 21:25:14,213 - ERROR - Agent handler not found for department: graph
+2025-04-16 21:25:36,933 - INFO - Routing query to graph agent: Whta are the visiting hours of outpatients
+2025-04-16 21:25:36,935 - DEBUG - Session ID: None
+2025-04-16 21:25:36,936 - ERROR - Agent handler not found for department: graph
+2025-04-16 21:25:47,735 - INFO - Routing query to graph agent: I want to book an appointmnet
+2025-04-16 21:25:47,737 - DEBUG - Session ID: None
+2025-04-16 21:25:47,738 - ERROR - Agent handler not found for department: graph
+2025-04-16 21:28:01,028 - INFO - Starting agent initialization...
+2025-04-16 21:28:01,030 - DEBUG - Environment variables verified
+2025-04-16 21:28:01,030 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:28:16,554 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:28:16,556 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:28:16,557 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:28:16,558 - INFO - rag agent ready
+2025-04-16 21:28:16,559 - INFO - graph agent ready
+2025-04-16 21:28:16,561 - DEBUG - Agent verification complete
+2025-04-16 21:28:16,562 - INFO - All agents initialized successfully
+2025-04-16 21:28:32,773 - INFO - Query classified as rag with confidence 1.0
+2025-04-16 21:28:32,774 - INFO - Routing query to rag agent: What are the visiting hours for outpatients
+2025-04-16 21:28:32,776 - DEBUG - Session ID: sess_20250416212832_c48a1dde
+2025-04-16 21:28:32,777 - DEBUG - Getting context for agent: rag
+2025-04-16 21:28:32,778 - INFO - Calling rag agent handler
+2025-04-16 21:28:32,779 - DEBUG - Query data: {'text': 'What are the visiting hours for outpatients', 'context': {'session_id': 'sess_20250416212832_c48a1dde', 'department': 'rag', 'timestamp': '2025-04-16T21:28:32.778492'}}
+2025-04-16 21:28:50,392 - INFO - Received response from rag agent
+2025-04-16 21:28:50,393 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:28:50.389038', 'chat_history': [{'query': 'What are the visiting hours for outpatients', 'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:28:50.389060'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:29:02,692 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-16 21:29:02,693 - DEBUG - Session ID: None
+2025-04-16 21:29:02,694 - DEBUG - Getting context for agent: rag
+2025-04-16 21:29:02,695 - INFO - Calling rag agent handler
+2025-04-16 21:29:02,696 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416212902_8352ee44', 'department': 'rag', 'timestamp': '2025-04-16T21:29:02.695770'}}
+2025-04-16 21:29:11,688 - INFO - Received response from rag agent
+2025-04-16 21:29:11,690 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:29:11.679506', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:29:11.679547'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:29:20,294 - INFO - Routing query to rag agent: I want to book an appointment
+2025-04-16 21:29:20,296 - DEBUG - Session ID: None
+2025-04-16 21:29:20,297 - DEBUG - Getting context for agent: rag
+2025-04-16 21:29:20,298 - INFO - Calling rag agent handler
+2025-04-16 21:29:20,300 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416212920_09173d46', 'department': 'rag', 'timestamp': '2025-04-16T21:29:20.298750'}}
+2025-04-16 21:29:28,280 - INFO - Received response from rag agent
+2025-04-16 21:29:28,283 - DEBUG - Agent response: {'response': "I can help you with that! \n\nUnfortunately, the documents I have don't explain how to book an appointment.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:29:28.272426', 'chat_history': [{'query': 'I want to book an appointment', 'response': "I can help you with that! \n\nUnfortunately, the documents I have don't explain how to book an appointment.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:29:28.272463'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:31:48,507 - INFO - Starting agent initialization...
+2025-04-16 21:31:48,508 - DEBUG - Environment variables verified
+2025-04-16 21:31:48,509 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:32:04,408 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:32:04,409 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:32:04,411 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:32:04,412 - INFO - rag agent ready
+2025-04-16 21:32:04,413 - INFO - graph agent ready
+2025-04-16 21:32:04,414 - DEBUG - Agent verification complete
+2025-04-16 21:32:04,416 - INFO - All agents initialized successfully
+2025-04-16 21:32:13,375 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:32:13,377 - INFO - Routing query to rag agent: Whata re your admission policies
+2025-04-16 21:32:13,378 - DEBUG - Session ID: sess_20250416213213_55e41c20
+2025-04-16 21:32:13,380 - DEBUG - Getting context for agent: rag
+2025-04-16 21:32:13,381 - INFO - Calling rag agent handler
+2025-04-16 21:32:13,382 - DEBUG - Query data: {'text': 'Whata re your admission policies', 'context': {'session_id': 'sess_20250416213213_55e41c20', 'department': 'rag', 'timestamp': '2025-04-16T21:32:13.381113'}}
+2025-04-16 21:32:24,158 - INFO - Received response from rag agent
+2025-04-16 21:32:24,160 - DEBUG - Agent response: {'response': 'I can help with that!\n\nHi there! \n\nTo help you understand our admission policies, I\'ve looked at our "Hospital Admission Process" and "Admission Guidelines and Procedures" documents. \n\nBasically, your doctor will let you know when you need to be admitted to the hospital.  They\'ll register your admission, and then the clinical section will contact you to schedule your arrival time.  \n\nOn the day of your admission, make sure to bring your patient registration card, personal seal, and admission application to the Inpatients Reception.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-16T21:32:24.152572', 'chat_history': [{'query': 'Whata re your admission policies', 'response': 'I can help with that!\n\nHi there! \n\nTo help you understand our admission policies, I\'ve looked at our "Hospital Admission Process" and "Admission Guidelines and Procedures" documents. \n\nBasically, your doctor will let you know when you need to be admitted to the hospital.  They\'ll register your admission, and then the clinical section will contact you to schedule your arrival time.  \n\nOn the day of your admission, make sure to bring your patient registration card, personal seal, and admission application to the Inpatients Reception.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-16T21:32:24.152583'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:32:48,787 - INFO - Routing query to rag agent: What are the symmptoms of gout
+2025-04-16 21:32:48,788 - DEBUG - Session ID: None
+2025-04-16 21:32:48,790 - DEBUG - Getting context for agent: rag
+2025-04-16 21:32:48,791 - INFO - Calling rag agent handler
+2025-04-16 21:32:48,792 - DEBUG - Query data: {'text': 'What are the symmptoms of gout', 'context': {'session_id': 'sess_20250416213248_8b222a10', 'department': 'rag', 'timestamp': '2025-04-16T21:32:48.791357'}}
+2025-04-16 21:32:56,148 - INFO - Received response from rag agent
+2025-04-16 21:32:56,150 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the documents I have access to.  \n\nWould you like me to try finding some reliable information about gout symptoms online?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:32:56.141134', 'chat_history': [{'query': 'What are the symmptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the documents I have access to.  \n\nWould you like me to try finding some reliable information about gout symptoms online?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:32:56.141175'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:34:53,520 - INFO - Starting agent initialization...
+2025-04-16 21:34:53,521 - DEBUG - Environment variables verified
+2025-04-16 21:34:53,522 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:35:13,244 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:35:13,246 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:35:13,249 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:35:13,251 - INFO - rag agent ready
+2025-04-16 21:35:13,253 - INFO - graph agent ready
+2025-04-16 21:35:13,254 - DEBUG - Agent verification complete
+2025-04-16 21:35:13,256 - INFO - All agents initialized successfully
+2025-04-16 21:35:26,453 - INFO - Query classified as graph with confidence 1.0
+2025-04-16 21:35:26,455 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-16 21:35:26,456 - DEBUG - Session ID: sess_20250416213526_8352ee44
+2025-04-16 21:35:26,458 - DEBUG - Getting context for agent: graph
+2025-04-16 21:35:26,459 - INFO - Calling graph agent handler
+2025-04-16 21:35:26,460 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416213526_8352ee44', 'department': 'graph', 'timestamp': '2025-04-16T21:35:26.459361'}}
+2025-04-16 21:35:30,954 - INFO - Received response from graph agent
+2025-04-16 21:35:30,957 - DEBUG - Agent response: {'response': "I understand you're looking for information about gout.  \n\nGout can cause very intense pain in your joints, especially the big toe. You might also notice swelling and redness in the affected area.  \n\nIt's important to remember that I'm not a doctor and this isn't medical advice. If you're experiencing these symptoms, please reach out to a healthcare professional for proper diagnosis and treatment. They can help you understand what's going on and get you the care you need. \n\n", 'context_updates': {'last_interaction': '2025-04-16T21:35:30.954420', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I understand you're looking for information about gout.  \n\nGout can cause very intense pain in your joints, especially the big toe. You might also notice swelling and redness in the affected area.  \n\nIt's important to remember that I'm not a doctor and this isn't medical advice. If you're experiencing these symptoms, please reach out to a healthcare professional for proper diagnosis and treatment. They can help you understand what's going on and get you the care you need. \n\n", 'timestamp': '2025-04-16T21:35:30.954448'}]}, 'suggested_next': None}
+2025-04-16 21:35:39,942 - INFO - Routing query to graph agent: What are your admission policies
+2025-04-16 21:35:39,943 - DEBUG - Session ID: None
+2025-04-16 21:35:39,947 - DEBUG - Getting context for agent: graph
+2025-04-16 21:35:39,948 - INFO - Calling graph agent handler
+2025-04-16 21:35:39,949 - DEBUG - Query data: {'text': 'What are your admission policies', 'context': {'session_id': 'sess_20250416213539_14d53768', 'department': 'graph', 'timestamp': '2025-04-16T21:35:39.948546'}}
+2025-04-16 21:35:42,731 - INFO - Received response from graph agent
+2025-04-16 21:35:42,734 - DEBUG - Agent response: {'response': 'Osaka University Hospital treats a wide range of serious medical conditions. \n\nWe specialize in caring for people with:\n\n* **Heart problems:** This includes things like heart disease, valve problems, and high blood pressure.\n* **Lung conditions:** We treat lung cancer, infections, and breathing difficulties.\n* **Cancer:** We have a dedicated team to treat many types of cancer, including those affecting the lungs, breast, blood, and reproductive organs.\n* **Blood disorders:** We care for patients with conditions like anemia, leukemia, and clotting problems.\n* **Gastrointestinal issues:** We treat problems with the stomach, intestines, and liver, including bleeding, ulcers, and inflammation.\n* **Other serious conditions:** This includes things like infections, bone marrow disorders, and complications from surgery.\n\nIf you are experiencing a medical emergency, please call 911 or go to the nearest emergency room. \n\nIf you have questions about our services or would like to schedule an appointment, please contact our office.\n\n\n\n', 'context_updates': {'last_interaction': '2025-04-16T21:35:42.731319', 'chat_history': [{'query': 'What are your admission policies', 'response': 'Osaka University Hospital treats a wide range of serious medical conditions. \n\nWe specialize in caring for people with:\n\n* **Heart problems:** This includes things like heart disease, valve problems, and high blood pressure.\n* **Lung conditions:** We treat lung cancer, infections, and breathing difficulties.\n* **Cancer:** We have a dedicated team to treat many types of cancer, including those affecting the lungs, breast, blood, and reproductive organs.\n* **Blood disorders:** We care for patients with conditions like anemia, leukemia, and clotting problems.\n* **Gastrointestinal issues:** We treat problems with the stomach, intestines, and liver, including bleeding, ulcers, and inflammation.\n* **Other serious conditions:** This includes things like infections, bone marrow disorders, and complications from surgery.\n\nIf you are experiencing a medical emergency, please call 911 or go to the nearest emergency room. \n\nIf you have questions about our services or would like to schedule an appointment, please contact our office.\n\n\n\n', 'timestamp': '2025-04-16T21:35:42.731353'}]}, 'suggested_next': None}
+2025-04-16 21:35:52,495 - INFO - Routing query to graph agent: I want to book an appointment
+2025-04-16 21:35:52,496 - DEBUG - Session ID: None
+2025-04-16 21:35:52,498 - DEBUG - Getting context for agent: graph
+2025-04-16 21:35:52,499 - INFO - Calling graph agent handler
+2025-04-16 21:35:52,500 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416213552_09173d46', 'department': 'graph', 'timestamp': '2025-04-16T21:35:52.499551'}}
+2025-04-16 21:35:53,618 - INFO - Received response from graph agent
+2025-04-16 21:35:53,621 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:36:22,602 - INFO - Starting agent initialization...
+2025-04-16 21:36:22,603 - DEBUG - Environment variables verified
+2025-04-16 21:36:22,604 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:36:45,538 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:36:45,540 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:36:45,541 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:36:45,542 - INFO - rag agent ready
+2025-04-16 21:36:45,543 - INFO - graph agent ready
+2025-04-16 21:36:45,544 - DEBUG - Agent verification complete
+2025-04-16 21:36:45,545 - INFO - All agents initialized successfully
+2025-04-16 21:36:56,784 - INFO - Query classified as sql with confidence 1.0
+2025-04-16 21:36:56,785 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-16 21:36:56,787 - DEBUG - Session ID: sess_20250416213656_09173d46
+2025-04-16 21:36:56,788 - DEBUG - Getting context for agent: sql
+2025-04-16 21:36:56,790 - INFO - Calling sql agent handler
+2025-04-16 21:36:56,791 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416213656_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T21:36:56.789957'}}
+2025-04-16 21:36:56,811 - INFO - Received response from sql agent
+2025-04-16 21:36:56,812 - DEBUG - Agent response: {'response': "Appointment system error: name 'context' is not defined. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-16 21:39:22,066 - INFO - Starting agent initialization...
+2025-04-16 21:39:22,068 - DEBUG - Environment variables verified
+2025-04-16 21:39:22,069 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:39:36,522 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:39:36,523 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:39:36,524 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:39:36,525 - INFO - rag agent ready
+2025-04-16 21:39:36,526 - INFO - graph agent ready
+2025-04-16 21:39:36,527 - DEBUG - Agent verification complete
+2025-04-16 21:39:36,529 - INFO - All agents initialized successfully
+2025-04-16 21:39:41,308 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:39:41,310 - INFO - Routing query to rag agent: What are your admission policies
+2025-04-16 21:39:41,311 - DEBUG - Session ID: sess_20250416213941_14d53768
+2025-04-16 21:39:41,312 - DEBUG - Getting context for agent: rag
+2025-04-16 21:39:41,313 - INFO - Calling rag agent handler
+2025-04-16 21:39:41,315 - DEBUG - Query data: {'text': 'What are your admission policies', 'context': {'session_id': 'sess_20250416213941_14d53768', 'department': 'rag', 'timestamp': '2025-04-16T21:39:41.313920'}}
+2025-04-16 21:39:52,939 - INFO - Received response from rag agent
+2025-04-16 21:39:52,941 - DEBUG - Agent response: {'response': 'I can help with that!\n\nHello!  \n\nTo answer your question about admission policies, I\'ve looked at our documents "Hospital Admission Process" and "Admission Guidelines and Procedures". \n\nAccording to "Admission Guidelines and Procedures", your doctor will let you know the date for hospitalization. If you need to be admitted after an outpatient appointment, your doctor will register your admission and the clinical section will contact you with the date and time.\n\n"Hospital Admission Process" outlines that you\'ll need to arrive at the Inpatients Reception with your patient registration card, personal seal, and admission application on the day of your admission. \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-16T21:39:52.933453', 'chat_history': [{'query': 'What are your admission policies', 'response': 'I can help with that!\n\nHello!  \n\nTo answer your question about admission policies, I\'ve looked at our documents "Hospital Admission Process" and "Admission Guidelines and Procedures". \n\nAccording to "Admission Guidelines and Procedures", your doctor will let you know the date for hospitalization. If you need to be admitted after an outpatient appointment, your doctor will register your admission and the clinical section will contact you with the date and time.\n\n"Hospital Admission Process" outlines that you\'ll need to arrive at the Inpatients Reception with your patient registration card, personal seal, and admission application on the day of your admission. \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-16T21:39:52.933464'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:40:00,158 - INFO - Query classified as graph with confidence 1.0
+2025-04-16 21:40:00,159 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-16 21:40:00,161 - DEBUG - Session ID: sess_20250416214000_8352ee44
+2025-04-16 21:40:00,162 - DEBUG - Getting context for agent: graph
+2025-04-16 21:40:00,163 - INFO - Calling graph agent handler
+2025-04-16 21:40:00,164 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416214000_8352ee44', 'department': 'graph', 'timestamp': '2025-04-16T21:40:00.163616'}}
+2025-04-16 21:40:02,520 - INFO - Received response from graph agent
+2025-04-16 21:40:02,523 - DEBUG - Agent response: {'response': "Gout can be very painful.  \n\nIt often starts with a sudden, intense pain in your joint, especially your big toe.  You might also notice the joint is swollen, red, and feels hot to the touch.  \n\n\nIt's important to remember that everyone experiences gout differently, but this is a common description of what it feels like.  If you're experiencing any of these symptoms, please don't hesitate to seek medical attention.  We're here to help. \n\n", 'context_updates': {'last_interaction': '2025-04-16T21:40:02.520438', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "Gout can be very painful.  \n\nIt often starts with a sudden, intense pain in your joint, especially your big toe.  You might also notice the joint is swollen, red, and feels hot to the touch.  \n\n\nIt's important to remember that everyone experiences gout differently, but this is a common description of what it feels like.  If you're experiencing any of these symptoms, please don't hesitate to seek medical attention.  We're here to help. \n\n", 'timestamp': '2025-04-16T21:40:02.520477'}]}, 'suggested_next': None}
+2025-04-16 21:40:07,741 - INFO - Routing query to graph agent: I want to book an appointment
+2025-04-16 21:40:07,743 - DEBUG - Session ID: None
+2025-04-16 21:40:07,744 - DEBUG - Getting context for agent: graph
+2025-04-16 21:40:07,746 - INFO - Calling graph agent handler
+2025-04-16 21:40:07,747 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416214007_09173d46', 'department': 'graph', 'timestamp': '2025-04-16T21:40:07.746040'}}
+2025-04-16 21:40:08,712 - INFO - Received response from graph agent
+2025-04-16 21:40:08,715 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:40:18,508 - INFO - Routing query to graph agent: I want to book an appointment
+2025-04-16 21:40:18,510 - DEBUG - Session ID: None
+2025-04-16 21:40:18,511 - DEBUG - Getting context for agent: graph
+2025-04-16 21:40:18,512 - INFO - Calling graph agent handler
+2025-04-16 21:40:18,513 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416214018_09173d46', 'department': 'graph', 'timestamp': '2025-04-16T21:40:18.512680'}}
+2025-04-16 21:40:19,958 - INFO - Received response from graph agent
+2025-04-16 21:40:19,961 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:44:55,854 - INFO - Starting agent initialization...
+2025-04-16 21:44:55,856 - DEBUG - Environment variables verified
+2025-04-16 21:44:55,857 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:45:10,859 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:45:10,861 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:45:10,862 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:45:10,864 - INFO - rag agent ready
+2025-04-16 21:45:10,864 - INFO - graph agent ready
+2025-04-16 21:45:10,866 - DEBUG - Agent verification complete
+2025-04-16 21:45:10,867 - INFO - All agents initialized successfully
+2025-04-16 21:45:15,237 - DEBUG - Classifying query: what are the symptoms of gout
+2025-04-16 21:45:15,238 - DEBUG - Found GRAPH keyword: symptom
+2025-04-16 21:45:15,240 - INFO - Query classified as graph with confidence 1.0
+2025-04-16 21:45:15,241 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-16 21:45:15,242 - DEBUG - Session ID: sess_20250416214515_8352ee44
+2025-04-16 21:45:15,244 - DEBUG - Getting context for agent: graph
+2025-04-16 21:45:15,245 - INFO - Calling graph agent handler
+2025-04-16 21:45:15,246 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416214515_8352ee44', 'department': 'graph', 'timestamp': '2025-04-16T21:45:15.245281'}}
+2025-04-16 21:45:17,188 - INFO - Received response from graph agent
+2025-04-16 21:45:17,190 - DEBUG - Agent response: {'response': "Gout can be very painful.  \n\nYou might experience intense pain in your joints, especially in your big toe. The joint might also feel swollen and look red. \n\n\nIf you're experiencing these symptoms, it's important to seek medical attention right away.  We can help figure out what's going on and get you the treatment you need. \n\n", 'context_updates': {'last_interaction': '2025-04-16T21:45:17.188237', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "Gout can be very painful.  \n\nYou might experience intense pain in your joints, especially in your big toe. The joint might also feel swollen and look red. \n\n\nIf you're experiencing these symptoms, it's important to seek medical attention right away.  We can help figure out what's going on and get you the treatment you need. \n\n", 'timestamp': '2025-04-16T21:45:17.188262'}]}, 'suggested_next': None}
+2025-04-16 21:45:20,723 - INFO - Routing query to graph agent: What are the visiting hours for outpatients
+2025-04-16 21:45:20,725 - DEBUG - Session ID: None
+2025-04-16 21:45:20,726 - DEBUG - Getting context for agent: graph
+2025-04-16 21:45:20,728 - INFO - Calling graph agent handler
+2025-04-16 21:45:20,729 - DEBUG - Query data: {'text': 'What are the visiting hours for outpatients', 'context': {'session_id': 'sess_20250416214520_c48a1dde', 'department': 'graph', 'timestamp': '2025-04-16T21:45:20.728007'}}
+2025-04-16 21:45:21,886 - INFO - Received response from graph agent
+2025-04-16 21:45:21,888 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:45:25,596 - INFO - Routing query to graph agent: What are the visiting hours for outpatients
+2025-04-16 21:45:25,598 - DEBUG - Session ID: None
+2025-04-16 21:45:25,599 - DEBUG - Getting context for agent: graph
+2025-04-16 21:45:25,600 - INFO - Calling graph agent handler
+2025-04-16 21:45:25,601 - DEBUG - Query data: {'text': 'What are the visiting hours for outpatients', 'context': {'session_id': 'sess_20250416214525_c48a1dde', 'department': 'graph', 'timestamp': '2025-04-16T21:45:25.600513'}}
+2025-04-16 21:45:26,911 - INFO - Received response from graph agent
+2025-04-16 21:45:26,912 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-16 21:45:30,043 - INFO - Routing query to graph agent: I want to book an appointmnet
+2025-04-16 21:45:30,044 - DEBUG - Session ID: None
+2025-04-16 21:45:30,046 - DEBUG - Getting context for agent: graph
+2025-04-16 21:45:30,047 - INFO - Calling graph agent handler
+2025-04-16 21:45:30,048 - DEBUG - Query data: {'text': 'I want to book an appointmnet', 'context': {'session_id': 'sess_20250416214530_8f58b94b', 'department': 'graph', 'timestamp': '2025-04-16T21:45:30.047163'}}
+2025-04-16 21:45:32,443 - INFO - Received response from graph agent
+2025-04-16 21:45:32,444 - DEBUG - Agent response: {'response': "It looks like you're looking for help with a health concern.  \n\nThe results we have show a wide range of possible conditions, from heart and lung issues to cancers and digestive problems.  \n\nIt's important to remember that these are just possibilities, and we can't diagnose anything based on this information alone. \n\nTo get the right help, please tell me more about what's going on. For example:\n\n* **What are your symptoms?** \n* **When did they start?**\n* **Have you experienced anything else unusual?**\n\nThe more details you can provide, the better we can understand your situation and help you find the right specialist. \n\nDon't worry, you're in the right place to start getting the care you need. \n\n\n\n", 'context_updates': {'last_interaction': '2025-04-16T21:45:32.443159', 'chat_history': [{'query': 'I want to book an appointmnet', 'response': "It looks like you're looking for help with a health concern.  \n\nThe results we have show a wide range of possible conditions, from heart and lung issues to cancers and digestive problems.  \n\nIt's important to remember that these are just possibilities, and we can't diagnose anything based on this information alone. \n\nTo get the right help, please tell me more about what's going on. For example:\n\n* **What are your symptoms?** \n* **When did they start?**\n* **Have you experienced anything else unusual?**\n\nThe more details you can provide, the better we can understand your situation and help you find the right specialist. \n\nDon't worry, you're in the right place to start getting the care you need. \n\n\n\n", 'timestamp': '2025-04-16T21:45:32.443175'}]}, 'suggested_next': None}
+2025-04-16 21:48:03,758 - INFO - Starting agent initialization...
+2025-04-16 21:48:03,759 - DEBUG - Environment variables verified
+2025-04-16 21:48:03,760 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:48:25,374 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:48:25,376 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:48:25,378 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:48:25,380 - INFO - rag agent ready
+2025-04-16 21:48:25,382 - INFO - graph agent ready
+2025-04-16 21:48:25,383 - DEBUG - Agent verification complete
+2025-04-16 21:48:25,385 - INFO - All agents initialized successfully
+2025-04-16 21:48:28,750 - DEBUG - Classifying query: whta are the visiting hours of outpatients
+2025-04-16 21:48:28,752 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:48:28,754 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:48:28,755 - INFO - Routing query to rag agent: Whta are the visiting hours of outpatients
+2025-04-16 21:48:28,757 - DEBUG - Session ID: sess_20250416214828_a8d9f4d2
+2025-04-16 21:48:28,758 - DEBUG - Getting context for agent: rag
+2025-04-16 21:48:28,759 - INFO - Calling rag agent handler
+2025-04-16 21:48:28,760 - DEBUG - Query data: {'text': 'Whta are the visiting hours of outpatients', 'context': {'session_id': 'sess_20250416214828_a8d9f4d2', 'department': 'rag', 'timestamp': '2025-04-16T21:48:28.759501'}}
+2025-04-16 21:48:40,201 - INFO - Received response from rag agent
+2025-04-16 21:48:40,203 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:48:40.198020', 'chat_history': [{'query': 'Whta are the visiting hours of outpatients', 'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:48:40.198039'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:48:49,102 - DEBUG - Classifying query: what are the symptoms of gout
+2025-04-16 21:48:49,103 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:48:49,105 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:48:49,106 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-16 21:48:49,107 - DEBUG - Session ID: sess_20250416214849_8352ee44
+2025-04-16 21:48:49,109 - DEBUG - Getting context for agent: rag
+2025-04-16 21:48:49,110 - INFO - Calling rag agent handler
+2025-04-16 21:48:49,111 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416214849_8352ee44', 'department': 'rag', 'timestamp': '2025-04-16T21:48:49.110388'}}
+2025-04-16 21:48:56,340 - INFO - Received response from rag agent
+2025-04-16 21:48:56,341 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents. \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:48:56.337067', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents. \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:48:56.337112'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:51:44,528 - INFO - Starting agent initialization...
+2025-04-16 21:51:44,529 - DEBUG - Environment variables verified
+2025-04-16 21:51:44,529 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:51:59,607 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:51:59,608 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:51:59,609 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:51:59,610 - INFO - rag agent ready
+2025-04-16 21:51:59,611 - INFO - graph agent ready
+2025-04-16 21:51:59,612 - DEBUG - Agent verification complete
+2025-04-16 21:51:59,613 - INFO - All agents initialized successfully
+2025-04-16 21:52:04,293 - DEBUG - Classifying query: what are the symptoms of gout
+2025-04-16 21:52:04,295 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:52:04,296 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:52:04,298 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-16 21:52:04,299 - DEBUG - Session ID: sess_20250416215204_8352ee44
+2025-04-16 21:52:04,301 - DEBUG - Getting context for agent: rag
+2025-04-16 21:52:04,302 - INFO - Calling rag agent handler
+2025-04-16 21:52:04,304 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416215204_8352ee44', 'department': 'rag', 'timestamp': '2025-04-16T21:52:04.302748', 'is_new_session': False}}
+2025-04-16 21:52:16,634 - INFO - Received response from rag agent
+2025-04-16 21:52:16,636 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:52:16.630636', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:52:16.630665'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:52:21,810 - DEBUG - Classifying query: what are the visiting hours for outpatients at your hospital
+2025-04-16 21:52:21,812 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:52:21,814 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:52:21,815 - INFO - Routing query to rag agent: what are the visiting hours for outpatients at your hospital
+2025-04-16 21:52:21,817 - DEBUG - Session ID: sess_20250416215221_4f00e538
+2025-04-16 21:52:21,818 - DEBUG - Getting context for agent: rag
+2025-04-16 21:52:21,819 - INFO - Calling rag agent handler
+2025-04-16 21:52:21,821 - DEBUG - Query data: {'text': 'what are the visiting hours for outpatients at your hospital', 'context': {'session_id': 'sess_20250416215221_4f00e538', 'department': 'rag', 'timestamp': '2025-04-16T21:52:21.819905', 'is_new_session': False}}
+2025-04-16 21:52:27,292 - INFO - Received response from rag agent
+2025-04-16 21:52:27,294 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.  \n\nWould you like me to look for that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:52:27.284405', 'chat_history': [{'query': 'what are the visiting hours for outpatients at your hospital', 'response': "I can help with that!\n\nI couldn't find specific information about visiting hours for outpatients in the provided documents.  \n\nWould you like me to look for that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:52:27.284444'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:52:48,788 - DEBUG - Classifying query: what are the symptoms of gout
+2025-04-16 21:52:48,789 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:52:48,791 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:52:48,792 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-16 21:52:48,794 - DEBUG - Session ID: sess_20250416215248_8352ee44
+2025-04-16 21:52:48,795 - DEBUG - Getting context for agent: rag
+2025-04-16 21:52:48,796 - INFO - Calling rag agent handler
+2025-04-16 21:52:48,798 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250416215248_8352ee44', 'department': 'rag', 'timestamp': '2025-04-16T21:52:48.796874', 'is_new_session': False}}
+2025-04-16 21:52:55,857 - INFO - Received response from rag agent
+2025-04-16 21:52:55,859 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents. \n\nWould you like me to look for that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T21:52:55.849135', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents. \n\nWould you like me to look for that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T21:52:55.849168'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:53:00,029 - DEBUG - Classifying query: i want to book an appointment
+2025-04-16 21:53:00,031 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:53:00,032 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:53:00,034 - INFO - Routing query to rag agent: I want to book an appointment
+2025-04-16 21:53:00,035 - DEBUG - Session ID: sess_20250416215300_09173d46
+2025-04-16 21:53:00,036 - DEBUG - Getting context for agent: rag
+2025-04-16 21:53:00,038 - INFO - Calling rag agent handler
+2025-04-16 21:53:00,039 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416215300_09173d46', 'department': 'rag', 'timestamp': '2025-04-16T21:53:00.038031', 'is_new_session': False}}
+2025-04-16 21:53:13,361 - INFO - Starting agent initialization...
+2025-04-16 21:53:13,362 - DEBUG - Environment variables verified
+2025-04-16 21:53:13,363 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 21:53:27,878 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 21:53:27,879 - DEBUG - Verifying agent interfaces...
+2025-04-16 21:53:27,880 - ERROR - Error verifying sql agent: object bool can't be used in 'await' expression
+2025-04-16 21:53:27,882 - INFO - rag agent ready
+2025-04-16 21:53:27,883 - INFO - graph agent ready
+2025-04-16 21:53:27,884 - DEBUG - Agent verification complete
+2025-04-16 21:53:27,885 - INFO - All agents initialized successfully
+2025-04-16 21:53:42,750 - DEBUG - Classifying query: i want to book an appointment
+2025-04-16 21:53:42,752 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:53:42,753 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:53:42,755 - INFO - Routing query to rag agent: I want to book an appointment
+2025-04-16 21:53:42,756 - DEBUG - Session ID: sess_20250416215342_09173d46
+2025-04-16 21:53:42,757 - DEBUG - Getting context for agent: rag
+2025-04-16 21:53:42,758 - INFO - Calling rag agent handler
+2025-04-16 21:53:42,760 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416215342_09173d46', 'department': 'rag', 'timestamp': '2025-04-16T21:53:42.758844', 'is_new_session': False}}
+2025-04-16 21:53:54,365 - INFO - Received response from rag agent
+2025-04-16 21:53:54,367 - DEBUG - Agent response: {'response': 'I can help with that!  \n\nTo book an appointment, you\'ll need to first make sure you have a referral letter from another medical facility.  "Osaka University Hospital is an \'advanced treatment hospital\' and requires new patients to present a referral letter, including a medical report, from another medical facility" according to the "Information Document for Outpatients at Osaka University Hospital_v2". \n\nOnce you have that, you can proceed with booking your appointment.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-16T21:53:54.360312', 'chat_history': [{'query': 'I want to book an appointment', 'response': 'I can help with that!  \n\nTo book an appointment, you\'ll need to first make sure you have a referral letter from another medical facility.  "Osaka University Hospital is an \'advanced treatment hospital\' and requires new patients to present a referral letter, including a medical report, from another medical facility" according to the "Information Document for Outpatients at Osaka University Hospital_v2". \n\nOnce you have that, you can proceed with booking your appointment.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-16T21:53:54.360357'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 21:54:16,651 - DEBUG - Classifying query: i want to book an appointment with doctor angella webb
+2025-04-16 21:54:16,654 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'create'
+2025-04-16 21:54:16,656 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 21:54:16,657 - INFO - Routing query to rag agent: I want to book an appointment with Doctor Angella Webb
+2025-04-16 21:54:16,659 - DEBUG - Session ID: sess_20250416215416_21647770
+2025-04-16 21:54:16,660 - DEBUG - Getting context for agent: rag
+2025-04-16 21:54:16,662 - INFO - Calling rag agent handler
+2025-04-16 21:54:16,663 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250416215416_21647770', 'department': 'rag', 'timestamp': '2025-04-16T21:54:16.662282', 'is_new_session': False}}
+2025-04-16 21:54:23,635 - INFO - Received response from rag agent
+2025-04-16 21:54:23,638 - DEBUG - Agent response: {'response': 'I can help with that!  \n\nTo book an appointment with Dr. Angella Webb, you\'ll first need to make sure you have a referral letter from another medical facility.  "Osaka University Hospital is an \'advanced treatment hospital\' and requires new patients to present a referral letter, including a medical report, from another medical facility" according to the "Information Document for Outpatients at Osaka University Hospital_v2". \n\nOnce you have that, you can proceed with booking your appointment.  \n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-16T21:54:23.615922', 'chat_history': [{'query': 'I want to book an appointment with Doctor Angella Webb', 'response': 'I can help with that!  \n\nTo book an appointment with Dr. Angella Webb, you\'ll first need to make sure you have a referral letter from another medical facility.  "Osaka University Hospital is an \'advanced treatment hospital\' and requires new patients to present a referral letter, including a medical report, from another medical facility" according to the "Information Document for Outpatients at Osaka University Hospital_v2". \n\nOnce you have that, you can proceed with booking your appointment.  \n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-16T21:54:23.615960'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 22:07:31,211 - INFO - Starting agent initialization...
+2025-04-16 22:07:31,212 - DEBUG - Environment variables verified
+2025-04-16 22:07:31,213 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 22:07:50,593 - DEBUG - Agent loading results: [False, False, True]
+2025-04-16 22:07:50,594 - ERROR - Failed to load agents: ['sql', 'rag']
+2025-04-16 22:07:50,595 - ERROR - Agent loading failure details:
+2025-04-16 22:07:50,596 - ERROR - sql loading traceback:
+2025-04-16 22:07:50,598 - ERROR - NoneType: None
+
+2025-04-16 22:07:50,600 - ERROR - rag loading traceback:
+2025-04-16 22:07:50,603 - ERROR - NoneType: None
+
+2025-04-16 22:07:50,606 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag']
+2025-04-16 22:07:50,608 - ERROR - Full initialization traceback:
+2025-04-16 22:07:50,611 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+
+2025-04-16 22:07:50,618 - ERROR - Critical error: Failed to load agents: ['sql', 'rag']
+2025-04-16 22:07:50,622 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 584, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+
+2025-04-16 22:08:48,958 - INFO - Starting agent initialization...
+2025-04-16 22:08:48,960 - DEBUG - Environment variables verified
+2025-04-16 22:08:48,961 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 22:09:10,110 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 22:09:10,112 - DEBUG - Verifying agent interfaces...
+2025-04-16 22:09:10,114 - ERROR - Critical: sql agent verification failed!
+2025-04-16 22:09:10,115 - INFO - rag agent ready
+2025-04-16 22:09:10,116 - INFO - graph agent ready
+2025-04-16 22:09:10,117 - DEBUG - Agent verification complete
+2025-04-16 22:09:10,118 - INFO - All agents initialized successfully
+2025-04-16 22:09:18,259 - DEBUG - Classifying query: i want to book an appointment
+2025-04-16 22:09:18,261 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-16 22:09:18,263 - INFO - Query classified as sql with confidence 0.9
+2025-04-16 22:09:18,264 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-16 22:09:18,266 - DEBUG - Session ID: sess_20250416220918_09173d46
+2025-04-16 22:09:18,267 - DEBUG - Getting context for agent: sql
+2025-04-16 22:09:18,268 - INFO - Calling sql agent handler
+2025-04-16 22:09:18,269 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416220918_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:09:18.268506', 'is_new_session': False}}
+2025-04-16 22:09:18,289 - INFO - Received response from sql agent
+2025-04-16 22:09:18,291 - DEBUG - Agent response: {'response': "Appointment system error: name 'context' is not defined. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-16 22:10:34,062 - INFO - Starting agent initialization...
+2025-04-16 22:10:34,064 - DEBUG - Environment variables verified
+2025-04-16 22:10:34,065 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 22:10:57,488 - DEBUG - Agent loading results: [True, True, True]
+2025-04-16 22:10:57,490 - DEBUG - Verifying agent interfaces...
+2025-04-16 22:10:57,494 - ERROR - Critical: sql agent verification failed!
+2025-04-16 22:10:57,496 - INFO - rag agent ready
+2025-04-16 22:10:57,497 - INFO - graph agent ready
+2025-04-16 22:10:57,498 - DEBUG - Agent verification complete
+2025-04-16 22:10:57,499 - INFO - All agents initialized successfully
+2025-04-16 22:11:20,460 - DEBUG - Classifying query: i want to book an appointment
+2025-04-16 22:11:20,462 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-16 22:11:20,463 - INFO - Query classified as sql with confidence 0.9
+2025-04-16 22:11:20,465 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-16 22:11:20,466 - DEBUG - Session ID: sess_20250416221120_09173d46
+2025-04-16 22:11:20,468 - DEBUG - Getting context for agent: sql
+2025-04-16 22:11:20,469 - INFO - Calling sql agent handler
+2025-04-16 22:11:20,470 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250416221120_09173d46', 'department': 'sql', 'timestamp': '2025-04-16T22:11:20.469481', 'is_new_session': False}}
+2025-04-16 22:11:24,157 - INFO - Received response from sql agent
+2025-04-16 22:11:24,158 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-16 22:11:36,000 - DEBUG - Classifying query: doctor angella webb
+2025-04-16 22:11:36,003 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-16 22:11:36,004 - INFO - Query classified as rag with confidence 0.7
+2025-04-16 22:11:36,006 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-16 22:11:36,008 - DEBUG - Session ID: sess_20250416221136_e4364c25
+2025-04-16 22:11:36,009 - DEBUG - Getting context for agent: rag
+2025-04-16 22:11:36,010 - INFO - Calling rag agent handler
+2025-04-16 22:11:36,011 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250416221136_e4364c25', 'department': 'rag', 'timestamp': '2025-04-16T22:11:36.010469', 'is_new_session': False}}
+2025-04-16 22:11:52,115 - INFO - Received response from rag agent
+2025-04-16 22:11:52,117 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-16T22:11:52.110409', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-16T22:11:52.110474'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-16 22:17:34,419 - INFO - Starting agent initialization...
+2025-04-16 22:17:34,421 - DEBUG - Environment variables verified
+2025-04-16 22:17:34,422 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-16 22:19:11,646 - DEBUG - Agent loading results: [False, False, True]
+2025-04-16 22:19:11,647 - ERROR - Failed to load agents: ['sql', 'rag']
+2025-04-16 22:19:11,648 - ERROR - Agent loading failure details:
+2025-04-16 22:19:11,650 - ERROR - sql loading traceback:
+2025-04-16 22:19:11,651 - ERROR - NoneType: None
+
+2025-04-16 22:19:11,653 - ERROR - rag loading traceback:
+2025-04-16 22:19:11,654 - ERROR - NoneType: None
+
+2025-04-16 22:19:11,655 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag']
+2025-04-16 22:19:11,657 - ERROR - Full initialization traceback:
+2025-04-16 22:19:11,659 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+
+2025-04-16 22:19:11,662 - ERROR - Critical error: Failed to load agents: ['sql', 'rag']
+2025-04-16 22:19:11,665 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 592, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+
