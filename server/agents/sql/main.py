@@ -14,7 +14,7 @@ from agents.sql.prompt import agent_instructions
 from agents.sql.llm import llm
 from agents.sql.tools.doctors_details import doctor_info_tool
 from agents.sql.tools.cancel_appointment import cancel_appointment_tool
-from agents.sql.tools.book_appointment import AppointmentBookingTool, AppointmentBookingInput
+from agents.sql.tools.book_appointment import book_appointment_tool
 from agents.sql.tools.register_patient import register_patient_tool
 from agents.sql.tools.appointmentSlots_info import appointment_slotsInfo_tool
 from agents.sql.connection import supabase
@@ -82,20 +82,10 @@ class SQLAgent:
 
             # Initialize tools
             logger.info("Initializing tools")
-            booking_tool = AppointmentBookingTool(
-                doctor_info_tool=doctor_info_tool,
-                appointmentSlots_info_tool=appointment_slotsInfo_tool
-            )
-            
             self.tools = [
                 doctor_info_tool,
                 cancel_appointment_tool,
-                StructuredTool.from_function(
-                    booking_tool.invoke,
-                    name="book_appointment_tool",
-                    description="Handle appointment booking requests. This tool manages the entire booking process interactively, guiding the user through selecting a doctor, checking availability, and confirming the appointment.",
-                    args_schema=AppointmentBookingInput
-                ),
+                book_appointment_tool,
                 register_patient_tool,
                 appointment_slotsInfo_tool
             ]
@@ -123,7 +113,7 @@ class SQLAgent:
                 prompt=prompt
             )
 
-            # Create agent executor
+            # Create agent executor with async support
             logger.info("Creating agent executor")
             self.agent_executor = AgentExecutor(
                 agent=agent,
@@ -131,14 +121,12 @@ class SQLAgent:
                 memory=self.memory,
                 verbose=True,
                 handle_parsing_errors=True,
-                return_intermediate_steps=True,
-                max_iterations=5,
-                max_execution_time=30.0
+                return_intermediate_steps=True,  # Enable tracking of intermediate steps
+                handle_tool_error=True  # Enable error handling for tools
             )
 
-            # Mark as initialized
             self._initialized = True
-            logger.info("SQL Agent initialized successfully")
+            logger.info("SQL Agent initialization complete")
 
         except Exception as e:
             logger.error(f"Error initializing SQL Agent: {str(e)}")
@@ -220,12 +208,12 @@ class SQLAgent:
         logger.debug(f"Query data: {query_data}")
         
         try:
-            # Get query text
-            query_text = query_data.get("text", "")
-
+            # Extract query text
+            query_text = query_data.get('text', '')
+            
             # Update session context if provided
-            if "context" in query_data:
-                self.session_context.update(query_data["context"])
+            if 'context' in query_data:
+                self.session_context.update(query_data['context'])
                 logger.debug(f"Updated session context: {self.session_context}")
             
             # Check if this is a completion indicator
@@ -237,54 +225,47 @@ class SQLAgent:
                     "status": "resolved"
                 }
             
-            # Update memory with context and history
-            if "context" in query_data:
-                self.session_context.update(query_data["context"])
-            
-            if "history" in query_data:
-                for exchange in query_data["history"]:
-                    self.memory.chat_memory.add_message(
-                        HumanMessage(content=exchange["content"]) if exchange["role"] == "user"
-                        else AIMessage(content=exchange["content"])
-                    )
-            
-            # Process query through agent executor
-            logger.debug(f"Processing query: {query_text}")
+            # Get agent response
             response = await self.agent_executor.ainvoke(
                 {
                     "input": query_text,
-                    "chat_history": query_data.get("history", [])
+                    "chat_history": self.memory.chat_memory.messages
                 }
             )
             
-            # Extract potential context updates
-            context_updates = self._extract_context_updates(response["output"])
+            # Extract response text and any intermediate steps
+            response_text = response.get('output', '')
+            intermediate_steps = response.get('intermediate_steps', [])
             
-            # Determine if we need more information
-            needs_more_info = False
-            response_lower = response["output"].lower()
+            # Handle any pending tool calls from intermediate steps
+            for step in intermediate_steps:
+                if hasattr(step[0], 'tool') and step[0].tool in ['book_appointment_tool', 'register_patient_tool']:
+                    tool_result = step[1]
+                    if isinstance(tool_result, asyncio.Future):
+                        await tool_result
             
-            # Check if response indicates need for more information
-            if any(phrase in response_lower for phrase in [
-                "what time", "which doctor", "what date", "please specify",
-                "could you tell me", "do you prefer", "would you like"]):
-                needs_more_info = True
+            # Update memory with current exchange
+            self.memory.chat_memory.add_message(HumanMessage(content=query_text))
+            self.memory.chat_memory.add_message(AIMessage(content=response_text))
+            
+            # Extract context updates
+            context_updates = self._extract_context_updates(response_text)
             
             return {
-                "response": response["output"],
+                "response": response_text,
                 "context_updates": context_updates,
-                "suggested_next": "SQL" if needs_more_info else None,
-                "status": "active" if needs_more_info else "resolved"
+                "suggested_next": None,
+                "status": "resolved"
             }
             
         except Exception as e:
             logger.error(f"Error in handle_query: {str(e)}")
             logger.error(traceback.format_exc())
             return {
-                "response": f"Appointment system error: {str(e)}. Please try again later.",
+                "response": f"I encountered an error: {str(e)}",
                 "context_updates": {},
-                "suggested_next": "HUMAN",
-                "status": "resolved"
+                "suggested_next": None,
+                "status": "error"
             }
 
     def _extract_context_updates(self, response_text: str) -> Dict:

@@ -363,7 +363,7 @@ class HospitalRouter:
     def _is_follow_up(self, query: str, current_department: str) -> bool:
         """Determine if query is a follow-up to current session"""
         follow_up_keywords = {
-            "SQL": ["about my", "appointment", "change", "cancel", "reschedule"],
+            "SQL": ["yes", "no", "confirm", "cancel", "reschedule", "book", "appointment"],
             "GRAPH": ["symptom", "pain", "treatment", "diagnosis", "result"],
             "RAG": ["more about", "explain", "details", "information", "policy"]
         }
@@ -372,7 +372,7 @@ class HospitalRouter:
         keywords = follow_up_keywords.get(current_department, [])
         return any(keyword in query_lower for keyword in keywords)
 
-    async def route_to_agent(self, department: str, query: str, session_id: Optional[str] = None) -> Dict:
+    async def route_to_agent(self, department: str, query: str, session_id: Optional[str] = None, maintain_context: bool = False) -> Dict:
         """Route the query to the appropriate agent with session context"""
         logger.info(f"Routing query to {department} agent: {query}")
         logger.debug(f"Session ID: {session_id}")
@@ -394,9 +394,13 @@ class HospitalRouter:
             }
         
         try:
-            # Reset context for new query
-            if session_id not in self.active_sessions:
+            # Only reset context if not maintaining context from active session
+            if not maintain_context and session_id not in self.active_sessions:
                 self.context_manager.clear_context()
+            
+            # For active sessions, we want to maintain the context
+            if maintain_context:
+                logger.debug(f"Maintaining context for active session: {session_id}")
                 
             # Get fresh context for agent
             logger.debug(f"Getting context for agent: {department}")
@@ -464,27 +468,42 @@ class HospitalRouter:
 
     async def process_query(self, query: str, session_id: Optional[str] = None) -> Dict:
         """
-        Process a query with session support and ensure resolution
+        Process a query with session support and ensure resolution.
+        If status is active, maintains the same agent for continuity.
         """
         try:
             # Clean up old sessions
             self._cleanup_sessions()
+            
+            # Get or create session ID
+            if not session_id:
+                # Look for any active session
+                active_sessions = {sid: session for sid, session in self.active_sessions.items() 
+                                 if session.get('status') == 'active'}
+                if active_sessions:
+                    # Use the most recent active session
+                    session_id = next(iter(active_sessions))
+                    logger.debug(f"Using existing active session: {session_id}")
+                else:
+                    session_id = self._generate_session_id(query)
+                    logger.debug(f"Created new session: {session_id}")
             
             # Check active sessions
             if session_id in self.active_sessions:
                 # Get the current active session
                 active_session = self.active_sessions[session_id]
                 
-                # If there's an active query that's not resolved, continue with the same department
+                # If status is active, always continue with the same department
                 if active_session.get('status') == 'active':
-                    logger.debug(f"Continuing active session with department: {active_session['department']}")
-                    return await self.route_to_agent(active_session['department'], query, session_id)
+                    logger.debug(f"Status active - Continuing with same agent: {active_session['department']}")
+                    return await self.route_to_agent(
+                        active_session['department'],
+                        query,
+                        session_id,
+                        maintain_context=True
+                    )
             
-            # Get or create session ID
-            if not session_id:
-                session_id = self._generate_session_id(query)
-            
-            # Classify query to determine department
+            # If no active session or session is resolved, start new classification
             classification = await self.classify_query(query, None)  # Don't pass current_department to ensure fresh classification
             department = classification[0]
             
@@ -495,7 +514,7 @@ class HospitalRouter:
             self.active_sessions[session_id] = {
                 "department": department,
                 "last_activity": datetime.now(),
-                "status": "pending"  # Will be updated by agent response
+                "status": "active"  # Will be updated by agent response
             }
             
             # Start new query context
@@ -528,11 +547,11 @@ class HospitalRouter:
                 }
                 self.context_manager.clear_context()
                 return response
-            
+                
         except Exception as e:
             import traceback
-            print(f"Error processing query: {str(e)}")
-            traceback.print_exc()
+            logger.error(f"Error processing query: {str(e)}")
+            logger.error(traceback.format_exc())
             return {
                 "response": f"Error processing query: {str(e)}",
                 "context_updates": {},

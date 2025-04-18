@@ -1,8 +1,9 @@
 from agents.sql.tools.functions.register_patient.extract_patient_info import extract_patient_info
 from agents.sql.tools.functions.register_patient.validate_patient_info import validate_patient_info
 from agents.sql.tools.functions.register_patient.create_patient_record import create_patient_record
-from langchain.tools import Tool
-from typing import Dict, Any
+from langchain.tools import StructuredTool
+from typing import Dict, Any, Optional
+from pydantic import BaseModel
 import random
 import string
 import logging
@@ -14,12 +15,26 @@ class PatientRegistrationTool:
         self.current_step = "get_name"
         self.collected_data = {}
 
-    async def invoke(self, input_data: Dict) -> Dict:
+    async def invoke(self, input_data: str | Dict, context: Dict = None) -> Dict:
         """Main entry point that matches LangChain's expected interface"""
-        return await self.handle_query(
-            input_data.get("input_str", ""),
-            input_data.get("context", {})
-        )
+        try:
+            # Handle both structured and direct input
+            if isinstance(input_data, dict):
+                query = input_data.get('input_data', '')
+                ctx = input_data.get('context', {}) or context or {}
+            else:
+                query = input_data
+                ctx = context or {}
+
+            # Ensure we await the handle_query call
+            result = await self.handle_query(query, ctx)
+            return result
+        except Exception as e:
+            logger.error(f"Error in registration tool invoke: {str(e)}")
+            return {
+                "response": f"Registration error: {str(e)}. Please try again.",
+                "status": "error"
+            }
 
     async def handle_query(self, input_str: str, context: Dict[str, Any]) -> Dict:
         """
@@ -196,9 +211,17 @@ class PatientRegistrationTool:
                 }
             
             # Create patient record
-            patient_id = await create_patient_record(self.collected_data)
+            result = await create_patient_record(self.collected_data)
+            if not result['success']:
+                return {
+                    'response': result['value'],
+                    'current_step': 'get_name',
+                    'collected_data': {},
+                    'status': 'error'
+                }
+            
             return {
-                'response': f"Great! You have been successfully registered with ID {patient_id}.",
+                'response': f"Great! You have been successfully registered with ID {result['value']}.",
                 'current_step': 'complete',
                 'collected_data': {},
                 'status': 'complete'
@@ -211,7 +234,7 @@ class PatientRegistrationTool:
                 'collected_data': {},
                 'status': 'error'
             }
-    
+
     def _reset_flow(self, message: str) -> Dict:
         """Reset the registration flow"""
         self.current_step = 'get_name'
@@ -257,14 +280,21 @@ async def create_patient_record(data: Dict) -> Dict:
             'confidence': 0.0
         }
 
+# Input schema for registration
+class PatientRegistrationInput(BaseModel):
+    input_data: str
+    context: Optional[Dict] = {}
+
 # Create tool instance
 registration_tool = PatientRegistrationTool()
 
 # LangChain tool decorator
-register_patient_tool = Tool(
+register_patient_tool = StructuredTool(
     name="Register Patient",
     func=registration_tool.invoke,
-    description="Call this tool to register a patient with unique ID, name, gender, phone number, age, and address."
+    description="Register a new patient by providing their details (name, gender, phone, age, address).",
+    args_schema=PatientRegistrationInput,
+    is_async=True
 )
 
 __all__ = ["register_patient_tool"]

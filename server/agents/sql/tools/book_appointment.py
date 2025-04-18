@@ -25,24 +25,32 @@ class AppointmentBookingTool:
         self.doctor_info_tool = doctor_info_tool
         self.appointmentSlots_info_tool = appointmentSlots_info_tool
 
-    async def invoke(self, input_data: str, context: Dict = None) -> Dict:
+    async def invoke(self, input_data: str | AppointmentBookingInput, context: Dict = None) -> Dict:
         """Main entry point that matches LangChain's expected interface"""
-        if isinstance(input_data, dict):
-            input_data = input_data.get("input_data", "")
-        
-        if context is None:
-            context = {}
-        
-        # Ensure we have a proper dictionary for context
-        if not isinstance(context, dict):
-            context = {}
-        
-        # Create a new instance for each invocation to avoid state issues
-        tool_instance = AppointmentBookingTool(
-            doctor_info_tool=self.doctor_info_tool,
-            appointmentSlots_info_tool=self.appointmentSlots_info_tool
-        )
-        return await tool_instance.handle_query(input_data, context)
+        try:
+            # Create a new instance for each invocation to avoid state issues
+            tool_instance = AppointmentBookingTool(
+                doctor_info_tool=self.doctor_info_tool,
+                appointmentSlots_info_tool=self.appointmentSlots_info_tool
+            )
+
+            # Handle both structured and direct input
+            if isinstance(input_data, AppointmentBookingInput):
+                query = input_data.input_data
+                ctx = input_data.context or {}
+            else:
+                query = input_data
+                ctx = context or {}
+
+            # Ensure we await the handle_query call
+            result = await tool_instance.handle_query(query, ctx)
+            return result
+        except Exception as e:
+            logger.error(f"Error in appointment booking tool invoke: {str(e)}")
+            return {
+                "response": f"Booking error: {str(e)}. Please try again.",
+                "status": "error"
+            }
 
     async def handle_query(self, input_str: str, context: Dict[str, Any]) -> Dict:
         """
@@ -193,13 +201,21 @@ class AppointmentBookingTool:
                 'status': 'error'
             }
 
-# Create tool instance
-book_appointment_tool = StructuredTool.from_function(
-    lambda input_data, context: asyncio.run(AppointmentBookingTool(
-        doctor_info_tool=doctor_info_tool,
-        appointmentSlots_info_tool=appointmentSlots_info_tool
-    ).invoke(input_data, context)),
-    name="book_appointment_tool",
-    description="Handle appointment booking requests. This tool manages the entire booking process interactively, guiding the user through selecting a doctor, checking availability, and confirming the appointment.",
-    args_schema=AppointmentBookingInput
-)
+from .doctors_details import doctor_info_tool
+from .appointmentSlots_info import appointment_slotsInfo_tool
+
+def create_booking_tool(doctor_info_tool, appointmentSlots_info_tool):
+    """Create and return the booking tool instance"""
+    return StructuredTool.from_function(
+        AppointmentBookingTool(
+            doctor_info_tool=doctor_info_tool,
+            appointmentSlots_info_tool=appointmentSlots_info_tool
+        ).invoke,
+        name="book_appointment_tool",
+        description="Handle appointment booking requests. This tool manages the entire booking process interactively, guiding the user through selecting a doctor, checking availability, and confirming the appointment.",
+        args_schema=AppointmentBookingInput,
+        is_async=True
+    )
+
+# Create the tool instance
+book_appointment_tool = create_booking_tool(doctor_info_tool, appointment_slotsInfo_tool)

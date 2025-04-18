@@ -4226,3 +4226,490 @@ RuntimeError: Failed to load agents: ['sql', 'rag']
     raise RuntimeError(f"Failed to load agents: {failed}")
 RuntimeError: Failed to load agents: ['sql', 'rag']
 
+2025-04-18 12:36:12,229 - INFO - Starting agent initialization...
+2025-04-18 12:36:12,231 - DEBUG - Environment variables verified
+2025-04-18 12:36:12,232 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 12:36:45,125 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 12:36:45,127 - DEBUG - Verifying agent interfaces...
+2025-04-18 12:36:45,131 - ERROR - Critical: sql agent verification failed!
+2025-04-18 12:36:45,133 - INFO - rag agent ready
+2025-04-18 12:36:45,135 - INFO - graph agent ready
+2025-04-18 12:36:45,137 - DEBUG - Agent verification complete
+2025-04-18 12:36:45,138 - INFO - All agents initialized successfully
+2025-04-18 12:45:03,715 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 12:45:03,717 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 12:45:03,718 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 12:45:03,719 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 12:45:03,721 - DEBUG - Session ID: sess_20250418124503_09173d46
+2025-04-18 12:45:03,722 - DEBUG - Getting context for agent: sql
+2025-04-18 12:45:03,723 - INFO - Calling sql agent handler
+2025-04-18 12:45:03,724 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418124503_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:45:03.723575', 'is_new_session': False}}
+2025-04-18 12:45:05,407 - INFO - Received response from sql agent
+2025-04-18 12:45:05,410 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 12:45:14,427 - DEBUG - Classifying query: doctor angella webb
+2025-04-18 12:45:14,429 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-18 12:45:14,431 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 12:45:14,432 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 12:45:14,434 - DEBUG - Session ID: sess_20250418124514_e4364c25
+2025-04-18 12:45:14,435 - DEBUG - Getting context for agent: rag
+2025-04-18 12:45:14,436 - INFO - Calling rag agent handler
+2025-04-18 12:45:14,438 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418124514_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T12:45:14.436915', 'is_new_session': False}}
+2025-04-18 12:46:07,021 - INFO - Received response from rag agent
+2025-04-18 12:46:07,022 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about a different doctor, or perhaps about a specific department at the hospital?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T12:46:07.018954', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about a different doctor, or perhaps about a specific department at the hospital?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T12:46:07.018969'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 12:48:46,722 - INFO - Starting agent initialization...
+2025-04-18 12:48:46,724 - DEBUG - Environment variables verified
+2025-04-18 12:48:46,724 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 12:49:01,548 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 12:49:01,550 - DEBUG - Verifying agent interfaces...
+2025-04-18 12:49:01,553 - ERROR - Critical: sql agent verification failed!
+2025-04-18 12:49:01,554 - INFO - rag agent ready
+2025-04-18 12:49:01,555 - INFO - graph agent ready
+2025-04-18 12:49:01,557 - DEBUG - Agent verification complete
+2025-04-18 12:49:01,558 - INFO - All agents initialized successfully
+2025-04-18 12:49:11,106 - DEBUG - Query matched APPOINTMENT pattern: (book|schedule|reschedule|cancel).*appointment
+2025-04-18 12:49:11,108 - INFO - Query classified as APPOINTMENT with confidence 0.9
+2025-04-18 12:49:11,109 - INFO - Routing query to APPOINTMENT agent: I want to book an appointment
+2025-04-18 12:49:11,111 - DEBUG - Session ID: sess_20250418124911_09173d46
+2025-04-18 12:49:11,112 - ERROR - Agent handler not found for department: APPOINTMENT
+2025-04-18 12:50:47,362 - INFO - Starting agent initialization...
+2025-04-18 12:50:47,363 - DEBUG - Environment variables verified
+2025-04-18 12:50:47,364 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 12:51:07,027 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 12:51:07,028 - DEBUG - Verifying agent interfaces...
+2025-04-18 12:51:07,032 - ERROR - Critical: sql agent verification failed!
+2025-04-18 12:51:07,033 - INFO - rag agent ready
+2025-04-18 12:51:07,034 - INFO - graph agent ready
+2025-04-18 12:51:07,035 - DEBUG - Agent verification complete
+2025-04-18 12:51:07,036 - INFO - All agents initialized successfully
+2025-04-18 12:51:17,963 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 12:51:17,965 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 12:51:17,966 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 12:51:17,967 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 12:51:17,969 - DEBUG - Session ID: sess_20250418125117_09173d46
+2025-04-18 12:51:17,970 - DEBUG - Getting context for agent: sql
+2025-04-18 12:51:17,971 - INFO - Calling sql agent handler
+2025-04-18 12:51:17,972 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418125117_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:51:17.971589', 'is_new_session': False}}
+2025-04-18 12:51:19,947 - INFO - Received response from sql agent
+2025-04-18 12:51:19,948 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 12:51:27,960 - DEBUG - Classifying query: doctor angella webb
+2025-04-18 12:51:27,962 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-18 12:51:27,964 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 12:51:27,965 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 12:51:27,967 - DEBUG - Session ID: sess_20250418125127_e4364c25
+2025-04-18 12:51:27,968 - DEBUG - Getting context for agent: rag
+2025-04-18 12:51:27,969 - INFO - Calling rag agent handler
+2025-04-18 12:51:27,970 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418125127_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T12:51:27.969687', 'is_new_session': False}}
+2025-04-18 12:51:37,266 - INFO - Received response from rag agent
+2025-04-18 12:51:37,267 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T12:51:37.264222', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T12:51:37.264235'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 12:51:52,250 - DEBUG - Classifying query: i want to book an appointment with doctor angella webb
+2025-04-18 12:51:52,252 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 12:51:52,253 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 12:51:52,255 - INFO - Routing query to sql agent: I want to book an appointment with Doctor Angella Webb
+2025-04-18 12:51:52,257 - DEBUG - Session ID: sess_20250418125152_21647770
+2025-04-18 12:51:52,258 - DEBUG - Getting context for agent: sql
+2025-04-18 12:51:52,260 - INFO - Calling sql agent handler
+2025-04-18 12:51:52,261 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418125152_21647770', 'department': 'sql', 'timestamp': '2025-04-18T12:51:52.259929', 'is_new_session': False}}
+2025-04-18 12:51:54,084 - INFO - Received response from sql agent
+2025-04-18 12:51:54,086 - DEBUG - Agent response: {'response': 'When would you like to schedule your appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 12:52:04,701 - DEBUG - Classifying query: friday 14:00
+2025-04-18 12:52:04,702 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-18 12:52:04,704 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 12:52:04,706 - INFO - Routing query to rag agent: Friday 14:00
+2025-04-18 12:52:04,707 - DEBUG - Session ID: sess_20250418125204_5948324b
+2025-04-18 12:52:04,709 - DEBUG - Getting context for agent: rag
+2025-04-18 12:52:04,710 - INFO - Calling rag agent handler
+2025-04-18 12:52:04,711 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418125204_5948324b', 'department': 'rag', 'timestamp': '2025-04-18T12:52:04.710136', 'is_new_session': False}}
+2025-04-18 12:52:09,663 - INFO - Received response from rag agent
+2025-04-18 12:52:09,666 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about appointments or scheduling times in the provided documents.  \n\nWould you like me to help you find the hospital's general contact information?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T12:52:09.655931', 'chat_history': [{'query': 'Friday 14:00', 'response': "I can help with that!\n\nI couldn't find specific information about appointments or scheduling times in the provided documents.  \n\nWould you like me to help you find the hospital's general contact information?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T12:52:09.655972'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 12:54:59,525 - INFO - Starting agent initialization...
+2025-04-18 12:54:59,526 - DEBUG - Environment variables verified
+2025-04-18 12:54:59,527 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 12:55:17,867 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 12:55:17,868 - DEBUG - Verifying agent interfaces...
+2025-04-18 12:55:17,871 - ERROR - Critical: sql agent verification failed!
+2025-04-18 12:55:17,873 - INFO - rag agent ready
+2025-04-18 12:55:17,874 - INFO - graph agent ready
+2025-04-18 12:55:17,875 - DEBUG - Agent verification complete
+2025-04-18 12:55:17,876 - INFO - All agents initialized successfully
+2025-04-18 12:55:26,929 - DEBUG - Created new session: sess_20250418125526_09173d46
+2025-04-18 12:55:26,931 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 12:55:26,933 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 12:55:26,934 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 12:55:26,936 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 12:55:26,937 - DEBUG - Session ID: sess_20250418125526_09173d46
+2025-04-18 12:55:26,939 - DEBUG - Getting context for agent: sql
+2025-04-18 12:55:26,940 - INFO - Calling sql agent handler
+2025-04-18 12:55:26,941 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:26.940087', 'is_new_session': False}}
+2025-04-18 12:55:28,426 - INFO - Received response from sql agent
+2025-04-18 12:55:28,429 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 12:55:36,630 - DEBUG - Using existing active session: sess_20250418125526_09173d46
+2025-04-18 12:55:36,632 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 12:55:36,633 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 12:55:36,634 - DEBUG - Session ID: sess_20250418125526_09173d46
+2025-04-18 12:55:36,636 - DEBUG - Maintaining context for active session: sess_20250418125526_09173d46
+2025-04-18 12:55:36,637 - DEBUG - Getting context for agent: sql
+2025-04-18 12:55:36,638 - INFO - Calling sql agent handler
+2025-04-18 12:55:36,640 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:36.638795', 'is_new_session': False}}
+2025-04-18 12:55:37,649 - INFO - Received response from sql agent
+2025-04-18 12:55:37,654 - DEBUG - Agent response: {'response': "Appointment system error: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 12:58:29,742 - INFO - Starting agent initialization...
+2025-04-18 12:58:29,743 - DEBUG - Environment variables verified
+2025-04-18 12:58:29,744 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 12:58:42,498 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 12:58:42,500 - ERROR - Failed to load agents: ['sql']
+2025-04-18 12:58:42,501 - ERROR - Agent loading failure details:
+2025-04-18 12:58:42,504 - ERROR - sql loading traceback:
+2025-04-18 12:58:42,507 - ERROR - NoneType: None
+
+2025-04-18 12:58:42,510 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 12:58:42,512 - ERROR - Full initialization traceback:
+2025-04-18 12:58:42,516 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 12:58:42,523 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 12:58:42,528 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 611, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 13:00:33,062 - INFO - Starting agent initialization...
+2025-04-18 13:00:33,063 - DEBUG - Environment variables verified
+2025-04-18 13:00:33,064 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 13:00:45,517 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 13:00:45,519 - ERROR - Failed to load agents: ['sql']
+2025-04-18 13:00:45,520 - ERROR - Agent loading failure details:
+2025-04-18 13:00:45,521 - ERROR - sql loading traceback:
+2025-04-18 13:00:45,523 - ERROR - NoneType: None
+
+2025-04-18 13:00:45,524 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 13:00:45,525 - ERROR - Full initialization traceback:
+2025-04-18 13:00:45,528 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 13:00:45,532 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 13:00:45,536 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 611, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 13:02:51,860 - INFO - Starting agent initialization...
+2025-04-18 13:02:51,861 - DEBUG - Environment variables verified
+2025-04-18 13:02:51,862 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 13:03:06,336 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 13:03:06,338 - DEBUG - Verifying agent interfaces...
+2025-04-18 13:03:06,341 - ERROR - Critical: sql agent verification failed!
+2025-04-18 13:03:06,342 - INFO - rag agent ready
+2025-04-18 13:03:06,343 - INFO - graph agent ready
+2025-04-18 13:03:06,344 - DEBUG - Agent verification complete
+2025-04-18 13:03:06,345 - INFO - All agents initialized successfully
+2025-04-18 13:03:10,318 - DEBUG - Created new session: sess_20250418130310_09173d46
+2025-04-18 13:03:10,319 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 13:03:10,321 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 13:03:10,322 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 13:03:10,324 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 13:03:10,325 - DEBUG - Session ID: sess_20250418130310_09173d46
+2025-04-18 13:03:10,326 - DEBUG - Getting context for agent: sql
+2025-04-18 13:03:10,328 - INFO - Calling sql agent handler
+2025-04-18 13:03:10,329 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:10.328083', 'is_new_session': False}}
+2025-04-18 13:03:11,961 - INFO - Received response from sql agent
+2025-04-18 13:03:11,963 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 13:03:18,791 - DEBUG - Using existing active session: sess_20250418130310_09173d46
+2025-04-18 13:03:18,792 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 13:03:18,794 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 13:03:18,795 - DEBUG - Session ID: sess_20250418130310_09173d46
+2025-04-18 13:03:18,796 - DEBUG - Maintaining context for active session: sess_20250418130310_09173d46
+2025-04-18 13:03:18,798 - DEBUG - Getting context for agent: sql
+2025-04-18 13:03:18,799 - INFO - Calling sql agent handler
+2025-04-18 13:03:18,801 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:18.799699', 'is_new_session': False}}
+2025-04-18 13:03:20,852 - INFO - Received response from sql agent
+2025-04-18 13:03:20,855 - DEBUG - Agent response: {'response': 'When would you like to schedule your appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 13:03:31,777 - DEBUG - Using existing active session: sess_20250418130310_09173d46
+2025-04-18 13:03:31,778 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 13:03:31,780 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-18 13:03:31,781 - DEBUG - Session ID: sess_20250418130310_09173d46
+2025-04-18 13:03:31,782 - DEBUG - Maintaining context for active session: sess_20250418130310_09173d46
+2025-04-18 13:03:31,784 - DEBUG - Getting context for agent: sql
+2025-04-18 13:03:31,785 - INFO - Calling sql agent handler
+2025-04-18 13:03:31,786 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:31.785479', 'is_new_session': False}}
+2025-04-18 13:03:33,625 - INFO - Received response from sql agent
+2025-04-18 13:03:33,627 - DEBUG - Agent response: {'response': "I see that Doctor Angella Webb has an appointment slot available on Friday at 14:00. I'll create your appointment with Doctor Angella Webb on Friday at 14:00. Is this correct?", 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 13:03:44,094 - DEBUG - Using existing active session: sess_20250418130310_09173d46
+2025-04-18 13:03:44,096 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 13:03:44,097 - INFO - Routing query to sql agent: Yes
+2025-04-18 13:03:44,098 - DEBUG - Session ID: sess_20250418130310_09173d46
+2025-04-18 13:03:44,099 - DEBUG - Maintaining context for active session: sess_20250418130310_09173d46
+2025-04-18 13:03:44,101 - DEBUG - Getting context for agent: sql
+2025-04-18 13:03:44,102 - INFO - Calling sql agent handler
+2025-04-18 13:03:44,103 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:44.102352', 'is_new_session': False}}
+2025-04-18 13:03:46,110 - INFO - Received response from sql agent
+2025-04-18 13:03:46,112 - DEBUG - Agent response: {'response': 'Your appointment with Doctor Angella Webb is confirmed for Friday at 14:00. Would you like to register as a patient or do you already have a patient ID?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 13:04:07,520 - DEBUG - Using existing active session: sess_20250418130310_09173d46
+2025-04-18 13:04:07,521 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 13:04:07,522 - INFO - Routing query to sql agent: i want to register as a patient
+2025-04-18 13:04:07,524 - DEBUG - Session ID: sess_20250418130310_09173d46
+2025-04-18 13:04:07,525 - DEBUG - Maintaining context for active session: sess_20250418130310_09173d46
+2025-04-18 13:04:07,526 - DEBUG - Getting context for agent: sql
+2025-04-18 13:04:07,527 - INFO - Calling sql agent handler
+2025-04-18 13:04:07,528 - DEBUG - Query data: {'text': 'i want to register as a patient', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:04:07.527821', 'is_new_session': False}}
+2025-04-18 13:04:08,455 - INFO - Received response from sql agent
+2025-04-18 13:04:08,458 - DEBUG - Agent response: {'response': "Appointment system error: Too many arguments to single-input tool Register Patient.\n                Consider using StructuredTool instead. Args: ['unique_id', 'user_name', 'user_gender', 'user_phone', 'user_age', 'user_address']. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 13:07:42,233 - INFO - Starting agent initialization...
+2025-04-18 13:07:42,235 - DEBUG - Environment variables verified
+2025-04-18 13:07:42,236 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 13:08:01,760 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 13:08:01,761 - DEBUG - Verifying agent interfaces...
+2025-04-18 13:08:01,765 - ERROR - Critical: sql agent verification failed!
+2025-04-18 13:08:01,766 - INFO - rag agent ready
+2025-04-18 13:08:01,767 - INFO - graph agent ready
+2025-04-18 13:08:01,769 - DEBUG - Agent verification complete
+2025-04-18 13:08:01,770 - INFO - All agents initialized successfully
+2025-04-18 13:08:08,984 - DEBUG - Created new session: sess_20250418130808_33d8eac5
+2025-04-18 13:08:08,985 - DEBUG - Classifying query: i want to register as a patient
+2025-04-18 13:08:08,987 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-18 13:08:08,989 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 13:08:08,991 - INFO - Routing query to rag agent: i want to register as a patient
+2025-04-18 13:08:08,992 - DEBUG - Session ID: sess_20250418130808_33d8eac5
+2025-04-18 13:08:08,993 - DEBUG - Getting context for agent: rag
+2025-04-18 13:08:08,995 - INFO - Calling rag agent handler
+2025-04-18 13:08:08,996 - DEBUG - Query data: {'text': 'i want to register as a patient', 'context': {'session_id': 'sess_20250418130808_33d8eac5', 'department': 'rag', 'timestamp': '2025-04-18T13:08:08.994981', 'is_new_session': False}}
+2025-04-18 13:08:19,047 - INFO - Received response from rag agent
+2025-04-18 13:08:23,816 - DEBUG - Created new session: sess_20250418130823_09173d46
+2025-04-18 13:08:23,817 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 13:08:23,819 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 13:08:23,820 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 13:08:23,822 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 13:08:23,823 - DEBUG - Session ID: sess_20250418130823_09173d46
+2025-04-18 13:08:23,825 - DEBUG - Getting context for agent: sql
+2025-04-18 13:08:23,826 - INFO - Calling sql agent handler
+2025-04-18 13:08:23,827 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418130823_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:08:23.826503', 'is_new_session': False}}
+2025-04-18 13:08:24,886 - INFO - Received response from sql agent
+2025-04-18 13:08:24,890 - DEBUG - Agent response: {'response': "Appointment system error: AppointmentBookingTool.invoke() got an unexpected keyword argument 'context'. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 14:14:48,409 - INFO - Starting agent initialization...
+2025-04-18 14:14:48,411 - DEBUG - Environment variables verified
+2025-04-18 14:14:48,412 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:15:03,524 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:15:03,526 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:15:03,531 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:15:03,533 - INFO - rag agent ready
+2025-04-18 14:15:03,534 - INFO - graph agent ready
+2025-04-18 14:15:03,536 - DEBUG - Agent verification complete
+2025-04-18 14:15:03,537 - INFO - All agents initialized successfully
+2025-04-18 14:15:14,321 - DEBUG - Created new session: sess_20250418141514_09173d46
+2025-04-18 14:15:14,323 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 14:15:14,325 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:15:14,327 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:15:14,329 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:15:14,330 - DEBUG - Session ID: sess_20250418141514_09173d46
+2025-04-18 14:15:14,332 - DEBUG - Getting context for agent: sql
+2025-04-18 14:15:14,334 - INFO - Calling sql agent handler
+2025-04-18 14:15:14,335 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:14.334069', 'is_new_session': False}}
+2025-04-18 14:15:16,692 - INFO - Received response from sql agent
+2025-04-18 14:15:16,694 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:15:26,069 - DEBUG - Using existing active session: sess_20250418141514_09173d46
+2025-04-18 14:15:26,071 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:15:26,073 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 14:15:26,074 - DEBUG - Session ID: sess_20250418141514_09173d46
+2025-04-18 14:15:26,076 - DEBUG - Maintaining context for active session: sess_20250418141514_09173d46
+2025-04-18 14:15:26,078 - DEBUG - Getting context for agent: sql
+2025-04-18 14:15:26,080 - INFO - Calling sql agent handler
+2025-04-18 14:15:26,081 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:26.079959', 'is_new_session': False}}
+2025-04-18 14:15:27,598 - INFO - Received response from sql agent
+2025-04-18 14:15:27,600 - DEBUG - Agent response: {'response': "Appointment system error: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 14:16:55,455 - INFO - Starting agent initialization...
+2025-04-18 14:16:55,456 - DEBUG - Environment variables verified
+2025-04-18 14:16:55,457 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:17:14,467 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:17:14,469 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:17:14,472 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:17:14,479 - INFO - rag agent ready
+2025-04-18 14:17:14,481 - INFO - graph agent ready
+2025-04-18 14:17:14,483 - DEBUG - Agent verification complete
+2025-04-18 14:17:14,484 - INFO - All agents initialized successfully
+2025-04-18 14:17:26,555 - DEBUG - Created new session: sess_20250418141726_09173d46
+2025-04-18 14:17:26,557 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 14:17:26,559 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:17:26,561 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:17:26,562 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:17:26,564 - DEBUG - Session ID: sess_20250418141726_09173d46
+2025-04-18 14:17:26,566 - DEBUG - Getting context for agent: sql
+2025-04-18 14:17:26,567 - INFO - Calling sql agent handler
+2025-04-18 14:17:26,568 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:26.567611', 'is_new_session': False}}
+2025-04-18 14:17:28,433 - INFO - Received response from sql agent
+2025-04-18 14:17:28,436 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:17:40,497 - DEBUG - Using existing active session: sess_20250418141726_09173d46
+2025-04-18 14:17:40,499 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:17:40,500 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 14:17:40,501 - DEBUG - Session ID: sess_20250418141726_09173d46
+2025-04-18 14:17:40,503 - DEBUG - Maintaining context for active session: sess_20250418141726_09173d46
+2025-04-18 14:17:40,504 - DEBUG - Getting context for agent: sql
+2025-04-18 14:17:40,506 - INFO - Calling sql agent handler
+2025-04-18 14:17:40,507 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:40.506002', 'is_new_session': False}}
+2025-04-18 14:17:42,939 - INFO - Received response from sql agent
+2025-04-18 14:17:42,942 - DEBUG - Agent response: {'response': 'When would you like to schedule?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:17:58,109 - DEBUG - Using existing active session: sess_20250418141726_09173d46
+2025-04-18 14:17:58,110 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:17:58,112 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-18 14:17:58,113 - DEBUG - Session ID: sess_20250418141726_09173d46
+2025-04-18 14:17:58,114 - DEBUG - Maintaining context for active session: sess_20250418141726_09173d46
+2025-04-18 14:17:58,115 - DEBUG - Getting context for agent: sql
+2025-04-18 14:17:58,117 - INFO - Calling sql agent handler
+2025-04-18 14:17:58,118 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:58.117172', 'is_new_session': False}}
+2025-04-18 14:18:00,111 - INFO - Received response from sql agent
+2025-04-18 14:18:00,114 - DEBUG - Agent response: {'response': "Is this appointment for a new patient or an existing one? If new, I'll need some additional information to register them.", 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:18:03,593 - DEBUG - Using existing active session: sess_20250418141726_09173d46
+2025-04-18 14:18:03,595 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:18:03,596 - INFO - Routing query to sql agent: Yes
+2025-04-18 14:18:03,597 - DEBUG - Session ID: sess_20250418141726_09173d46
+2025-04-18 14:18:03,598 - DEBUG - Maintaining context for active session: sess_20250418141726_09173d46
+2025-04-18 14:18:03,600 - DEBUG - Getting context for agent: sql
+2025-04-18 14:18:03,601 - INFO - Calling sql agent handler
+2025-04-18 14:18:03,602 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:18:03.601713', 'is_new_session': False}}
+2025-04-18 14:18:04,640 - INFO - Received response from sql agent
+2025-04-18 14:18:04,644 - DEBUG - Agent response: {'response': "Appointment system error: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 14:21:12,198 - INFO - Starting agent initialization...
+2025-04-18 14:21:12,232 - DEBUG - Environment variables verified
+2025-04-18 14:21:12,237 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:21:35,764 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:21:35,766 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:21:35,771 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:21:35,773 - INFO - rag agent ready
+2025-04-18 14:21:35,775 - INFO - graph agent ready
+2025-04-18 14:21:35,776 - DEBUG - Agent verification complete
+2025-04-18 14:21:35,778 - INFO - All agents initialized successfully
+2025-04-18 14:21:40,953 - DEBUG - Created new session: sess_20250418142140_09173d46
+2025-04-18 14:21:40,954 - DEBUG - Classifying query: i want to book an appointment
+2025-04-18 14:21:40,956 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:21:40,957 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:21:40,959 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:21:40,960 - DEBUG - Session ID: sess_20250418142140_09173d46
+2025-04-18 14:21:40,961 - DEBUG - Getting context for agent: sql
+2025-04-18 14:21:40,963 - INFO - Calling sql agent handler
+2025-04-18 14:21:40,964 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:40.963048', 'is_new_session': False}}
+2025-04-18 14:21:43,792 - INFO - Received response from sql agent
+2025-04-18 14:21:43,795 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:21:48,313 - DEBUG - Using existing active session: sess_20250418142140_09173d46
+2025-04-18 14:21:48,315 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:21:48,316 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 14:21:48,317 - DEBUG - Session ID: sess_20250418142140_09173d46
+2025-04-18 14:21:48,318 - DEBUG - Maintaining context for active session: sess_20250418142140_09173d46
+2025-04-18 14:21:48,319 - DEBUG - Getting context for agent: sql
+2025-04-18 14:21:48,320 - INFO - Calling sql agent handler
+2025-04-18 14:21:48,321 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:48.320531', 'is_new_session': False}}
+2025-04-18 14:21:51,057 - INFO - Received response from sql agent
+2025-04-18 14:21:51,059 - DEBUG - Agent response: {'response': 'When would you like to schedule?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:22:02,312 - DEBUG - Using existing active session: sess_20250418142140_09173d46
+2025-04-18 14:22:02,314 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:22:02,315 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-18 14:22:02,316 - DEBUG - Session ID: sess_20250418142140_09173d46
+2025-04-18 14:22:02,318 - DEBUG - Maintaining context for active session: sess_20250418142140_09173d46
+2025-04-18 14:22:02,320 - DEBUG - Getting context for agent: sql
+2025-04-18 14:22:02,321 - INFO - Calling sql agent handler
+2025-04-18 14:22:02,322 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:22:02.321181', 'is_new_session': False}}
+2025-04-18 14:22:04,567 - INFO - Received response from sql agent
+2025-04-18 14:22:04,570 - DEBUG - Agent response: {'response': "Appointment system error: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?. Please try again later.", 'context_updates': {}, 'suggested_next': 'HUMAN', 'status': 'resolved'}
+2025-04-18 14:24:58,825 - INFO - Starting agent initialization...
+2025-04-18 14:24:58,826 - DEBUG - Environment variables verified
+2025-04-18 14:24:58,827 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:25:20,112 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:25:20,114 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:25:20,116 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:25:20,118 - INFO - rag agent ready
+2025-04-18 14:25:20,119 - INFO - graph agent ready
+2025-04-18 14:25:20,120 - DEBUG - Agent verification complete
+2025-04-18 14:25:20,121 - INFO - All agents initialized successfully
+2025-04-18 14:25:32,591 - DEBUG - Created new session: sess_20250418142532_21647770
+2025-04-18 14:25:32,592 - DEBUG - Classifying query: i want to book an appointment with doctor angella webb
+2025-04-18 14:25:32,594 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:25:32,596 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:25:32,597 - INFO - Routing query to sql agent: I want to book an appointment with Doctor Angella Webb
+2025-04-18 14:25:32,598 - DEBUG - Session ID: sess_20250418142532_21647770
+2025-04-18 14:25:32,600 - DEBUG - Getting context for agent: sql
+2025-04-18 14:25:32,601 - INFO - Calling sql agent handler
+2025-04-18 14:25:32,603 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:32.601560', 'is_new_session': False}}
+2025-04-18 14:25:35,645 - INFO - Received response from sql agent
+2025-04-18 14:25:35,647 - DEBUG - Agent response: {'response': 'When would you like to schedule the appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': 'SQL', 'status': 'active'}
+2025-04-18 14:25:44,298 - DEBUG - Using existing active session: sess_20250418142532_21647770
+2025-04-18 14:25:44,300 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:25:44,301 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-18 14:25:44,303 - DEBUG - Session ID: sess_20250418142532_21647770
+2025-04-18 14:25:44,304 - DEBUG - Maintaining context for active session: sess_20250418142532_21647770
+2025-04-18 14:25:44,306 - DEBUG - Getting context for agent: sql
+2025-04-18 14:25:44,307 - INFO - Calling sql agent handler
+2025-04-18 14:25:44,308 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:44.307103', 'is_new_session': False}}
+2025-04-18 14:25:46,672 - INFO - Received response from sql agent
+2025-04-18 14:25:46,675 - DEBUG - Agent response: {'response': 'Is your appointment with Doctor Angella Webb on Friday at 14:00 confirmed?', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:25:55,354 - DEBUG - Using existing active session: sess_20250418142532_21647770
+2025-04-18 14:25:55,355 - DEBUG - Status active - Continuing with same agent: sql
+2025-04-18 14:25:55,356 - INFO - Routing query to sql agent: yes confirmed
+2025-04-18 14:25:55,357 - DEBUG - Session ID: sess_20250418142532_21647770
+2025-04-18 14:25:55,358 - DEBUG - Maintaining context for active session: sess_20250418142532_21647770
+2025-04-18 14:25:55,360 - DEBUG - Getting context for agent: sql
+2025-04-18 14:25:55,361 - INFO - Calling sql agent handler
+2025-04-18 14:25:55,362 - DEBUG - Query data: {'text': 'yes confirmed', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:55.361099', 'is_new_session': False}}
+2025-04-18 14:25:58,447 - INFO - Received response from sql agent
+2025-04-18 14:25:58,450 - DEBUG - Agent response: {'response': 'I apologize, but it seems like the system is requiring your patient details to complete the booking. Please provide your details (name, gender, phone, age, address) to finish the registration and confirm your appointment with Doctor Angella Webb on Friday at 14:00.', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:32:16,108 - INFO - Starting agent initialization...
+2025-04-18 14:32:16,109 - DEBUG - Environment variables verified
+2025-04-18 14:32:16,109 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:32:33,478 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:32:33,479 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:32:33,482 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:32:33,484 - INFO - rag agent ready
+2025-04-18 14:32:33,485 - INFO - graph agent ready
+2025-04-18 14:32:33,486 - DEBUG - Agent verification complete
+2025-04-18 14:32:33,487 - INFO - All agents initialized successfully
+2025-04-18 14:32:38,719 - DEBUG - Created new session: sess_20250418143238_21647770
+2025-04-18 14:32:38,720 - DEBUG - Classifying query: i want to book an appointment with doctor angella webb
+2025-04-18 14:32:38,722 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:32:38,724 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:32:38,725 - INFO - Routing query to sql agent: I want to book an appointment with Doctor Angella Webb
+2025-04-18 14:32:38,727 - DEBUG - Session ID: sess_20250418143238_21647770
+2025-04-18 14:32:38,728 - DEBUG - Getting context for agent: sql
+2025-04-18 14:32:38,729 - INFO - Calling sql agent handler
+2025-04-18 14:32:38,730 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418143238_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:32:38.729658', 'is_new_session': False}}
+2025-04-18 14:32:38,750 - INFO - Received response from sql agent
+2025-04-18 14:32:38,751 - DEBUG - Agent response: {'response': "I encountered an error: name 'history' is not defined", 'context_updates': {}, 'suggested_next': None, 'status': 'error'}
+2025-04-18 14:36:14,441 - INFO - Starting agent initialization...
+2025-04-18 14:36:14,442 - DEBUG - Environment variables verified
+2025-04-18 14:36:14,442 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:37:04,078 - DEBUG - Agent loading results: [False, False, True]
+2025-04-18 14:37:04,079 - ERROR - Failed to load agents: ['sql', 'rag']
+2025-04-18 14:37:04,079 - ERROR - Agent loading failure details:
+2025-04-18 14:37:04,080 - ERROR - sql loading traceback:
+2025-04-18 14:37:04,080 - ERROR - NoneType: None
+
+2025-04-18 14:37:04,081 - ERROR - rag loading traceback:
+2025-04-18 14:37:04,081 - ERROR - NoneType: None
+
+2025-04-18 14:37:04,082 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag']
+2025-04-18 14:37:04,082 - ERROR - Full initialization traceback:
+2025-04-18 14:37:04,083 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+
+2025-04-18 14:37:04,085 - ERROR - Critical error: Failed to load agents: ['sql', 'rag']
+2025-04-18 14:37:04,086 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 611, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 176, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 202, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag']
+

@@ -18,34 +18,48 @@ async def extract_appointment_info(text: str, field_type: str = None) -> Dict:
     try:
         if field_type == 'doctor_name':
             # Extract doctor name
-            doctor_pattern = r"(dr\.|doctor)\s+([a-zA-Z]+(?:\s+[a-zA-Z]+)*)"
+            # First try with dr/doctor prefix
+            doctor_pattern = r"(?:dr\.|doctor)?\s*([a-zA-Z]+(?:\s+[a-zA-Z]+)*)"
             match = re.search(doctor_pattern, text, re.IGNORECASE)
             if match:
-                return {
-                    'success': True,
-                    'value': match.group(2).strip(),
-                    'confidence': 0.9
-                }
+                name = match.group(1).strip()
+                # Ensure we have at least two words (first and last name)
+                if len(name.split()) >= 2:
+                    return {
+                        'success': True,
+                        'value': name,
+                        'confidence': 0.9
+                    }
             return {
                 'success': False,
-                'value': "Please provide a valid doctor's name.",
+                'value': "Please provide a valid doctor's full name (first and last name).",
                 'confidence': 0.1
             }
             
         elif field_type == 'day_time':
             # Extract day and time
-            # This is a simplified example - in production you'd want more robust date/time parsing
-            time_pattern = r"(?:\d{1,2}:\d{2})\s*(?:am|pm)?"
+            # Handle various time formats
+            time_pattern = r"(?:\d{1,2})(?::|\.)?(\d{2})?\s*(?:am|pm|AM|PM)?"
             match = re.search(time_pattern, text, re.IGNORECASE)
             if match:
-                return {
-                    'success': True,
-                    'value': match.group(0).strip(),
-                    'confidence': 0.9
-                }
+                time_str = match.group(0).strip()
+                # Convert to 24-hour format if needed
+                try:
+                    # If minutes not provided, add :00
+                    if ':' not in time_str and '.' not in time_str:
+                        time_str = f"{time_str}:00"
+                    # Replace dot with colon if used
+                    time_str = time_str.replace('.', ':')
+                    return {
+                        'success': True,
+                        'value': time_str,
+                        'confidence': 0.9
+                    }
+                except ValueError:
+                    pass
             return {
                 'success': False,
-                'value': "Please provide a valid time (e.g., 2:30pm).",
+                'value': "Please provide a valid time (e.g., 2:30pm or 14:30).",
                 'confidence': 0.1
             }
             

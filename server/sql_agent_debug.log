@@ -3307,3 +3307,796 @@ Traceback (most recent call last):
     raise ConnectionError(error_msg)
 ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
 
+2025-04-18 12:36:18,742 - INFO - Creating SQL Agent instance
+2025-04-18 12:36:18,744 - INFO - Creating SQL Agent instance
+2025-04-18 12:36:18,745 - DEBUG - Initial session context: {}
+2025-04-18 12:36:18,746 - INFO - Initializing Supabase connection
+2025-04-18 12:36:20,759 - INFO - Initializing tools
+2025-04-18 12:36:20,761 - DEBUG - Tools initialized: 5
+2025-04-18 12:36:20,762 - INFO - Initializing memory
+2025-04-18 12:36:20,766 - DEBUG - Memory initialized
+2025-04-18 12:36:20,767 - INFO - Creating prompt template
+2025-04-18 12:36:20,768 - INFO - Creating agent
+2025-04-18 12:36:20,851 - INFO - Creating agent executor
+2025-04-18 12:36:20,853 - INFO - SQL Agent initialized successfully
+2025-04-18 12:36:45,129 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 12:45:03,727 - INFO - SQL Agent: Received query
+2025-04-18 12:45:03,728 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418124503_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:45:03.723575', 'is_new_session': False}}
+2025-04-18 12:45:03,732 - DEBUG - Updated session context: {'session_id': 'sess_20250418124503_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:45:03.723575', 'is_new_session': False}
+2025-04-18 12:45:03,734 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 12:48:50,429 - INFO - Creating SQL Agent instance
+2025-04-18 12:48:50,430 - INFO - Creating SQL Agent instance
+2025-04-18 12:48:50,431 - DEBUG - Initial session context: {}
+2025-04-18 12:48:50,432 - INFO - Initializing Supabase connection
+2025-04-18 12:48:51,613 - INFO - Initializing tools
+2025-04-18 12:48:51,615 - DEBUG - Tools initialized: 5
+2025-04-18 12:48:51,616 - INFO - Initializing memory
+2025-04-18 12:48:51,627 - DEBUG - Memory initialized
+2025-04-18 12:48:51,628 - INFO - Creating prompt template
+2025-04-18 12:48:51,632 - INFO - Creating agent
+2025-04-18 12:48:51,770 - INFO - Creating agent executor
+2025-04-18 12:48:51,772 - INFO - SQL Agent initialized successfully
+2025-04-18 12:49:01,551 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 12:50:51,755 - INFO - Creating SQL Agent instance
+2025-04-18 12:50:51,756 - INFO - Creating SQL Agent instance
+2025-04-18 12:50:51,757 - DEBUG - Initial session context: {}
+2025-04-18 12:50:51,758 - INFO - Initializing Supabase connection
+2025-04-18 12:50:53,271 - INFO - Initializing tools
+2025-04-18 12:50:53,273 - DEBUG - Tools initialized: 5
+2025-04-18 12:50:53,275 - INFO - Initializing memory
+2025-04-18 12:50:53,284 - DEBUG - Memory initialized
+2025-04-18 12:50:53,286 - INFO - Creating prompt template
+2025-04-18 12:50:53,289 - INFO - Creating agent
+2025-04-18 12:50:53,471 - INFO - Creating agent executor
+2025-04-18 12:50:53,473 - INFO - SQL Agent initialized successfully
+2025-04-18 12:51:07,030 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 12:51:17,975 - INFO - SQL Agent: Received query
+2025-04-18 12:51:17,977 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418125117_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:51:17.971589', 'is_new_session': False}}
+2025-04-18 12:51:17,990 - DEBUG - Updated session context: {'session_id': 'sess_20250418125117_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:51:17.971589', 'is_new_session': False}
+2025-04-18 12:51:17,993 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 12:51:52,264 - INFO - SQL Agent: Received query
+2025-04-18 12:51:52,265 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418125152_21647770', 'department': 'sql', 'timestamp': '2025-04-18T12:51:52.259929', 'is_new_session': False}}
+2025-04-18 12:51:52,268 - DEBUG - Updated session context: {'session_id': 'sess_20250418125152_21647770', 'department': 'sql', 'timestamp': '2025-04-18T12:51:52.259929', 'is_new_session': False}
+2025-04-18 12:51:52,271 - DEBUG - Processing query: I want to book an appointment with Doctor Angella Webb
+2025-04-18 12:55:04,248 - INFO - Creating SQL Agent instance
+2025-04-18 12:55:04,250 - INFO - Creating SQL Agent instance
+2025-04-18 12:55:04,250 - DEBUG - Initial session context: {}
+2025-04-18 12:55:04,251 - INFO - Initializing Supabase connection
+2025-04-18 12:55:05,558 - INFO - Initializing tools
+2025-04-18 12:55:05,560 - DEBUG - Tools initialized: 5
+2025-04-18 12:55:05,562 - INFO - Initializing memory
+2025-04-18 12:55:05,569 - DEBUG - Memory initialized
+2025-04-18 12:55:05,571 - INFO - Creating prompt template
+2025-04-18 12:55:05,573 - INFO - Creating agent
+2025-04-18 12:55:05,737 - INFO - Creating agent executor
+2025-04-18 12:55:05,740 - INFO - SQL Agent initialized successfully
+2025-04-18 12:55:17,870 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 12:55:26,944 - INFO - SQL Agent: Received query
+2025-04-18 12:55:26,945 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:26.940087', 'is_new_session': False}}
+2025-04-18 12:55:26,948 - DEBUG - Updated session context: {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:26.940087', 'is_new_session': False}
+2025-04-18 12:55:26,950 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 12:55:36,643 - INFO - SQL Agent: Received query
+2025-04-18 12:55:36,644 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:36.638795', 'is_new_session': False}}
+2025-04-18 12:55:36,647 - DEBUG - Updated session context: {'session_id': 'sess_20250418125526_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T12:55:36.638795', 'is_new_session': False}
+2025-04-18 12:55:36,649 - DEBUG - Processing query: Doctor Angella Webb
+2025-04-18 12:55:37,442 - ERROR - Error in handle_query: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+2025-04-18 12:55:37,557 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 253, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\language_models\chat_models.py", line 512, in astream
+    async for chunk in self._astream(
+    ...<14 lines>...
+            generation += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_groq\chat_models.py", line 573, in _astream
+    async for chunk in await self.async_client.create(
+    ...<28 lines>...
+        yield generation_chunk
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 147, in __aiter__
+    async for item in self._iterator:
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 193, in __stream__
+    raise APIError(
+    ...<3 lines>...
+    )
+groq.APIError: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+
+2025-04-18 13:02:55,170 - INFO - Creating SQL Agent instance
+2025-04-18 13:02:55,171 - INFO - Creating SQL Agent instance
+2025-04-18 13:02:55,172 - DEBUG - Initial session context: {}
+2025-04-18 13:02:55,173 - INFO - Initializing Supabase connection
+2025-04-18 13:02:56,404 - INFO - Initializing tools
+2025-04-18 13:02:56,405 - DEBUG - Tools initialized: 5
+2025-04-18 13:02:56,407 - INFO - Initializing memory
+2025-04-18 13:02:56,412 - DEBUG - Memory initialized
+2025-04-18 13:02:56,413 - INFO - Creating prompt template
+2025-04-18 13:02:56,416 - INFO - Creating agent
+2025-04-18 13:02:56,553 - INFO - Creating agent executor
+2025-04-18 13:02:56,554 - INFO - SQL Agent initialized successfully
+2025-04-18 13:03:06,339 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 13:03:10,331 - INFO - SQL Agent: Received query
+2025-04-18 13:03:10,332 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:10.328083', 'is_new_session': False}}
+2025-04-18 13:03:10,335 - DEBUG - Updated session context: {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:10.328083', 'is_new_session': False}
+2025-04-18 13:03:10,337 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 13:03:18,803 - INFO - SQL Agent: Received query
+2025-04-18 13:03:18,804 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:18.799699', 'is_new_session': False}}
+2025-04-18 13:03:18,806 - DEBUG - Updated session context: {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:18.799699', 'is_new_session': False}
+2025-04-18 13:03:18,808 - DEBUG - Processing query: Doctor Angella Webb
+2025-04-18 13:03:31,789 - INFO - SQL Agent: Received query
+2025-04-18 13:03:31,790 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:31.785479', 'is_new_session': False}}
+2025-04-18 13:03:31,792 - DEBUG - Updated session context: {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:31.785479', 'is_new_session': False}
+2025-04-18 13:03:31,795 - DEBUG - Processing query: Friday 14:00
+2025-04-18 13:03:44,105 - INFO - SQL Agent: Received query
+2025-04-18 13:03:44,106 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:44.102352', 'is_new_session': False}}
+2025-04-18 13:03:44,109 - DEBUG - Updated session context: {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:03:44.102352', 'is_new_session': False}
+2025-04-18 13:03:44,111 - DEBUG - Processing query: Yes
+2025-04-18 13:04:07,531 - INFO - SQL Agent: Received query
+2025-04-18 13:04:07,532 - DEBUG - Query data: {'text': 'i want to register as a patient', 'context': {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:04:07.527821', 'is_new_session': False}}
+2025-04-18 13:04:07,535 - DEBUG - Updated session context: {'session_id': 'sess_20250418130310_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:04:07.527821', 'is_new_session': False}
+2025-04-18 13:04:07,537 - DEBUG - Processing query: i want to register as a patient
+2025-04-18 13:04:08,369 - ERROR - Error in handle_query: Too many arguments to single-input tool Register Patient.
+                Consider using StructuredTool instead. Args: ['unique_id', 'user_name', 'user_gender', 'user_phone', 'user_age', 'user_address']
+2025-04-18 13:04:08,410 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 833, in arun
+    tool_args, tool_kwargs = self._to_args_and_kwargs(tool_input, tool_call_id)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\simple.py", line 84, in _to_args_and_kwargs
+    raise ToolException(msg)
+langchain_core.tools.base.ToolException: Too many arguments to single-input tool Register Patient.
+                Consider using StructuredTool instead. Args: ['unique_id', 'user_name', 'user_gender', 'user_phone', 'user_age', 'user_address']
+
+2025-04-18 13:07:46,644 - INFO - Creating SQL Agent instance
+2025-04-18 13:07:46,646 - INFO - Creating SQL Agent instance
+2025-04-18 13:07:46,648 - DEBUG - Initial session context: {}
+2025-04-18 13:07:46,649 - INFO - Initializing Supabase connection
+2025-04-18 13:07:48,798 - INFO - Initializing tools
+2025-04-18 13:07:48,800 - DEBUG - Tools initialized: 5
+2025-04-18 13:07:48,802 - INFO - Initializing memory
+2025-04-18 13:07:48,808 - DEBUG - Memory initialized
+2025-04-18 13:07:48,810 - INFO - Creating prompt template
+2025-04-18 13:07:48,814 - INFO - Creating agent
+2025-04-18 13:07:48,984 - INFO - Creating agent executor
+2025-04-18 13:07:48,987 - INFO - SQL Agent initialized successfully
+2025-04-18 13:08:01,763 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 13:08:23,830 - INFO - SQL Agent: Received query
+2025-04-18 13:08:23,832 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418130823_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:08:23.826503', 'is_new_session': False}}
+2025-04-18 13:08:23,835 - DEBUG - Updated session context: {'session_id': 'sess_20250418130823_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T13:08:23.826503', 'is_new_session': False}
+2025-04-18 13:08:23,838 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 13:08:24,700 - ERROR - Error in handle_query: AppointmentBookingTool.invoke() got an unexpected keyword argument 'context'
+2025-04-18 13:08:24,801 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 110, in _arun
+    return await super()._arun(
+           ^^^^^^^^^^^^^^^^^^^^
+        *args, config=config, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 635, in _arun
+    return await run_in_executor(None, self._run, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 622, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 613, in wrapper
+    return func(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 89, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: AppointmentBookingTool.invoke() got an unexpected keyword argument 'context'
+
+2025-04-18 14:14:51,563 - INFO - Creating SQL Agent instance
+2025-04-18 14:14:51,565 - INFO - Creating SQL Agent instance
+2025-04-18 14:14:51,566 - DEBUG - Initial session context: {}
+2025-04-18 14:14:51,567 - INFO - Initializing Supabase connection
+2025-04-18 14:14:53,433 - INFO - Initializing tools
+2025-04-18 14:14:53,434 - DEBUG - Tools initialized: 5
+2025-04-18 14:14:53,435 - INFO - Initializing memory
+2025-04-18 14:14:53,439 - DEBUG - Memory initialized
+2025-04-18 14:14:53,440 - INFO - Creating prompt template
+2025-04-18 14:14:53,441 - INFO - Creating agent
+2025-04-18 14:14:53,528 - INFO - Creating agent executor
+2025-04-18 14:14:53,530 - INFO - SQL Agent initialized successfully
+2025-04-18 14:15:03,528 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:15:14,338 - INFO - SQL Agent: Received query
+2025-04-18 14:15:14,339 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:14.334069', 'is_new_session': False}}
+2025-04-18 14:15:14,344 - DEBUG - Updated session context: {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:14.334069', 'is_new_session': False}
+2025-04-18 14:15:14,346 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 14:15:26,084 - INFO - SQL Agent: Received query
+2025-04-18 14:15:26,085 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:26.079959', 'is_new_session': False}}
+2025-04-18 14:15:26,088 - DEBUG - Updated session context: {'session_id': 'sess_20250418141514_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:15:26.079959', 'is_new_session': False}
+2025-04-18 14:15:26,091 - DEBUG - Processing query: Doctor Angella Webb
+2025-04-18 14:15:27,528 - ERROR - Error in handle_query: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+2025-04-18 14:15:27,551 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1495, in _aiter_next_step
+    output = await self._action_agent.aplan(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 620, in aplan
+    async for chunk in self.runnable.astream(
+    ...<5 lines>...
+            final_output += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3434, in astream
+    async for chunk in self.atransform(input_aiter(), config, **kwargs):
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3417, in atransform
+    async for chunk in self._atransform_stream_with_config(
+    ...<5 lines>...
+        yield chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 2305, in _atransform_stream_with_config
+    chunk: Output = await asyncio.create_task(  # type: ignore[call-arg]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 3387, in _atransform
+    async for output in final_pipeline:
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1454, in atransform
+    async for ichunk in input:
+    ...<14 lines>...
+                final = ichunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 5577, in atransform
+    async for item in self.bound.atransform(
+    ...<4 lines>...
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\base.py", line 1472, in atransform
+    async for output in self.astream(final, config, **kwargs):
+        yield output
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\language_models\chat_models.py", line 512, in astream
+    async for chunk in self._astream(
+    ...<14 lines>...
+            generation += chunk
+  File "D:\FYP\server\env\Lib\site-packages\langchain_groq\chat_models.py", line 573, in _astream
+    async for chunk in await self.async_client.create(
+    ...<28 lines>...
+        yield generation_chunk
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 147, in __aiter__
+    async for item in self._iterator:
+        yield item
+  File "D:\FYP\server\env\Lib\site-packages\groq\_streaming.py", line 193, in __stream__
+    raise APIError(
+    ...<3 lines>...
+    )
+groq.APIError: Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.
+
+2025-04-18 14:17:00,545 - INFO - Creating SQL Agent instance
+2025-04-18 14:17:00,546 - INFO - Creating SQL Agent instance
+2025-04-18 14:17:00,548 - DEBUG - Initial session context: {}
+2025-04-18 14:17:00,549 - INFO - Initializing Supabase connection
+2025-04-18 14:17:02,309 - INFO - Initializing tools
+2025-04-18 14:17:02,310 - DEBUG - Tools initialized: 5
+2025-04-18 14:17:02,312 - INFO - Initializing memory
+2025-04-18 14:17:02,319 - DEBUG - Memory initialized
+2025-04-18 14:17:02,320 - INFO - Creating prompt template
+2025-04-18 14:17:02,323 - INFO - Creating agent
+2025-04-18 14:17:02,454 - INFO - Creating agent executor
+2025-04-18 14:17:02,457 - INFO - SQL Agent initialized successfully
+2025-04-18 14:17:14,470 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:17:26,571 - INFO - SQL Agent: Received query
+2025-04-18 14:17:26,574 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:26.567611', 'is_new_session': False}}
+2025-04-18 14:17:26,579 - DEBUG - Updated session context: {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:26.567611', 'is_new_session': False}
+2025-04-18 14:17:26,581 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 14:17:40,509 - INFO - SQL Agent: Received query
+2025-04-18 14:17:40,510 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:40.506002', 'is_new_session': False}}
+2025-04-18 14:17:40,513 - DEBUG - Updated session context: {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:40.506002', 'is_new_session': False}
+2025-04-18 14:17:40,515 - DEBUG - Processing query: Doctor Angella Webb
+2025-04-18 14:17:58,120 - INFO - SQL Agent: Received query
+2025-04-18 14:17:58,121 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:58.117172', 'is_new_session': False}}
+2025-04-18 14:17:58,124 - DEBUG - Updated session context: {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:17:58.117172', 'is_new_session': False}
+2025-04-18 14:17:58,126 - DEBUG - Processing query: Friday 14:00
+2025-04-18 14:18:03,605 - INFO - SQL Agent: Received query
+2025-04-18 14:18:03,606 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:18:03.601713', 'is_new_session': False}}
+2025-04-18 14:18:03,609 - DEBUG - Updated session context: {'session_id': 'sess_20250418141726_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:18:03.601713', 'is_new_session': False}
+2025-04-18 14:18:03,610 - DEBUG - Processing query: Yes
+2025-04-18 14:18:04,544 - ERROR - Error in handle_query: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+2025-04-18 14:18:04,578 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 110, in _arun
+    return await super()._arun(
+           ^^^^^^^^^^^^^^^^^^^^
+        *args, config=config, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 635, in _arun
+    return await run_in_executor(None, self._run, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 622, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 613, in wrapper
+    return func(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 89, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+
+2025-04-18 14:21:17,575 - INFO - Creating SQL Agent instance
+2025-04-18 14:21:17,576 - INFO - Creating SQL Agent instance
+2025-04-18 14:21:17,576 - DEBUG - Initial session context: {}
+2025-04-18 14:21:17,577 - INFO - Initializing Supabase connection
+2025-04-18 14:21:21,806 - INFO - Initializing tools
+2025-04-18 14:21:21,808 - DEBUG - Tools initialized: 5
+2025-04-18 14:21:21,809 - INFO - Initializing memory
+2025-04-18 14:21:21,815 - DEBUG - Memory initialized
+2025-04-18 14:21:21,816 - INFO - Creating prompt template
+2025-04-18 14:21:21,819 - INFO - Creating agent
+2025-04-18 14:21:21,912 - INFO - Creating agent executor
+2025-04-18 14:21:21,914 - INFO - SQL Agent initialized successfully
+2025-04-18 14:21:35,768 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:21:40,967 - INFO - SQL Agent: Received query
+2025-04-18 14:21:40,968 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:40.963048', 'is_new_session': False}}
+2025-04-18 14:21:40,983 - DEBUG - Updated session context: {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:40.963048', 'is_new_session': False}
+2025-04-18 14:21:40,985 - DEBUG - Processing query: I want to book an appointment
+2025-04-18 14:21:48,323 - INFO - SQL Agent: Received query
+2025-04-18 14:21:48,324 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:48.320531', 'is_new_session': False}}
+2025-04-18 14:21:48,326 - DEBUG - Updated session context: {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:21:48.320531', 'is_new_session': False}
+2025-04-18 14:21:48,328 - DEBUG - Processing query: Doctor Angella Webb
+2025-04-18 14:22:02,325 - INFO - SQL Agent: Received query
+2025-04-18 14:22:02,326 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:22:02.321181', 'is_new_session': False}}
+2025-04-18 14:22:02,329 - DEBUG - Updated session context: {'session_id': 'sess_20250418142140_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:22:02.321181', 'is_new_session': False}
+2025-04-18 14:22:02,331 - DEBUG - Processing query: Friday 14:00
+2025-04-18 14:22:04,457 - ERROR - Error in handle_query: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+2025-04-18 14:22:04,490 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 243, in handle_query
+    response = await self.agent_executor.ainvoke(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 221, in ainvoke
+    raise e
+  File "D:\FYP\server\env\Lib\site-packages\langchain\chains\base.py", line 212, in ainvoke
+    await self._acall(inputs, run_manager=run_manager)
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1673, in _acall
+    next_step_output = await self._atake_next_step(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1467, in _atake_next_step
+    [
+    ...<8 lines>...
+    ]
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1551, in _aiter_next_step
+    result = await asyncio.gather(
+             ^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain\agents\agent.py", line 1584, in _aperform_agent_action
+    observation = await tool.arun(
+                  ^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 879, in arun
+    raise error_to_raise
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 846, in arun
+    response = await asyncio.create_task(coro, context=context)  # type: ignore
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 110, in _arun
+    return await super()._arun(
+           ^^^^^^^^^^^^^^^^^^^^
+        *args, config=config, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\base.py", line 635, in _arun
+    return await run_in_executor(None, self._run, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 622, in run_in_executor
+    return await asyncio.get_running_loop().run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\runnables\config.py", line 613, in wrapper
+    return func(*args, **kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\langchain_core\tools\structured.py", line 89, in _run
+    return self.func(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: PatientRegistrationTool.invoke() got an unexpected keyword argument 'input_str'. Did you mean 'input_data'?
+
+2025-04-18 14:25:04,680 - INFO - Creating SQL Agent instance
+2025-04-18 14:25:04,680 - INFO - Creating SQL Agent instance
+2025-04-18 14:25:04,681 - DEBUG - Initial session context: {}
+2025-04-18 14:25:04,682 - INFO - Initializing Supabase connection
+2025-04-18 14:25:06,431 - INFO - Initializing tools
+2025-04-18 14:25:06,433 - DEBUG - Tools initialized: 5
+2025-04-18 14:25:06,435 - INFO - Initializing memory
+2025-04-18 14:25:06,441 - DEBUG - Memory initialized
+2025-04-18 14:25:06,443 - INFO - Creating prompt template
+2025-04-18 14:25:06,446 - INFO - Creating agent
+2025-04-18 14:25:06,578 - INFO - Creating agent executor
+2025-04-18 14:25:06,580 - INFO - SQL Agent initialized successfully
+2025-04-18 14:25:20,115 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:25:32,605 - INFO - SQL Agent: Received query
+2025-04-18 14:25:32,607 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:32.601560', 'is_new_session': False}}
+2025-04-18 14:25:32,610 - DEBUG - Updated session context: {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:32.601560', 'is_new_session': False}
+2025-04-18 14:25:32,612 - DEBUG - Processing query: I want to book an appointment with Doctor Angella Webb
+2025-04-18 14:25:44,310 - INFO - SQL Agent: Received query
+2025-04-18 14:25:44,311 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:44.307103', 'is_new_session': False}}
+2025-04-18 14:25:44,313 - DEBUG - Updated session context: {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:44.307103', 'is_new_session': False}
+2025-04-18 14:25:44,315 - DEBUG - Processing query: Friday 14:00
+2025-04-18 14:25:55,364 - INFO - SQL Agent: Received query
+2025-04-18 14:25:55,365 - DEBUG - Query data: {'text': 'yes confirmed', 'context': {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:55.361099', 'is_new_session': False}}
+2025-04-18 14:25:55,368 - DEBUG - Updated session context: {'session_id': 'sess_20250418142532_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:25:55.361099', 'is_new_session': False}
+2025-04-18 14:25:55,370 - DEBUG - Processing query: yes confirmed
+2025-04-18 14:32:19,681 - INFO - Creating SQL Agent instance
+2025-04-18 14:32:19,682 - INFO - Creating SQL Agent instance
+2025-04-18 14:32:19,683 - DEBUG - Initial session context: {}
+2025-04-18 14:32:19,684 - INFO - Initializing Supabase connection
+2025-04-18 14:32:21,134 - INFO - Initializing tools
+2025-04-18 14:32:21,136 - DEBUG - Tools initialized: 5
+2025-04-18 14:32:21,137 - INFO - Initializing memory
+2025-04-18 14:32:21,142 - DEBUG - Memory initialized
+2025-04-18 14:32:21,144 - INFO - Creating prompt template
+2025-04-18 14:32:21,146 - INFO - Creating agent
+2025-04-18 14:32:21,258 - INFO - Creating agent executor
+2025-04-18 14:32:21,261 - INFO - SQL Agent initialization complete
+2025-04-18 14:32:33,481 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:32:38,733 - INFO - SQL Agent: Received query
+2025-04-18 14:32:38,734 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418143238_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:32:38.729658', 'is_new_session': False}}
+2025-04-18 14:32:38,737 - ERROR - Error in handle_query: name 'history' is not defined
+2025-04-18 14:32:38,746 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 214, in handle_query
+    if history:
+       ^^^^^^^
+NameError: name 'history' is not defined
+
+2025-04-18 14:36:16,068 - INFO - Creating SQL Agent instance
+2025-04-18 14:36:16,069 - INFO - Creating SQL Agent instance
+2025-04-18 14:36:16,070 - DEBUG - Initial session context: {}
+2025-04-18 14:36:16,070 - INFO - Initializing Supabase connection
+2025-04-18 14:36:59,150 - ERROR - Error initializing SQL Agent: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-04-18 14:36:59,319 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+2025-04-18 14:36:59,331 - ERROR - Error creating SQL Agent: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+2025-04-18 14:36:59,337 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
