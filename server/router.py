@@ -308,57 +308,53 @@ class HospitalRouter:
 
     async def classify_query(self, query: str, current_department: Optional[str] = None) -> Tuple[str, float]:
         """Classify query to determine which agent should handle it using LLM reasoning"""
-        query = query.lower().strip()
-        logger.debug(f"Classifying query: {query}")
-        
-        # First check for appointment-related patterns
-        appointment_patterns = [r'\b(book|schedule|cancel|reschedule).*appointment\b', r'appointment.*with.*doctor\b']
-        for pattern in appointment_patterns:
-            if re.search(pattern, query, re.IGNORECASE):
-                logger.debug(f"Query matched SQL pattern: {pattern}")
-                return 'sql', 0.9
-                
-        # Then check for medical/symptom patterns
-        medical_patterns = [r'\b(symptom|treatment|medicine|disease|condition|diagnosis)\b']
-        for pattern in medical_patterns:
-            if re.search(pattern, query, re.IGNORECASE):
-                logger.debug(f"Query matched GRAPH pattern: {pattern}")
-                return 'graph', 0.9
-        
-        # Try LLM classification
         try:
-            prompt = [
-                {"role": "system", "content": """
-                You are a query classifier for a hospital system. Classify incoming queries into one of three categories:
-                1. SQL - For appointment booking, scheduling, cancellations, and calendar management
-                2. GRAPH - For medical knowledge, symptoms, diseases, treatments, and diagnosis information
-                3. RAG - For general hospital information, policies, locations, and services
-                
-                Respond ONLY with the category name in lowercase (sql/graph/rag) and a confidence score (0.0-1.0).
-                Format: category|confidence
-                """}, 
-                {"role": "user", "content": "What are the visiting hours?"}, 
-                {"role": "assistant", "content": "rag|1.0"}, 
-                {"role": "user", "content": "I need to book an appointment"}, 
-                {"role": "assistant", "content": "sql|1.0"}, 
-                {"role": "user", "content": "What are the symptoms of diabetes?"}, 
-                {"role": "assistant", "content": "graph|1.0"}, 
-                {"role": "user", "content": query}
-            ]
+            # If we have a current department and it's SQL, maintain it for the session
+            if current_department == 'sql':
+                logger.debug("Maintaining SQL session")
+                return 'sql', 1.0
 
-            response = await llm.chat.completions.create(
-                messages=prompt,
-                temperature=0.1,
-                max_tokens=10
-            )
-            result = response.choices[0].message.content.strip()
-            department, confidence = result.split('|')
-            logger.debug(f"LLM classified query as {department} with confidence {confidence}")
-            return department, float(confidence)
+            # Check for direct SQL patterns first
+            sql_patterns = [
+                r"\b(book|schedule|cancel|reschedule).*appointment\b",
+                r"\b(register|sign up).*patient\b",
+                r"\bdoctor\b.*\b(available|schedule|time|slot)\b",
+                # Add patterns for time/date responses during booking
+                r"\b\d{1,2}:\d{2}\b",  # Match time format HH:MM
+                r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b"
+            ]
+            
+            for pattern in sql_patterns:
+                if re.search(pattern, query.lower()):
+                    logger.debug(f"Query matched SQL pattern: {pattern}")
+                    return "sql", 0.9
+            
+            # Use LLM for more complex classification
+            try:
+                response = await self.llm.invoke([
+                    {"role": "system", "content": """You are a query classifier for a hospital system.
+                    Classify queries as either:
+                    - sql: For appointments, registrations, and scheduling
+                    - rag: For general hospital information
+                    
+                    Respond ONLY with: classification|confidence_score
+                    Example: sql|0.9"""},
+                    {"role": "user", "content": query}
+                ])
+                
+                result = response.choices[0].message.content.strip()
+                classification, confidence = result.split('|')
+                confidence = float(confidence)
+                
+                return classification.lower().strip(), confidence
+                
+            except Exception as e:
+                logger.error(f"Error in LLM classification: {str(e)}")
+                # Default to RAG with lower confidence if LLM fails
+                return "rag", 0.7
         except Exception as e:
-            logger.error(f"Error in LLM classification: {str(e)}")
-            # Fallback to RAG if LLM fails
-            return "rag", 0.7
+            logger.error(f"Error in query classification: {str(e)}")
+            return "rag", 0.5
 
     def _is_follow_up(self, query: str, current_department: str) -> bool:
         """Determine if query is a follow-up to current session"""
@@ -477,50 +473,43 @@ class HospitalRouter:
             
             # Get or create session ID
             if not session_id:
-                # Look for any active session
-                active_sessions = {sid: session for sid, session in self.active_sessions.items() 
-                                 if session.get('status') == 'active'}
-                if active_sessions:
-                    # Use the most recent active session
-                    session_id = next(iter(active_sessions))
-                    logger.debug(f"Using existing active session: {session_id}")
+                # Check for any active SQL sessions that are still in progress
+                active_sql_sessions = {
+                    sid: session for sid, session in self.active_sessions.items()
+                    if session.get('department') == 'sql' and session.get('status') == 'in_progress'
+                }
+                
+                if active_sql_sessions:
+                    # Use the most recent active SQL session
+                    session_id = max(active_sql_sessions.keys(), key=lambda x: active_sql_sessions[x]['last_activity'])
+                    logger.debug(f"Using existing SQL session: {session_id}")
                 else:
                     session_id = self._generate_session_id(query)
                     logger.debug(f"Created new session: {session_id}")
             
-            # Check active sessions
+            # Get current department from active session if it exists
+            current_department = None
             if session_id in self.active_sessions:
-                # Get the current active session
-                active_session = self.active_sessions[session_id]
+                current_department = self.active_sessions[session_id].get('department')
+                current_status = self.active_sessions[session_id].get('status')
                 
-                # If status is active, always continue with the same department
-                if active_session.get('status') == 'active':
-                    logger.debug(f"Status active - Continuing with same agent: {active_session['department']}")
-                    return await self.route_to_agent(
-                        active_session['department'],
-                        query,
-                        session_id,
-                        maintain_context=True
-                    )
+                # If we have an active SQL session in progress, maintain it
+                if current_department == 'sql' and current_status == 'in_progress':
+                    department = 'sql'
+                    confidence = 1.0
+                    logger.debug(f"Maintaining active SQL session: {session_id}")
+                else:
+                    # Classify query with current department context
+                    logger.debug(f"Classifying query: {query}")
+                    department, confidence = await self.classify_query(query, current_department)
+            else:
+                # New session, classify the query
+                logger.debug(f"Classifying query: {query}")
+                department, confidence = await self.classify_query(query, None)
             
-            # If no active session or session is resolved, start new classification
-            classification = await self.classify_query(query, None)  # Don't pass current_department to ensure fresh classification
-            department = classification[0]
+            logger.info(f"Query classified as {department} with confidence {confidence}")
             
-            # Log the classification result
-            logger.info(f"Query classified as {department} with confidence {classification[1]}")
-            
-            # Update active session
-            self.active_sessions[session_id] = {
-                "department": department,
-                "last_activity": datetime.now(),
-                "status": "active"  # Will be updated by agent response
-            }
-            
-            # Start new query context
-            self.context_manager.start_query(query, department)
-            
-            # Route to appropriate agent
+            # Route to agent
             result = await self.route_to_agent(department, query, session_id)
             
             # Ensure result is properly formatted
@@ -528,12 +517,23 @@ class HospitalRouter:
                 result = await result
                 
             if isinstance(result, dict):
-                # Update session status
-                if session_id in self.active_sessions:
-                    self.active_sessions[session_id]["status"] = result.get('status', 'resolved')
-                    
-                # Clear context if query is resolved
-                if result.get('status') == 'resolved':
+                # Update session activity and department
+                if session_id not in self.active_sessions:
+                    self.active_sessions[session_id] = {}
+                
+                # Get the status from the result, defaulting to 'in_progress' for SQL department
+                status = result.get('status')
+                if department == 'sql' and not status:
+                    status = 'in_progress'
+                
+                self.active_sessions[session_id].update({
+                    "last_activity": datetime.now(),
+                    "department": department,
+                    "status": status
+                })
+                
+                # Only clear context if query is explicitly resolved
+                if status == 'resolved':
                     self.context_manager.clear_context()
                     
                 return result

@@ -4713,3 +4713,109 @@ RuntimeError: Failed to load agents: ['sql', 'rag']
     raise RuntimeError(f"Failed to load agents: {failed}")
 RuntimeError: Failed to load agents: ['sql', 'rag']
 
+2025-04-18 14:38:55,676 - INFO - Starting agent initialization...
+2025-04-18 14:38:55,677 - DEBUG - Environment variables verified
+2025-04-18 14:38:55,678 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:39:04,937 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:39:04,938 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:39:04,939 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:39:04,940 - INFO - rag agent ready
+2025-04-18 14:39:04,941 - INFO - graph agent ready
+2025-04-18 14:39:04,941 - DEBUG - Agent verification complete
+2025-04-18 14:39:04,942 - INFO - All agents initialized successfully
+2025-04-18 14:39:16,760 - DEBUG - Created new session: sess_20250418143916_21647770
+2025-04-18 14:39:16,762 - DEBUG - Classifying query: i want to book an appointment with doctor angella webb
+2025-04-18 14:39:16,764 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:39:16,765 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:39:16,767 - INFO - Routing query to sql agent: I want to book an appointment with Doctor Angella Webb
+2025-04-18 14:39:16,768 - DEBUG - Session ID: sess_20250418143916_21647770
+2025-04-18 14:39:16,770 - DEBUG - Getting context for agent: sql
+2025-04-18 14:39:16,771 - INFO - Calling sql agent handler
+2025-04-18 14:39:16,772 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418143916_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:39:16.771189', 'is_new_session': False}}
+2025-04-18 14:39:19,274 - INFO - Received response from sql agent
+2025-04-18 14:39:19,275 - DEBUG - Agent response: {'response': 'When would you like to schedule your appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:39:22,805 - DEBUG - Created new session: sess_20250418143922_5948324b
+2025-04-18 14:39:22,806 - DEBUG - Classifying query: friday 14:00
+2025-04-18 14:39:22,807 - ERROR - Error in LLM classification: 'ChatGroq' object has no attribute 'chat'
+2025-04-18 14:39:22,808 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 14:39:22,810 - INFO - Routing query to rag agent: Friday 14:00
+2025-04-18 14:39:22,810 - DEBUG - Session ID: sess_20250418143922_5948324b
+2025-04-18 14:39:22,811 - DEBUG - Getting context for agent: rag
+2025-04-18 14:39:22,812 - INFO - Calling rag agent handler
+2025-04-18 14:39:22,812 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418143922_5948324b', 'department': 'rag', 'timestamp': '2025-04-18T14:39:22.812145', 'is_new_session': False}}
+2025-04-18 14:39:32,145 - INFO - Received response from rag agent
+2025-04-18 14:46:12,659 - INFO - Starting agent initialization...
+2025-04-18 14:46:12,660 - DEBUG - Environment variables verified
+2025-04-18 14:46:12,660 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:46:22,323 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:46:22,324 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:46:22,326 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:46:22,327 - INFO - rag agent ready
+2025-04-18 14:46:22,327 - INFO - graph agent ready
+2025-04-18 14:46:22,328 - DEBUG - Agent verification complete
+2025-04-18 14:46:22,329 - INFO - All agents initialized successfully
+2025-04-18 14:46:26,189 - DEBUG - Created new session: sess_20250418144626_09173d46
+2025-04-18 14:46:26,190 - DEBUG - Classifying query: I want to book an appointment
+2025-04-18 14:46:26,191 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:46:26,193 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:46:26,193 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:46:26,194 - DEBUG - Session ID: sess_20250418144626_09173d46
+2025-04-18 14:46:26,195 - DEBUG - Getting context for agent: sql
+2025-04-18 14:46:26,195 - INFO - Calling sql agent handler
+2025-04-18 14:46:26,195 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418144626_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:46:26.195546', 'is_new_session': True}}
+2025-04-18 14:46:30,387 - INFO - Received response from sql agent
+2025-04-18 14:46:30,388 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:46:37,669 - DEBUG - Created new session: sess_20250418144637_e4364c25
+2025-04-18 14:46:37,670 - DEBUG - Classifying query: Doctor Angella Webb
+2025-04-18 14:46:37,672 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 14:46:37,672 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 14:46:37,673 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 14:46:37,674 - DEBUG - Session ID: sess_20250418144637_e4364c25
+2025-04-18 14:46:37,674 - DEBUG - Getting context for agent: rag
+2025-04-18 14:46:37,675 - INFO - Calling rag agent handler
+2025-04-18 14:46:37,676 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418144637_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T14:46:37.675515', 'is_new_session': True}}
+2025-04-18 14:46:46,607 - INFO - Received response from rag agent
+2025-04-18 14:46:46,608 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T14:46:46.606728', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T14:46:46.606736'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:50:34,913 - DEBUG - Created new session: sess_20250418145034_8352ee44
+2025-04-18 14:50:34,914 - DEBUG - Classifying query: What are the symptoms of gout
+2025-04-18 14:50:34,915 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 14:50:34,915 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 14:50:34,916 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-18 14:50:34,917 - DEBUG - Session ID: sess_20250418145034_8352ee44
+2025-04-18 14:50:34,917 - DEBUG - Getting context for agent: rag
+2025-04-18 14:50:34,918 - INFO - Calling rag agent handler
+2025-04-18 14:50:34,918 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250418145034_8352ee44', 'department': 'rag', 'timestamp': '2025-04-18T14:50:34.918357', 'is_new_session': True}}
+2025-04-18 14:50:40,824 - INFO - Received response from rag agent
+2025-04-18 14:50:40,825 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T14:50:40.819537', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the provided documents.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T14:50:40.819579'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:50:46,344 - INFO - Starting agent initialization...
+2025-04-18 14:50:46,345 - DEBUG - Environment variables verified
+2025-04-18 14:50:46,345 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:50:57,837 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:50:57,837 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:50:57,838 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:50:57,839 - INFO - rag agent ready
+2025-04-18 14:50:57,839 - INFO - graph agent ready
+2025-04-18 14:50:57,839 - DEBUG - Agent verification complete
+2025-04-18 14:50:57,840 - INFO - All agents initialized successfully
+2025-04-18 14:51:02,619 - DEBUG - Created new session: sess_20250418145102_09173d46
+2025-04-18 14:51:02,621 - DEBUG - Classifying query: I want to book an appointment
+2025-04-18 14:51:02,622 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:51:02,624 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:51:02,625 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:51:02,626 - DEBUG - Session ID: sess_20250418145102_09173d46
+2025-04-18 14:51:02,628 - DEBUG - Getting context for agent: sql
+2025-04-18 14:51:02,630 - INFO - Calling sql agent handler
+2025-04-18 14:51:02,631 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418145102_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:51:02.629952', 'is_new_session': True}}
+2025-04-18 14:51:06,275 - INFO - Received response from sql agent
+2025-04-18 14:51:06,276 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:51:18,875 - DEBUG - Created new session: sess_20250418145118_e4364c25
+2025-04-18 14:51:18,877 - DEBUG - Classifying query: Doctor Angella Webb
+2025-04-18 14:51:18,879 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 14:51:18,881 - INFO - Query classified as rag with confidence 0.7
+2025-04-18 14:51:18,882 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 14:51:18,884 - DEBUG - Session ID: sess_20250418145118_e4364c25
+2025-04-18 14:51:18,885 - DEBUG - Getting context for agent: rag
+2025-04-18 14:51:18,886 - INFO - Calling rag agent handler
+2025-04-18 14:51:18,887 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418145118_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T14:51:18.886443', 'is_new_session': True}}
+2025-04-18 14:51:27,247 - INFO - Received response from rag agent
+2025-04-18 14:51:27,248 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about her using other resources?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T14:51:27.245379', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about her using other resources?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T14:51:27.245389'}]}, 'suggested_next': None, 'status': 'resolved'}

@@ -216,22 +216,9 @@ class SQLAgent:
                 self.session_context.update(query_data['context'])
                 logger.debug(f"Updated session context: {self.session_context}")
             
-            # Check if this is a completion indicator
-            if query_text.lower().strip() in ['done', 'finish', 'complete', 'end']:
-                return {
-                    "response": "Appointment scheduling completed.",
-                    "context_updates": {},
-                    "suggested_next": None,
-                    "status": "resolved"
-                }
-            
-            # Get agent response
-            response = await self.agent_executor.ainvoke(
-                {
-                    "input": query_text,
-                    "chat_history": self.memory.chat_memory.messages
-                }
-            )
+            # Run query through agent
+            logger.info("Running query through agent executor")
+            response = await self.agent_executor.ainvoke({"input": query_text})
             
             # Extract response text and any intermediate steps
             response_text = response.get('output', '')
@@ -251,11 +238,25 @@ class SQLAgent:
             # Extract context updates
             context_updates = self._extract_context_updates(response_text)
             
+            # Determine status based on response and query content
+            status = "in_progress"  # Default to in_progress for SQL operations
+            
+            # Only mark as resolved if we have a final confirmation
+            if any(phrase in response_text.lower() for phrase in [
+                "appointment has been booked",
+                "successfully registered",
+                "appointment confirmed",
+                "registration complete"
+            ]):
+                status = "resolved"
+            elif "error" in response_text.lower():
+                status = "error"
+            
             return {
                 "response": response_text,
                 "context_updates": context_updates,
                 "suggested_next": None,
-                "status": "resolved"
+                "status": status
             }
             
         except Exception as e:

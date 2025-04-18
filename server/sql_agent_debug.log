@@ -4100,3 +4100,51 @@ Traceback (most recent call last):
     raise ConnectionError(error_msg)
 ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
 
+2025-04-18 14:38:57,291 - INFO - Creating SQL Agent instance
+2025-04-18 14:38:57,292 - INFO - Creating SQL Agent instance
+2025-04-18 14:38:57,292 - DEBUG - Initial session context: {}
+2025-04-18 14:38:57,293 - INFO - Initializing Supabase connection
+2025-04-18 14:38:58,507 - INFO - Initializing tools
+2025-04-18 14:38:58,508 - DEBUG - Tools initialized: 5
+2025-04-18 14:38:58,509 - INFO - Initializing memory
+2025-04-18 14:38:58,511 - DEBUG - Memory initialized
+2025-04-18 14:38:58,512 - INFO - Creating prompt template
+2025-04-18 14:38:58,513 - INFO - Creating agent
+2025-04-18 14:38:58,549 - INFO - Creating agent executor
+2025-04-18 14:38:58,550 - INFO - SQL Agent initialization complete
+2025-04-18 14:39:04,938 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:39:16,774 - INFO - SQL Agent: Received query
+2025-04-18 14:39:16,775 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250418143916_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:39:16.771189', 'is_new_session': False}}
+2025-04-18 14:39:16,776 - DEBUG - Updated session context: {'session_id': 'sess_20250418143916_21647770', 'department': 'sql', 'timestamp': '2025-04-18T14:39:16.771189', 'is_new_session': False}
+2025-04-18 14:46:14,493 - INFO - Creating SQL Agent instance
+2025-04-18 14:46:14,495 - INFO - Creating SQL Agent instance
+2025-04-18 14:46:14,495 - DEBUG - Initial session context: {}
+2025-04-18 14:46:14,496 - INFO - Initializing Supabase connection
+2025-04-18 14:46:15,773 - INFO - Initializing tools
+2025-04-18 14:46:15,774 - DEBUG - Tools initialized: 5
+2025-04-18 14:46:15,775 - INFO - Initializing memory
+2025-04-18 14:46:15,778 - DEBUG - Memory initialized
+2025-04-18 14:46:15,778 - INFO - Creating prompt template
+2025-04-18 14:46:15,779 - INFO - Creating agent
+2025-04-18 14:46:15,824 - INFO - Creating agent executor
+2025-04-18 14:46:15,825 - INFO - SQL Agent initialization complete
+2025-04-18 14:46:22,325 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:46:26,196 - INFO - SQL Agent: Received query
+2025-04-18 14:46:26,196 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418144626_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:46:26.195546', 'is_new_session': True}}
+2025-04-18 14:46:26,197 - DEBUG - Updated session context: {'session_id': 'sess_20250418144626_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:46:26.195546', 'is_new_session': True}
+2025-04-18 14:50:47,919 - INFO - Creating SQL Agent instance
+2025-04-18 14:50:47,920 - INFO - Creating SQL Agent instance
+2025-04-18 14:50:47,920 - DEBUG - Initial session context: {}
+2025-04-18 14:50:47,921 - INFO - Initializing Supabase connection
+2025-04-18 14:50:50,808 - INFO - Initializing tools
+2025-04-18 14:50:50,809 - DEBUG - Tools initialized: 5
+2025-04-18 14:50:50,810 - INFO - Initializing memory
+2025-04-18 14:50:50,812 - DEBUG - Memory initialized
+2025-04-18 14:50:50,813 - INFO - Creating prompt template
+2025-04-18 14:50:50,814 - INFO - Creating agent
+2025-04-18 14:50:50,844 - INFO - Creating agent executor
+2025-04-18 14:50:50,845 - INFO - SQL Agent initialization complete
+2025-04-18 14:50:57,838 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:51:02,633 - INFO - SQL Agent: Received query
+2025-04-18 14:51:02,634 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418145102_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:51:02.629952', 'is_new_session': True}}
+2025-04-18 14:51:02,636 - DEBUG - Updated session context: {'session_id': 'sess_20250418145102_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:51:02.629952', 'is_new_session': True}
