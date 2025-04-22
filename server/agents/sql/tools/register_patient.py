@@ -7,6 +7,13 @@ from pydantic import BaseModel
 import random
 import string
 import logging
+import asyncio
+
+async def ensure_awaited(obj):
+    if asyncio.iscoroutine(obj):
+        return await obj
+    return obj
+
 
 logger = logging.getLogger(__name__)
 
@@ -50,17 +57,17 @@ class PatientRegistrationTool:
 
         try:
             if self.current_step == 'get_name':
-                return await self._handle_name_step(input_str)
+                return await ensure_awaited(self._handle_name_step(input_str))
             elif self.current_step == 'get_gender':
-                return await self._handle_gender_step(input_str)
+                return await ensure_awaited(self._handle_gender_step(input_str))
             elif self.current_step == 'get_phone':
-                return await self._handle_phone_step(input_str)
+                return await ensure_awaited(self._handle_phone_step(input_str))
             elif self.current_step == 'get_age':
-                return await self._handle_age_step(input_str)
+                return await ensure_awaited(self._handle_age_step(input_str))
             elif self.current_step == 'get_address':
-                return await self._handle_address_step(input_str)
+                return await ensure_awaited(self._handle_address_step(input_str))
             elif self.current_step == 'confirm':
-                return await self._handle_confirmation_step(input_str)
+                return await ensure_awaited(self._handle_confirmation_step(input_str))
             else:
                 return self._reset_flow("Let's start your registration. What is your name?")
                 

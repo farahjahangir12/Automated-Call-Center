@@ -12,6 +12,7 @@ from typing import Dict, Optional, Tuple, Any
 import sys
 import hashlib
 import json
+from rapidfuzz import fuzz
 
 # Add the server directory to the Python path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -307,47 +308,86 @@ class HospitalRouter:
             return False
 
     async def classify_query(self, query: str, current_department: Optional[str] = None) -> Tuple[str, float]:
-        """Classify query to determine which agent should handle it using LLM reasoning"""
+        """Classify query to determine which agent should handle it using rules, fuzzy matching, and LLM reasoning"""
         try:
+            # Normalize query
+            query_norm = query.lower().strip()
             # If we have a current department and it's SQL, maintain it for the session
             if current_department == 'sql':
                 logger.debug("Maintaining SQL session")
                 return 'sql', 1.0
 
-            # Check for direct SQL patterns first
+            # --- Improved Pattern Matching ---
             sql_patterns = [
-                r"\b(book|schedule|cancel|reschedule).*appointment\b",
-                r"\b(register|sign up).*patient\b",
-                r"\bdoctor\b.*\b(available|schedule|time|slot)\b",
-                # Add patterns for time/date responses during booking
-                r"\b\d{1,2}:\d{2}\b",  # Match time format HH:MM
-                r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b"
+                r"\b(book|schedule|cancel|reschedule|move|change|shift).*appointment\b",
+                r"\b(register|sign up|enroll|add).*patient\b",
+                r"\bdoctor\b.*\b(available|schedule|time|slot|book|see)\b",
+                r"\bappointment with (dr\.|doctor)\b",
+                r"\bsee (dr\.|doctor)\b",
+                r"\b\d{1,2}[:.]\d{2}\b",  # Time format HH:MM or HH.MM
+                r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday|today|tomorrow)\b",
+                r"\bclinic hours\b",
+                r"\bconsultation (slot|time|hours)\b"
             ]
-            
-            for pattern in sql_patterns:
-                if re.search(pattern, query.lower()):
-                    logger.debug(f"Query matched SQL pattern: {pattern}")
-                    return "sql", 0.9
-            
-            # Use LLM for more complex classification
+            graph_patterns = [
+                r"\b(symptom|pain|fever|diagnosis|treatment|disease|condition|allergy|asthma|diabetes|hypertension|migraine|cough|rash|headache)\b",
+                r"\bwhat should i do for\b",
+                r"\bis.*serious\b",
+                r"\btreatment for\b",
+                r"\bmy (child|son|daughter).*fever\b",
+                r"\bsymptoms of\b",
+                r"\bcauses of\b",
+                r"\bprevention of\b",
+                r"\brisks of\b",
+                r"\bcomplications of\b",
+                r"\bhow to treat\b",
+                r"\bhow to prevent\b",
+                r"\bwhat causes\b",
+                r"\bwhat are the symptoms of\b",
+                r"\bhow to manage\b",
+                r"\bwhat is.*disease\b",
+                r"\bhow to diagnose\b",
+                r"\bwhat are the risk factors for\b"
+            ]
+            rag_patterns = [
+                r"\b(policy|insurance|visiting hours|consulting hours|rules|procedure|admission|department details|payment methods|payment options|payment details|hospital info|general info|contact|location|address|parking|facilities)\b"
+            ]
+
+            def fuzzy_match(patterns, query):
+                for pattern in patterns:
+                    if re.search(pattern, query):
+                        return True
+                    # Fuzzy match for each word in pattern
+                    for word in re.findall(r'\\w+', pattern):
+                        if fuzz.partial_ratio(word, query) > 85:
+                            return True
+                return False
+
+            # 1. Direct pattern or fuzzy match
+            if fuzzy_match(sql_patterns, query_norm):
+                logger.debug("Query matched SQL pattern or fuzzy")
+                return "sql", 0.9
+            if fuzzy_match(graph_patterns, query_norm):
+                logger.debug("Query matched GRAPH pattern or fuzzy")
+                return "graph", 0.9
+            if fuzzy_match(rag_patterns, query_norm):
+                logger.debug("Query matched RAG pattern or fuzzy")
+                return "rag", 0.9
+
+            # 2. Use context (if available)
+            # Example: If last agent was SQL and query is ambiguous, prefer SQL
+            # (Optional: can be expanded with ConversationContext)
+
+            # 3. Fallback to LLM (with improved prompt)
             try:
                 response = await self.llm.invoke([
-                    {"role": "system", "content": """You are a query classifier for a hospital system.
-                    Classify queries as either:
-                    - sql: For appointments, registrations, and scheduling
-                    - rag: For general hospital information
-                    
-                    Respond ONLY with: classification|confidence_score
-                    Example: sql|0.9"""},
+                    {"role": "system", "content": """You are a query classifier for a hospital system.\nClassify queries as either:\n- sql: For appointments, registrations, and scheduling\n- graph: For medical queries, symptoms, and diagnosis\n- rag: For general hospital information, policies, and rules\nRespond ONLY with: classification|confidence_score\nExample: sql|0.9"""},
                     {"role": "user", "content": query}
                 ])
-                
                 result = response.choices[0].message.content.strip()
                 classification, confidence = result.split('|')
                 confidence = float(confidence)
-                
                 return classification.lower().strip(), confidence
-                
             except Exception as e:
                 logger.error(f"Error in LLM classification: {str(e)}")
                 # Default to RAG with lower confidence if LLM fails

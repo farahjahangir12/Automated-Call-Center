@@ -23,14 +23,14 @@ async def get_doctor_info(input_data: Dict) -> Dict:
                 "output": result['value'],
                 "current_step": "get_doctor",
                 "collected_data": {},
-                "status": "in_progress"
+                "status": "error"
             }
 
         return {
             "output": f"Doctor information extracted successfully: {result['value']}",
             "current_step": "get_doctor",
             "collected_data": {"doctor": result['value']},
-            "status": "in_progress"
+            "status": "success"
         }
     except Exception as e:
         logger.error(f"Error in get_doctor_info: {str(e)}")

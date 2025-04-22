@@ -4148,3 +4148,250 @@ ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connec
 2025-04-18 14:51:02,633 - INFO - SQL Agent: Received query
 2025-04-18 14:51:02,634 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418145102_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:51:02.629952', 'is_new_session': True}}
 2025-04-18 14:51:02,636 - DEBUG - Updated session context: {'session_id': 'sess_20250418145102_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:51:02.629952', 'is_new_session': True}
+2025-04-18 14:54:15,420 - INFO - Creating SQL Agent instance
+2025-04-18 14:54:15,421 - INFO - Creating SQL Agent instance
+2025-04-18 14:54:15,421 - DEBUG - Initial session context: {}
+2025-04-18 14:54:15,422 - INFO - Initializing Supabase connection
+2025-04-18 14:54:16,624 - INFO - Initializing tools
+2025-04-18 14:54:16,625 - DEBUG - Tools initialized: 5
+2025-04-18 14:54:16,627 - INFO - Initializing memory
+2025-04-18 14:54:16,630 - DEBUG - Memory initialized
+2025-04-18 14:54:16,631 - INFO - Creating prompt template
+2025-04-18 14:54:16,633 - INFO - Creating agent
+2025-04-18 14:54:16,669 - INFO - Creating agent executor
+2025-04-18 14:54:16,670 - INFO - SQL Agent initialization complete
+2025-04-18 14:54:22,887 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 14:54:33,310 - INFO - SQL Agent: Received query
+2025-04-18 14:54:33,311 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:33.306828', 'is_new_session': True}}
+2025-04-18 14:54:33,313 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:33.306828', 'is_new_session': True}
+2025-04-18 14:54:33,315 - INFO - Running query through agent executor
+2025-04-18 14:54:39,197 - INFO - SQL Agent: Received query
+2025-04-18 14:54:39,198 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:39.196056', 'is_new_session': False}}
+2025-04-18 14:54:39,199 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:39.196056', 'is_new_session': False}
+2025-04-18 14:54:39,200 - INFO - Running query through agent executor
+2025-04-18 14:54:52,212 - INFO - SQL Agent: Received query
+2025-04-18 14:54:52,213 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:52.208938', 'is_new_session': False}}
+2025-04-18 14:54:52,214 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:52.208938', 'is_new_session': False}
+2025-04-18 14:54:52,216 - INFO - Running query through agent executor
+2025-04-18 14:55:26,441 - INFO - SQL Agent: Received query
+2025-04-18 14:55:26,442 - DEBUG - Query data: {'text': 'Farah ,female,phone,14,age', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:26.437739', 'is_new_session': False}}
+2025-04-18 14:55:26,444 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:26.437739', 'is_new_session': False}
+2025-04-18 14:55:26,445 - INFO - Running query through agent executor
+2025-04-18 14:55:56,368 - INFO - SQL Agent: Received query
+2025-04-18 14:55:56,369 - DEBUG - Query data: {'text': 'No I dont want to proceed with it', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:56.364613', 'is_new_session': False}}
+2025-04-18 14:55:56,372 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:56.364613', 'is_new_session': False}
+2025-04-18 14:55:56,373 - INFO - Running query through agent executor
+2025-04-18 14:56:14,847 - INFO - SQL Agent: Received query
+2025-04-18 14:56:14,849 - DEBUG - Query data: {'text': 'What are the admission policies of your hospital', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:14.844292', 'is_new_session': False}}
+2025-04-18 14:56:14,851 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:14.844292', 'is_new_session': False}
+2025-04-18 14:56:14,853 - INFO - Running query through agent executor
+2025-04-18 14:56:30,630 - INFO - SQL Agent: Received query
+2025-04-18 14:56:30,632 - DEBUG - Query data: {'text': 'Admission policies of your hospital', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:30.627165', 'is_new_session': False}}
+2025-04-18 14:56:30,634 - DEBUG - Updated session context: {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:30.627165', 'is_new_session': False}
+2025-04-18 14:56:30,636 - INFO - Running query through agent executor
+2025-04-18 20:24:13,781 - INFO - Creating SQL Agent instance
+2025-04-18 20:24:13,782 - INFO - Creating SQL Agent instance
+2025-04-18 20:24:13,783 - DEBUG - Initial session context: {}
+2025-04-18 20:24:13,784 - INFO - Initializing Supabase connection
+2025-04-18 20:24:15,710 - INFO - Initializing tools
+2025-04-18 20:24:15,712 - DEBUG - Tools initialized: 5
+2025-04-18 20:24:15,713 - INFO - Initializing memory
+2025-04-18 20:24:15,718 - DEBUG - Memory initialized
+2025-04-18 20:24:15,720 - INFO - Creating prompt template
+2025-04-18 20:24:15,724 - INFO - Creating agent
+2025-04-18 20:24:15,881 - INFO - Creating agent executor
+2025-04-18 20:24:15,884 - INFO - SQL Agent initialization complete
+2025-04-18 20:24:37,362 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 20:26:11,890 - INFO - Creating SQL Agent instance
+2025-04-18 20:26:11,891 - INFO - Creating SQL Agent instance
+2025-04-18 20:26:11,892 - DEBUG - Initial session context: {}
+2025-04-18 20:26:11,893 - INFO - Initializing Supabase connection
+2025-04-18 20:26:13,560 - INFO - Initializing tools
+2025-04-18 20:26:13,561 - DEBUG - Tools initialized: 5
+2025-04-18 20:26:13,562 - INFO - Initializing memory
+2025-04-18 20:26:13,566 - DEBUG - Memory initialized
+2025-04-18 20:26:13,567 - INFO - Creating prompt template
+2025-04-18 20:26:13,569 - INFO - Creating agent
+2025-04-18 20:26:13,659 - INFO - Creating agent executor
+2025-04-18 20:26:13,661 - INFO - SQL Agent initialization complete
+2025-04-18 20:26:23,917 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 20:27:36,744 - INFO - Creating SQL Agent instance
+2025-04-18 20:27:36,745 - INFO - Creating SQL Agent instance
+2025-04-18 20:27:36,746 - DEBUG - Initial session context: {}
+2025-04-18 20:27:36,747 - INFO - Initializing Supabase connection
+2025-04-18 20:27:38,336 - INFO - Initializing tools
+2025-04-18 20:27:38,338 - DEBUG - Tools initialized: 5
+2025-04-18 20:27:38,339 - INFO - Initializing memory
+2025-04-18 20:27:38,345 - DEBUG - Memory initialized
+2025-04-18 20:27:38,346 - INFO - Creating prompt template
+2025-04-18 20:27:38,349 - INFO - Creating agent
+2025-04-18 20:27:38,473 - INFO - Creating agent executor
+2025-04-18 20:27:38,475 - INFO - SQL Agent initialization complete
+2025-04-18 20:27:48,376 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 20:48:29,652 - INFO - Creating SQL Agent instance
+2025-04-18 20:48:29,653 - INFO - Creating SQL Agent instance
+2025-04-18 20:48:29,654 - DEBUG - Initial session context: {}
+2025-04-18 20:48:29,655 - INFO - Initializing Supabase connection
+2025-04-18 20:48:31,062 - INFO - Initializing tools
+2025-04-18 20:48:31,063 - DEBUG - Tools initialized: 5
+2025-04-18 20:48:31,064 - INFO - Initializing memory
+2025-04-18 20:48:31,113 - DEBUG - Memory initialized
+2025-04-18 20:48:31,114 - INFO - Creating prompt template
+2025-04-18 20:48:31,117 - INFO - Creating agent
+2025-04-18 20:48:31,236 - INFO - Creating agent executor
+2025-04-18 20:48:31,237 - INFO - SQL Agent initialization complete
+2025-04-18 20:48:46,610 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 20:50:32,358 - INFO - SQL Agent: Received query
+2025-04-18 20:50:32,359 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418205032_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:50:32.354594', 'is_new_session': True}}
+2025-04-18 20:50:32,362 - DEBUG - Updated session context: {'session_id': 'sess_20250418205032_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:50:32.354594', 'is_new_session': True}
+2025-04-18 20:50:32,364 - INFO - Running query through agent executor
+2025-04-18 20:57:48,713 - INFO - Creating SQL Agent instance
+2025-04-18 20:57:48,714 - INFO - Creating SQL Agent instance
+2025-04-18 20:57:48,715 - DEBUG - Initial session context: {}
+2025-04-18 20:57:48,716 - INFO - Initializing Supabase connection
+2025-04-18 20:57:50,298 - INFO - Initializing tools
+2025-04-18 20:57:50,299 - DEBUG - Tools initialized: 5
+2025-04-18 20:57:50,301 - INFO - Initializing memory
+2025-04-18 20:57:50,306 - DEBUG - Memory initialized
+2025-04-18 20:57:50,307 - INFO - Creating prompt template
+2025-04-18 20:57:50,310 - INFO - Creating agent
+2025-04-18 20:57:50,434 - INFO - Creating agent executor
+2025-04-18 20:57:50,437 - INFO - SQL Agent initialization complete
+2025-04-18 20:57:59,897 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 20:58:04,096 - INFO - SQL Agent: Received query
+2025-04-18 20:58:04,097 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418205804_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:58:04.092649', 'is_new_session': True}}
+2025-04-18 20:58:04,099 - DEBUG - Updated session context: {'session_id': 'sess_20250418205804_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:58:04.092649', 'is_new_session': True}
+2025-04-18 20:58:04,101 - INFO - Running query through agent executor
+2025-04-18 21:05:09,538 - INFO - Creating SQL Agent instance
+2025-04-18 21:05:09,539 - INFO - Creating SQL Agent instance
+2025-04-18 21:05:09,540 - DEBUG - Initial session context: {}
+2025-04-18 21:05:09,541 - INFO - Initializing Supabase connection
+2025-04-18 21:05:10,558 - INFO - Initializing tools
+2025-04-18 21:05:10,560 - DEBUG - Tools initialized: 5
+2025-04-18 21:05:10,561 - INFO - Initializing memory
+2025-04-18 21:05:10,567 - DEBUG - Memory initialized
+2025-04-18 21:05:10,569 - INFO - Creating prompt template
+2025-04-18 21:05:10,571 - INFO - Creating agent
+2025-04-18 21:05:10,694 - INFO - Creating agent executor
+2025-04-18 21:05:10,697 - INFO - SQL Agent initialization complete
+2025-04-18 21:05:20,552 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 21:07:18,653 - INFO - SQL Agent: Received query
+2025-04-18 21:07:18,654 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418210718_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:07:18.648752', 'is_new_session': True}}
+2025-04-18 21:07:18,657 - DEBUG - Updated session context: {'session_id': 'sess_20250418210718_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:07:18.648752', 'is_new_session': True}
+2025-04-18 21:07:18,659 - INFO - Running query through agent executor
+2025-04-18 21:13:20,605 - INFO - Creating SQL Agent instance
+2025-04-18 21:13:20,606 - INFO - Creating SQL Agent instance
+2025-04-18 21:13:20,607 - DEBUG - Initial session context: {}
+2025-04-18 21:13:20,608 - INFO - Initializing Supabase connection
+2025-04-18 21:13:22,222 - INFO - Initializing tools
+2025-04-18 21:13:22,224 - DEBUG - Tools initialized: 5
+2025-04-18 21:13:22,225 - INFO - Initializing memory
+2025-04-18 21:13:22,230 - DEBUG - Memory initialized
+2025-04-18 21:13:22,231 - INFO - Creating prompt template
+2025-04-18 21:13:22,234 - INFO - Creating agent
+2025-04-18 21:13:22,358 - INFO - Creating agent executor
+2025-04-18 21:13:22,359 - INFO - SQL Agent initialization complete
+2025-04-18 21:13:32,902 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 21:13:38,936 - INFO - SQL Agent: Received query
+2025-04-18 21:13:38,937 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418211338_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:13:38.932349', 'is_new_session': True}}
+2025-04-18 21:13:38,940 - DEBUG - Updated session context: {'session_id': 'sess_20250418211338_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:13:38.932349', 'is_new_session': True}
+2025-04-18 21:13:38,943 - INFO - Running query through agent executor
+2025-04-18 21:25:52,665 - INFO - Creating SQL Agent instance
+2025-04-18 21:25:52,666 - INFO - Creating SQL Agent instance
+2025-04-18 21:25:52,666 - DEBUG - Initial session context: {}
+2025-04-18 21:25:52,667 - INFO - Initializing Supabase connection
+2025-04-18 21:25:54,511 - INFO - Initializing tools
+2025-04-18 21:25:54,513 - DEBUG - Tools initialized: 5
+2025-04-18 21:25:54,514 - INFO - Initializing memory
+2025-04-18 21:25:54,519 - DEBUG - Memory initialized
+2025-04-18 21:25:54,520 - INFO - Creating prompt template
+2025-04-18 21:25:54,522 - INFO - Creating agent
+2025-04-18 21:25:54,666 - INFO - Creating agent executor
+2025-04-18 21:25:54,669 - INFO - SQL Agent initialization complete
+2025-04-18 21:26:04,360 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-18 22:03:57,977 - INFO - Creating SQL Agent instance
+2025-04-18 22:03:57,978 - INFO - Creating SQL Agent instance
+2025-04-18 22:03:57,979 - DEBUG - Initial session context: {}
+2025-04-18 22:03:57,980 - INFO - Initializing Supabase connection
+2025-04-18 22:03:59,436 - INFO - Initializing tools
+2025-04-18 22:03:59,437 - DEBUG - Tools initialized: 5
+2025-04-18 22:03:59,438 - INFO - Initializing memory
+2025-04-18 22:03:59,441 - DEBUG - Memory initialized
+2025-04-18 22:03:59,442 - INFO - Creating prompt template
+2025-04-18 22:03:59,444 - INFO - Creating agent
+2025-04-18 22:03:59,504 - INFO - Creating agent executor
+2025-04-18 22:03:59,506 - INFO - SQL Agent initialization complete
+2025-04-18 22:04:08,943 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-21 20:32:23,103 - INFO - Creating SQL Agent instance
+2025-04-21 20:32:23,104 - INFO - Creating SQL Agent instance
+2025-04-21 20:32:23,104 - DEBUG - Initial session context: {}
+2025-04-21 20:32:23,105 - INFO - Initializing Supabase connection
+2025-04-21 20:32:25,436 - INFO - Initializing tools
+2025-04-21 20:32:25,437 - DEBUG - Tools initialized: 5
+2025-04-21 20:32:25,438 - INFO - Initializing memory
+2025-04-21 20:32:25,441 - DEBUG - Memory initialized
+2025-04-21 20:32:25,442 - INFO - Creating prompt template
+2025-04-21 20:32:25,443 - INFO - Creating agent
+2025-04-21 20:32:25,536 - INFO - Creating agent executor
+2025-04-21 20:32:25,538 - INFO - SQL Agent initialization complete
+2025-04-21 20:33:05,710 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-21 20:56:06,907 - INFO - Creating SQL Agent instance
+2025-04-21 20:56:06,909 - INFO - Creating SQL Agent instance
+2025-04-21 20:56:06,910 - DEBUG - Initial session context: {}
+2025-04-21 20:56:06,910 - INFO - Initializing Supabase connection
+2025-04-21 20:56:08,679 - INFO - Initializing tools
+2025-04-21 20:56:08,681 - DEBUG - Tools initialized: 5
+2025-04-21 20:56:08,683 - INFO - Initializing memory
+2025-04-21 20:56:08,690 - DEBUG - Memory initialized
+2025-04-21 20:56:08,692 - INFO - Creating prompt template
+2025-04-21 20:56:08,694 - INFO - Creating agent
+2025-04-21 20:56:08,840 - INFO - Creating agent executor
+2025-04-21 20:56:08,843 - INFO - SQL Agent initialization complete
+2025-04-21 20:56:19,624 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-21 21:00:19,982 - INFO - Creating SQL Agent instance
+2025-04-21 21:00:19,983 - INFO - Creating SQL Agent instance
+2025-04-21 21:00:19,984 - DEBUG - Initial session context: {}
+2025-04-21 21:00:19,985 - INFO - Initializing Supabase connection
+2025-04-21 21:00:21,552 - INFO - Initializing tools
+2025-04-21 21:00:21,554 - DEBUG - Tools initialized: 5
+2025-04-21 21:00:21,555 - INFO - Initializing memory
+2025-04-21 21:00:21,559 - DEBUG - Memory initialized
+2025-04-21 21:00:21,560 - INFO - Creating prompt template
+2025-04-21 21:00:21,562 - INFO - Creating agent
+2025-04-21 21:00:21,638 - INFO - Creating agent executor
+2025-04-21 21:00:21,640 - INFO - SQL Agent initialization complete
+2025-04-21 21:00:31,139 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-21 21:17:09,698 - INFO - Creating SQL Agent instance
+2025-04-21 21:17:09,699 - INFO - Creating SQL Agent instance
+2025-04-21 21:17:09,700 - DEBUG - Initial session context: {}
+2025-04-21 21:17:09,700 - INFO - Initializing Supabase connection
+2025-04-21 21:17:11,606 - INFO - Initializing tools
+2025-04-21 21:17:11,608 - DEBUG - Tools initialized: 5
+2025-04-21 21:17:11,609 - INFO - Initializing memory
+2025-04-21 21:17:11,616 - DEBUG - Memory initialized
+2025-04-21 21:17:11,617 - INFO - Creating prompt template
+2025-04-21 21:17:11,620 - INFO - Creating agent
+2025-04-21 21:17:11,752 - INFO - Creating agent executor
+2025-04-21 21:17:11,755 - INFO - SQL Agent initialization complete
+2025-04-21 21:17:22,692 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-21 21:19:56,572 - INFO - SQL Agent: Received query
+2025-04-21 21:19:56,573 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:19:56.567772', 'is_new_session': True}}
+2025-04-21 21:19:56,576 - DEBUG - Updated session context: {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:19:56.567772', 'is_new_session': True}
+2025-04-21 21:19:56,578 - INFO - Running query through agent executor
+2025-04-21 21:20:08,381 - INFO - SQL Agent: Received query
+2025-04-21 21:20:08,384 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:08.374507', 'is_new_session': False}}
+2025-04-21 21:20:08,389 - DEBUG - Updated session context: {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:08.374507', 'is_new_session': False}
+2025-04-21 21:20:08,391 - INFO - Running query through agent executor
+2025-04-21 21:20:43,521 - INFO - SQL Agent: Received query
+2025-04-21 21:20:43,522 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:43.517654', 'is_new_session': False}}
+2025-04-21 21:20:43,525 - DEBUG - Updated session context: {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:43.517654', 'is_new_session': False}
+2025-04-21 21:20:43,528 - INFO - Running query through agent executor
+2025-04-21 21:20:48,738 - ERROR - Error in handle_query: 'str' object has no attribute 'get'
+2025-04-21 21:20:48,759 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 244, in handle_query
+    await step[1]
+  File "D:\FYP\server\agents\sql\tools\cancel_appointment.py", line 18, in invoke
+    input_data.get("input_str", ""),
+    ^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+

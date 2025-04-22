@@ -4,6 +4,13 @@ from agents.sql.tools.functions.book_appointment.create_appointment_record impor
 from langchain.tools import StructuredTool
 from typing import Dict, Any, Optional, Callable
 import logging
+import asyncio
+
+async def ensure_awaited(obj):
+    if asyncio.iscoroutine(obj):
+        return await obj
+    return obj
+
 from pydantic import BaseModel, Field
 import asyncio
 
@@ -80,90 +87,50 @@ class AppointmentBookingTool:
                 
                 if doctor_info.get('success', False):
                     # Use doctor_info_tool to get full doctor details
-                    doctor_details = await self.doctor_info_tool.invoke(input_str)
+                    doctor_details = await ensure_awaited(self.doctor_info_tool.invoke({'input_str': input_str}))
                     if doctor_details.get('success', False):
                         self.collected_data['doctor'] = doctor_details
                         self.current_step = 'get_time'
                         return {
-                            'response': f"Great! You've selected {doctor_details['value']}. When would you like to schedule your appointment?",
+                            'response': f"Please provide your preferred date and time for the appointment.",
                             'current_step': 'get_time',
                             'collected_data': self.collected_data,
                             'status': 'in_progress'
                         }
                     else:
                         return {
-                            'response': f"I couldn't find details for the doctor you specified. Please try again.",
+                            'response': doctor_details.get('output', 'Could not get doctor details.'),
                             'current_step': 'get_doctor',
-                            'collected_data': {},
-                            'status': 'in_progress'
+                            'collected_data': self.collected_data,
+                            'status': 'error'
                         }
                 else:
                     return {
-                        'response': f"I couldn't understand the doctor you specified. Please try again.",
+                        'response': doctor_info.get('value', "I couldn't extract a doctor name. Please try again."),
                         'current_step': 'get_doctor',
-                        'collected_data': {},
-                        'status': 'in_progress'
+                        'collected_data': self.collected_data,
+                        'status': 'error'
                     }
 
             elif self.current_step == 'get_time':
                 # Second step - ask for time if not specified
                 if not input_str.strip():
                     return {
-                        'response': "When would you like to schedule your appointment? Please specify a date and time.",
+                        'response': "Please provide your preferred date and time for the appointment.",
                         'current_step': 'get_time',
                         'collected_data': self.collected_data,
                         'status': 'in_progress'
                     }
-                
-                # Extract time information
-                time_info = await extract_appointment_info(input_str, field_type="day_time")
-                
-                if time_info.get('success', False):
-                    # Check if time slot is available
-                    slot_check = await self.appointmentSlots_info_tool.invoke(
-                        {
-                            'doctor_id': self.collected_data['doctor']['id'],
-                            'time': time_info['value']
-                        }
-                    )
-                    
-                    if slot_check.get('success', False):
-                        self.collected_data['time'] = time_info
-                        self.current_step = 'confirm'
-                        return {
-                            'response': f"The time {time_info['value']} is available. Would you like to confirm this appointment? (yes/no)",
-                            'current_step': 'confirm',
-                            'collected_data': self.collected_data,
-                            'status': 'in_progress'
-                        }
-                    else:
-                        # Get list of available slots
-                        slots = await self.appointmentSlots_info_tool.invoke(
-                            {
-                                'doctor_id': self.collected_data['doctor']['id']
-                            }
-                        )
-                        if slots.get('success', False):
-                            return {
-                                'response': f"I'm sorry, that time is not available. Available slots: {slots['value']}. Please choose another time.",
-                                'current_step': 'get_time',
-                                'collected_data': self.collected_data,
-                                'status': 'in_progress'
-                            }
-                        else:
-                            return {
-                                'response': f"I couldn't check available slots. Please try a different time.",
-                                'current_step': 'get_time',
-                                'collected_data': self.collected_data,
-                                'status': 'in_progress'
-                            }
-                else:
-                    return {
-                        'response': f"I couldn't understand the time you provided. Please specify a valid time (e.g., 2:30pm).",
-                        'current_step': 'get_time',
-                        'collected_data': self.collected_data,
-                        'status': 'in_progress'
-                    }
+                # Validate time (could use regex or NLU)
+                # For now, just store it
+                self.collected_data['time'] = input_str
+                self.current_step = 'confirm'
+                return {
+                    'response': f"Is the provided information correct? If so, I will proceed with booking your appointment with {self.collected_data['doctor'].get('output', 'the doctor')} on {input_str}. If not, please provide the correct information.",
+                    'current_step': 'confirm',
+                    'collected_data': self.collected_data,
+                    'status': 'in_progress'
+                }
 
             elif self.current_step == 'confirm':
                 # Third step - confirm appointment

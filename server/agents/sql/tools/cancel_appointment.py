@@ -95,7 +95,9 @@ class AppointmentCancellationTool:
             return self._reset_flow("Cancellation aborted. Let's start over if you want to try again.")
 
         try:
-            result = delete_appointment(self.collected_data['patient_id'])
+            # Await the delete_appointment_record async function
+            from agents.sql.tools.functions.cancel_appointment.delete_appointment_record import delete_appointment_record
+            result = await delete_appointment_record(self.collected_data['patient_id'])
             if not result['success']:
                 return {
                     'response': result['value'],

@@ -4819,3 +4819,568 @@ RuntimeError: Failed to load agents: ['sql', 'rag']
 2025-04-18 14:51:18,887 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418145118_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T14:51:18.886443', 'is_new_session': True}}
 2025-04-18 14:51:27,247 - INFO - Received response from rag agent
 2025-04-18 14:51:27,248 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about her using other resources?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T14:51:27.245379', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about her using other resources?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T14:51:27.245389'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 14:54:13,759 - INFO - Starting agent initialization...
+2025-04-18 14:54:13,760 - DEBUG - Environment variables verified
+2025-04-18 14:54:13,760 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 14:54:22,885 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 14:54:22,886 - DEBUG - Verifying agent interfaces...
+2025-04-18 14:54:22,887 - ERROR - Critical: sql agent verification failed!
+2025-04-18 14:54:22,888 - INFO - rag agent ready
+2025-04-18 14:54:22,889 - INFO - graph agent ready
+2025-04-18 14:54:22,889 - DEBUG - Agent verification complete
+2025-04-18 14:54:22,890 - INFO - All agents initialized successfully
+2025-04-18 14:54:33,297 - DEBUG - Created new session: sess_20250418145433_09173d46
+2025-04-18 14:54:33,298 - DEBUG - Classifying query: I want to book an appointment
+2025-04-18 14:54:33,300 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 14:54:33,301 - INFO - Query classified as sql with confidence 0.9
+2025-04-18 14:54:33,303 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 14:54:33,304 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:54:33,305 - DEBUG - Getting context for agent: sql
+2025-04-18 14:54:33,306 - INFO - Calling sql agent handler
+2025-04-18 14:54:33,308 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:33.306828', 'is_new_session': True}}
+2025-04-18 14:54:36,035 - INFO - Received response from sql agent
+2025-04-18 14:54:36,036 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:54:39,187 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:54:39,189 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:54:39,192 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:54:39,193 - INFO - Routing query to sql agent: Doctor Angella Webb
+2025-04-18 14:54:39,194 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:54:39,195 - DEBUG - Getting context for agent: sql
+2025-04-18 14:54:39,196 - INFO - Calling sql agent handler
+2025-04-18 14:54:39,196 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:39.196056', 'is_new_session': False}}
+2025-04-18 14:54:42,668 - INFO - Received response from sql agent
+2025-04-18 14:54:42,670 - DEBUG - Agent response: {'response': 'When would you like to schedule the appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:54:52,201 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:54:52,203 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:54:52,204 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:54:52,205 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-18 14:54:52,206 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:54:52,207 - DEBUG - Getting context for agent: sql
+2025-04-18 14:54:52,209 - INFO - Calling sql agent handler
+2025-04-18 14:54:52,209 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:54:52.208938', 'is_new_session': False}}
+2025-04-18 14:54:54,601 - INFO - Received response from sql agent
+2025-04-18 14:54:54,602 - DEBUG - Agent response: {'response': 'I need to confirm your details before finalizing the appointment. Please provide your name, gender, phone, age, and address to register as a new patient.', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:55:26,430 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:55:26,431 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:55:26,433 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:55:26,434 - INFO - Routing query to sql agent: Farah ,female,phone,14,age
+2025-04-18 14:55:26,435 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:55:26,436 - DEBUG - Getting context for agent: sql
+2025-04-18 14:55:26,437 - INFO - Calling sql agent handler
+2025-04-18 14:55:26,438 - DEBUG - Query data: {'text': 'Farah ,female,phone,14,age', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:26.437739', 'is_new_session': False}}
+2025-04-18 14:55:30,077 - INFO - Received response from sql agent
+2025-04-18 14:55:30,077 - DEBUG - Agent response: {'response': 'I apologize, but it seems like there was an issue with the registration and appointment booking process. Could you please provide your phone number and address to complete the registration? Additionally, I will need to confirm the appointment details with you again. Please let me know if you would like to proceed with the appointment booking.', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:55:56,356 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:55:56,358 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:55:56,359 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:55:56,360 - INFO - Routing query to sql agent: No I dont want to proceed with it
+2025-04-18 14:55:56,362 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:55:56,363 - DEBUG - Getting context for agent: sql
+2025-04-18 14:55:56,364 - INFO - Calling sql agent handler
+2025-04-18 14:55:56,365 - DEBUG - Query data: {'text': 'No I dont want to proceed with it', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:55:56.364613', 'is_new_session': False}}
+2025-04-18 14:55:57,616 - INFO - Received response from sql agent
+2025-04-18 14:55:57,617 - DEBUG - Agent response: {'response': "The appointment has been cancelled. If you change your mind and want to book an appointment in the future, please let me know and I'll be happy to help.", 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:56:14,836 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:56:14,837 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:56:14,839 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:56:14,840 - INFO - Routing query to sql agent: What are the admission policies of your hospital
+2025-04-18 14:56:14,841 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:56:14,843 - DEBUG - Getting context for agent: sql
+2025-04-18 14:56:14,844 - INFO - Calling sql agent handler
+2025-04-18 14:56:14,845 - DEBUG - Query data: {'text': 'What are the admission policies of your hospital', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:14.844292', 'is_new_session': False}}
+2025-04-18 14:56:18,736 - INFO - Received response from sql agent
+2025-04-18 14:56:18,736 - DEBUG - Agent response: {'response': "I can't answer that. Is there anything else I can help you with?", 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 14:56:30,619 - DEBUG - Using existing SQL session: sess_20250418145433_09173d46
+2025-04-18 14:56:30,621 - DEBUG - Maintaining active SQL session: sess_20250418145433_09173d46
+2025-04-18 14:56:30,622 - INFO - Query classified as sql with confidence 1.0
+2025-04-18 14:56:30,623 - INFO - Routing query to sql agent: Admission policies of your hospital
+2025-04-18 14:56:30,624 - DEBUG - Session ID: sess_20250418145433_09173d46
+2025-04-18 14:56:30,626 - DEBUG - Getting context for agent: sql
+2025-04-18 14:56:30,627 - INFO - Calling sql agent handler
+2025-04-18 14:56:30,628 - DEBUG - Query data: {'text': 'Admission policies of your hospital', 'context': {'session_id': 'sess_20250418145433_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T14:56:30.627165', 'is_new_session': False}}
+2025-04-18 14:56:54,279 - INFO - Received response from sql agent
+2025-04-18 14:56:54,280 - DEBUG - Agent response: {'response': "I can't provide information about the admission policies of our hospital. If you have any other questions or need help with booking an appointment, I'd be happy to assist you.", 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 20:24:09,609 - INFO - Starting agent initialization...
+2025-04-18 20:24:09,610 - DEBUG - Environment variables verified
+2025-04-18 20:24:09,611 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 20:24:37,359 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 20:24:37,361 - DEBUG - Verifying agent interfaces...
+2025-04-18 20:24:37,365 - ERROR - Critical: sql agent verification failed!
+2025-04-18 20:24:37,366 - INFO - rag agent ready
+2025-04-18 20:24:37,367 - INFO - graph agent ready
+2025-04-18 20:24:37,368 - DEBUG - Agent verification complete
+2025-04-18 20:24:37,369 - INFO - All agents initialized successfully
+2025-04-18 20:24:51,472 - ERROR - Error processing query: 'HospitalRouter' object has no attribute 'process_query'
+2025-04-18 20:24:51,478 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 534, in main
+    result = await router.process_query(query)
+                   ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HospitalRouter' object has no attribute 'process_query'
+
+2025-04-18 20:26:01,667 - ERROR - Error in main loop: 
+2025-04-18 20:26:01,673 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 524, in main
+    return f"sess_{timestamp}_{query_hash}"
+                    ^^^^^^^^^^^^^^
+EOFError
+
+2025-04-18 20:26:08,435 - INFO - Starting agent initialization...
+2025-04-18 20:26:08,436 - DEBUG - Environment variables verified
+2025-04-18 20:26:08,437 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 20:26:23,915 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 20:26:23,916 - DEBUG - Verifying agent interfaces...
+2025-04-18 20:26:23,919 - ERROR - Critical: sql agent verification failed!
+2025-04-18 20:26:23,920 - INFO - rag agent ready
+2025-04-18 20:26:23,921 - INFO - graph agent ready
+2025-04-18 20:26:23,922 - DEBUG - Agent verification complete
+2025-04-18 20:26:23,923 - INFO - All agents initialized successfully
+2025-04-18 20:26:38,484 - ERROR - Error processing query: cannot unpack non-iterable coroutine object
+2025-04-18 20:26:38,488 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 392, in process_query
+    department, _ = self.classify_query(query, current_department)
+    ^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable coroutine object
+
+2025-04-18 20:27:26,007 - ERROR - Error in main loop: 
+2025-04-18 20:27:26,013 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 569, in main
+    query = input("You: ").strip()
+            ~~~~~^^^^^^^^^
+EOFError
+
+2025-04-18 20:27:33,669 - INFO - Starting agent initialization...
+2025-04-18 20:27:33,670 - DEBUG - Environment variables verified
+2025-04-18 20:27:33,671 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 20:27:48,374 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 20:27:48,375 - DEBUG - Verifying agent interfaces...
+2025-04-18 20:27:48,378 - ERROR - Critical: sql agent verification failed!
+2025-04-18 20:27:48,380 - INFO - rag agent ready
+2025-04-18 20:27:48,381 - INFO - graph agent ready
+2025-04-18 20:27:48,382 - DEBUG - Agent verification complete
+2025-04-18 20:27:48,383 - INFO - All agents initialized successfully
+2025-04-18 20:27:54,814 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 20:27:54,816 - INFO - Routing query to rag agent: What are he admission policies of your hosppital
+2025-04-18 20:27:54,817 - DEBUG - Session ID: sess_20250418202754_97b46a93
+2025-04-18 20:27:54,819 - DEBUG - Getting context for agent: rag
+2025-04-18 20:27:54,820 - INFO - Calling rag agent handler
+2025-04-18 20:27:54,821 - DEBUG - Query data: {'text': 'What are he admission policies of your hosppital', 'context': {'session_id': 'sess_20250418202754_97b46a93', 'department': 'rag', 'timestamp': '2025-04-18T20:27:54.820287', 'is_new_session': True}}
+2025-04-18 20:28:07,078 - INFO - Received response from rag agent
+2025-04-18 20:28:07,079 - DEBUG - Agent response: {'response': 'I can help with that!\n\nHi there! \n\nTo answer your question about admission policies, I\'ve looked at our "Hospital Admission Process" and "Admission Guidelines and Procedures" documents. \n\nAccording to "Admission Guidelines and Procedures", your doctor will let you know the date for hospitalization. If you need to be admitted after an outpatient appointment, your doctor will register your admission and the clinical section will contact you with the specific date and time. \n\n"Hospital Admission Process" tells us that on the day of your admission, you\'ll need to arrive at the Inpatients Reception with some necessary documents.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-18T20:28:07.068736', 'chat_history': [{'query': 'What are he admission policies of your hosppital', 'response': 'I can help with that!\n\nHi there! \n\nTo answer your question about admission policies, I\'ve looked at our "Hospital Admission Process" and "Admission Guidelines and Procedures" documents. \n\nAccording to "Admission Guidelines and Procedures", your doctor will let you know the date for hospitalization. If you need to be admitted after an outpatient appointment, your doctor will register your admission and the clinical section will contact you with the specific date and time. \n\n"Hospital Admission Process" tells us that on the day of your admission, you\'ll need to arrive at the Inpatients Reception with some necessary documents.  \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-18T20:28:07.068753'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 20:28:31,771 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 20:28:31,772 - INFO - Routing query to rag agent: What are the symptoms of gout
+2025-04-18 20:28:31,774 - DEBUG - Session ID: sess_20250418202831_8352ee44
+2025-04-18 20:28:31,775 - DEBUG - Getting context for agent: rag
+2025-04-18 20:28:31,776 - INFO - Calling rag agent handler
+2025-04-18 20:28:31,777 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250418202831_8352ee44', 'department': 'rag', 'timestamp': '2025-04-18T20:28:31.776549', 'is_new_session': True}}
+2025-04-18 20:28:37,912 - INFO - Received response from rag agent
+2025-04-18 20:28:37,915 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the documents I have access to.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T20:28:37.905833', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I can help with that!\n\nI couldn't find specific information about the symptoms of gout in the documents I have access to.  \n\nWould you like me to try finding that information elsewhere?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T20:28:37.905874'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 20:48:14,245 - ERROR - Error in main loop: 
+2025-04-18 20:48:14,288 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 569, in main
+    }
+    
+EOFError
+
+2025-04-18 20:48:25,292 - INFO - Starting agent initialization...
+2025-04-18 20:48:25,293 - DEBUG - Environment variables verified
+2025-04-18 20:48:25,294 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 20:48:46,607 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 20:48:46,609 - DEBUG - Verifying agent interfaces...
+2025-04-18 20:48:46,612 - ERROR - Critical: sql agent verification failed!
+2025-04-18 20:48:46,613 - INFO - rag agent ready
+2025-04-18 20:48:46,614 - INFO - graph agent ready
+2025-04-18 20:48:46,616 - DEBUG - Agent verification complete
+2025-04-18 20:48:46,617 - INFO - All agents initialized successfully
+2025-04-18 20:48:49,156 - DEBUG - Query matched GRAPH keyword: symptom
+2025-04-18 20:48:49,157 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-18 20:48:49,159 - DEBUG - Session ID: sess_20250418204849_8352ee44
+2025-04-18 20:48:49,160 - DEBUG - Getting context for agent: graph
+2025-04-18 20:48:49,162 - INFO - Calling graph agent handler
+2025-04-18 20:48:49,163 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250418204849_8352ee44', 'department': 'graph', 'timestamp': '2025-04-18T20:48:49.162025', 'is_new_session': True}}
+2025-04-18 20:48:54,255 - INFO - Received response from graph agent
+2025-04-18 20:48:54,257 - DEBUG - Agent response: {'response': "I understand you're looking for information about gout. \n\nGout can cause some very uncomfortable symptoms.  The most common is a sudden, intense pain in your joints, especially your big toe. You might also notice swelling, redness, and warmth in the affected area.  \n\nIt's important to remember that everyone experiences gout differently, but these are some of the key things to look out for. \n\n\nIf you're experiencing any of these symptoms, please don't hesitate to contact your doctor or come to the hospital. We're here to help. \n\n", 'context_updates': {'last_interaction': '2025-04-18T20:48:54.255586', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I understand you're looking for information about gout. \n\nGout can cause some very uncomfortable symptoms.  The most common is a sudden, intense pain in your joints, especially your big toe. You might also notice swelling, redness, and warmth in the affected area.  \n\nIt's important to remember that everyone experiences gout differently, but these are some of the key things to look out for. \n\n\nIf you're experiencing any of these symptoms, please don't hesitate to contact your doctor or come to the hospital. We're here to help. \n\n", 'timestamp': '2025-04-18T20:48:54.255611'}]}, 'suggested_next': None}
+2025-04-18 20:49:15,140 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 20:49:15,142 - INFO - Routing query to rag agent: What are he admission policies of your hosppital
+2025-04-18 20:49:15,144 - DEBUG - Session ID: sess_20250418204915_97b46a93
+2025-04-18 20:49:15,145 - DEBUG - Getting context for agent: rag
+2025-04-18 20:49:15,146 - INFO - Calling rag agent handler
+2025-04-18 20:49:15,148 - DEBUG - Query data: {'text': 'What are he admission policies of your hosppital', 'context': {'session_id': 'sess_20250418204915_97b46a93', 'department': 'rag', 'timestamp': '2025-04-18T20:49:15.146871', 'is_new_session': True}}
+2025-04-18 20:50:05,817 - INFO - Received response from rag agent
+2025-04-18 20:50:05,822 - DEBUG - Agent response: {'response': 'I can help with that!\n\nHi there!  \n\nTo get admitted to Osaka University Hospital, you\'ll need to follow a few steps.  \n\nAccording to "Hospital Admission Process" and "Admission Guidelines and Procedures", you\'ll need to bring your patient registration card and personal seal to the Inpatients Reception on the day of your admission. Your doctor will let you know the date for hospitalization, and they\'ll register your admission if needed. The clinical section will then contact you with the specific date and time for your admission. \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-18T20:50:05.810677', 'chat_history': [{'query': 'What are he admission policies of your hosppital', 'response': 'I can help with that!\n\nHi there!  \n\nTo get admitted to Osaka University Hospital, you\'ll need to follow a few steps.  \n\nAccording to "Hospital Admission Process" and "Admission Guidelines and Procedures", you\'ll need to bring your patient registration card and personal seal to the Inpatients Reception on the day of your admission. Your doctor will let you know the date for hospitalization, and they\'ll register your admission if needed. The clinical section will then contact you with the specific date and time for your admission. \n\n\nLet me know if you have any other questions!\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-18T20:50:05.810694'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 20:50:32,348 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 20:50:32,350 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 20:50:32,352 - DEBUG - Session ID: sess_20250418205032_09173d46
+2025-04-18 20:50:32,353 - DEBUG - Getting context for agent: sql
+2025-04-18 20:50:32,354 - INFO - Calling sql agent handler
+2025-04-18 20:50:32,355 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418205032_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:50:32.354594', 'is_new_session': True}}
+2025-04-18 20:50:35,080 - INFO - Received response from sql agent
+2025-04-18 20:50:35,083 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 20:50:44,713 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 20:50:44,714 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 20:50:44,716 - DEBUG - Session ID: sess_20250418205044_e4364c25
+2025-04-18 20:50:44,717 - DEBUG - Getting context for agent: rag
+2025-04-18 20:50:44,718 - INFO - Calling rag agent handler
+2025-04-18 20:50:44,719 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418205044_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T20:50:44.718471', 'is_new_session': True}}
+2025-04-18 20:50:50,253 - INFO - Received response from rag agent
+2025-04-18 20:50:50,256 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to help you find information about a different doctor or topic?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T20:50:50.245807', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to help you find information about a different doctor or topic?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T20:50:50.245893'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 20:57:36,985 - ERROR - Error in main loop: 
+2025-04-18 20:57:36,992 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 596, in main
+    print("Type 'quit' to exit")
+                    ^^^^^^^^^^^^
+EOFError
+
+2025-04-18 20:57:45,067 - INFO - Starting agent initialization...
+2025-04-18 20:57:45,068 - DEBUG - Environment variables verified
+2025-04-18 20:57:45,069 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 20:57:59,895 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 20:57:59,896 - DEBUG - Verifying agent interfaces...
+2025-04-18 20:57:59,899 - ERROR - Critical: sql agent verification failed!
+2025-04-18 20:57:59,900 - INFO - rag agent ready
+2025-04-18 20:57:59,901 - INFO - graph agent ready
+2025-04-18 20:57:59,903 - DEBUG - Agent verification complete
+2025-04-18 20:57:59,904 - INFO - All agents initialized successfully
+2025-04-18 20:58:04,086 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 20:58:04,088 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 20:58:04,090 - DEBUG - Session ID: sess_20250418205804_09173d46
+2025-04-18 20:58:04,091 - DEBUG - Getting context for agent: sql
+2025-04-18 20:58:04,092 - INFO - Calling sql agent handler
+2025-04-18 20:58:04,093 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418205804_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T20:58:04.092649', 'is_new_session': True}}
+2025-04-18 20:58:07,841 - INFO - Received response from sql agent
+2025-04-18 20:58:07,843 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 20:58:18,495 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-18 20:58:18,497 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 20:58:18,498 - DEBUG - Session ID: sess_20250418205818_e4364c25
+2025-04-18 20:58:18,499 - DEBUG - Getting context for agent: rag
+2025-04-18 20:58:18,501 - INFO - Calling rag agent handler
+2025-04-18 20:58:18,502 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418205818_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T20:58:18.501184', 'is_new_session': True}}
+2025-04-18 20:58:28,565 - INFO - Received response from rag agent
+2025-04-18 20:58:28,567 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about other doctors or hospital services?\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T20:58:28.562466', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.  \n\nWould you like me to try finding information about other doctors or hospital services?\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T20:58:28.562479'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 21:04:58,127 - ERROR - Error in main loop: 
+2025-04-18 21:04:58,135 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 602, in main
+    print("Enter your query:")
+                    ^^^^^^^^^^
+EOFError
+
+2025-04-18 21:05:06,027 - INFO - Starting agent initialization...
+2025-04-18 21:05:06,029 - DEBUG - Environment variables verified
+2025-04-18 21:05:06,029 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:05:20,549 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 21:05:20,551 - DEBUG - Verifying agent interfaces...
+2025-04-18 21:05:20,554 - ERROR - Critical: sql agent verification failed!
+2025-04-18 21:05:20,555 - INFO - rag agent ready
+2025-04-18 21:05:20,556 - INFO - graph agent ready
+2025-04-18 21:05:20,557 - DEBUG - Agent verification complete
+2025-04-18 21:05:20,558 - INFO - All agents initialized successfully
+2025-04-18 21:07:18,643 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 21:07:18,644 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 21:07:18,646 - DEBUG - Session ID: sess_20250418210718_09173d46
+2025-04-18 21:07:18,647 - DEBUG - Getting context for agent: sql
+2025-04-18 21:07:18,648 - INFO - Calling sql agent handler
+2025-04-18 21:07:18,650 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418210718_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:07:18.648752', 'is_new_session': True}}
+2025-04-18 21:07:22,502 - INFO - Received response from sql agent
+2025-04-18 21:07:22,504 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 21:07:32,171 - ERROR - Error in LLM classification: object AIMessage can't be used in 'await' expression
+2025-04-18 21:07:32,175 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 21:07:32,177 - DEBUG - Session ID: sess_20250418210731_e4364c25
+2025-04-18 21:07:32,180 - DEBUG - Getting context for agent: rag
+2025-04-18 21:07:32,182 - INFO - Calling rag agent handler
+2025-04-18 21:07:32,185 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418210731_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T21:07:32.182388', 'is_new_session': True}}
+2025-04-18 21:07:42,465 - INFO - Received response from rag agent
+2025-04-18 21:07:42,467 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T21:07:42.463004', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T21:07:42.463018'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 21:13:09,044 - ERROR - Error in main loop: 
+2025-04-18 21:13:09,050 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    query = input("You: ").strip()
+            ~~~~~^^^^^^^^^
+EOFError
+
+2025-04-18 21:13:17,117 - INFO - Starting agent initialization...
+2025-04-18 21:13:17,119 - DEBUG - Environment variables verified
+2025-04-18 21:13:17,119 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:13:32,900 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 21:13:32,901 - DEBUG - Verifying agent interfaces...
+2025-04-18 21:13:32,904 - ERROR - Critical: sql agent verification failed!
+2025-04-18 21:13:32,906 - INFO - rag agent ready
+2025-04-18 21:13:32,906 - INFO - graph agent ready
+2025-04-18 21:13:32,908 - DEBUG - Agent verification complete
+2025-04-18 21:13:32,909 - INFO - All agents initialized successfully
+2025-04-18 21:13:38,927 - DEBUG - Query matched SQL pattern: \b(book|schedule|cancel|reschedule).*appointment\b
+2025-04-18 21:13:38,928 - INFO - Routing query to sql agent: I want to book an appointment
+2025-04-18 21:13:38,929 - DEBUG - Session ID: sess_20250418211338_09173d46
+2025-04-18 21:13:38,931 - DEBUG - Getting context for agent: sql
+2025-04-18 21:13:38,932 - INFO - Calling sql agent handler
+2025-04-18 21:13:38,933 - DEBUG - Query data: {'text': 'I want to book an appointment', 'context': {'session_id': 'sess_20250418211338_09173d46', 'department': 'sql', 'timestamp': '2025-04-18T21:13:38.932349', 'is_new_session': True}}
+2025-04-18 21:13:41,465 - INFO - Received response from sql agent
+2025-04-18 21:13:41,468 - DEBUG - Agent response: {'response': 'Which doctor would you like to see?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-18 21:13:50,351 - ERROR - Error in LLM classification: object AIMessage can't be used in 'await' expression
+2025-04-18 21:13:50,354 - INFO - Routing query to rag agent: Doctor Angella Webb
+2025-04-18 21:13:50,358 - DEBUG - Session ID: sess_20250418211349_e4364c25
+2025-04-18 21:13:50,361 - DEBUG - Getting context for agent: rag
+2025-04-18 21:13:50,363 - INFO - Calling rag agent handler
+2025-04-18 21:13:50,366 - DEBUG - Query data: {'text': 'Doctor Angella Webb', 'context': {'session_id': 'sess_20250418211349_e4364c25', 'department': 'rag', 'timestamp': '2025-04-18T21:13:50.363717', 'is_new_session': True}}
+2025-04-18 21:14:01,362 - INFO - Received response from rag agent
+2025-04-18 21:14:01,364 - DEBUG - Agent response: {'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-18T21:14:01.360752', 'chat_history': [{'query': 'Doctor Angella Webb', 'response': "I can help with that!\n\nI couldn't find specific information about Doctor Angella Webb in the provided documents.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-18T21:14:01.360764'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-18 21:16:32,420 - ERROR - Error in main loop: 
+2025-04-18 21:16:32,426 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    query = input("You: ").strip()
+            ~~~~~^^^^^^^^^
+EOFError
+
+2025-04-18 21:16:40,994 - INFO - Starting agent initialization...
+2025-04-18 21:16:40,995 - DEBUG - Environment variables verified
+2025-04-18 21:16:40,996 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:16:54,924 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 21:16:54,925 - ERROR - Failed to load agents: ['sql']
+2025-04-18 21:16:54,926 - ERROR - Agent loading failure details:
+2025-04-18 21:16:54,927 - ERROR - sql loading traceback:
+2025-04-18 21:16:54,928 - ERROR - NoneType: None
+
+2025-04-18 21:16:54,929 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 21:16:54,930 - ERROR - Full initialization traceback:
+2025-04-18 21:16:54,933 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:16:54,938 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 21:16:54,942 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 599, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 180, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:18:13,496 - INFO - Starting agent initialization...
+2025-04-18 21:18:13,497 - DEBUG - Environment variables verified
+2025-04-18 21:18:13,498 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:18:25,526 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 21:18:25,527 - ERROR - Failed to load agents: ['sql']
+2025-04-18 21:18:25,529 - ERROR - Agent loading failure details:
+2025-04-18 21:18:25,530 - ERROR - sql loading traceback:
+2025-04-18 21:18:25,531 - ERROR - NoneType: None
+
+2025-04-18 21:18:25,533 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 21:18:25,534 - ERROR - Full initialization traceback:
+2025-04-18 21:18:25,536 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:18:25,540 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 21:18:25,543 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 599, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 180, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:20:32,181 - INFO - Starting agent initialization...
+2025-04-18 21:20:32,182 - DEBUG - Environment variables verified
+2025-04-18 21:20:32,183 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:20:45,098 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 21:20:45,100 - ERROR - Failed to load agents: ['sql']
+2025-04-18 21:20:45,101 - ERROR - Agent loading failure details:
+2025-04-18 21:20:45,102 - ERROR - sql loading traceback:
+2025-04-18 21:20:45,103 - ERROR - NoneType: None
+
+2025-04-18 21:20:45,105 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 21:20:45,106 - ERROR - Full initialization traceback:
+2025-04-18 21:20:45,109 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:20:45,112 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 21:20:45,115 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 599, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 180, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:23:02,344 - INFO - Starting agent initialization...
+2025-04-18 21:23:02,345 - DEBUG - Environment variables verified
+2025-04-18 21:23:02,346 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:23:17,445 - DEBUG - Agent loading results: [False, True, True]
+2025-04-18 21:23:17,446 - ERROR - Failed to load agents: ['sql']
+2025-04-18 21:23:17,447 - ERROR - Agent loading failure details:
+2025-04-18 21:23:17,448 - ERROR - sql loading traceback:
+2025-04-18 21:23:17,449 - ERROR - NoneType: None
+
+2025-04-18 21:23:17,451 - ERROR - Critical initialization failure: Failed to load agents: ['sql']
+2025-04-18 21:23:17,452 - ERROR - Full initialization traceback:
+2025-04-18 21:23:17,454 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:23:17,457 - ERROR - Critical error: Failed to load agents: ['sql']
+2025-04-18 21:23:17,460 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 599, in main
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 180, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 206, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql']
+
+2025-04-18 21:25:49,325 - INFO - Starting agent initialization...
+2025-04-18 21:25:49,326 - DEBUG - Environment variables verified
+2025-04-18 21:25:49,326 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 21:26:04,357 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 21:26:04,358 - DEBUG - Verifying agent interfaces...
+2025-04-18 21:26:04,361 - ERROR - Critical: sql agent verification failed!
+2025-04-18 21:26:04,363 - INFO - rag agent ready
+2025-04-18 21:26:04,364 - INFO - graph agent ready
+2025-04-18 21:26:04,365 - DEBUG - Agent verification complete
+2025-04-18 21:26:04,366 - INFO - All agents initialized successfully
+2025-04-18 22:03:44,962 - ERROR - Error in main loop: 
+2025-04-18 22:03:44,966 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 607, in main
+    query = input("You: ").strip()
+            ~~~~~^^^^^^^^^
+EOFError
+
+2025-04-18 22:03:54,468 - INFO - Starting agent initialization...
+2025-04-18 22:03:54,469 - DEBUG - Environment variables verified
+2025-04-18 22:03:54,470 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-18 22:04:08,940 - DEBUG - Agent loading results: [True, True, True]
+2025-04-18 22:04:08,942 - DEBUG - Verifying agent interfaces...
+2025-04-18 22:04:08,945 - ERROR - Critical: sql agent verification failed!
+2025-04-18 22:04:08,947 - INFO - rag agent ready
+2025-04-18 22:04:08,949 - INFO - graph agent ready
+2025-04-18 22:04:08,950 - DEBUG - Agent verification complete
+2025-04-18 22:04:08,951 - INFO - All agents initialized successfully
+2025-04-21 20:32:12,960 - INFO - Starting agent initialization...
+2025-04-21 20:32:12,963 - DEBUG - Environment variables verified
+2025-04-21 20:32:12,964 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-21 20:33:05,706 - DEBUG - Agent loading results: [True, True, True]
+2025-04-21 20:33:05,708 - DEBUG - Verifying agent interfaces...
+2025-04-21 20:33:05,712 - ERROR - Critical: sql agent verification failed!
+2025-04-21 20:33:05,714 - INFO - rag agent ready
+2025-04-21 20:33:05,715 - INFO - graph agent ready
+2025-04-21 20:33:05,717 - DEBUG - Agent verification complete
+2025-04-21 20:33:05,718 - INFO - All agents initialized successfully
+2025-04-21 20:56:03,266 - INFO - Starting agent initialization...
+2025-04-21 20:56:03,268 - DEBUG - Environment variables verified
+2025-04-21 20:56:03,268 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-21 20:56:19,621 - DEBUG - Agent loading results: [True, True, True]
+2025-04-21 20:56:19,622 - DEBUG - Verifying agent interfaces...
+2025-04-21 20:56:19,626 - ERROR - Critical: sql agent verification failed!
+2025-04-21 20:56:19,627 - INFO - rag agent ready
+2025-04-21 20:56:19,628 - INFO - graph agent ready
+2025-04-21 20:56:19,630 - DEBUG - Agent verification complete
+2025-04-21 20:56:19,633 - INFO - All agents initialized successfully
+2025-04-21 20:56:33,682 - INFO - Created new session: sess_20250421205633_8352ee44
+2025-04-21 20:56:33,684 - INFO - Starting new session: sess_20250421205633_8352ee44
+2025-04-21 20:56:33,685 - ERROR - Error processing query: 'ContextManager' object has no attribute 'save_context'
+2025-04-21 20:56:33,693 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 493, in process_query
+    self.active_sessions[session_id]["context_id"] = self.context_manager.save_context(context)
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ContextManager' object has no attribute 'save_context'. Did you mean: 'get_context'?
+
+2025-04-21 21:00:08,663 - ERROR - Error in main loop: 
+2025-04-21 21:00:08,666 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 789, in main
+    query = input("You: ").strip()
+            ~~~~~^^^^^^^^^
+EOFError
+
+2025-04-21 21:00:16,756 - INFO - Starting agent initialization...
+2025-04-21 21:00:16,757 - DEBUG - Environment variables verified
+2025-04-21 21:00:16,758 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-21 21:00:31,136 - DEBUG - Agent loading results: [True, True, True]
+2025-04-21 21:00:31,138 - DEBUG - Verifying agent interfaces...
+2025-04-21 21:00:31,141 - ERROR - Critical: sql agent verification failed!
+2025-04-21 21:00:31,143 - INFO - rag agent ready
+2025-04-21 21:00:31,144 - INFO - graph agent ready
+2025-04-21 21:00:31,145 - DEBUG - Agent verification complete
+2025-04-21 21:00:31,146 - INFO - All agents initialized successfully
+2025-04-21 21:00:35,174 - INFO - Created new session: sess_20250421210035_8352ee44
+2025-04-21 21:00:35,176 - INFO - Starting new session: sess_20250421210035_8352ee44
+2025-04-21 21:00:35,178 - ERROR - Error in query classification: 'HospitalRouter' object has no attribute 'session_context'
+2025-04-21 21:00:35,181 - INFO - Classified query as rag with confidence 0.5
+2025-04-21 21:00:35,184 - INFO - Routing to rag agent
+2025-04-21 21:00:35,194 - ERROR - Error routing to agent: 'HospitalRouter' object has no attribute 'rag_agent'
+2025-04-21 21:00:35,208 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 630, in route_to_agent
+    response = await self.rag_agent.handle_query(query_data)
+                     ^^^^^^^^^^^^^^
+AttributeError: 'HospitalRouter' object has no attribute 'rag_agent'
+
+2025-04-21 21:17:05,546 - INFO - Starting agent initialization...
+2025-04-21 21:17:05,548 - DEBUG - Environment variables verified
+2025-04-21 21:17:05,549 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-21 21:17:22,689 - DEBUG - Agent loading results: [True, True, True]
+2025-04-21 21:17:22,691 - DEBUG - Verifying agent interfaces...
+2025-04-21 21:17:22,694 - ERROR - Critical: sql agent verification failed!
+2025-04-21 21:17:22,695 - INFO - rag agent ready
+2025-04-21 21:17:22,696 - INFO - graph agent ready
+2025-04-21 21:17:22,697 - DEBUG - Agent verification complete
+2025-04-21 21:17:22,698 - INFO - All agents initialized successfully
+2025-04-21 21:18:27,727 - DEBUG - Created new session: sess_20250421211827_8352ee44
+2025-04-21 21:18:27,729 - DEBUG - Classifying query: What are the symptoms of gout
+2025-04-21 21:18:27,733 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-21 21:18:27,735 - INFO - Query classified as graph with confidence 0.9
+2025-04-21 21:18:27,736 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-21 21:18:27,738 - DEBUG - Session ID: sess_20250421211827_8352ee44
+2025-04-21 21:18:27,739 - DEBUG - Getting context for agent: graph
+2025-04-21 21:18:27,741 - INFO - Calling graph agent handler
+2025-04-21 21:18:27,742 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250421211827_8352ee44', 'department': 'graph', 'timestamp': '2025-04-21T21:18:27.741082', 'is_new_session': True}}
+2025-04-21 21:18:33,242 - INFO - Received response from graph agent
+2025-04-21 21:18:33,245 - DEBUG - Agent response: {'response': "I understand you're looking for information about gout.  \n\nGout can cause very painful inflammation in your joints.  It often starts in the big toe, but it can also affect other joints. You might experience:\n\n* **Intense pain:**  Think of it like a sharp, throbbing pain that makes it hard to move your toe.\n* **Swelling:** The joint might look puffy and feel tight.\n* **Redness:** The skin around the joint might be red and warm to the touch.\n\nIf you're experiencing any of these symptoms, it's important to see a doctor as soon as possible. They can help diagnose the cause of your pain and recommend the best treatment. \n\n\nPlease remember, I'm here to help guide you, but I'm not a doctor.  It's always best to consult with a medical professional for any health concerns.\n", 'context_updates': {'last_interaction': '2025-04-21T21:18:33.242741', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I understand you're looking for information about gout.  \n\nGout can cause very painful inflammation in your joints.  It often starts in the big toe, but it can also affect other joints. You might experience:\n\n* **Intense pain:**  Think of it like a sharp, throbbing pain that makes it hard to move your toe.\n* **Swelling:** The joint might look puffy and feel tight.\n* **Redness:** The skin around the joint might be red and warm to the touch.\n\nIf you're experiencing any of these symptoms, it's important to see a doctor as soon as possible. They can help diagnose the cause of your pain and recommend the best treatment. \n\n\nPlease remember, I'm here to help guide you, but I'm not a doctor.  It's always best to consult with a medical professional for any health concerns.\n", 'timestamp': '2025-04-21T21:18:33.242764'}]}, 'suggested_next': None}
+2025-04-21 21:18:46,633 - DEBUG - Created new session: sess_20250421211846_68ae24c3
+2025-04-21 21:18:46,634 - DEBUG - Classifying query: What are the payment procedures
+2025-04-21 21:18:46,638 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-21 21:18:46,640 - INFO - Query classified as rag with confidence 0.7
+2025-04-21 21:18:46,642 - INFO - Routing query to rag agent: What are the payment procedures
+2025-04-21 21:18:46,643 - DEBUG - Session ID: sess_20250421211846_68ae24c3
+2025-04-21 21:18:46,645 - DEBUG - Getting context for agent: rag
+2025-04-21 21:18:46,647 - INFO - Calling rag agent handler
+2025-04-21 21:18:46,648 - DEBUG - Query data: {'text': 'What are the payment procedures', 'context': {'session_id': 'sess_20250421211846_68ae24c3', 'department': 'rag', 'timestamp': '2025-04-21T21:18:46.647465', 'is_new_session': True}}
+2025-04-21 21:19:33,878 - INFO - Received response from rag agent
+2025-04-21 21:19:56,557 - DEBUG - Created new session: sess_20250421211956_21647770
+2025-04-21 21:19:56,558 - DEBUG - Classifying query: I want to book an appointment with Doctor Angella Webb
+2025-04-21 21:19:56,560 - DEBUG - Query matched SQL pattern or fuzzy
+2025-04-21 21:19:56,561 - INFO - Query classified as sql with confidence 0.9
+2025-04-21 21:19:56,563 - INFO - Routing query to sql agent: I want to book an appointment with Doctor Angella Webb
+2025-04-21 21:19:56,564 - DEBUG - Session ID: sess_20250421211956_21647770
+2025-04-21 21:19:56,566 - DEBUG - Getting context for agent: sql
+2025-04-21 21:19:56,567 - INFO - Calling sql agent handler
+2025-04-21 21:19:56,569 - DEBUG - Query data: {'text': 'I want to book an appointment with Doctor Angella Webb', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:19:56.567772', 'is_new_session': True}}
+2025-04-21 21:20:00,890 - INFO - Received response from sql agent
+2025-04-21 21:20:00,893 - DEBUG - Agent response: {'response': 'When would you like to schedule your appointment with Doctor Angella Webb?', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-21 21:20:08,365 - DEBUG - Using existing SQL session: sess_20250421211956_21647770
+2025-04-21 21:20:08,366 - DEBUG - Maintaining active SQL session: sess_20250421211956_21647770
+2025-04-21 21:20:08,368 - INFO - Query classified as sql with confidence 1.0
+2025-04-21 21:20:08,370 - INFO - Routing query to sql agent: Friday 14:00
+2025-04-21 21:20:08,371 - DEBUG - Session ID: sess_20250421211956_21647770
+2025-04-21 21:20:08,373 - DEBUG - Getting context for agent: sql
+2025-04-21 21:20:08,374 - INFO - Calling sql agent handler
+2025-04-21 21:20:08,375 - DEBUG - Query data: {'text': 'Friday 14:00', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:08.374507', 'is_new_session': False}}
+2025-04-21 21:20:11,801 - INFO - Received response from sql agent
+2025-04-21 21:20:11,803 - DEBUG - Agent response: {'response': 'Is the provided information correct? If so, I will proceed with booking your appointment with Doctor Angella Webb on Friday at 14:00. If not, please provide the correct information.', 'context_updates': {}, 'suggested_next': None, 'status': 'in_progress'}
+2025-04-21 21:20:43,509 - DEBUG - Using existing SQL session: sess_20250421211956_21647770
+2025-04-21 21:20:43,510 - DEBUG - Maintaining active SQL session: sess_20250421211956_21647770
+2025-04-21 21:20:43,512 - INFO - Query classified as sql with confidence 1.0
+2025-04-21 21:20:43,513 - INFO - Routing query to sql agent: Yes
+2025-04-21 21:20:43,515 - DEBUG - Session ID: sess_20250421211956_21647770
+2025-04-21 21:20:43,516 - DEBUG - Getting context for agent: sql
+2025-04-21 21:20:43,517 - INFO - Calling sql agent handler
+2025-04-21 21:20:43,518 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:43.517654', 'is_new_session': False}}
+2025-04-21 21:20:48,768 - INFO - Received response from sql agent
+2025-04-21 21:20:48,770 - DEBUG - Agent response: {'response': "I encountered an error: 'str' object has no attribute 'get'", 'context_updates': {}, 'suggested_next': None, 'status': 'error'}

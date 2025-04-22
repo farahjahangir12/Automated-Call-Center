@@ -43,7 +43,7 @@ async def get_appointment_slots(input_data: Dict) -> Dict:
             "response": f"Available slots for Dr. {result['value']} fetched successfully: {slots_result['value']}",
             "current_step": "get_time",
             "collected_data": {"slots": slots_result['value']},
-            "status": "in_progress"
+            "status": "success"
         }
 
     except Exception as e:

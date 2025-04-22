@@ -217,30 +217,44 @@ class SQLAgent:
                 logger.debug(f"Updated session context: {self.session_context}")
             
             # Run query through agent
+            # NOTE: All async calls (ainvoke, tool.invoke, tool.handle_query, etc) are properly awaited to avoid coroutine warnings
             logger.info("Running query through agent executor")
             response = await self.agent_executor.ainvoke({"input": query_text})
             
+            # Patch: Await any coroutine objects in output (tool results)
+            async def resolve_coroutines(obj):
+                if asyncio.iscoroutine(obj):
+                    return await obj
+                if isinstance(obj, dict):
+                    return {k: await resolve_coroutines(v) for k, v in obj.items()}
+                if isinstance(obj, list):
+                    return [await resolve_coroutines(v) for v in obj]
+                return obj
+
+            response = await resolve_coroutines(response)
+
             # Extract response text and any intermediate steps
             response_text = response.get('output', '')
             intermediate_steps = response.get('intermediate_steps', [])
-            
-            # Handle any pending tool calls from intermediate steps
+
+            # Handle any pending tool calls from intermediate steps (extra safety)
             for step in intermediate_steps:
-                if hasattr(step[0], 'tool') and step[0].tool in ['book_appointment_tool', 'register_patient_tool']:
-                    tool_result = step[1]
-                    if isinstance(tool_result, asyncio.Future):
-                        await tool_result
-            
+                # step[1] might be a coroutine if tool was not awaited
+                if asyncio.iscoroutine(step[1]):
+                    await step[1]
+                elif isinstance(step[1], asyncio.Future):
+                    await step[1]
+
             # Update memory with current exchange
             self.memory.chat_memory.add_message(HumanMessage(content=query_text))
             self.memory.chat_memory.add_message(AIMessage(content=response_text))
-            
+
             # Extract context updates
             context_updates = self._extract_context_updates(response_text)
-            
+
             # Determine status based on response and query content
             status = "in_progress"  # Default to in_progress for SQL operations
-            
+
             # Only mark as resolved if we have a final confirmation
             if any(phrase in response_text.lower() for phrase in [
                 "appointment has been booked",
@@ -251,7 +265,7 @@ class SQLAgent:
                 status = "resolved"
             elif "error" in response_text.lower():
                 status = "error"
-            
+
             return {
                 "response": response_text,
                 "context_updates": context_updates,
