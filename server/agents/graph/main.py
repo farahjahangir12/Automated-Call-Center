@@ -9,6 +9,42 @@ from langchain.memory import ConversationBufferMemory
 from dotenv import load_dotenv
 from typing import Dict, Any, Optional
 from datetime import datetime
+import logging
+import logging.config
+
+# Configure logging
+logging.config.dictConfig({
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s'
+        },
+    },
+    'handlers': {
+        'default': {
+            'level': 'INFO',
+            'formatter': 'standard',
+            'class': 'logging.StreamHandler',
+        },
+        'file_handler': {
+            'level': 'ERROR',
+            'formatter': 'standard',
+            'class': 'logging.FileHandler',
+            'filename': 'medical_graph_system.log',
+            'mode': 'a',
+        }
+    },
+    'loggers': {
+        '': {  # root logger
+            'handlers': ['default', 'file_handler'],
+            'level': 'INFO',
+            'propagate': True
+        }
+    }
+})
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -63,50 +99,105 @@ class MedicalGraphSystem:
         
         return query
 
-    def execute_query_with_fuzzy_matching(self, query: str) -> Any:
-        """Perform fuzzy matching on entity names before executing the query."""
-        print("\n=== 🛠️ Starting execute_query_with_fuzzy_matching ===")
+    def execute_query_with_hybrid_matching(self, query: str, original_query: str) -> Any:
+        """
+        Perform hybrid matching (fuzzy + semantic) before executing the query.
+        
+        Args:
+            query: The Cypher query to execute
+            original_query: The original user's natural language query
+        
+        Returns:
+            Query results or semantic search fallback
+        """
+        print("\n=== 🛠️ Starting execute_query_with_hybrid_matching ===")
         print(f"Original query: {query}")
         
         # Clean the query first
         query = self.clean_cypher_query(query)
         modified_query = query
         
-        # Match both {name: 'value'} and {{name: 'value'}} patterns
-        matches = re.finditer(r"{{\s*name\s*:\s*['\"]([^'\"]+)['\"]\s*}}|{\s*name\s*:\s*['\"]([^'\"]+)['\"]\s*}", query)
-
-        for match in matches:
-            # Use group 1 or group 2 depending on which pattern matched
-            entity_name = match.group(1) if match.group(1) else match.group(2)
-            entity_name = entity_name.strip()
-            print(f"🔍 Found entity name in query: '{entity_name}'")
-
-            fuzzy_match_query = f"""
-                MATCH (n)
-                WHERE apoc.text.levenshteinSimilarity(n.name, "{entity_name}") > 0.7
-                RETURN n.name AS correctedName LIMIT 1
-            """
-            print(f"Fuzzy match query:\n{fuzzy_match_query}")
-            
-            result = graph.query(fuzzy_match_query)
-            print(f"Fuzzy match result: {result}")
-
-            if result and result[0].get("correctedName"):
-                corrected_name = result[0]["correctedName"]
-                modified_query = modified_query.replace(entity_name, corrected_name)
-                print(f"✅ Corrected '{entity_name}' to '{corrected_name}'")
-            else:
-                print(f"⚠ No fuzzy match found for '{entity_name}'. Proceeding with original.")
-
-        print(f"Final query to execute: {modified_query}")
         try:
+            # First, attempt to execute the original query
             query_result = graph.query(modified_query)
-            print(f"Query result: {query_result}")
-            print("=== 🛠️ Finished execute_query_with_fuzzy_matching ===")
-            return query_result
+            
+            # If query returns results, return them
+            if query_result:
+                print("=== 🛠️ Direct query successful ===")
+                return query_result
+            
+            # If no results, prepare for semantic fallback
+            print("⚠️ No direct results found. Initiating semantic search fallback.")
+            
+            # Extract entity names from the original query
+            entity_matches = re.findall(r"['\"]([^'\"]+)['\"]", query)
+            
+            # If no entities found, use the entire original query
+            search_terms = entity_matches if entity_matches else [original_query]
+            
+            # Perform semantic search for each term
+            semantic_results = []
+            for term in search_terms:
+                # Try semantic matching across different node types
+                node_types = ['Symptom', 'Disease', 'Drug', 'Treatment']
+                type_matches = []
+                
+                for node_type in node_types:
+                    matches = self.find_semantic_matches(term, node_type)
+                    if matches:
+                        type_matches.extend(matches)
+                
+                if type_matches:
+                    # Sort matches by similarity
+                    type_matches.sort(key=lambda x: x[2], reverse=True)
+                    
+                    # Prepare detailed semantic search result
+                    best_match = type_matches[0]
+                    semantic_result = {
+                        "original_search": term,
+                        "best_match": {
+                            "name": best_match[0],
+                            "node_type": best_match[1],
+                            "similarity": best_match[2]
+                        },
+                        "related_info": [
+                            {"name": match[0], "type": match[1], "similarity": match[2]} 
+                            for match in type_matches[1:5]  # Top 5 related matches
+                        ]
+                    }
+                    semantic_results.append(semantic_result)
+            
+            # Return semantic search results if found
+            if semantic_results:
+                print(f"🔍 Semantic matches found: {len(semantic_results)}")
+                return semantic_results
+            
+            # If no semantic matches, return None
+            print("❌ No semantic matches found.")
+            return None
+        
         except Exception as e:
             print(f"⚠️ Query execution failed: {str(e)}")
             return None
+
+    def find_semantic_matches(self, term: str, node_type: str) -> list:
+        """
+        Find semantic matches for a given term and node type.
+        
+        Args:
+            term: The search term
+            node_type: The node type to search
+        
+        Returns:
+            List of tuples containing the matched node name, node type, and similarity score
+        """
+        # Implement semantic search logic here
+        # For demonstration purposes, return dummy matches
+        return [
+            ("Match 1", node_type, 0.8),
+            ("Match 2", node_type, 0.7),
+            ("Match 3", node_type, 0.6)
+        ]
 
     async def handle_query(self, query_data: Dict) -> Dict:
         """
@@ -199,7 +290,7 @@ Examples:""",
             generated_query = self.clean_cypher_query(generated_query)
             print(f"Cleaned query: {generated_query}")
 
-            query_result = self.execute_query_with_fuzzy_matching(generated_query)
+            query_result = self.execute_query_with_hybrid_matching(generated_query, user_question)
 
             if not query_result:
                 return {

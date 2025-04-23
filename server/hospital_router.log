@@ -5384,3 +5384,183 @@ AttributeError: 'HospitalRouter' object has no attribute 'rag_agent'
 2025-04-21 21:20:43,518 - DEBUG - Query data: {'text': 'Yes', 'context': {'session_id': 'sess_20250421211956_21647770', 'department': 'sql', 'timestamp': '2025-04-21T21:20:43.517654', 'is_new_session': False}}
 2025-04-21 21:20:48,768 - INFO - Received response from sql agent
 2025-04-21 21:20:48,770 - DEBUG - Agent response: {'response': "I encountered an error: 'str' object has no attribute 'get'", 'context_updates': {}, 'suggested_next': None, 'status': 'error'}
+2025-04-23 23:34:17,826 - INFO - Starting agent initialization...
+2025-04-23 23:34:17,827 - DEBUG - Environment variables verified
+2025-04-23 23:34:17,828 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:34:38,797 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:34:38,798 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:34:38,802 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:34:38,803 - INFO - rag agent ready
+2025-04-23 23:34:38,804 - INFO - graph agent ready
+2025-04-23 23:34:38,805 - DEBUG - Agent verification complete
+2025-04-23 23:34:38,807 - INFO - All agents initialized successfully
+2025-04-23 23:34:55,839 - DEBUG - Created new session: sess_20250423233455_e2b8910f
+2025-04-23 23:34:55,840 - DEBUG - Classifying query: I am suffering from intense joint pains
+2025-04-23 23:34:55,846 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-23 23:34:55,848 - INFO - Query classified as rag with confidence 0.7
+2025-04-23 23:34:55,849 - INFO - Routing query to rag agent: I am suffering from intense joint pains
+2025-04-23 23:34:55,850 - DEBUG - Session ID: sess_20250423233455_e2b8910f
+2025-04-23 23:34:55,852 - DEBUG - Getting context for agent: rag
+2025-04-23 23:34:55,853 - INFO - Calling rag agent handler
+2025-04-23 23:34:55,854 - DEBUG - Query data: {'text': 'I am suffering from intense joint pains', 'context': {'session_id': 'sess_20250423233455_e2b8910f', 'department': 'rag', 'timestamp': '2025-04-23T23:34:55.853426', 'is_new_session': True}}
+2025-04-23 23:35:22,608 - INFO - Received response from rag agent
+2025-04-23 23:35:22,610 - DEBUG - Agent response: {'response': 'I can help with that!\n\nI understand you\'re experiencing joint pain. I\'m sorry to hear that! \n\nUnfortunately, I\'m not able to provide medical advice.  I can tell you that if you need to be admitted to the hospital, you\'ll need your ID and insurance information. You can find more details about the admission process in the "Admission Discharge Information" document. \n\nIt\'s important to speak with a doctor about your joint pain so they can properly diagnose the cause and recommend the best treatment.\n\nIs there anything else I can help you with?', 'context_updates': {'last_interaction': '2025-04-23T23:35:22.602933', 'chat_history': [{'query': 'I am suffering from intense joint pains', 'response': 'I can help with that!\n\nI understand you\'re experiencing joint pain. I\'m sorry to hear that! \n\nUnfortunately, I\'m not able to provide medical advice.  I can tell you that if you need to be admitted to the hospital, you\'ll need your ID and insurance information. You can find more details about the admission process in the "Admission Discharge Information" document. \n\nIt\'s important to speak with a doctor about your joint pain so they can properly diagnose the cause and recommend the best treatment.\n\nIs there anything else I can help you with?', 'timestamp': '2025-04-23T23:35:22.602955'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-23 23:35:57,641 - DEBUG - Created new session: sess_20250423233557_dbd73368
+2025-04-23 23:35:57,643 - DEBUG - Classifying query: What disease i can have if i ma having intense joint pains
+2025-04-23 23:35:57,645 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:35:57,646 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:35:57,657 - INFO - Routing query to graph agent: What disease i can have if i ma having intense joint pains
+2025-04-23 23:35:57,659 - DEBUG - Session ID: sess_20250423233557_dbd73368
+2025-04-23 23:35:57,660 - DEBUG - Getting context for agent: graph
+2025-04-23 23:35:57,661 - INFO - Calling graph agent handler
+2025-04-23 23:35:57,663 - DEBUG - Query data: {'text': 'What disease i can have if i ma having intense joint pains', 'context': {'session_id': 'sess_20250423233557_dbd73368', 'department': 'graph', 'timestamp': '2025-04-23T23:35:57.661876', 'is_new_session': True}}
+2025-04-23 23:35:59,683 - INFO - Received response from graph agent
+2025-04-23 23:35:59,684 - DEBUG - Agent response: {'response': 'Based on your query about "What disease i can have if i ma having intense joint pains", here\'s what I found:\n\nSymptoms: No specific symptoms found\nPotentially Related Diseases: No related diseases found\nPossible Treatments: No treatments identified\nRecommended Drugs: No drugs recommended\n\nWould you like more detailed information about any of these?\n', 'context_updates': {'symptoms': [], 'diseases': [], 'drugs': [], 'treatments': []}, 'suggested_next': 'MEDICAL_CONSULTATION'}
+2025-04-23 23:36:30,149 - INFO - Starting agent initialization...
+2025-04-23 23:36:30,150 - DEBUG - Environment variables verified
+2025-04-23 23:36:30,151 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:36:46,514 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:36:46,515 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:36:46,518 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:36:46,520 - INFO - rag agent ready
+2025-04-23 23:36:46,521 - INFO - graph agent ready
+2025-04-23 23:36:46,522 - DEBUG - Agent verification complete
+2025-04-23 23:36:46,523 - INFO - All agents initialized successfully
+2025-04-23 23:36:56,100 - DEBUG - Created new session: sess_20250423233656_8352ee44
+2025-04-23 23:36:56,101 - DEBUG - Classifying query: What are the symptoms of gout
+2025-04-23 23:36:56,106 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:36:56,107 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:36:56,108 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-23 23:36:56,110 - DEBUG - Session ID: sess_20250423233656_8352ee44
+2025-04-23 23:36:56,111 - DEBUG - Getting context for agent: graph
+2025-04-23 23:36:56,112 - INFO - Calling graph agent handler
+2025-04-23 23:36:56,113 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250423233656_8352ee44', 'department': 'graph', 'timestamp': '2025-04-23T23:36:56.112445', 'is_new_session': True}}
+2025-04-23 23:36:56,144 - INFO - Received response from graph agent
+2025-04-23 23:36:56,146 - DEBUG - Agent response: {'response': 'Based on your query about "What are the symptoms of gout", here\'s what I found:\n\nSymptoms: No specific symptoms found\nPotentially Related Diseases: No related diseases found\nPossible Treatments: No treatments identified\nRecommended Drugs: No drugs recommended\n\nWould you like more detailed information about any of these?\n', 'context_updates': {'symptoms': [], 'diseases': [], 'drugs': [], 'treatments': []}, 'suggested_next': 'MEDICAL_CONSULTATION'}
+2025-04-23 23:37:32,832 - INFO - Starting agent initialization...
+2025-04-23 23:37:32,833 - DEBUG - Environment variables verified
+2025-04-23 23:37:32,834 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:37:48,250 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:37:48,252 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:37:48,254 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:37:48,255 - INFO - rag agent ready
+2025-04-23 23:37:48,257 - INFO - graph agent ready
+2025-04-23 23:37:48,258 - DEBUG - Agent verification complete
+2025-04-23 23:37:48,259 - INFO - All agents initialized successfully
+2025-04-23 23:37:58,566 - DEBUG - Created new session: sess_20250423233758_8352ee44
+2025-04-23 23:37:58,567 - DEBUG - Classifying query: What are the symptoms of gout
+2025-04-23 23:37:58,572 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:37:58,573 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:37:58,574 - INFO - Routing query to graph agent: What are the symptoms of gout
+2025-04-23 23:37:58,575 - DEBUG - Session ID: sess_20250423233758_8352ee44
+2025-04-23 23:37:58,576 - DEBUG - Getting context for agent: graph
+2025-04-23 23:37:58,578 - INFO - Calling graph agent handler
+2025-04-23 23:37:58,578 - DEBUG - Query data: {'text': 'What are the symptoms of gout', 'context': {'session_id': 'sess_20250423233758_8352ee44', 'department': 'graph', 'timestamp': '2025-04-23T23:37:58.577978', 'is_new_session': True}}
+2025-04-23 23:38:01,106 - INFO - Received response from graph agent
+2025-04-23 23:38:01,108 - DEBUG - Agent response: {'response': "I understand you're looking for information about gout.  \n\nGout can cause very painful flares in your joints.  You might experience:\n\n* **Intense pain:**  Imagine a sharp, throbbing pain in your joint, especially in your big toe. \n* **Swelling:** The joint might feel puffy and tender to the touch.\n* **Redness:** The skin around the joint might look red and inflamed.\n\nIf you're experiencing these symptoms, it's important to see a doctor as soon as possible. They can help determine if it's gout and recommend the best treatment for you. \n\n\nRemember, you're not alone, and there are ways to manage gout and find relief.  \n\n", 'context_updates': {'last_interaction': '2025-04-23T23:38:01.106308', 'chat_history': [{'query': 'What are the symptoms of gout', 'response': "I understand you're looking for information about gout.  \n\nGout can cause very painful flares in your joints.  You might experience:\n\n* **Intense pain:**  Imagine a sharp, throbbing pain in your joint, especially in your big toe. \n* **Swelling:** The joint might feel puffy and tender to the touch.\n* **Redness:** The skin around the joint might look red and inflamed.\n\nIf you're experiencing these symptoms, it's important to see a doctor as soon as possible. They can help determine if it's gout and recommend the best treatment for you. \n\n\nRemember, you're not alone, and there are ways to manage gout and find relief.  \n\n", 'timestamp': '2025-04-23T23:38:01.106343'}]}, 'suggested_next': None}
+2025-04-23 23:45:28,145 - INFO - Starting agent initialization...
+2025-04-23 23:45:28,147 - DEBUG - Environment variables verified
+2025-04-23 23:45:28,148 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:45:45,047 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:45:45,048 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:45:45,052 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:45:45,053 - INFO - rag agent ready
+2025-04-23 23:45:45,055 - INFO - graph agent ready
+2025-04-23 23:45:45,056 - DEBUG - Agent verification complete
+2025-04-23 23:45:45,057 - INFO - All agents initialized successfully
+2025-04-23 23:45:58,934 - DEBUG - Created new session: sess_20250423234558_133ab581
+2025-04-23 23:45:58,935 - DEBUG - Classifying query: I am having intense pain in my joints
+2025-04-23 23:45:58,940 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:45:58,941 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:45:58,943 - INFO - Routing query to graph agent: I am having intense pain in my joints
+2025-04-23 23:45:58,944 - DEBUG - Session ID: sess_20250423234558_133ab581
+2025-04-23 23:45:58,945 - DEBUG - Getting context for agent: graph
+2025-04-23 23:45:58,946 - INFO - Calling graph agent handler
+2025-04-23 23:45:58,947 - DEBUG - Query data: {'text': 'I am having intense pain in my joints', 'context': {'session_id': 'sess_20250423234558_133ab581', 'department': 'graph', 'timestamp': '2025-04-23T23:45:58.946710', 'is_new_session': True}}
+2025-04-23 23:46:01,955 - INFO - Received response from graph agent
+2025-04-23 23:46:01,957 - DEBUG - Agent response: {'response': "I couldn't find any information about that in our database.", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-23 23:49:32,011 - INFO - Starting agent initialization...
+2025-04-23 23:49:32,012 - DEBUG - Environment variables verified
+2025-04-23 23:49:32,012 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:49:49,755 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:49:49,756 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:49:49,760 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:49:49,761 - INFO - rag agent ready
+2025-04-23 23:49:49,763 - INFO - graph agent ready
+2025-04-23 23:49:49,764 - DEBUG - Agent verification complete
+2025-04-23 23:49:49,764 - INFO - All agents initialized successfully
+2025-04-23 23:49:54,572 - DEBUG - Created new session: sess_20250423234954_133ab581
+2025-04-23 23:49:54,573 - DEBUG - Classifying query: I am having intense pain in my joints
+2025-04-23 23:49:54,576 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:49:54,577 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:49:54,578 - INFO - Routing query to graph agent: I am having intense pain in my joints
+2025-04-23 23:49:54,580 - DEBUG - Session ID: sess_20250423234954_133ab581
+2025-04-23 23:49:54,581 - DEBUG - Getting context for agent: graph
+2025-04-23 23:49:54,582 - INFO - Calling graph agent handler
+2025-04-23 23:49:54,583 - DEBUG - Query data: {'text': 'I am having intense pain in my joints', 'context': {'session_id': 'sess_20250423234954_133ab581', 'department': 'graph', 'timestamp': '2025-04-23T23:49:54.582363', 'is_new_session': True}}
+2025-04-23 23:49:54,586 - INFO - Received response from graph agent
+2025-04-23 23:49:54,587 - DEBUG - Agent response: {'response': "I'm sorry, I couldn't process your query fully. 'NoneType' object has no attribute 'encode'", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-23 23:51:45,015 - INFO - Starting agent initialization...
+2025-04-23 23:51:45,016 - DEBUG - Environment variables verified
+2025-04-23 23:51:45,017 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:52:02,559 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:52:02,561 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:52:02,564 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:52:02,565 - INFO - rag agent ready
+2025-04-23 23:52:02,566 - INFO - graph agent ready
+2025-04-23 23:52:02,568 - DEBUG - Agent verification complete
+2025-04-23 23:52:02,568 - INFO - All agents initialized successfully
+2025-04-23 23:52:04,802 - DEBUG - Created new session: sess_20250423235204_133ab581
+2025-04-23 23:52:04,803 - DEBUG - Classifying query: I am having intense pain in my joints
+2025-04-23 23:52:04,806 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:52:04,807 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:52:04,809 - INFO - Routing query to graph agent: I am having intense pain in my joints
+2025-04-23 23:52:04,810 - DEBUG - Session ID: sess_20250423235204_133ab581
+2025-04-23 23:52:04,811 - DEBUG - Getting context for agent: graph
+2025-04-23 23:52:04,812 - INFO - Calling graph agent handler
+2025-04-23 23:52:04,813 - DEBUG - Query data: {'text': 'I am having intense pain in my joints', 'context': {'session_id': 'sess_20250423235204_133ab581', 'department': 'graph', 'timestamp': '2025-04-23T23:52:04.812370', 'is_new_session': True}}
+2025-04-23 23:52:04,816 - INFO - Received response from graph agent
+2025-04-23 23:52:04,817 - DEBUG - Agent response: {'response': "I'm sorry, I couldn't process your query fully. 'NoneType' object has no attribute 'encode'", 'context_updates': {}, 'suggested_next': 'HUMAN'}
+2025-04-23 23:54:21,812 - INFO - Starting agent initialization...
+2025-04-23 23:54:21,813 - DEBUG - Environment variables verified
+2025-04-23 23:54:21,814 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-04-23 23:54:37,859 - DEBUG - Agent loading results: [True, True, True]
+2025-04-23 23:54:37,860 - DEBUG - Verifying agent interfaces...
+2025-04-23 23:54:37,864 - ERROR - Critical: sql agent verification failed!
+2025-04-23 23:54:37,866 - INFO - rag agent ready
+2025-04-23 23:54:37,867 - INFO - graph agent ready
+2025-04-23 23:54:37,868 - DEBUG - Agent verification complete
+2025-04-23 23:54:37,869 - INFO - All agents initialized successfully
+2025-04-23 23:54:41,195 - DEBUG - Created new session: sess_20250423235441_133ab581
+2025-04-23 23:54:41,196 - DEBUG - Classifying query: I am having intense pain in my joints
+2025-04-23 23:54:41,199 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-23 23:54:41,200 - INFO - Query classified as graph with confidence 0.9
+2025-04-23 23:54:41,201 - INFO - Routing query to graph agent: I am having intense pain in my joints
+2025-04-23 23:54:41,203 - DEBUG - Session ID: sess_20250423235441_133ab581
+2025-04-23 23:54:41,204 - DEBUG - Getting context for agent: graph
+2025-04-23 23:54:41,205 - INFO - Calling graph agent handler
+2025-04-23 23:54:41,206 - DEBUG - Query data: {'text': 'I am having intense pain in my joints', 'context': {'session_id': 'sess_20250423235441_133ab581', 'department': 'graph', 'timestamp': '2025-04-23T23:54:41.205189', 'is_new_session': True}}
+2025-04-23 23:54:44,102 - INFO - Received response from graph agent
+2025-04-23 23:54:44,105 - DEBUG - Agent response: {'response': "I understand you're experiencing intense joint pain, and that must be very difficult.  \n\nBased on what you've told me, our system suggests that this pain could be related to a number of things, like a specific condition, medication side effect, or even a treatment option. \n\nTo help me understand better and give you the most helpful advice, could you tell me a little more about your pain? For example:\n\n* **Where exactly are you feeling the pain?**\n* **How long have you been experiencing this pain?**\n* **Is there anything that makes the pain better or worse?**\n* **Have you noticed any other symptoms?**\n\n\nKnowing more details will help us narrow down the possibilities and figure out the best next steps for you.  Don't worry, we're here to help you feel better. \n\n", 'context_updates': {'last_interaction': '2025-04-23T23:54:44.102587', 'chat_history': [{'query': 'I am having intense pain in my joints', 'response': "I understand you're experiencing intense joint pain, and that must be very difficult.  \n\nBased on what you've told me, our system suggests that this pain could be related to a number of things, like a specific condition, medication side effect, or even a treatment option. \n\nTo help me understand better and give you the most helpful advice, could you tell me a little more about your pain? For example:\n\n* **Where exactly are you feeling the pain?**\n* **How long have you been experiencing this pain?**\n* **Is there anything that makes the pain better or worse?**\n* **Have you noticed any other symptoms?**\n\n\nKnowing more details will help us narrow down the possibilities and figure out the best next steps for you.  Don't worry, we're here to help you feel better. \n\n", 'timestamp': '2025-04-23T23:54:44.102609'}]}, 'suggested_next': None}
+2025-04-23 23:57:04,026 - DEBUG - Created new session: sess_20250423235704_458ac2da
+2025-04-23 23:57:04,026 - DEBUG - Classifying query: I have developed redness in my joints too
+2025-04-23 23:57:04,031 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-23 23:57:04,033 - INFO - Query classified as rag with confidence 0.7
+2025-04-23 23:57:04,035 - INFO - Routing query to rag agent: I have developed redness in my joints too
+2025-04-23 23:57:04,036 - DEBUG - Session ID: sess_20250423235704_458ac2da
+2025-04-23 23:57:04,037 - DEBUG - Getting context for agent: rag
+2025-04-23 23:57:04,037 - INFO - Calling rag agent handler
+2025-04-23 23:57:04,038 - DEBUG - Query data: {'text': 'I have developed redness in my joints too', 'context': {'session_id': 'sess_20250423235704_458ac2da', 'department': 'rag', 'timestamp': '2025-04-23T23:57:04.037872', 'is_new_session': True}}
+2025-04-23 23:57:38,584 - INFO - Received response from rag agent
+2025-04-23 23:57:38,587 - DEBUG - Agent response: {'response': "I can help with that!\n\nI understand you're experiencing redness in your joints. I'm sorry to hear that! \n\nUnfortunately, I couldn't find specific information about joint redness in the provided documents.  \n\nIt's important to speak with a medical professional about your symptoms. They can properly diagnose the cause of your redness and recommend the best course of treatment.\n\nIs there anything else I can help you with?", 'context_updates': {'last_interaction': '2025-04-23T23:57:38.578332', 'chat_history': [{'query': 'I have developed redness in my joints too', 'response': "I can help with that!\n\nI understand you're experiencing redness in your joints. I'm sorry to hear that! \n\nUnfortunately, I couldn't find specific information about joint redness in the provided documents.  \n\nIt's important to speak with a medical professional about your symptoms. They can properly diagnose the cause of your redness and recommend the best course of treatment.\n\nIs there anything else I can help you with?", 'timestamp': '2025-04-23T23:57:38.578358'}]}, 'suggested_next': None, 'status': 'resolved'}
+2025-04-24 00:01:53,495 - DEBUG - Created new session: sess_20250424000153_76d1f3ef
+2025-04-24 00:01:53,496 - DEBUG - Classifying query: What is the treatment for gout
+2025-04-24 00:01:53,497 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-04-24 00:01:53,497 - INFO - Query classified as graph with confidence 0.9
+2025-04-24 00:01:53,499 - INFO - Routing query to graph agent: What is the treatment for gout
+2025-04-24 00:01:53,500 - DEBUG - Session ID: sess_20250424000153_76d1f3ef
+2025-04-24 00:01:53,501 - DEBUG - Getting context for agent: graph
+2025-04-24 00:01:53,501 - INFO - Calling graph agent handler
+2025-04-24 00:01:53,502 - DEBUG - Query data: {'text': 'What is the treatment for gout', 'context': {'session_id': 'sess_20250424000153_76d1f3ef', 'department': 'graph', 'timestamp': '2025-04-24T00:01:53.501718', 'is_new_session': True}}
+2025-04-24 00:01:55,679 - INFO - Received response from graph agent
+2025-04-24 00:01:55,682 - DEBUG - Agent response: {'response': "I understand you're looking for information about gout treatment.  \n\nGout can be very painful, and I'm here to help.  \n\nBased on what I've found, treatment for gout usually involves a combination of things:\n\n* **Medications:** There are specific medications that can help reduce the inflammation and pain caused by gout. \n* **Lifestyle changes:**  Making changes to your diet and lifestyle can also help prevent future gout attacks. This might include limiting foods high in purines, which can contribute to gout.\n\nIt's important to talk to your doctor about the best treatment plan for you. They can assess your individual situation and recommend the most appropriate medications and lifestyle changes. \n\nRemember, you're not alone in this. Gout is a common condition, and there are effective treatments available.  Don't hesitate to reach out to your doctor with any questions or concerns you may have. \n\n\n\n", 'context_updates': {'last_interaction': '2025-04-24T00:01:55.679692', 'chat_history': [{'query': 'What is the treatment for gout', 'response': "I understand you're looking for information about gout treatment.  \n\nGout can be very painful, and I'm here to help.  \n\nBased on what I've found, treatment for gout usually involves a combination of things:\n\n* **Medications:** There are specific medications that can help reduce the inflammation and pain caused by gout. \n* **Lifestyle changes:**  Making changes to your diet and lifestyle can also help prevent future gout attacks. This might include limiting foods high in purines, which can contribute to gout.\n\nIt's important to talk to your doctor about the best treatment plan for you. They can assess your individual situation and recommend the most appropriate medications and lifestyle changes. \n\nRemember, you're not alone in this. Gout is a common condition, and there are effective treatments available.  Don't hesitate to reach out to your doctor with any questions or concerns you may have. \n\n\n\n", 'timestamp': '2025-04-24T00:01:55.679720'}]}, 'suggested_next': None}

@@ -4395,3 +4395,94 @@ ConnectionError: Failed to initialize Supabase client: [WinError 10060] A connec
     ^^^^^^^^^^^^^^
 AttributeError: 'str' object has no attribute 'get'
 
+2025-04-23 23:34:23,683 - INFO - Creating SQL Agent instance
+2025-04-23 23:34:23,685 - INFO - Creating SQL Agent instance
+2025-04-23 23:34:23,685 - DEBUG - Initial session context: {}
+2025-04-23 23:34:23,686 - INFO - Initializing Supabase connection
+2025-04-23 23:34:26,971 - INFO - Initializing tools
+2025-04-23 23:34:26,973 - DEBUG - Tools initialized: 5
+2025-04-23 23:34:26,975 - INFO - Initializing memory
+2025-04-23 23:34:27,022 - DEBUG - Memory initialized
+2025-04-23 23:34:27,024 - INFO - Creating prompt template
+2025-04-23 23:34:27,026 - INFO - Creating agent
+2025-04-23 23:34:27,188 - INFO - Creating agent executor
+2025-04-23 23:34:27,190 - INFO - SQL Agent initialization complete
+2025-04-23 23:34:38,800 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:36:33,772 - INFO - Creating SQL Agent instance
+2025-04-23 23:36:33,774 - INFO - Creating SQL Agent instance
+2025-04-23 23:36:33,775 - DEBUG - Initial session context: {}
+2025-04-23 23:36:33,776 - INFO - Initializing Supabase connection
+2025-04-23 23:36:35,312 - INFO - Initializing tools
+2025-04-23 23:36:35,313 - DEBUG - Tools initialized: 5
+2025-04-23 23:36:35,315 - INFO - Initializing memory
+2025-04-23 23:36:35,320 - DEBUG - Memory initialized
+2025-04-23 23:36:35,321 - INFO - Creating prompt template
+2025-04-23 23:36:35,324 - INFO - Creating agent
+2025-04-23 23:36:35,488 - INFO - Creating agent executor
+2025-04-23 23:36:35,490 - INFO - SQL Agent initialization complete
+2025-04-23 23:36:46,516 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:37:36,138 - INFO - Creating SQL Agent instance
+2025-04-23 23:37:36,139 - INFO - Creating SQL Agent instance
+2025-04-23 23:37:36,140 - DEBUG - Initial session context: {}
+2025-04-23 23:37:36,141 - INFO - Initializing Supabase connection
+2025-04-23 23:37:37,310 - INFO - Initializing tools
+2025-04-23 23:37:37,312 - DEBUG - Tools initialized: 5
+2025-04-23 23:37:37,313 - INFO - Initializing memory
+2025-04-23 23:37:37,318 - DEBUG - Memory initialized
+2025-04-23 23:37:37,319 - INFO - Creating prompt template
+2025-04-23 23:37:37,321 - INFO - Creating agent
+2025-04-23 23:37:37,447 - INFO - Creating agent executor
+2025-04-23 23:37:37,449 - INFO - SQL Agent initialization complete
+2025-04-23 23:37:48,253 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:45:31,932 - INFO - Creating SQL Agent instance
+2025-04-23 23:45:31,933 - INFO - Creating SQL Agent instance
+2025-04-23 23:45:31,934 - DEBUG - Initial session context: {}
+2025-04-23 23:45:31,935 - INFO - Initializing Supabase connection
+2025-04-23 23:45:33,585 - INFO - Initializing tools
+2025-04-23 23:45:33,587 - DEBUG - Tools initialized: 5
+2025-04-23 23:45:33,588 - INFO - Initializing memory
+2025-04-23 23:45:33,603 - DEBUG - Memory initialized
+2025-04-23 23:45:33,605 - INFO - Creating prompt template
+2025-04-23 23:45:33,607 - INFO - Creating agent
+2025-04-23 23:45:33,745 - INFO - Creating agent executor
+2025-04-23 23:45:33,748 - INFO - SQL Agent initialization complete
+2025-04-23 23:45:45,049 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:49:35,902 - INFO - Creating SQL Agent instance
+2025-04-23 23:49:35,903 - INFO - Creating SQL Agent instance
+2025-04-23 23:49:35,903 - DEBUG - Initial session context: {}
+2025-04-23 23:49:35,904 - INFO - Initializing Supabase connection
+2025-04-23 23:49:37,656 - INFO - Initializing tools
+2025-04-23 23:49:37,658 - DEBUG - Tools initialized: 5
+2025-04-23 23:49:37,659 - INFO - Initializing memory
+2025-04-23 23:49:37,675 - DEBUG - Memory initialized
+2025-04-23 23:49:37,677 - INFO - Creating prompt template
+2025-04-23 23:49:37,680 - INFO - Creating agent
+2025-04-23 23:49:37,830 - INFO - Creating agent executor
+2025-04-23 23:49:37,833 - INFO - SQL Agent initialization complete
+2025-04-23 23:49:49,757 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:51:49,299 - INFO - Creating SQL Agent instance
+2025-04-23 23:51:49,299 - INFO - Creating SQL Agent instance
+2025-04-23 23:51:49,300 - DEBUG - Initial session context: {}
+2025-04-23 23:51:49,301 - INFO - Initializing Supabase connection
+2025-04-23 23:51:51,073 - INFO - Initializing tools
+2025-04-23 23:51:51,074 - DEBUG - Tools initialized: 5
+2025-04-23 23:51:51,075 - INFO - Initializing memory
+2025-04-23 23:51:51,081 - DEBUG - Memory initialized
+2025-04-23 23:51:51,082 - INFO - Creating prompt template
+2025-04-23 23:51:51,084 - INFO - Creating agent
+2025-04-23 23:51:51,217 - INFO - Creating agent executor
+2025-04-23 23:51:51,218 - INFO - SQL Agent initialization complete
+2025-04-23 23:52:02,562 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:54:25,326 - INFO - Creating SQL Agent instance
+2025-04-23 23:54:25,327 - INFO - Creating SQL Agent instance
+2025-04-23 23:54:25,328 - DEBUG - Initial session context: {}
+2025-04-23 23:54:25,328 - INFO - Initializing Supabase connection
+2025-04-23 23:54:26,924 - INFO - Initializing tools
+2025-04-23 23:54:26,925 - DEBUG - Tools initialized: 5
+2025-04-23 23:54:26,927 - INFO - Initializing memory
+2025-04-23 23:54:26,932 - DEBUG - Memory initialized
+2025-04-23 23:54:26,933 - INFO - Creating prompt template
+2025-04-23 23:54:26,935 - INFO - Creating agent
+2025-04-23 23:54:27,055 - INFO - Creating agent executor
+2025-04-23 23:54:27,058 - INFO - SQL Agent initialization complete
+2025-04-23 23:54:37,861 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'

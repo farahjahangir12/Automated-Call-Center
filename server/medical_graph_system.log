@@ -1,0 +1,11 @@
+2025-04-23 23:45:45,049 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:45:45,052 [ERROR] __main__: Critical: sql agent verification failed!
+2025-04-23 23:49:49,757 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:49:49,760 [ERROR] __main__: Critical: sql agent verification failed!
+2025-04-23 23:49:54,585 [ERROR] agents.graph.main: Query handling failed: 'NoneType' object has no attribute 'encode'
+2025-04-23 23:52:02,562 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:52:02,564 [ERROR] __main__: Critical: sql agent verification failed!
+2025-04-23 23:52:04,815 [ERROR] agents.graph.main: Query handling failed: 'NoneType' object has no attribute 'encode'
+2025-04-23 23:54:37,861 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-23 23:54:37,864 [ERROR] __main__: Critical: sql agent verification failed!
+2025-04-23 23:57:04,031 [ERROR] __main__: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
