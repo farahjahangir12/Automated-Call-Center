@@ -9,3 +9,205 @@
 2025-04-23 23:54:37,861 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
 2025-04-23 23:54:37,864 [ERROR] __main__: Critical: sql agent verification failed!
 2025-04-23 23:57:04,031 [ERROR] __main__: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-04-25 22:23:32,002 [ERROR] livekit.agents: job shutdown is taking too much time..
+2025-04-25 22:23:45,621 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:23:45,623 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:23:48,892 [ERROR] livekit.agents: Error in _inference_task
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\tts\tts.py", line 445, in __anext__
+    val = await self._event_aiter.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopAsyncIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\generation.py", line 146, in _inference_task
+    async for audio_frame in tts_node:
+        audio_ch.send_nowait(audio_frame)
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent.py", line 473, in tts_node
+    async for ev in stream:
+        yield ev.frame
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\tts\tts.py", line 448, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\tts\tts.py", line 301, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\plugins\cartesia\tts.py", line 373, in _run
+    async with self._pool.connection() as ws:
+               ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\connection_pool.py", line 76, in connection
+    conn = await self.get()
+           ^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\connection_pool.py", line 108, in get
+    return await self._connect()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\connection_pool.py", line 59, in _connect
+    connection = await self._connect_cb()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\plugins\cartesia\tts.py", line 146, in _connect_ws
+    return await asyncio.wait_for(session.ws_connect(url), self._conn_options.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\asyncio\tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\aiohttp\client.py", line 512, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+2025-04-25 22:23:54,633 [ERROR] livekit.agents: Error in _stt_task
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\livekit\plugins\openai\stt.py", line 375, in _recognize_impl
+    resp = await self._client.audio.transcriptions.create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\openai\resources\audio\transcriptions.py", line 616, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\openai\_base_client.py", line 1742, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\openai\_base_client.py", line 1452, in request
+    self._platform = await asyncify(get_platform)()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\openai\_utils\_sync.py", line 84, in wrapper
+    return await to_thread(function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\openai\_utils\_sync.py", line 45, in to_thread
+    return await _asyncio_to_thread(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\asyncio\threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+                 ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 889, in run_in_executor
+    self._check_default_executor()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\asyncio\base_events.py", line 555, in _check_default_executor
+    raise RuntimeError('Executor shutdown has been called')
+RuntimeError: Executor shutdown has been called
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\audio_recognition.py", line 299, in _stt_task
+    async for ev in node:
+        assert isinstance(ev, stt.SpeechEvent), "STT node must yield SpeechEvent"
+        await self._on_stt_event(ev)
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent.py", line 420, in stt_node
+    async for event in stream:
+        yield event
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\stt\stt.py", line 340, in __anext__
+    raise exc  # noqa: B904
+    ^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\stt\stt.py", line 228, in _main_task
+    return await self._run()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\stt\stream_adapter.py", line 123, in _run
+    await asyncio.gather(*tasks)
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\stt\stream_adapter.py", line 100, in _recognize
+    t_event = await self._wrapped_stt.recognize(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\stt\stt.py", line 117, in recognize
+    event = await self._recognize_impl(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        buffer, language=language, conn_options=conn_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\plugins\openai\stt.py", line 404, in _recognize_impl
+    raise APIConnectionError() from e
+livekit.agents._exceptions.APIConnectionError: Connection error.
+2025-04-25 22:30:27,393 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:30:27,396 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:30:27,405 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 26, in entrypoint
+    await router.initialize_agents()  # Ensure all agents are loaded
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HospitalRouter' object has no attribute 'initialize_agents'
+2025-04-25 22:33:02,749 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:33:02,751 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:40:09,131 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:40:09,134 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:44:00,769 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:44:00,771 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:44:02,259 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 39, in entrypoint
+    session = AgentSession(
+        stt=groq.STT(
+    ...<8 lines>...
+        query_handler=process_user_input,  # Route user input to the Assistant
+    )
+TypeError: AgentSession.__init__() got an unexpected keyword argument 'query_handler'
+2025-04-25 22:49:42,127 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 22:49:42,129 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 22:49:42,938 [ERROR] livekit.agents: Error in _update_activity_task
+Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_session.py", line 578, in _update_activity_task
+    self._next_activity = AgentActivity(task, self)
+                          ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 88, in __init__
+    self.turn_detection if isinstance(self.turn_detection, str) else None
+                                      ^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 175, in turn_detection
+    return self._agent._turn_detection or self._session._turn_detection
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HospitalRouter' object has no attribute '_turn_detection'
+2025-04-25 22:49:43,661 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 29, in entrypoint
+    await session.start(
+    ...<2 lines>...
+    )
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_session.py", line 378, in start
+    await self._update_activity_task(self._agent)
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_session.py", line 578, in _update_activity_task
+    self._next_activity = AgentActivity(task, self)
+                          ~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 88, in __init__
+    self.turn_detection if isinstance(self.turn_detection, str) else None
+                                      ^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\livekit\agents\voice\agent_activity.py", line 175, in turn_detection
+    return self._agent._turn_detection or self._session._turn_detection
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'HospitalRouter' object has no attribute '_turn_detection'
+2025-04-25 23:09:11,354 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 23:09:11,357 [ERROR] router: Critical: sql agent verification failed!
+2025-04-25 23:09:11,939 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 55, in entrypoint
+    vad=silero.VAD(),
+        ~~~~~~~~~~^^
+TypeError: VAD.__init__() missing 2 required keyword-only arguments: 'session' and 'opts'
+2025-04-25 23:13:49,167 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-04-25 23:13:49,169 [ERROR] router: Critical: sql agent verification failed!

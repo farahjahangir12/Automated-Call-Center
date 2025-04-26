@@ -11,6 +11,7 @@ from typing import Dict, Any, Optional
 from datetime import datetime
 import logging
 import logging.config
+from sentence_transformers import SentenceTransformer
 
 # Configure logging
 logging.config.dictConfig({
@@ -64,21 +65,261 @@ llm = ChatGroq(
 
 class MedicalGraphSystem:
     def __init__(self, session_context: Optional[Dict] = None):
-        """Initialize with optional session context"""
-        self.session_context = session_context or {}
-        self.memory = self._initialize_memory()
+        """Initialize with generic context tracking"""
+        self.session_context = session_context or {
+            'active_entities': [],  # Track all entity mentions
+            'last_query_type': None,
+            'query_history': []
+        }
         
-    def _initialize_memory(self) -> ConversationBufferMemory:
-        """Initialize memory with session context if available"""
-        memory = ConversationBufferMemory()
+        # Add embedding model initialization
+        self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
         
-        # Load previous conversation if exists in session
-        if "chat_history" in self.session_context:
-            for exchange in self.session_context["chat_history"]:
-                memory.chat_memory.add_user_message(exchange["query"])
-                memory.chat_memory.add_ai_message(exchange["response"])
+        # Define node types for semantic search
+        self.node_types = {
+            'symptoms': {'labels': ['Symptom'], 'relations': ['SYMPTOM_OF']},
+            'conditions': {'labels': ['Disease'], 'relations': ['TREATS', 'PRESCRIBED_FOR']},
+            'treatments': {'labels': ['Treatment'], 'relations': ['HAS_SIDE_EFFECT']},
+            'drugs': {'labels': ['Drug'], 'relations': ['RECOMMENDED_DOSAGE']}
+        }
+
+    def _extract_entities(self, text: str) -> list:
+        """
+        Generic entity extraction using semantic search
         
-        return memory
+        Args:
+            text: User's input text
+        
+        Returns:
+            List of extracted entities with type, name, and similarity score
+        """
+        try:
+            # Generate embedding for the text
+            embedding = self.embedding_model.encode(text)
+            
+            # Search across all node types
+            entities = []
+            for node_type, config in self.node_types.items():
+                query = f"""
+                MATCH (n:{'|'.join(config['labels'])})
+                WHERE n.embedding IS NOT NULL AND 
+                      gds.similarity.cosine(n.embedding, $embedding) > 0.7
+                RETURN 
+                    labels(n)[0] AS type,
+                    n.name AS name,
+                    id(n) AS id,
+                    gds.similarity.cosine(n.embedding, $embedding) AS score
+                ORDER BY score DESC
+                LIMIT 3
+                """
+                matches = graph.query(query, params={"embedding": embedding.tolist()})
+                entities.extend([dict(m) for m in matches])
+            
+            return entities
+        
+        except Exception as e:
+            logger.error(f"Entity extraction failed: {e}")
+            return []
+
+    def _search_related_entities(self, entities: list) -> list:
+        """
+        Find related entities based on graph relationships
+        
+        Args:
+            entities: List of extracted entities
+        
+        Returns:
+            List of related entities with their relationships
+        """
+        results = []
+        for entity in entities:
+            node_type = entity['type']
+            config = next((v for k,v in self.node_types.items() 
+                          if node_type in v['labels']), None)
+            
+            if config and config['relations']:
+                try:
+                    query = f"""
+                    MATCH (n) WHERE id(n) = $id
+                    MATCH (n)-[:{'|'.join(config['relations'])}]->(related)
+                    RETURN 
+                        labels(related)[0] AS related_type,
+                        related.name AS related_name,
+                        type(r) AS relationship
+                    LIMIT 5
+                    """
+                    related = graph.query(query, params={"id": entity['id']})
+                    results.append({
+                        "source": entity,
+                        "related": [dict(r) for r in related]
+                    })
+                except Exception as e:
+                    logger.error(f"Related entity search failed for {entity}: {e}")
+        
+        return results
+
+    def _format_response(self, results: list, query_type: str) -> str:
+        """
+        Enhanced response formatter with more detailed context
+        
+        Args:
+            results: List of query results
+            query_type: Type of query performed
+        
+        Returns:
+            Formatted response string
+        """
+        if not results:
+            return "I couldn't find matching information. Would you like me to refine the search?"
+        
+        if query_type == 'entity_search':
+            response = ["I found these related items:"]
+            for result in results:
+                source = result['source']
+                response.append(f"\n{source['type']} '{source['name']}' is connected to:")
+                for rel in result['related']:
+                    response.append(f"  - {rel['relationship']} {rel['related_type']} '{rel['related_name']}'")
+            
+            response.append("\nWould you like more details about any of these?")
+            return "\n".join(response)
+        
+        # Existing fallback for other query types
+        return str(results)
+
+    def _determine_query_type(self, entities: list) -> str:
+        """
+        Determine the type of query based on extracted entities
+        
+        Args:
+            entities: List of extracted entities
+        
+        Returns:
+            Query type as a string
+        """
+        if not entities:
+            return 'general_query'
+        
+        # Logic to determine query type based on entities
+        entity_types = set(entity['type'] for entity in entities)
+        
+        if 'Symptom' in entity_types:
+            return 'entity_search'
+        elif 'Disease' in entity_types:
+            return 'property_query'
+        elif 'Treatment' in entity_types or 'Drug' in entity_types:
+            return 'entity_search'
+        
+        return 'general_query'
+
+    def _query_entity_properties(self, entities: list) -> list:
+        """
+        Query properties for specific entities
+        
+        Args:
+            entities: List of entities to query properties for
+        
+        Returns:
+            List of entity properties
+        """
+        properties = []
+        for entity in entities:
+            try:
+                query = f"""
+                MATCH (n) WHERE id(n) = $id
+                RETURN properties(n) AS properties
+                """
+                prop_result = graph.query(query, params={"id": entity['id']})
+                properties.append({
+                    "entity": entity,
+                    "properties": prop_result[0]['properties'] if prop_result else {}
+                })
+            except Exception as e:
+                logger.error(f"Property query failed for {entity}: {e}")
+        
+        return properties
+
+    def _general_query(self, user_question: str) -> list:
+        """
+        Perform a general query when no specific entities are found
+        
+        Args:
+            user_question: User's input text
+        
+        Returns:
+            List of general query results
+        """
+        try:
+            # Use embedding to find semantically similar nodes
+            embedding = self.embedding_model.encode(user_question)
+            
+            query = """
+            MATCH (n)
+            WHERE n.embedding IS NOT NULL AND 
+                  gds.similarity.cosine(n.embedding, $embedding) > 0.6
+            RETURN 
+                labels(n)[0] AS type,
+                n.name AS name,
+                gds.similarity.cosine(n.embedding, $embedding) AS score
+            ORDER BY score DESC
+            LIMIT 5
+            """
+            
+            return graph.query(query, params={"embedding": embedding.tolist()})
+        
+        except Exception as e:
+            logger.error(f"General query failed: {e}")
+            return []
+
+    async def handle_query(self, query_data: Dict) -> Dict:
+        """
+        Enhanced query handling with context tracking and entity extraction
+        """
+        try:
+            user_question = query_data.get("text", "")
+            
+            # Extract entities from the question
+            entities = self._extract_entities(user_question)
+            
+            # Update session context with extracted entities
+            if entities:
+                self.session_context.setdefault('active_entities', []).extend(entities)
+                self.session_context['query_history'].append({
+                    'query': user_question,
+                    'entities': entities,
+                    'timestamp': datetime.now().isoformat()
+                })
+            
+            # Determine query type based on extracted entities
+            query_type = self._determine_query_type(entities)
+            self.session_context['last_query_type'] = query_type
+            
+            # Generate and execute query based on query type
+            if query_type == 'entity_search':
+                results = self._search_related_entities(entities)
+            elif query_type == 'property_query':
+                results = self._query_entity_properties(entities)
+            else:
+                results = self._general_query(user_question)
+            
+            # Format response based on results and context
+            response = self._format_response(results, query_type)
+            
+            return {
+                "response": response,
+                "context_updates": {
+                    "active_entities": self.session_context['active_entities'],
+                    "last_query_type": query_type,
+                    "query_history": self.session_context['query_history']
+                }
+            }
+            
+        except Exception as e:
+            logger.error(f"Query handling failed: {e}")
+            return {
+                "response": f"I encountered an error processing your query: {str(e)}",
+                "context_updates": {},
+                "error": str(e)
+            }
 
     def clean_cypher_query(self, query: str) -> str:
         """Clean and validate Cypher queries"""
@@ -198,146 +439,6 @@ class MedicalGraphSystem:
             ("Match 2", node_type, 0.7),
             ("Match 3", node_type, 0.6)
         ]
-
-    async def handle_query(self, query_data: Dict) -> Dict:
-        """
-        Handle medical graph queries with session context
-        Args:
-            query_data: {
-                "text": "the user query",
-                "context": {"session_id": "abc123", ...},
-                "history": [previous exchanges]
-            }
-        Returns:
-            Dict: {
-                "response": "the generated response",
-                "context_updates": {"new_info": "value"},
-                "suggested_next": "optional department suggestion"
-            }
-        """
-        try:
-            user_question = query_data.get("text", "")
-            self.session_context = query_data.get("context", {})
-            
-            if user_question.lower() in ['exit', 'quit', 'bye']:
-                self.memory.clear()
-                return {
-                    "response": "Thank you for contacting Osaka University Hospital. Have a good day!",
-                    "context_updates": {},
-                    "suggested_next": None
-                }
-                
-            examples = [
-                {"question": "How many diseases are there?", "query": "MATCH (d:Disease) RETURN count(d);"},
-                {"question": "Symptoms of COVID-19?", "query": "MATCH (s:Symptom)-[:SYMPTOM_OF]->(d:Disease {{name: 'COVID-19'}}) RETURN s.name;"},
-                {"question": "Drugs for Diabetes?", "query": "MATCH (d:Disease {{name: 'Diabetes'}})<-[:PRESCRIBED_FOR]-(drug:Drug) RETURN drug.name;"},
-            ]
-
-            schema = """Node properties:
-Disease {name: STRING}, Symptom {name: STRING}, GeneticLinkage {name: STRING}, 
-CareInstruction {name: STRING}, Drug {name: STRING}, Treatment {name: STRING}, 
-SideEffect {name: STRING}.
-
-Relationships:
-(:Symptom)-[:SYMPTOM_OF]->(:Disease), 
-(:GeneticLinkage)-[:LINKED_TO]->(:Disease), 
-(:CareInstruction)-[:RECOMMENDED_FOR]->(:Disease), 
-(:Drug)-[:PRESCRIBED_FOR]->(:Disease), 
-(:Drug)-[:RECOMMENDED_DOSAGE]->(:Disease), 
-(:Treatment)-[:TREATS]->(:Disease), 
-(:Treatment)-[:USES_DRUG]->(:Drug), 
-(:Treatment)-[:HAS_SIDE_EFFECT]->(:SideEffect)."""
-
-            example_prompt = PromptTemplate.from_template(
-                "User input: {question}\nCypher query: {query}"
-            )
-
-            prompt = FewShotPromptTemplate(
-                examples=examples,
-                example_prompt=example_prompt,
-                prefix="""You are a Neo4j expert. Generate ONLY the Cypher query - no additional text or markdown. 
-
-Important rules:
-1. Always use single quotes for string values
-2. Always end queries with a semicolon
-3. Never include markdown code blocks
-4. Use correct relationship types from schema
-
-Schema:
-{schema}
-
-Examples:""",
-                suffix="User input: {question}\nCypher query:",
-                input_variables=["question", "schema"],
-            )
-
-            # Generate Cypher query
-            formatted_prompt = prompt.format(
-                question=user_question,
-                schema=schema
-            )
-            response = await llm.ainvoke(formatted_prompt)
-            
-            if not response or not hasattr(response, 'content'):
-                return {
-                    "response": "I couldn't generate a proper query for that question.",
-                    "context_updates": {},
-                    "suggested_next": None
-                }
-
-            generated_query = response.content
-            print(f"\nGenerated query before cleaning: {generated_query}")
-            generated_query = self.clean_cypher_query(generated_query)
-            print(f"Cleaned query: {generated_query}")
-
-            query_result = self.execute_query_with_hybrid_matching(generated_query, user_question)
-
-            if not query_result:
-                return {
-                    "response": "I couldn't find any information about that in our database.",
-                    "context_updates": {},
-                    "suggested_next": "HUMAN"
-                }
-
-            # Generate natural language response
-            response_prompt = f"""You are a Clinical Triage agent for Osaka University Hospital. 
-Explain these results in simple, compassionate terms:
-
-Question: {user_question}
-Results: {json.dumps(query_result, indent=2)}
-
-Response:"""
-            
-            final_response = await llm.ainvoke(response_prompt)
-            
-            # Update conversation memory and context
-            self.memory.chat_memory.add_user_message(user_question)
-            self.memory.chat_memory.add_ai_message(final_response.content)
-            
-            context_updates = {
-                "last_interaction": datetime.now().isoformat(),
-                "chat_history": [
-                    {
-                        "query": user_question,
-                        "response": final_response.content,
-                        "timestamp": datetime.now().isoformat()
-                    }
-                ]
-            }
-            
-            return {
-                "response": final_response.content,
-                "context_updates": context_updates,
-                "suggested_next": None
-            }
-            
-        except Exception as e:
-            self.memory.clear()
-            return {
-                "response": f"⚠️ An error occurred: {str(e)}",
-                "context_updates": {},
-                "suggested_next": "HUMAN"
-            }
 
 # Router-compatible interface
 async def handle_query(query_data: Dict) -> Dict:

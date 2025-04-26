@@ -643,57 +643,14 @@ class HospitalRouter:
             return "C (Acceptable)"
         return "D (Needs Improvement)"
 
-# Main function to run the router with interactive input
-async def main():
-    """Main function to run the router with interactive input"""
+# Main function to process a query and return the response
+async def main(query: str) -> str:
+    """Process a query and return the response."""
     try:
-        # Create and initialize router
+        # Create and initialize the router
         router = await HospitalRouter.create()
-        print("Router initialized")
-        print("Type 'quit' to exit")
-        print("Enter your query:")
-
-        while True:
-            try:
-                # Get user input
-                query = input("You: ").strip()
-                
-                if query.lower() == 'quit':
-                    break
-                    
-                if not query:
-                    continue
-
-                # Process the query
-                try:
-                    result = await router.process_query(query)
-                    if asyncio.iscoroutine(result):
-                        result = await result
-                        
-                    if result and 'response' in result:
-                        print(f"Agent: {result['response']}")
-                except Exception as e:
-                    print(f"Error: {str(e)}")
-                
-            except KeyboardInterrupt:
-                print("\nExiting...")
-                break
-            except Exception as e:
-                print(f"Error: {str(e)}")
-                continue
-
-        # Clean up sessions before exiting
-        router._cleanup_sessions()
-
+        response = await router.process_query(query)
+        return response.get("response", "Sorry, I couldn't process your request.")
     except Exception as e:
-        print(f"Critical error: {str(e)}")
-        logger.error(f"Critical error: {str(e)}")
-        logger.error(traceback.format_exc())
-
-    finally:
-        # Clean up sessions if router exists
-        if 'router' in locals():
-            router._cleanup_sessions()
-
-if __name__ == "__main__":
-    asyncio.run(main())
+        logger.error(f"Error processing query: {str(e)}")
+        return "An error occurred while processing your request."
