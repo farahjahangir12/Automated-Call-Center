@@ -1,76 +1,111 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
+import axios from "axios";
+import "./QueryProcessor.css"; // Import the CSS file for styling
 
 const QueryProcessor = () => {
-  const [query, setQuery] = useState('');
-  const [response, setResponse] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [queryStatus, setQueryStatus] = useState('inactive');
-  const [currentAgent, setCurrentAgent] = useState(null);
+  const [query, setQuery] = useState("");
+  const [response, setResponse] = useState(null);
+  const [agent, setAgent] = useState(null);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [isListening, setIsListening] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(null);
-    
+  const handleQuerySubmit = async (customQuery) => {
+    const finalQuery = customQuery || query;
+    if (!finalQuery.trim()) return;
+
+    setIsProcessing(true);
     try {
-      const res = await fetch('http://localhost:8000/process-query', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          query,
-          currentAgent,
-          queryStatus
-        }),
+      // Send the query to the backend router
+      const res = await axios.post("http://localhost:5000/process_query", {
+        query: finalQuery,
       });
-      
-      if (!res.ok) throw new Error('Server error');
-      const data = await res.json();
-      
-      setResponse(data.response || '');
-      setQueryStatus(data.status);
-      setCurrentAgent(data.agent);
-      
-      // If the query is resolved, reset the state for the next query
-      if (data.status === 'resolved') {
-        setQuery('');
-        setCurrentAgent(null);
-        setQueryStatus('inactive');
-      }
-    } catch (err) {
-      setError(err.message);
+
+      // Extract the routed agent and response
+      setAgent(res.data.agent || "Unknown");
+      setResponse(res.data.response || "No response received.");
+    } catch (error) {
+      console.error("Error processing query:", error);
+      setResponse("An error occurred while processing your query.");
     } finally {
-      setLoading(false);
+      setIsProcessing(false);
     }
   };
 
+  const handleVoiceInput = () => {
+    if (!("webkitSpeechRecognition" in window)) {
+      alert("Your browser does not support speech recognition. Please try Chrome.");
+      return;
+    }
+
+    const recognition = new window.webkitSpeechRecognition();
+    recognition.lang = "en-US";
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    setIsListening(true);
+
+    recognition.onresult = async (event) => {
+      const voiceQuery = event.results[0][0].transcript;
+      setQuery(voiceQuery);
+
+      setIsListening(false);
+
+      // Immediately submit the voice query
+      await handleQuerySubmit(voiceQuery);
+    };
+
+    recognition.onerror = (event) => {
+      console.error("Speech recognition error:", event.error);
+      setIsListening(false);
+    };
+
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognition.start();
+  };
+
   return (
-    <div style={{ maxWidth: 500, margin: '2rem auto', padding: 24, border: '1px solid #eee', borderRadius: 8, background: '#fafbfc' }}>
-      <h2>Query Processor</h2>
-      <div style={{ marginBottom: 12 }}>
-        {queryStatus === 'active' && (
-          <div style={{ color: '#0066cc', marginBottom: 8 }}>
-            Currently processing with {currentAgent} agent. Please provide any additional information or type 'done' to finish.
-          </div>
-        )}
-      </div>
-      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        <input
-          type="text"
+    <div className="query-processor">
+      <header className="header">
+        <h1>Healthcare AI Call Center</h1>
+        <p>Ask your query, and our AI agents will assist you!</p>
+      </header>
+
+      <div className="query-section">
+        <textarea
+          className="query-input"
+          placeholder="Type your query here or use the microphone..."
           value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Enter your query..."
-          required
-          style={{ padding: 8, fontSize: 16 }}
-        />
-        <button type="submit" disabled={loading} style={{ padding: 8, fontSize: 16 }}>
-          {loading ? 'Processing...' : 'Submit'}
-        </button>
-      </form>
-      {error && <div style={{ color: 'red', marginTop: 12 }}>{error}</div>}
-      {response && <div style={{ marginTop: 12, whiteSpace: 'pre-wrap', background: '#f4f4f4', padding: 12, borderRadius: 4 }}>{response}</div>}
+          onChange={(e) => setQuery(e.target.value)}
+          disabled={isProcessing || isListening}
+        ></textarea>
+        <div className="actions">
+          <button className="voice-button" onClick={handleVoiceInput} disabled={isListening}>
+            {isListening ? "🎙️ Listening..." : "🎤 Voice Input"}
+          </button>
+          <button
+            className="submit-button"
+            onClick={() => handleQuerySubmit()}
+            disabled={isProcessing}
+          >
+            {isProcessing ? "Processing..." : "Submit Query"}
+          </button>
+        </div>
+      </div>
+
+      {response && (
+        <div className="response-section">
+          <h2>Agent Response</h2>
+          <p>
+            <strong>Routed to Agent:</strong> {agent}
+          </p>
+          <p>
+            <strong>Response:</strong> {response}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
