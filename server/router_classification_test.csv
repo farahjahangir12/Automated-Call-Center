@@ -1,0 +1,275 @@
+question,expected,response,correct
+Is the hospital clinic open on national holidays??,sql,rag|0.70,False
+I was wondering i want to enroll in your hospital system?,sql,rag|0.70,False
+My child has a high fever and rash,graph,graph|0.90,True
+What does it mean if I have numbness in my left arm??,graph,rag|0.70,False
+I was wondering what are your weekend hours??,sql,rag|0.70,False
+Could you please tell me please cancel my upcoming consultation?,sql,rag|0.70,False
+I need to see a doctor this week?,sql,rag|0.70,False
+What time do you begin discharges?,rag,rag|0.70,True
+Could you please tell me i need to cancel my appointment on thursday?,sql,sql|0.90,True
+Could you please tell me what forms do i need to fill out for registration??,sql,rag|0.70,False
+What should I know about statin medications?,graph,rag|0.70,False
+Could you please tell me i want to make an appointment for my annual checkup?,sql,rag|0.70,False
+I was wondering what time does the laboratory close today??,sql,sql|0.90,True
+Are there any available appointments with the orthopedist?,sql,rag|0.70,False
+Could you please tell me what could cause sudden dizziness and nausea??,graph,rag|0.70,False
+Can I register my daughter as a new patient??,sql,sql|0.90,True
+What's the difference between brand name and generic medications?,graph,rag|0.70,False
+Do you provide wheelchair assistance within the facility?,rag,rag|0.70,True
+Reschedule my MRI appointment to next week,sql,sql|0.90,True
+Is the radiology department open on weekends?,sql,rag|0.70,False
+Could you please tell me i need to see a doctor this week?,sql,rag|0.70,False
+I was wondering cancel my dental cleaning appointment?,sql,sql|0.90,True
+How do I update my patient information??,sql,rag|0.70,False
+Could you please tell me is the radiology department open on weekends??,sql,rag|0.70,False
+Are there visitor limitations per patient?,rag,rag|0.70,True
+I was wondering which neurologists are available on friday??,sql,sql|0.90,True
+I want to make an appointment for my annual checkup,sql,rag|0.70,False
+What time can family visit after surgery?,rag,rag|0.70,True
+I was wondering how do i sign up for the patient portal??,sql,sql|0.90,True
+Do you have any pediatricians available today?,sql,sql|0.90,True
+Do you accept international insurance?,rag,rag|0.90,True
+I was wondering i need to postpone my checkup?,sql,rag|0.70,False
+Need to move my appointment from Monday to Wednesday,sql,sql|0.90,True
+Is the dermatologist available tomorrow??,sql,sql|0.90,True
+How is hyperthyroidism managed?,graph,rag|0.70,False
+What is your policy on releasing patient information?,rag,rag|0.90,True
+When can I see Dr. Watanabe??,sql,rag|0.70,False
+Do you offer payment plans?,rag,rag|0.70,True
+Could you please tell me can i get an appointment at 3:30 pm??,sql,sql|0.90,True
+How do I book an appointment with the cardiologist??,sql,sql|0.90,True
+What causes persistent coughing at night?,graph,graph|0.90,True
+Why am I experiencing shortness of breath?,graph,rag|0.70,False
+I was wondering when can i see dr. watanabe??,sql,rag|0.70,False
+Could you please tell me how do i book an appointment with the cardiologist??,sql,sql|0.90,True
+What are the consultation hours for cardiology?,sql,sql|0.90,True
+I was wondering is the ent specialist in today??,sql,sql|0.90,True
+I was wondering i've been having persistent headaches for three days?,graph,rag|0.70,False
+What forms do I need to fill out for registration??,sql,rag|0.70,False
+Need to move my appointment from Monday to Wednesday?,sql,sql|0.90,True
+What are the clinic hours for pediatrics??,sql,sql|0.90,True
+What are the treatment options for chronic back pain?,graph,graph|0.90,True
+I was wondering schedule me for a blood test tomorrow?,sql,sql|0.90,True
+Can I reschedule my consultation with Dr. Tanaka?,sql,rag|0.70,False
+I was wondering my child has a high fever and rash?,graph,graph|0.90,True
+I need to book an appointment with Dr. Yamamoto,sql,sql|0.90,True
+Register my son who is 5 years old?,sql,rag|0.70,False
+I was wondering can i schedule a consultation for next tuesday??,sql,sql|0.90,True
+Could you please tell me what time does dr. ito see patients??,sql,rag|0.70,False
+I'd like to book a dental checkup?,sql,rag|0.70,False
+How do you handle medical records requests?,rag,rag|0.70,True
+Could you please tell me i need to postpone my checkup?,sql,rag|0.70,False
+How early can I arrive before scheduled surgery?,rag,rag|0.70,True
+Can I schedule a consultation for next Tuesday?,sql,sql|0.90,True
+What are the side effects of lisinopril?,graph,rag|0.70,False
+Could you please tell me i'd like to book a dental checkup?,sql,rag|0.70,False
+Could you please tell me what are the clinic hours for pediatrics??,sql,sql|0.90,True
+I was wondering book me a slot with the neurologist?,sql,rag|0.70,False
+How do I update my patient information?,sql,rag|0.70,False
+I'd like to book a dental checkup,sql,rag|0.70,False
+I need to postpone my checkup?,sql,rag|0.70,False
+My child has a high fever and rash?,graph,graph|0.90,True
+I need to cancel my appointment on Thursday,sql,sql|0.90,True
+What are the risk factors for heart disease?,graph,graph|0.90,True
+Cancel my dental cleaning appointment?,sql,sql|0.90,True
+How do I sign up for the patient portal?,sql,sql|0.90,True
+What are the consultation hours for cardiology??,sql,sql|0.90,True
+Please cancel my upcoming consultation,sql,rag|0.70,False
+What is your complaint resolution process?,rag,rag|0.70,True
+Reschedule my MRI appointment to next week?,sql,sql|0.90,True
+Can I register my daughter as a new patient?,sql,sql|0.90,True
+Could you please tell me i've been having persistent headaches for three days?,graph,rag|0.70,False
+Could you please tell me cancel my dental cleaning appointment?,sql,sql|0.90,True
+Cancel my dental cleaning appointment,sql,sql|0.90,True
+When should I take my thyroid medication?,graph,rag|0.70,False
+What treatments are available for severe allergies?,graph,rag|0.70,False
+I was wondering i want to change my appointment time from morning to afternoon?,sql,sql|0.90,True
+What is your policy on advance directives?,rag,rag|0.90,True
+What should I bring for overnight admission?,rag,rag|0.90,True
+Is the dermatologist available tomorrow?,sql,sql|0.90,True
+I was wondering are there any available appointments with the orthopedist??,sql,rag|0.70,False
+Schedule me for vaccination,sql,rag|0.70,False
+I was wondering i need to see a doctor this week?,sql,rag|0.70,False
+What is the check-in procedure for scheduled admissions?,rag,rag|0.90,True
+My joints are swollen and painful?,graph,rag|0.70,False
+I was wondering can i reschedule my consultation with dr. tanaka??,sql,rag|0.70,False
+Could you please tell me schedule me for vaccination?,sql,rag|0.70,False
+Could you please tell me which neurologists are available on friday??,sql,sql|0.90,True
+I need to cancel my appointment on Thursday?,sql,sql|0.90,True
+I was wondering what time does dr. ito see patients??,sql,rag|0.70,False
+Do you offer overnight accommodations for family members?,rag,rag|0.70,True
+What are your COVID-19 visitor restrictions?,rag,rag|0.70,True
+Could you please tell me is the ent specialist in today??,sql,sql|0.90,True
+Could you please tell me when can i see dr. watanabe??,sql,rag|0.70,False
+I'm experiencing chest pain when I breathe deeply,graph,graph|0.90,True
+Could you please tell me register my son who is 5 years old?,sql,rag|0.70,False
+What is your visitor policy for the ICU?,rag,rag|0.90,True
+Is there a chapel or meditation room available?,rag,rag|0.70,True
+Can I get an appointment at 3:30 PM?,sql,sql|0.90,True
+What are your weekend hours??,sql,rag|0.70,False
+What time does Dr. Ito see patients?,sql,rag|0.70,False
+Schedule me for vaccination?,sql,rag|0.70,False
+Could you please tell me what are the consultation hours for cardiology??,sql,sql|0.90,True
+What are the visiting hours for general wards?,rag,rag|0.90,True
+I was wondering what does it mean if i have numbness in my left arm??,graph,rag|0.70,False
+Can I get an appointment at 3:30 PM??,sql,sql|0.90,True
+Could you please tell me what are dr. nakamura's office hours??,sql,rag|0.70,False
+Is there an ATM inside the hospital?,rag,rag|0.70,True
+Could you please tell me what does it mean if i have numbness in my left arm??,graph,rag|0.70,False
+I was wondering how do i update my patient information??,sql,rag|0.70,False
+My joints are swollen and painful,graph,rag|0.70,False
+I was wondering how do i book an appointment with the cardiologist??,sql,sql|0.90,True
+I was wondering register my son who is 5 years old?,sql,rag|0.70,False
+Could you please tell me do i need to make an appointment for blood work??,sql,rag|0.70,False
+How do I get an itemized bill?,rag,rag|0.70,True
+Can I reschedule my consultation with Dr. Tanaka??,sql,rag|0.70,False
+I need to book an appointment with Dr. Yamamoto?,sql,sql|0.90,True
+Do you have a patient bill of rights?,rag,rag|0.70,True
+I was wondering need to move my appointment from monday to wednesday?,sql,sql|0.90,True
+Could you please tell me i want to change my appointment time from morning to afternoon?,sql,sql|0.90,True
+How is rheumatoid arthritis different from osteoarthritis?,graph,rag|0.70,False
+Which neurologists are available on Friday??,sql,sql|0.90,True
+Tell me about hypertension causes,graph,graph|0.90,True
+How long should I take antibiotics for a sinus infection?,graph,rag|0.70,False
+What time does the laboratory close today??,sql,sql|0.90,True
+Are there accommodations near the hospital for families?,rag,rag|0.70,True
+I was wondering i want to make an appointment for my annual checkup?,sql,rag|0.70,False
+How does multiple sclerosis progress?,graph,rag|0.70,False
+Could you please tell me my child has a high fever and rash?,graph,graph|0.90,True
+Could you please tell me i can't make it to my 2:00 pm appointment tomorrow?,sql,sql|0.90,True
+When does the pharmacy open tomorrow??,sql,sql|0.90,True
+Could you please tell me i need to add my new insurance information to my record?,sql,rag|0.90,False
+Can I take ibuprofen with my blood pressure medication?,graph,rag|0.70,False
+Please cancel my upcoming consultation?,sql,rag|0.70,False
+What is the proper dosage of amoxicillin for a child?,graph,rag|0.70,False
+I've been feeling unusually tired lately,graph,rag|0.70,False
+Where is the outpatient laboratory located?,rag,rag|0.70,True
+What does it mean if I have numbness in my left arm?,graph,rag|0.70,False
+Could you please tell me book me a slot with the neurologist?,sql,rag|0.70,False
+I've been having trouble sleeping and feel anxious,graph,rag|0.70,False
+I was wondering my joints are swollen and painful?,graph,rag|0.70,False
+Book me a slot with the neurologist?,sql,rag|0.70,False
+When can I see Dr. Watanabe?,sql,rag|0.70,False
+How is Crohn's disease managed?,graph,graph|0.90,True
+How do I submit my insurance information?,rag,rag|0.90,True
+Tell me about migraine triggers,graph,graph|0.90,True
+I was wondering i need to register as a new patient?,sql,sql|0.90,True
+Could you please tell me i need to register as a new patient?,sql,sql|0.90,True
+I was wondering please cancel my upcoming consultation?,sql,rag|0.70,False
+I was wondering is the hospital clinic open on national holidays??,sql,rag|0.70,False
+Do I need to make an appointment for blood work?,sql,rag|0.70,False
+Are there any available appointments with the orthopedist??,sql,rag|0.70,False
+What are my options for treating osteoporosis?,graph,rag|0.70,False
+Can children visit patients in the hospital?,rag,rag|0.70,True
+When does the pharmacy open tomorrow?,sql,sql|0.90,True
+I need to register as a new patient?,sql,sql|0.90,True
+What are Dr. Nakamura's office hours??,sql,rag|0.70,False
+Could you please tell me need to move my appointment from monday to wednesday?,sql,sql|0.90,True
+Is there a generic alternative to Lipitor?,graph,rag|0.70,False
+I need to postpone my checkup,sql,rag|0.70,False
+What time does Dr. Ito see patients??,sql,rag|0.70,False
+What time does the laboratory close today?,sql,sql|0.90,True
+What could cause sudden dizziness and nausea?,graph,rag|0.70,False
+I was wondering i need to cancel my appointment on thursday?,sql,sql|0.90,True
+Which neurologists are available on Friday?,sql,sql|0.90,True
+I was wondering can i get an appointment at 3:30 pm??,sql,sql|0.90,True
+I was wondering is the dermatologist available tomorrow??,sql,sql|0.90,True
+When is Dr. Suzuki available this week??,sql,rag|0.70,False
+I was wondering i'm experiencing chest pain when i breathe deeply?,graph,graph|0.90,True
+I was wondering what are dr. nakamura's office hours??,sql,rag|0.70,False
+Could you please tell me i'm experiencing chest pain when i breathe deeply?,graph,graph|0.90,True
+Do you provide cost estimates before procedures?,rag,rag|0.70,True
+Schedule me for a blood test tomorrow,sql,sql|0.90,True
+When is Dr. Suzuki available this week?,sql,rag|0.70,False
+I was wondering is the radiology department open on weekends??,sql,rag|0.70,False
+What could cause sudden dizziness and nausea??,graph,rag|0.70,False
+I was wondering i can't make it to my 2:00 pm appointment tomorrow?,sql,sql|0.90,True
+What insurance providers do you work with?,rag,rag|0.90,True
+Could you please tell me what are your weekend hours??,sql,rag|0.70,False
+Is financial assistance available?,rag,rag|0.70,True
+How do you handle prescription refills?,rag,rag|0.70,True
+What are the stages of chronic kidney disease?,graph,graph|0.90,True
+Explain the difference between type 1 and type 2 diabetes,graph,graph|0.90,True
+I need to add my new insurance information to my record?,sql,rag|0.90,False
+How do I book an appointment with the cardiologist?,sql,sql|0.90,True
+I was wondering when does the pharmacy open tomorrow??,sql,sql|0.90,True
+What is your patient privacy policy?,rag,rag|0.90,True
+Book me a slot with the neurologist,sql,rag|0.70,False
+Could you please tell me how do i sign up for the patient portal??,sql,sql|0.90,True
+I want to enroll in your hospital system?,sql,rag|0.70,False
+Could you please tell me do you have any pediatricians available today??,sql,sql|0.90,True
+Do you have a gift shop?,rag,rag|0.70,True
+I want to enroll in your hospital system,sql,rag|0.70,False
+Is the hospital clinic open on national holidays?,sql,rag|0.70,False
+Could you please tell me can i register my daughter as a new patient??,sql,sql|0.90,True
+What are Dr. Nakamura's office hours?,sql,rag|0.70,False
+I've been having persistent headaches for three days,graph,rag|0.70,False
+I was wondering what are the consultation hours for cardiology??,sql,sql|0.90,True
+I need to register as a new patient,sql,sql|0.90,True
+Are there any interactions between my blood thinner and vitamin supplements?,graph,rag|0.70,False
+I need to add my new insurance information to my record,sql,rag|0.90,False
+Could you please tell me when does the pharmacy open tomorrow??,sql,sql|0.90,True
+I was wondering what are the clinic hours for pediatrics??,sql,sql|0.90,True
+I was wondering i need to add my new insurance information to my record?,sql,rag|0.90,False
+What are the ICU visiting hours?,rag,rag|0.90,True
+What payment methods do you accept?,rag,rag|0.90,True
+Treatment approaches for childhood asthma,graph,graph|0.90,True
+Do you have parking available for patients?,rag,rag|0.90,True
+Could you please tell me how do i update my patient information??,sql,rag|0.70,False
+Do you have any pediatricians available today??,sql,sql|0.90,True
+I was wondering reschedule my mri appointment to next week?,sql,sql|0.90,True
+How do I pay my hospital bill online?,rag,rag|0.70,True
+I was wondering when is dr. suzuki available this week??,sql,rag|0.70,False
+What are your weekend hours?,sql,rag|0.70,False
+How do I sign up for the patient portal??,sql,sql|0.90,True
+What are the clinic hours for pediatrics?,sql,sql|0.90,True
+Could you please tell me are there any available appointments with the orthopedist??,sql,rag|0.70,False
+What are the early signs of Alzheimer's?,graph,rag|0.70,False
+Do I need to make an appointment for blood work??,sql,rag|0.70,False
+Do you have Wi-Fi available for patients?,rag,rag|0.70,True
+Could you please tell me can i reschedule my consultation with dr. tanaka??,sql,rag|0.70,False
+Could you please tell me reschedule my mri appointment to next week?,sql,sql|0.90,True
+I was wondering do i need to make an appointment for blood work??,sql,rag|0.70,False
+I was wondering what could cause sudden dizziness and nausea??,graph,rag|0.70,False
+How is pneumonia treated in elderly patients?,graph,rag|0.70,False
+How does metformin work for diabetes?,graph,graph|0.90,True
+How is high cholesterol typically treated?,graph,rag|0.70,False
+I'm experiencing chest pain when I breathe deeply?,graph,graph|0.90,True
+I was wondering do you have any pediatricians available today??,sql,sql|0.90,True
+Is the radiology department open on weekends??,sql,rag|0.70,False
+I want to change my appointment time from morning to afternoon?,sql,sql|0.90,True
+What therapy is recommended for anxiety disorders?,graph,rag|0.70,False
+Could you please tell me i want to enroll in your hospital system?,sql,rag|0.70,False
+I can't make it to my 2:00 PM appointment tomorrow,sql,sql|0.90,True
+Could you please tell me i need to book an appointment with dr. yamamoto?,sql,sql|0.90,True
+I need to see a doctor this week,sql,rag|0.70,False
+I was wondering can i register my daughter as a new patient??,sql,sql|0.90,True
+What forms do I need to fill out for registration?,sql,rag|0.70,False
+I was wondering i need to book an appointment with dr. yamamoto?,sql,sql|0.90,True
+Schedule me for a blood test tomorrow?,sql,sql|0.90,True
+Could you please tell me is the dermatologist available tomorrow??,sql,sql|0.90,True
+Can I schedule a consultation for next Tuesday??,sql,sql|0.90,True
+What treatments exist for psoriasis?,graph,rag|0.70,False
+I was wondering what forms do i need to fill out for registration??,sql,rag|0.70,False
+Could you please tell me what time does the laboratory close today??,sql,sql|0.90,True
+Where is the nearest pharmacy to your hospital?,rag,rag|0.70,True
+Could you please tell me can i schedule a consultation for next tuesday??,sql,sql|0.90,True
+Could you please tell me schedule me for a blood test tomorrow?,sql,sql|0.90,True
+Register my son who is 5 years old,sql,rag|0.70,False
+Could you please tell me when is dr. suzuki available this week??,sql,rag|0.70,False
+I can't make it to my 2:00 PM appointment tomorrow?,sql,sql|0.90,True
+Is the ENT specialist in today?,sql,sql|0.90,True
+What is diabetes and how is it treated?,graph,graph|0.90,True
+I want to make an appointment for my annual checkup?,sql,rag|0.70,False
+I was wondering i'd like to book a dental checkup?,sql,rag|0.70,False
+I was wondering schedule me for vaccination?,sql,rag|0.70,False
+Could you please tell me my joints are swollen and painful?,graph,rag|0.70,False
+What should I know about asthma?,graph,graph|0.90,True
+Could you please tell me is the hospital clinic open on national holidays??,sql,rag|0.70,False
+Is the ENT specialist in today??,sql,sql|0.90,True
+Do you have a no-smoking policy?,rag,rag|0.90,True
+I've been having persistent headaches for three days?,graph,rag|0.70,False
+What is your policy on copayments?,rag,rag|0.90,True
+Is there a cafeteria in the hospital?,rag,rag|0.70,True
+I want to change my appointment time from morning to afternoon,sql,sql|0.90,True

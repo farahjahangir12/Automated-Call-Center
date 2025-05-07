@@ -4590,3 +4590,225 @@ AttributeError: 'str' object has no attribute 'get'
 2025-04-25 23:13:28,480 - INFO - Creating agent executor
 2025-04-25 23:13:28,480 - INFO - SQL Agent initialization complete
 2025-04-25 23:13:49,167 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-05-05 12:43:26,315 - INFO - Creating SQL Agent instance
+2025-05-05 12:43:26,317 - INFO - Creating SQL Agent instance
+2025-05-05 12:43:26,318 - DEBUG - Initial session context: {}
+2025-05-05 12:43:26,318 - INFO - Initializing Supabase connection
+2025-05-05 12:43:26,584 - ERROR - Error initializing SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-05-05 12:43:26,755 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-05-05 12:43:26,759 - ERROR - Error creating SQL Agent: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+2025-05-05 12:43:26,764 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 101, in handle_request
+    raise exc
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_sync\connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_backends\sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\connection.py", line 43, in initialize
+    response = self._client.table("patients").select("count").execute()
+  File "D:\FYP\server\env\Lib\site-packages\postgrest\_sync\request_builder.py", line 58, in execute
+    r = self.session.request(
+        self.http_method,
+    ...<3 lines>...
+        headers=self.headers,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\FYP\server\env\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\FYP\server\agents\sql\main.py", line 66, in create
+    await self.initialize()
+  File "D:\FYP\server\agents\sql\main.py", line 81, in initialize
+    await supabase.initialize()
+  File "D:\FYP\server\agents\sql\connection.py", line 52, in initialize
+    raise ConnectionError(error_msg)
+ConnectionError: Failed to initialize Supabase client: [Errno 11001] getaddrinfo failed
+
+2025-05-05 12:46:02,262 - INFO - Creating SQL Agent instance
+2025-05-05 12:46:02,262 - INFO - Creating SQL Agent instance
+2025-05-05 12:46:02,263 - DEBUG - Initial session context: {}
+2025-05-05 12:46:02,263 - INFO - Initializing Supabase connection
+2025-05-05 12:46:04,110 - INFO - Initializing tools
+2025-05-05 12:46:04,111 - DEBUG - Tools initialized: 5
+2025-05-05 12:46:04,112 - INFO - Initializing memory
+2025-05-05 12:46:04,115 - DEBUG - Memory initialized
+2025-05-05 12:46:04,116 - INFO - Creating prompt template
+2025-05-05 12:46:04,116 - INFO - Creating agent
+2025-05-05 12:46:04,152 - INFO - Creating agent executor
+2025-05-05 12:46:04,153 - INFO - SQL Agent initialization complete
+2025-05-05 12:47:45,552 - INFO - Creating SQL Agent instance
+2025-05-05 12:47:45,552 - INFO - Creating SQL Agent instance
+2025-05-05 12:47:45,553 - DEBUG - Initial session context: {}
+2025-05-05 12:47:45,553 - INFO - Initializing Supabase connection
+2025-05-05 12:47:46,827 - INFO - Initializing tools
+2025-05-05 12:47:46,828 - DEBUG - Tools initialized: 5
+2025-05-05 12:47:46,828 - INFO - Initializing memory
+2025-05-05 12:47:46,830 - DEBUG - Memory initialized
+2025-05-05 12:47:46,831 - INFO - Creating prompt template
+2025-05-05 12:47:46,832 - INFO - Creating agent
+2025-05-05 12:47:46,863 - INFO - Creating agent executor
+2025-05-05 12:47:46,864 - INFO - SQL Agent initialization complete
+2025-05-05 12:48:11,574 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-05-07 20:30:32,816 - INFO - Creating SQL Agent instance
+2025-05-07 20:30:32,817 - INFO - Creating SQL Agent instance
+2025-05-07 20:30:32,817 - DEBUG - Initial session context: {}
+2025-05-07 20:30:32,817 - INFO - Initializing Supabase connection
+2025-05-07 20:30:34,278 - INFO - Initializing tools
+2025-05-07 20:30:34,278 - DEBUG - Tools initialized: 5
+2025-05-07 20:30:34,279 - INFO - Initializing memory
+2025-05-07 20:30:34,280 - DEBUG - Memory initialized
+2025-05-07 20:30:34,281 - INFO - Creating prompt template
+2025-05-07 20:30:34,281 - INFO - Creating agent
+2025-05-07 20:30:34,320 - INFO - Creating agent executor
+2025-05-07 20:30:34,322 - INFO - SQL Agent initialization complete
+2025-05-07 20:31:57,342 - INFO - Creating SQL Agent instance
+2025-05-07 20:31:57,343 - INFO - Creating SQL Agent instance
+2025-05-07 20:31:57,343 - DEBUG - Initial session context: {}
+2025-05-07 20:31:57,343 - INFO - Initializing Supabase connection
+2025-05-07 20:31:58,503 - INFO - Initializing tools
+2025-05-07 20:31:58,504 - DEBUG - Tools initialized: 5
+2025-05-07 20:31:58,504 - INFO - Initializing memory
+2025-05-07 20:31:58,506 - DEBUG - Memory initialized
+2025-05-07 20:31:58,506 - INFO - Creating prompt template
+2025-05-07 20:31:58,506 - INFO - Creating agent
+2025-05-07 20:31:58,535 - INFO - Creating agent executor
+2025-05-07 20:31:58,536 - INFO - SQL Agent initialization complete
+2025-05-07 20:33:38,417 - INFO - Creating SQL Agent instance
+2025-05-07 20:33:38,418 - INFO - Creating SQL Agent instance
+2025-05-07 20:33:38,418 - DEBUG - Initial session context: {}
+2025-05-07 20:33:38,418 - INFO - Initializing Supabase connection
+2025-05-07 20:33:39,627 - INFO - Initializing tools
+2025-05-07 20:33:39,628 - DEBUG - Tools initialized: 5
+2025-05-07 20:33:39,629 - INFO - Initializing memory
+2025-05-07 20:33:39,632 - DEBUG - Memory initialized
+2025-05-07 20:33:39,633 - INFO - Creating prompt template
+2025-05-07 20:33:39,634 - INFO - Creating agent
+2025-05-07 20:33:39,682 - INFO - Creating agent executor
+2025-05-07 20:33:39,684 - INFO - SQL Agent initialization complete
+2025-05-07 20:34:06,357 - ERROR - SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'

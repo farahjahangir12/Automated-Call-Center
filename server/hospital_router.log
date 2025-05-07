@@ -5644,3 +5644,367 @@ AttributeError: 'HospitalRouter' object has no attribute 'rag_agent'
 2025-04-25 23:13:49,170 - INFO - graph agent ready
 2025-04-25 23:13:49,171 - DEBUG - Agent verification complete
 2025-04-25 23:13:49,171 - INFO - All agents initialized successfully
+2025-05-05 12:43:24,286 - INFO - Starting agent initialization...
+2025-05-05 12:43:24,287 - DEBUG - Environment variables verified
+2025-05-05 12:43:24,288 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-05 12:44:21,855 - DEBUG - Agent loading results: [False, False, False]
+2025-05-05 12:44:21,856 - ERROR - Failed to load agents: ['sql', 'rag', 'graph']
+2025-05-05 12:44:21,857 - ERROR - Agent loading failure details:
+2025-05-05 12:44:21,858 - ERROR - sql loading traceback:
+2025-05-05 12:44:21,860 - ERROR - NoneType: None
+
+2025-05-05 12:44:21,860 - ERROR - rag loading traceback:
+2025-05-05 12:44:21,861 - ERROR - NoneType: None
+
+2025-05-05 12:44:21,862 - ERROR - graph loading traceback:
+2025-05-05 12:44:21,862 - ERROR - NoneType: None
+
+2025-05-05 12:44:21,863 - ERROR - Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-05-05 12:44:21,863 - ERROR - Full initialization traceback:
+2025-05-05 12:44:21,864 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-05-05 12:46:00,469 - INFO - Starting agent initialization...
+2025-05-05 12:46:00,470 - DEBUG - Environment variables verified
+2025-05-05 12:46:00,470 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-05 12:46:32,164 - DEBUG - Agent loading results: [True, False, True]
+2025-05-05 12:46:32,165 - ERROR - Failed to load agents: ['rag']
+2025-05-05 12:46:32,167 - ERROR - Agent loading failure details:
+2025-05-05 12:46:32,168 - ERROR - rag loading traceback:
+2025-05-05 12:46:32,169 - ERROR - NoneType: None
+
+2025-05-05 12:46:32,170 - ERROR - Critical initialization failure: Failed to load agents: ['rag']
+2025-05-05 12:46:32,171 - ERROR - Full initialization traceback:
+2025-05-05 12:46:32,173 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-05 12:47:43,743 - INFO - Starting agent initialization...
+2025-05-05 12:47:43,744 - DEBUG - Environment variables verified
+2025-05-05 12:47:43,745 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-05 12:48:11,573 - DEBUG - Agent loading results: [True, True, True]
+2025-05-05 12:48:11,573 - DEBUG - Verifying agent interfaces...
+2025-05-05 12:48:11,576 - ERROR - Critical: sql agent verification failed!
+2025-05-05 12:48:11,576 - INFO - rag agent ready
+2025-05-05 12:48:11,577 - INFO - graph agent ready
+2025-05-05 12:48:11,577 - DEBUG - Agent verification complete
+2025-05-05 12:48:11,577 - INFO - All agents initialized successfully
+2025-05-07 20:30:30,267 - INFO - Starting agent initialization...
+2025-05-07 20:30:30,268 - DEBUG - Environment variables verified
+2025-05-07 20:30:30,268 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-07 20:31:01,971 - DEBUG - Agent loading results: [True, False, True]
+2025-05-07 20:31:01,973 - ERROR - Failed to load agents: ['rag']
+2025-05-07 20:31:01,974 - ERROR - Agent loading failure details:
+2025-05-07 20:31:01,974 - ERROR - rag loading traceback:
+2025-05-07 20:31:01,975 - ERROR - NoneType: None
+
+2025-05-07 20:31:01,975 - ERROR - Critical initialization failure: Failed to load agents: ['rag']
+2025-05-07 20:31:01,976 - ERROR - Full initialization traceback:
+2025-05-07 20:31:01,977 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-07 20:31:54,902 - INFO - Starting agent initialization...
+2025-05-07 20:31:54,903 - DEBUG - Environment variables verified
+2025-05-07 20:31:54,903 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-07 20:32:21,019 - DEBUG - Agent loading results: [True, False, True]
+2025-05-07 20:32:21,020 - ERROR - Failed to load agents: ['rag']
+2025-05-07 20:32:21,021 - ERROR - Agent loading failure details:
+2025-05-07 20:32:21,022 - ERROR - rag loading traceback:
+2025-05-07 20:32:21,023 - ERROR - NoneType: None
+
+2025-05-07 20:32:21,024 - ERROR - Critical initialization failure: Failed to load agents: ['rag']
+2025-05-07 20:32:21,025 - ERROR - Full initialization traceback:
+2025-05-07 20:32:21,027 - ERROR - Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-07 20:33:35,999 - INFO - Starting agent initialization...
+2025-05-07 20:33:35,999 - DEBUG - Environment variables verified
+2025-05-07 20:33:36,000 - DEBUG - Loading agents: ['sql', 'rag', 'graph']
+2025-05-07 20:34:06,356 - DEBUG - Agent loading results: [True, True, True]
+2025-05-07 20:34:06,357 - DEBUG - Verifying agent interfaces...
+2025-05-07 20:34:06,358 - ERROR - Critical: sql agent verification failed!
+2025-05-07 20:34:06,359 - INFO - rag agent ready
+2025-05-07 20:34:06,359 - INFO - graph agent ready
+2025-05-07 20:34:06,360 - DEBUG - Agent verification complete
+2025-05-07 20:34:06,360 - INFO - All agents initialized successfully
+2025-05-07 20:34:06,377 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,382 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,384 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:06,385 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,387 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,391 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,393 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,394 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,395 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:08,396 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,402 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,403 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,404 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:10,405 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,407 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,413 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:12,415 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,417 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,420 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:12,422 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,474 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,476 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:14,477 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,479 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,481 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:16,487 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:16,489 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:16,491 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:16,494 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:16,495 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:18,504 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:18,505 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:18,506 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:18,507 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:18,508 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:20,512 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:20,514 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:20,515 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:20,516 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:20,518 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:22,523 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:22,524 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:22,525 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:22,527 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:22,528 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:24,533 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:24,535 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:24,536 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:24,537 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:24,538 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:26,542 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:26,543 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:26,544 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:26,546 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:26,546 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:28,552 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,554 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:28,555 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,556 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,557 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,562 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,565 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,575 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:30,579 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,589 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,606 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:32,607 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,608 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,609 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,610 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:34,616 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:34,617 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:34,618 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:34,619 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:34,619 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:36,625 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:36,626 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:36,627 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:36,628 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:36,628 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:38,633 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:38,634 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:38,635 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:38,636 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:38,637 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:40,644 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:40,648 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:40,652 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:40,653 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:40,655 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,665 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,669 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,672 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:42,674 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,676 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,685 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,688 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:44,690 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:44,691 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,694 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,703 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,705 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:46,707 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,709 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:46,711 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,721 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:48,723 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,724 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:48,725 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,727 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:50,735 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:50,739 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:50,742 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:34:50,745 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:50,749 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:52,760 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,766 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,771 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,777 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,783 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,798 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:54,801 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,806 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,810 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,815 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:56,823 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:56,824 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:56,825 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:56,826 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:56,826 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:58,832 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:58,833 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:34:58,834 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:58,835 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:34:58,835 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:00,840 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:00,841 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:00,842 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:00,843 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:00,844 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:02,852 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:02,855 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,859 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,864 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,869 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,885 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,886 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,887 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,888 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,889 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:06,896 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:06,899 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:06,902 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:06,904 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:06,907 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:08,920 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:08,924 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:08,928 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:08,934 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:08,941 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,962 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,966 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,970 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,973 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:10,977 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:12,987 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,988 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:12,988 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,991 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,992 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:15,008 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:15,012 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:15,015 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:15,018 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:15,022 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:17,037 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:17,039 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:17,041 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:17,043 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:17,046 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:19,052 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,054 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:19,055 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,056 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,058 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,068 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:21,072 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:21,075 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,080 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,086 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:23,103 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:23,106 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:23,110 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:23,113 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:23,116 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:25,133 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:25,136 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:25,139 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:25,142 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:25,144 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:27,153 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,157 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,164 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,168 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:27,171 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:29,187 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:29,188 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:29,189 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:29,190 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:29,193 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:31,198 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:31,199 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:31,200 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:31,201 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:31,202 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:33,207 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:33,211 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:33,215 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:33,219 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:33,221 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:35,242 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,246 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,249 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,251 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:35,253 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:37,262 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,266 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,269 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,274 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,280 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,298 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:39,302 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,306 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,315 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,330 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:41,343 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:41,344 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:41,345 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:41,346 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:41,347 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:43,351 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:43,353 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:43,354 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:43,363 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:43,364 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:45,369 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:45,370 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:45,370 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:45,371 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:45,371 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:47,377 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:47,380 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:47,384 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:47,386 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:47,389 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:49,399 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:49,402 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:49,406 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:49,409 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:49,412 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:51,419 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:51,428 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:51,430 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:51,431 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:51,433 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:53,441 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:53,443 - DEBUG - Query matched GRAPH pattern or fuzzy
+2025-05-07 20:35:53,444 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:53,445 - DEBUG - Query matched SQL pattern or fuzzy
+2025-05-07 20:35:53,445 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:55,450 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:55,451 - DEBUG - Query matched RAG pattern or fuzzy
+2025-05-07 20:35:55,452 - ERROR - Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:55,454 - DEBUG - Query matched SQL pattern or fuzzy

@@ -211,3 +211,233 @@ Traceback (most recent call last):
 TypeError: VAD.__init__() missing 2 required keyword-only arguments: 'session' and 'opts'
 2025-04-25 23:13:49,167 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
 2025-04-25 23:13:49,169 [ERROR] router: Critical: sql agent verification failed!
+2025-05-05 12:44:21,856 [ERROR] router: Failed to load agents: ['sql', 'rag', 'graph']
+2025-05-05 12:44:21,857 [ERROR] router: Agent loading failure details:
+2025-05-05 12:44:21,858 [ERROR] router: sql loading traceback:
+2025-05-05 12:44:21,860 [ERROR] router: NoneType: None
+
+2025-05-05 12:44:21,860 [ERROR] router: rag loading traceback:
+2025-05-05 12:44:21,861 [ERROR] router: NoneType: None
+
+2025-05-05 12:44:21,862 [ERROR] router: graph loading traceback:
+2025-05-05 12:44:21,862 [ERROR] router: NoneType: None
+
+2025-05-05 12:44:21,863 [ERROR] router: Critical initialization failure: Failed to load agents: ['sql', 'rag', 'graph']
+2025-05-05 12:44:21,863 [ERROR] router: Full initialization traceback:
+2025-05-05 12:44:21,864 [ERROR] router: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+
+2025-05-05 12:44:21,866 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 43, in entrypoint
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 177, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['sql', 'rag', 'graph']
+2025-05-05 12:46:32,165 [ERROR] router: Failed to load agents: ['rag']
+2025-05-05 12:46:32,167 [ERROR] router: Agent loading failure details:
+2025-05-05 12:46:32,168 [ERROR] router: rag loading traceback:
+2025-05-05 12:46:32,169 [ERROR] router: NoneType: None
+
+2025-05-05 12:46:32,170 [ERROR] router: Critical initialization failure: Failed to load agents: ['rag']
+2025-05-05 12:46:32,171 [ERROR] router: Full initialization traceback:
+2025-05-05 12:46:32,173 [ERROR] router: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-05 12:46:32,178 [ERROR] livekit.agents: unhandled exception while running the job task
+Traceback (most recent call last):
+  File "D:\FYP\server\main.py", line 43, in entrypoint
+    router = await HospitalRouter.create()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\FYP\server\router.py", line 177, in create
+    await self.initialize()
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+2025-05-05 12:48:11,574 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-05-05 12:48:11,576 [ERROR] router: Critical: sql agent verification failed!
+2025-05-07 19:37:37,747 [ERROR] main: Error loading fallback CSV: 'utf-8' codec can't decode byte 0x92 in position 923: invalid start byte
+2025-05-07 19:48:53,944 [ERROR] main: Error loading fallback CSV: 'utf-8' codec can't decode byte 0x92 in position 923: invalid start byte
+2025-05-07 20:30:57,746 [ERROR] agents.graph.main: Error loading fallback CSV: 'utf-8' codec can't decode byte 0x92 in position 923: invalid start byte
+2025-05-07 20:31:01,973 [ERROR] router: Failed to load agents: ['rag']
+2025-05-07 20:31:01,974 [ERROR] router: Agent loading failure details:
+2025-05-07 20:31:01,974 [ERROR] router: rag loading traceback:
+2025-05-07 20:31:01,975 [ERROR] router: NoneType: None
+
+2025-05-07 20:31:01,975 [ERROR] router: Critical initialization failure: Failed to load agents: ['rag']
+2025-05-07 20:31:01,976 [ERROR] router: Full initialization traceback:
+2025-05-07 20:31:01,977 [ERROR] router: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-07 20:32:17,178 [ERROR] agents.graph.main: Error loading fallback CSV: 'utf-8' codec can't decode byte 0x92 in position 923: invalid start byte
+2025-05-07 20:32:21,020 [ERROR] router: Failed to load agents: ['rag']
+2025-05-07 20:32:21,021 [ERROR] router: Agent loading failure details:
+2025-05-07 20:32:21,022 [ERROR] router: rag loading traceback:
+2025-05-07 20:32:21,023 [ERROR] router: NoneType: None
+
+2025-05-07 20:32:21,024 [ERROR] router: Critical initialization failure: Failed to load agents: ['rag']
+2025-05-07 20:32:21,025 [ERROR] router: Full initialization traceback:
+2025-05-07 20:32:21,027 [ERROR] router: Traceback (most recent call last):
+  File "D:\FYP\server\router.py", line 203, in initialize
+    raise RuntimeError(f"Failed to load agents: {failed}")
+RuntimeError: Failed to load agents: ['rag']
+
+2025-05-07 20:34:01,009 [ERROR] agents.graph.main: Error loading fallback CSV: 'utf-8' codec can't decode byte 0x92 in position 923: invalid start byte
+2025-05-07 20:34:06,357 [ERROR] agents.sql.main: SQL Agent verification failed: 'AsyncSupabaseClient' object has no attribute 'client'
+2025-05-07 20:34:06,358 [ERROR] router: Critical: sql agent verification failed!
+2025-05-07 20:34:06,377 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,382 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,385 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:06,387 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,391 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,393 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,394 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:08,396 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,402 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,403 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,405 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:10,407 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,415 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,417 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:12,422 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,474 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,477 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,479 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:14,481 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:16,489 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:16,491 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:18,505 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:18,508 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:20,514 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:20,515 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:22,524 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:22,525 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:24,535 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:24,536 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:26,544 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,552 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,555 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,556 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:28,557 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,562 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,565 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,579 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:30,589 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,607 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,608 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,609 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:32,610 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:36,626 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:36,627 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:38,633 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:38,636 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:38,637 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:40,655 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,665 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,669 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,674 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:42,676 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,685 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,691 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:44,694 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,703 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,707 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:46,711 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,723 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,725 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:48,727 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:50,735 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:50,745 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,760 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,766 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,771 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,777 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:52,783 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,801 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,806 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,810 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:54,815 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:56,824 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:56,826 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:58,834 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:34:58,835 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:00,840 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:00,841 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,855 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,859 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,864 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:02,869 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,885 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,886 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,887 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,888 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:04,889 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:06,896 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:06,899 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:08,928 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:08,934 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:08,941 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,962 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,966 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:10,970 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,987 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,988 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,991 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:12,992 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:15,012 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:17,039 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:17,043 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,052 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,055 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,056 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:19,058 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,075 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,080 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:21,086 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:25,136 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:25,142 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,153 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,157 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,164 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:27,171 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:29,187 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:29,190 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:33,215 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,242 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,246 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:35,249 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,262 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,266 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,269 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,274 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:37,280 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,302 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,306 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:39,315 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:41,343 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:41,346 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:43,351 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:43,353 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:43,364 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:45,370 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:47,380 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:47,384 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:47,389 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:49,406 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:49,409 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:51,430 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:51,431 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:51,433 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:53,441 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:53,444 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:55,450 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'
+2025-05-07 20:35:55,452 [ERROR] router: Error in LLM classification: 'HospitalRouter' object has no attribute 'llm'

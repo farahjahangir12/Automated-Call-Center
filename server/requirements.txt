@@ -1,4 +1,5 @@
-python-dotenv supabase
+python-dotenv
+supabase
 langchain
 langchain-community
 langchain-groq
@@ -9,3 +10,7 @@ langchain-cohere
 pymupdf
 langchain-neo4j
 rapidfuzz
+pandas
+ragas
+datasets
+openpyxl
